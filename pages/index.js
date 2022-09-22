@@ -37,7 +37,7 @@ font-weight: ${(props) => props.fontWeight || "#000000"};
 const DeliverSection = styled.div`
   height: 30rem;
   width: 100%;
-  background: rgba(0,48,100,1);
+  background: rgba(0, 48, 100, 1);
   position: relative;
   display: flex;
   align-item: center;
@@ -61,6 +61,18 @@ const DeliverSectionImage = styled.div`
   height: 100%;
 `;
 
+const HeaderButtonContainer = styled.div`
+  display: flex;
+  align-item: center;
+  gap: 3rem;
+`;
+const StyledButton = styled(Button)`
+background:${(props)=>props.background || '#fff'};
+color:${(props)=>props.color || '#fff'};
+border: 2px solid ${(props)=>props.border || '#fff'};
+height:2.5rem;
+width:6rem;
+`;
 export default function Home() {
   return (
     <>
@@ -81,10 +93,10 @@ export default function Home() {
           <Text fontSize={"18px"} color="white">
             We offer the most reliable power services in the country
           </Text>
-          <div className={styles.SectionHorizontal}>
-            <Button> About Us</Button>
-            <Button> Contact Us</Button>
-          </div>
+          <HeaderButtonContainer>
+            <StyledButton background="yellow" color="white" border="none"> About Us</StyledButton>
+            <StyledButton background="transparent" color="blue" border="blue"> Contact Us</StyledButton>
+          </HeaderButtonContainer>
         </div>
       </HeaderContainer>
       <VolvaContainer>

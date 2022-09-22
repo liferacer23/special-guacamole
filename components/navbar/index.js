@@ -11,6 +11,24 @@ align-item:center;
 justify-content:center;
 gap:10px;
 `;
+
+const StyledButton = styled(Button)`
+
+
+&.ant-btn {
+    border:none !important;
+}
+background:transparent !important;
+border:0px solid transparent !important;
+font-weight:medium !important;
+color:#000000 !important;
+font-size:14px !important;
+&:hover{
+    color:#FFFF00 !important;
+    background:transparent !important;
+    font-weight:bold !important;
+}
+`;
 const content = (
   <div>
     <p>Content</p>
@@ -20,23 +38,29 @@ const content = (
 const NavBar = () => (
   <>
     <Header style={{ display: "flex", alignItems: "center" }}></Header>
-    <Layout style={{ background: "transparent", padding: "0 100px" }}>
+    <Layout style={{ background: "transparent", padding: "0 200px" }}>
       <Header
         style={{ display: "flex", alignItems: "center", background: "#fff", justifyContent:'space-between' }}
       >
         <Image src={logo} alt="Website logo image" width={180} height={35} />
         <HeaderItems>
         <Popover content={content} title="Title">
-    <Button type="primary">Hover me</Button>
+    <StyledButton>Home</StyledButton>
   </Popover>
   <Popover content={content} title="Title">
-    <Button type="primary">Hover me</Button>
+    <StyledButton >About Us</StyledButton>
   </Popover>
   <Popover content={content} title="Title">
-    <Button type="primary">Hover me</Button>
+    <StyledButton >Products</StyledButton>
   </Popover>
   <Popover content={content} title="Title">
-    <Button type="primary">Hover me</Button>
+    <StyledButton >Service</StyledButton>
+  </Popover>
+  <Popover content={content} title="Title">
+    <StyledButton >Gallery</StyledButton>
+  </Popover>
+  <Popover content={content} title="Title">
+    <StyledButton >Contact Us</StyledButton>
   </Popover>
         </HeaderItems>
       </Header>

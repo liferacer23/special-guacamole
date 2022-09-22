@@ -1,7 +1,29 @@
+import styles from "../styles/Home.module.css";
 import Head from "next/head";
-import Layout from "antd/lib/layout/layout";
 import NavBar from "../components/navbar";
+import styled from "styled-components";
+import Button from "antd/lib/button";
+const HeaderContainer = styled.div``;
 
+const SectionVertical = styled.div`
+display:flex';
+align-item:center;
+justify:content:center;
+flex-direction:column;
+margin-left:10rem;
+margin-top:5rem;
+`;
+const SectionHorizontal = styled.div`
+display:flex';
+align-item:center;
+justify:content:center;
+`;
+
+const Text = styled.h1`
+font-size:${(props)=>props.fontSize || '15px'};
+color:${(props)=>props.color || '#000000'};
+font-weight:${(props)=>props.fontWeight || '#000000'};
+`;
 export default function Home() {
   return (
     <>
@@ -11,6 +33,17 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <NavBar />
+      <HeaderContainer className={styles.Section}>
+        <SectionVertical>
+          <Text fontSize={"14px"} color="yellow">--Welcome to Nileco--</Text>
+          <Text fontSize={"50px"} color="blue">We are leader in power and technology</Text>
+          <Text fontSize={"18px"} color="white">We offer the most reliable power services in the country</Text>
+          <SectionHorizontal>
+            <Button> About Us</Button>
+            <Button> Contact Us</Button>
+          </SectionHorizontal>
+        </SectionVertical>
+      </HeaderContainer>
     </>
   );
 }

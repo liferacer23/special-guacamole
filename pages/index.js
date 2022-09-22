@@ -5,19 +5,8 @@ import styled from "styled-components";
 import Button from "antd/lib/button";
 const HeaderContainer = styled.div``;
 
-const SectionVertical = styled.div`
-display:flex';
-align-item:center;
-justify:content:center;
-flex-direction:column;
-margin-left:10rem;
-margin-top:5rem;
-`;
-const SectionHorizontal = styled.div`
-display:flex';
-align-item:center;
-justify:content:center;
-`;
+
+
 
 const Text = styled.h1`
 font-size:${(props)=>props.fontSize || '15px'};
@@ -34,15 +23,15 @@ export default function Home() {
       </Head>
       <NavBar />
       <HeaderContainer className={styles.Section}>
-        <SectionVertical>
+        <div className={styles.SectionVertical}>
           <Text fontSize={"14px"} color="yellow">--Welcome to Nileco--</Text>
           <Text fontSize={"50px"} color="blue">We are leader in power and technology</Text>
           <Text fontSize={"18px"} color="white">We offer the most reliable power services in the country</Text>
-          <SectionHorizontal>
+          <div className={styles.SectionHorizontal}>
             <Button> About Us</Button>
             <Button> Contact Us</Button>
-          </SectionHorizontal>
-        </SectionVertical>
+          </div>
+        </div>
       </HeaderContainer>
     </>
   );

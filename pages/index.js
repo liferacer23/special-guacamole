@@ -37,7 +37,7 @@ font-weight: ${(props) => props.fontWeight || "#000000"};
 const DeliverSection = styled.div`
   height: 30rem;
   width: 100%;
-  background: blue;
+  background: rgba(0,48,100,1);
   position: relative;
   display: flex;
   align-item: center;

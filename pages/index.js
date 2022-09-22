@@ -17,7 +17,7 @@ const AboutUsContainer = styled.div`
   display: flex;
   align-item: center;
   justify-content: center;
-  gap: 10px;
+  gap: 40px;
   width: 100%;
   padding-left: 4rem;
   padding-top: 4rem;
@@ -27,7 +27,7 @@ const Description = styled.div`
   align-item: center;
   justify-content: start;
   flex-direction: column;
-  width: 50%;
+  width: 35%;
 `;
 const Text = styled.h1`
 font-size:${(props) => props.fontSize || "14px"}};
@@ -92,7 +92,7 @@ export default function Home() {
       </VolvaContainer>
 
       <AboutUsContainer>
-        <Image src={generator} width={500} height={600} alt="generator" />
+        <Image src={generator} width={400} height={500} alt="generator" />
         <Description>
           <Text fontSize="14px">About Us</Text>
           <Text fontSize="30px">We Have Everything That You Needed</Text>

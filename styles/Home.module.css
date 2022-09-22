@@ -12,6 +12,7 @@ padding-top:10rem;
 };
 
 .SectionHorizontal{
+  width:100%;
 display:flex;
 align-items:center;
 justify-content:center;

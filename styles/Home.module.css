@@ -20,7 +20,6 @@ gap:3rem;
 };
 .whiteSection{
   width:100%;
-  background:#fff;
+  background:rgb(121, 39, 39);
   height:20rem;
-  padding:1rem;
 }

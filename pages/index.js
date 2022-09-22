@@ -4,16 +4,38 @@ import NavBar from "../components/navbar";
 import styled from "styled-components";
 import Button from "antd/lib/button";
 import Image from "next/image";
-import volva from '../assets/vol.jpg';
+import volva from "../assets/vol.jpg";
+import generator from "../assets/generatorindex.jpeg";
 const HeaderContainer = styled.div``;
-
-
-
-
+const VolvaContainer = styled.div`
+  height: 8rem;
+  padding-left: 4rem;
+  padding-top: 4rem;
+`;
+const AboutUsContainer = styled.div`
+  display: flex;
+  align-item: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  padding-left: 4rem;
+  padding-top: 4rem;
+`;
+const AboutUsDescription = styled.div`
+  display: flex;
+  align-item: center;
+  justify-content: start;
+  flex-direction: column;
+  width: 50%;
+`;
+const AboutUsText = styled.h1`
+font-size:${(props) => props.fontSize || "14px"}};
+`;
+const Section = styled.div
 const Text = styled.h1`
-font-size:${(props)=>props.fontSize || '15px'};
-color:${(props)=>props.color || '#000000'};
-font-weight:${(props)=>props.fontWeight || '#000000'};
+  font-size: ${(props) => props.fontSize || "15px"};
+  color: ${(props) => props.color || "#000000"};
+  font-weight: ${(props) => props.fontWeight || "#000000"};
 `;
 export default function Home() {
   return (
@@ -26,18 +48,48 @@ export default function Home() {
       <NavBar />
       <HeaderContainer className={styles.Section}>
         <div className={styles.SectionVertical}>
-          <Text fontSize={"14px"} color="yellow">--Welcome to Nileco--</Text>
-          <Text fontSize={"50px"} color="blue">We are leader in power and technology</Text>
-          <Text fontSize={"18px"} color="white">We offer the most reliable power services in the country</Text>
+          <Text fontSize={"14px"} color="yellow">
+            --Welcome to Nileco--
+          </Text>
+          <Text fontSize={"50px"} color="blue">
+            We are leader in power and technology
+          </Text>
+          <Text fontSize={"18px"} color="white">
+            We offer the most reliable power services in the country
+          </Text>
           <div className={styles.SectionHorizontal}>
             <Button> About Us</Button>
             <Button> Contact Us</Button>
           </div>
         </div>
       </HeaderContainer>
-      <div className={styles.whiteSection}>
-<Image src={volva}/>
-      </div>
+      <VolvaContainer>
+        <Image src={volva} width={200} height={100} alt="Volva image" />
+      </VolvaContainer>
+
+      <AboutUsContainer>
+        <Image src={generator} width={500} height={600} alt="generator" />
+        <AboutUsDescription>
+          <AboutUsText fontSize="14px">About Us</AboutUsText>
+          <AboutUsText fontSize="30px">
+            We Have Everything That You Needed
+          </AboutUsText>
+          <AboutUsText fontSize="13px">
+            Nileco Electric Equipment Manufacturing PLC is your ultimate
+            solution provider of generators, switchgears, and electrical spare
+            parts.
+            <br />
+            <br />
+            Committed to delivering satisfaction and competence, we at Nileco
+            strive to look after our clients’ energy needs.
+            <br />
+            <br />
+            Aenean tincidunt id mauris id auctor. an countries during the
+            Industrial mercantile and feudal economies.ThDonec atnissim quis
+            neque inter dum, quis porta sem ng the Industria
+          </AboutUsText>
+        </AboutUsDescription>
+      </AboutUsContainer>
     </>
   );
 }

@@ -3,6 +3,8 @@ import Head from "next/head";
 import NavBar from "../components/navbar";
 import styled from "styled-components";
 import Button from "antd/lib/button";
+import Image from "next/image";
+import volva from '../assets/vol.jpg';
 const HeaderContainer = styled.div``;
 
 
@@ -33,6 +35,9 @@ export default function Home() {
           </div>
         </div>
       </HeaderContainer>
+      <div className={styles.whiteSection}>
+<Image src={volva}/>
+      </div>
     </>
   );
 }

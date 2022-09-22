@@ -18,3 +18,9 @@ align-items:center;
 justify-content:center;
 gap:3rem;
 };
+.whiteSection{
+  width:100%;
+  background:#fff;
+  height:20rem;
+  padding:1rem;
+}

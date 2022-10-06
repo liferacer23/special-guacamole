@@ -145,6 +145,13 @@ const CardButton = styled("div")`
   }
   cursor: pointer;
 `;
+const InnerText = styled("span")`
+  color: rgba(0, 48, 100, 1);
+  transition: 0.6s;
+  &:hover {
+    color: rgb(215, 186, 47);
+  }
+`;
 export default function Home() {
   return (
     <>
@@ -370,7 +377,7 @@ export default function Home() {
                 marginTop: "20px",
               }}
             >
-              Generators
+              <InnerText>Generators</InnerText>{" "}
             </Text>
             <Text
               style={{
@@ -397,9 +404,7 @@ export default function Home() {
                 Learn More
               </Text>
               <Flex width="30%" justifyContent="center">
-                <CgArrowLongRight
-                  style={{ fontSize: "30px", color: "#fff" }}
-                />
+                <CgArrowLongRight style={{ fontSize: "30px", color: "#fff" }} />
               </Flex>
             </CardButton>
           </Card>
@@ -422,7 +427,7 @@ export default function Home() {
                 marginTop: "20px",
               }}
             >
-              Switch Gears
+              <InnerText>Switch Gears</InnerText>{" "}
             </Text>
             <Text
               style={{
@@ -449,9 +454,7 @@ export default function Home() {
                 Learn More
               </Text>
               <Flex width="30%" justifyContent="center">
-                <CgArrowLongRight
-                  style={{ fontSize: "30px", color: "#fff" }}
-                />
+                <CgArrowLongRight style={{ fontSize: "30px", color: "#fff" }} />
               </Flex>
             </CardButton>
           </Card>
@@ -473,7 +476,7 @@ export default function Home() {
                 marginTop: "20px",
               }}
             >
-              Other Products
+              <InnerText>Other Products</InnerText>
             </Text>
             <Text
               style={{
@@ -499,9 +502,7 @@ export default function Home() {
                 Learn More
               </Text>
               <Flex width="30%" justifyContent="center">
-                <CgArrowLongRight
-                  style={{ fontSize: "30px", color: "#fff" }}
-                />
+                <CgArrowLongRight style={{ fontSize: "30px", color: "#fff" }} />
               </Flex>
             </CardButton>
           </Card>

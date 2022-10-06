@@ -14,6 +14,7 @@ import { FaWpforms } from "react-icons/fa";
 import generatorSingle from "../assets/generatorSingle.jpg";
 import switchGear from "../assets/switchgear.jpg";
 import otherProducts from "../assets/otherproducts.jpg";
+import { CgArrowLongRight } from "react-icons/cg";
 const Flex = styled.div`
   display: flex;
   text-align: ${(props) => props.align || "left"};
@@ -120,8 +121,29 @@ const Card = styled.div`
   justify-content: start;
   flex-direction: column;
   width: 390px;
-  height: 592px;
+  height: 562px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  padding: 7px;
+`;
+const CardButton = styled("div")`
+  margin-top: auto;
+  height: 3.5rem;
+  line-height: 3.5rem;
+  background: rgb(244, 245, 244);
+  width: 100%;
+  display: flex;
+  align-item: center;
+  justify-content: space-between;
+  padding-left: 1rem;
+  transition: 0.6s;
+  &:hover {
+    background: rgb(215, 186, 47);
+    div {
+      transition: 0.6s;
+      background: rgba(0, 48, 100, 1);
+    }
+  }
+  cursor: pointer;
 `;
 export default function Home() {
   return (
@@ -336,8 +358,50 @@ export default function Home() {
               src={generatorSingle}
               width={250}
               height={250}
-              alt="checklist background"
+              alt="generator Icon"
             />
+            <Text
+              style={{
+                fontSize: "1.5rem",
+                textAlign: "left",
+                color: "rgba(0, 48, 100, 1)",
+                fontWeight: "bold",
+                width: "100%",
+                marginTop: "20px",
+              }}
+            >
+              Generators
+            </Text>
+            <Text
+              style={{
+                fontSize: "1rem",
+                textAlign: "left",
+                color: "#858585",
+                width: "100%",
+                marginTop: "20px",
+              }}
+            >
+              Our diesel generators comprise of a Diesel Engine coupled to an
+              Alternator, mounted over a common base frame with Anti-Vibration
+              mounting
+            </Text>
+            <CardButton>
+              <Text
+                style={{
+                  width: "100%",
+                  fontSize: "1rem",
+                  fontWeight: "bold",
+                  color: "rgba(0, 48, 100, 1)",
+                }}
+              >
+                Learn More
+              </Text>
+              <Flex width="30%" justifyContent="center">
+                <CgArrowLongRight
+                  style={{ fontSize: "30px", color: "#fff" }}
+                />
+              </Flex>
+            </CardButton>
           </Card>
           <Card>
             {" "}
@@ -346,8 +410,50 @@ export default function Home() {
               src={switchGear}
               width={250}
               height={250}
-              alt="checklist background"
+              alt="switch gear"
             />
+            <Text
+              style={{
+                fontSize: "1.5rem",
+                textAlign: "left",
+                color: "rgba(0, 48, 100, 1)",
+                fontWeight: "bold",
+                width: "100%",
+                marginTop: "20px",
+              }}
+            >
+              Switch Gears
+            </Text>
+            <Text
+              style={{
+                fontSize: "1rem",
+                textAlign: "left",
+                color: "#858585",
+                width: "100%",
+                marginTop: "20px",
+              }}
+            >
+              Switchgears are effective solutions for a client seeking power at
+              cyclic conditions or generally to get efficient higher rating
+              power.
+            </Text>
+            <CardButton>
+              <Text
+                style={{
+                  width: "100%",
+                  fontSize: "1rem",
+                  fontWeight: "bold",
+                  color: "rgba(0, 48, 100, 1)",
+                }}
+              >
+                Learn More
+              </Text>
+              <Flex width="30%" justifyContent="center">
+                <CgArrowLongRight
+                  style={{ fontSize: "30px", color: "#fff" }}
+                />
+              </Flex>
+            </CardButton>
           </Card>
           <Card>
             {" "}
@@ -356,8 +462,48 @@ export default function Home() {
               src={otherProducts}
               width={250}
               height={250}
-              alt="checklist background"
+              alt="other products"
             />
+            <Text
+              style={{
+                fontSize: "1.5rem",
+                textAlign: "left",
+                color: "rgba(0, 48, 100, 1)",
+                width: "100%",
+                marginTop: "20px",
+              }}
+            >
+              Other Products
+            </Text>
+            <Text
+              style={{
+                fontSize: "1rem",
+                textAlign: "left",
+                color: "#858585",
+                width: "100%",
+                marginTop: "20px",
+              }}
+            >
+              We provide quality and genuine spare parts paired with efficient
+              after-sales service to keep your machines in great condition
+            </Text>
+            <CardButton>
+              <Text
+                style={{
+                  width: "100%",
+                  fontSize: "1rem",
+                  fontWeight: "bold",
+                  color: "rgba(0, 48, 100, 1)",
+                }}
+              >
+                Learn More
+              </Text>
+              <Flex width="30%" justifyContent="center">
+                <CgArrowLongRight
+                  style={{ fontSize: "30px", color: "#fff" }}
+                />
+              </Flex>
+            </CardButton>
           </Card>
         </Flex>
       </WorkingSection>

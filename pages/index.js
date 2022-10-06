@@ -7,7 +7,26 @@ import Image from "next/image";
 import volva from "../assets/vol.jpg";
 import checklistbg from "../assets/checklistbg.png";
 import generator from "../assets/generatorindex.jpeg";
+import { GiCheckMark } from "react-icons/gi";
+const Flex = styled.div`
+display: flex;
+text-align: ${props => props.align || "left"};
+flex-direction:${(props) => props.direction || "row"};
+align-items: ${props => props.alignItems || "center"};
+justify-content: ${props => props.justifyContent || "center"};
+gap: ${props => props.gap || "10px"};
+width: ${props => props.width || "100%"};
+`;
+
 const HeaderContainer = styled.div``;
+const IconTextContainer = styled.div`
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: start;
+margin-bottom: 1rem;
+
+`;
 const VolvaContainer = styled.div`
   height: 8rem;
   padding-left: 4rem;
@@ -67,11 +86,11 @@ const HeaderButtonContainer = styled.div`
   gap: 3rem;
 `;
 const StyledButton = styled(Button)`
-background:${(props)=>props.background || '#fff'};
-color:${(props)=>props.color || '#fff'};
-border: 2px solid ${(props)=>props.border || '#fff'};
-height:2.5rem;
-width:6rem;
+  background: ${(props) => props.background || "#fff"};
+  color: ${(props) => props.color || "#fff"};
+  border: 2px solid ${(props) => props.border || "#fff"};
+  height: 2.5rem;
+  width: 6rem;
 `;
 export default function Home() {
   return (
@@ -94,8 +113,14 @@ export default function Home() {
             We offer the most reliable power services in the country
           </Text>
           <HeaderButtonContainer>
-            <StyledButton background="yellow" color="white" border="none"> About Us</StyledButton>
-            <StyledButton background="transparent" color="blue" border="blue"> Contact Us</StyledButton>
+            <StyledButton background="yellow" color="white" border="none">
+              {" "}
+              About Us
+            </StyledButton>
+            <StyledButton background="transparent" color="blue" border="blue">
+              {" "}
+              Contact Us
+            </StyledButton>
           </HeaderButtonContainer>
         </div>
       </HeaderContainer>
@@ -127,27 +152,64 @@ export default function Home() {
       <DeliverSection>
         <DeliverSectionDescription>
           {" "}
-          <Text fontSize="14px" color="#fff">
+          <Flex direction="column">
+          <Text fontSize="14px" color="#fff" style={{width:"100%"}}>
             WE DELIVER ON TIME ,ALL THE TIME
           </Text>
-          <Text fontSize="30px" color="#fff">
+          <Text fontSize="30px" color="#fff" style={{width:"100%"}}>
             Great Experience For Building Construction & Outdoor Projects
           </Text>
+          <Flex justifyContent="start">
           <Text fontSize="13px" color="#fff">
-            The Easiest Way To Get What Need Need It Fast? We Can Help. We work
-            to reduce air emissions industriel has a brilliant Capitalise on low
-            hanging fruit to identify You get speed, flexibility and better
-            control F
+            <IconTextContainer>
+            <GiCheckMark
+              style={{ color: "rgb(255,199,44)", marginRight: "10px" }}
+            />
+            The Easiest Way To Get What Need
             <br />
+            </IconTextContainer>
+            <IconTextContainer>
+            <GiCheckMark
+              style={{ color: "rgb(255,199,44)", marginRight: "10px" }}
+            />
+            Need It Fast? We Can Help.
             <br />
-            Committed to delivering satisfaction and competence, we at Nileco
-            strive to look after our clients’ energy needs.
+            </IconTextContainer>
+            <IconTextContainer>
+            <GiCheckMark
+              style={{ color: "rgb(255,199,44)", marginRight: "10px" }}
+            />
+            We work to reduce air emissions
             <br />
-            <br />
-            Aenean tincidunt id mauris id auctor. an countries during the
-            Industrial mercantile and feudal economies.ThDonec atnissim quis
-            neque inter dum, quis porta sem ng the Industria
+            </IconTextContainer>
+  
           </Text>
+          <Text fontSize="13px" color="#fff">
+            <IconTextContainer>
+            <GiCheckMark
+              style={{ color: "rgb(255,199,44)", marginRight: "10px" }}
+            />
+            industriel has a brilliant
+            <br />
+            </IconTextContainer>
+            <IconTextContainer>
+            <GiCheckMark
+              style={{ color: "rgb(255,199,44)", marginRight: "10px" }}
+            />
+            Capitalise on low hanging fruit to identify
+            <br />
+            </IconTextContainer>
+            <IconTextContainer>
+            <GiCheckMark
+              style={{ color: "rgb(255,199,44)", marginRight: "10px" }}
+            />
+           You get speed, flexibility and better control
+            <br />
+            </IconTextContainer>
+  
+          </Text>
+          </Flex>
+          </Flex>
         </DeliverSectionDescription>
         <DeliverSectionImage>
           <Image

@@ -11,6 +11,7 @@ import { GiCheckMark } from "react-icons/gi";
 import { BsTools } from "react-icons/bs";
 import { GoGlobe } from "react-icons/go";
 import { FaWpforms } from "react-icons/fa";
+import AboutUs from "../assets/aboutus.jpg";
 import generatorSingle from "../assets/generatorSingle.jpg";
 import switchGear from "../assets/switchgear.jpg";
 import otherProducts from "../assets/otherproducts.jpg";
@@ -24,6 +25,7 @@ const Flex = styled.div`
   gap: ${(props) => props.gap || "10px"};
   width: ${(props) => props.width || "100%"};
   color: ${(props) => props.color || "#fff"};
+  background: ${(props) => props.background || "transparent"};
   font-size: ${(props) => props.fontSize || "0.8rem"};
   font-weight: ${(props) => props.fontWeight || "400"};
 `;
@@ -123,7 +125,7 @@ const Card = styled.div`
   width: 390px;
   height: 562px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  padding: 7px;
+  margin-bottom: 1rem;
 `;
 const CardButton = styled("div")`
   margin-top: auto;
@@ -137,7 +139,7 @@ const CardButton = styled("div")`
   padding-left: 1rem;
   transition: 0.6s;
   &:hover {
-    background: rgb(215, 186, 47);
+    background: rgb(255,199,44);
     div {
       transition: 0.6s;
       background: rgba(0, 48, 100, 1);
@@ -148,10 +150,28 @@ const CardButton = styled("div")`
 const InnerText = styled("span")`
   color: rgba(0, 48, 100, 1);
   transition: 0.6s;
+  padding-left:10px;
   &:hover {
-    color: rgb(215, 186, 47);
+    color: rgb(255,199,44);
   }
 `;
+const AboutSection = styled.div`
+  min-height: 40rem;
+  position: relative;
+  display: flex;
+  align-item: center;
+  margin-top: 4rem;
+`;
+const AboutSectionInsideContainer = styled.div`
+width:80%;
+height:80%;
+`;
+const AboutSectionDescription = styled.div`
+background:red;
+height:100%;
+width:auto;
+`;
+
 export default function Home() {
   return (
     <>
@@ -273,7 +293,7 @@ export default function Home() {
                 <Flex direction="column">
                   <Flex>
                     <BsTools
-                      style={{ color: "rgb(215,186,47)", fontSize: "30px" }}
+                      style={{ color: "rgb(255,199,44)", fontSize: "30px" }}
                     />
                     Product Listings
                   </Flex>
@@ -290,7 +310,7 @@ export default function Home() {
                 <Flex direction="column">
                   <Flex>
                     <GoGlobe
-                      style={{ color: "rgb(215,186,47)", fontSize: "30px" }}
+                      style={{ color: "rgb(255,199,44)", fontSize: "30px" }}
                     />
                     Certifications & Award
                   </Flex>
@@ -307,7 +327,7 @@ export default function Home() {
                 <Flex direction="column">
                   <Flex>
                     <FaWpforms
-                      style={{ color: "rgb(215,186,47)", fontSize: "30px" }}
+                      style={{ color: "rgb(255,199,44)", fontSize: "30px" }}
                     />
                     Brand Partners
                   </Flex>
@@ -386,6 +406,7 @@ export default function Home() {
                 color: "#858585",
                 width: "100%",
                 marginTop: "20px",
+                marginLeft:"10px"
               }}
             >
               Our diesel generators comprise of a Diesel Engine coupled to an
@@ -436,6 +457,7 @@ export default function Home() {
                 color: "#858585",
                 width: "100%",
                 marginTop: "20px",
+                marginLeft:"10px"
               }}
             >
               Switchgears are effective solutions for a client seeking power at
@@ -485,6 +507,7 @@ export default function Home() {
                 color: "#858585",
                 width: "100%",
                 marginTop: "20px",
+                marginLeft:"10px"
               }}
             >
               We provide quality and genuine spare parts paired with efficient
@@ -508,6 +531,17 @@ export default function Home() {
           </Card>
         </Flex>
       </WorkingSection>
+      <AboutSection>
+                <Flex justifyContent="center" background="linear-gradient(90deg, rgb(255,199,44) 375px, rgba(0, 48, 100, 1) 0, rgba(0, 48, 100, 1) 70%);" width="100%" height="100%">
+<AboutSectionInsideContainer>
+  <Flex justifyContent="space-between">
+  <Image src={AboutUs} width={500} height={512} alt="Volva image" />
+  <AboutSectionDescription>msdkalm</AboutSectionDescription>
+  </Flex>
+</AboutSectionInsideContainer>
+                </Flex>
+             
+      </AboutSection>
     </>
   );
 }

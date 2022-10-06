@@ -155,6 +155,7 @@ export default function Home() {
             src={checklistbg}
             width={500}
             height={100}
+            alt="checklist background"
           />
         </DeliverSectionImage>
       </DeliverSection>

@@ -1,6 +1,7 @@
 .Section{
   background: url('../assets/hero.png');
-  height:100vh;
+  object-fit: cover;
+  height:80vh;
   width:100vw;
 }
 .SectionVertical{

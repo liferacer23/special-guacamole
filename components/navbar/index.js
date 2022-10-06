@@ -5,42 +5,39 @@ import styled from "styled-components";
 import Image from "next/image";
 import logo from "../../assets/Nileco.png";
 import antDAnchor from "antd/lib/anchor";
-import {AiOutlineMail} from "react-icons/ai";
-import {BsTelephoneFill} from "react-icons/bs";
+import { AiOutlineMail } from "react-icons/ai";
+import { BsTelephoneFill } from "react-icons/bs";
 const { Link } = antDAnchor;
 const Header = styled("div")`
-display: flex;
-align-items: center;
-justify-content: center;
-background: rgb(0,44,91);
-height:3rem;
-
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(0, 44, 91);
+  height: 3rem;
 `;
 const Anchor = styled(antDAnchor)`
-
   .ant-anchor-ink::before {
     display: none;
   }
   .ant-anchor-link-title {
     color: #e6f7ff;
     font-size: 12px;
-    :&hover {
-      color:yellow !important;
+    :&hover  {
+      color: yellow !important;
     }
   }
 
   .ant-anchor {
     display: flex;
     width: 100%;
-    justify-content:end;
+    justify-content: end;
     align-items: center;
     gap: 20px;
   }
   .ant-anchor-ink-ball.visible {
     display: none;
-}
+  }
 `;
-
 
 const HeaderItems = styled.div`
   display: flex;
@@ -64,11 +61,11 @@ const StyledButton = styled(Button)`
     font-weight: bold !important;
   }
 `;
-const linkContainer = styled("div") `
-width: 100%;
-display: flex;
-align-item: center;
-justify-content: end;
+const linkContainer = styled("div")`
+  width: 100%;
+  display: flex;
+  align-item: center;
+  justify-content: end;
 `;
 const content = (
   <div>
@@ -80,19 +77,31 @@ const NavBar = () => (
   <>
     <Header style={{ display: "flex", alignItems: "center" }}>
       <linkContainer>
-      <Anchor affix={false}>
-       <AiOutlineMail style={{color:"yellow",marginRight:"-10px"}}/> <Link style={{ color: "#fff" }} href="#" title="info@nilecoeem.com" />
-        <BsTelephoneFill style={{color:"yellow",marginRight:"-10px"}}/><Link style={{ color: "#fff" }} href="#" title="+251 977 80 5757" />
-      </Anchor>
+        <Anchor affix={false}>
+          <AiOutlineMail style={{ color: "yellow", marginRight: "-10px" }} />{" "}
+          <Link style={{ color: "#fff" }} href="#" title="info@nilecoeem.com" />
+          <BsTelephoneFill style={{ color: "yellow", marginRight: "-10px" }} />
+          <Link style={{ color: "#fff" }} href="#" title="+251 977 80 5757" />
+        </Anchor>
       </linkContainer>
     </Header>
-    <Layout style={{ background: "transparent", padding: "0 200px" }}>
+    <Layout
+      style={{
+        background: "transparent",
+        position: "sticky",
+        top: "0px",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+      }}
+    >
       <Header
         style={{
           display: "flex",
           alignItems: "center",
           background: "#fff",
           justifyContent: "space-between",
+
         }}
       >
         <Image src={logo} alt="Website logo image" width={180} height={35} />

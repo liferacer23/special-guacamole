@@ -6,26 +6,34 @@ import Button from "antd/lib/button";
 import Image from "next/image";
 import volva from "../assets/vol.jpg";
 import checklistbg from "../assets/checklistbg.png";
-import generator from "../assets/generatorindex.jpeg";
+import generator from "../assets/generator.jpeg";
 import { GiCheckMark } from "react-icons/gi";
+import { BsTools } from "react-icons/bs";
+import { GoGlobe } from "react-icons/go";
+import { FaWpforms } from "react-icons/fa";
+import generatorSingle from "../assets/generatorSingle.jpg";
+import switchGear from "../assets/switchgear.jpg";
+import otherProducts from "../assets/otherproducts.jpg";
 const Flex = styled.div`
-display: flex;
-text-align: ${props => props.align || "left"};
-flex-direction:${(props) => props.direction || "row"};
-align-items: ${props => props.alignItems || "center"};
-justify-content: ${props => props.justifyContent || "center"};
-gap: ${props => props.gap || "10px"};
-width: ${props => props.width || "100%"};
+  display: flex;
+  text-align: ${(props) => props.align || "left"};
+  flex-direction: ${(props) => props.direction || "row"};
+  align-items: ${(props) => props.alignItems || "center"};
+  justify-content: ${(props) => props.justifyContent || "start"};
+  gap: ${(props) => props.gap || "10px"};
+  width: ${(props) => props.width || "100%"};
+  color: ${(props) => props.color || "#fff"};
+  font-size: ${(props) => props.fontSize || "0.8rem"};
+  font-weight: ${(props) => props.fontWeight || "400"};
 `;
 
 const HeaderContainer = styled.div``;
 const IconTextContainer = styled.div`
-display: flex;
-flex-direction: row;
-align-items: center;
-justify-content: start;
-margin-bottom: 1rem;
-
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+  margin-bottom: 1rem;
 `;
 const VolvaContainer = styled.div`
   height: 8rem;
@@ -54,7 +62,7 @@ color: ${(props) => props.color || "#000000"};
 font-weight: ${(props) => props.fontWeight || "#000000"};
 `;
 const DeliverSection = styled.div`
-  height: 30rem;
+  min-height: 30rem;
   width: 100%;
   background: rgba(0, 48, 100, 1);
   position: relative;
@@ -67,19 +75,33 @@ const DeliverSectionDescription = styled.div`
   align-item: center;
   justify-content: start;
   flex-direction: column;
-  width: 50%;
+  width: 60%;
   height: 100%;
   padding: 6rem;
+  position: relative;
 `;
 
 const DeliverSectionImage = styled.div`
   display: flex;
   align-item: center;
   justify-content: end;
-  width: 50%;
+  width: 60%;
   height: 100%;
+  position: absolute;
+  right: 0;
 `;
-
+const WorkingSection = styled.div`
+  min-height: 30rem;
+  padding-top: 4rem;
+  width: 100%;
+  background: #fff;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-item: center;
+  text-align: center;
+  justify-content: start;
+`;
 const HeaderButtonContainer = styled.div`
   display: flex;
   align-item: center;
@@ -91,6 +113,15 @@ const StyledButton = styled(Button)`
   border: 2px solid ${(props) => props.border || "#fff"};
   height: 2.5rem;
   width: 6rem;
+`;
+const Card = styled.div`
+  display: flex;
+  align-item: center;
+  justify-content: start;
+  flex-direction: column;
+  width: 390px;
+  height: 592px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 `;
 export default function Home() {
   return (
@@ -153,74 +184,183 @@ export default function Home() {
         <DeliverSectionDescription>
           {" "}
           <Flex direction="column">
-          <Text fontSize="14px" color="#fff" style={{width:"100%"}}>
-            WE DELIVER ON TIME ,ALL THE TIME
-          </Text>
-          <Text fontSize="30px" color="#fff" style={{width:"100%"}}>
-            Great Experience For Building Construction & Outdoor Projects
-          </Text>
-          <Flex justifyContent="start">
-          <Text fontSize="13px" color="#fff">
-            <IconTextContainer>
-            <GiCheckMark
-              style={{ color: "rgb(255,199,44)", marginRight: "10px" }}
-            />
-            The Easiest Way To Get What Need
-            <br />
-            </IconTextContainer>
-            <IconTextContainer>
-            <GiCheckMark
-              style={{ color: "rgb(255,199,44)", marginRight: "10px" }}
-            />
-            Need It Fast? We Can Help.
-            <br />
-            </IconTextContainer>
-            <IconTextContainer>
-            <GiCheckMark
-              style={{ color: "rgb(255,199,44)", marginRight: "10px" }}
-            />
-            We work to reduce air emissions
-            <br />
-            </IconTextContainer>
-  
-          </Text>
-          <Text fontSize="13px" color="#fff">
-            <IconTextContainer>
-            <GiCheckMark
-              style={{ color: "rgb(255,199,44)", marginRight: "10px" }}
-            />
-            industriel has a brilliant
-            <br />
-            </IconTextContainer>
-            <IconTextContainer>
-            <GiCheckMark
-              style={{ color: "rgb(255,199,44)", marginRight: "10px" }}
-            />
-            Capitalise on low hanging fruit to identify
-            <br />
-            </IconTextContainer>
-            <IconTextContainer>
-            <GiCheckMark
-              style={{ color: "rgb(255,199,44)", marginRight: "10px" }}
-            />
-           You get speed, flexibility and better control
-            <br />
-            </IconTextContainer>
-  
-          </Text>
-          </Flex>
+            <Text fontSize="14px" color="#fff" style={{ width: "100%" }}>
+              WE DELIVER ON TIME ,ALL THE TIME
+            </Text>
+            <Text fontSize="30px" color="#fff" style={{ width: "100%" }}>
+              Great Experience For Building Construction & Outdoor Projects
+            </Text>
+            <Flex justifyContent="start">
+              <Text fontSize="13px" color="#fff">
+                <IconTextContainer>
+                  <GiCheckMark
+                    style={{ color: "rgb(255,199,44)", marginRight: "10px" }}
+                  />
+                  The Easiest Way To Get What Need
+                  <br />
+                </IconTextContainer>
+                <IconTextContainer>
+                  <GiCheckMark
+                    style={{ color: "rgb(255,199,44)", marginRight: "10px" }}
+                  />
+                  Need It Fast? We Can Help.
+                  <br />
+                </IconTextContainer>
+                <IconTextContainer>
+                  <GiCheckMark
+                    style={{ color: "rgb(255,199,44)", marginRight: "10px" }}
+                  />
+                  We work to reduce air emissions
+                  <br />
+                </IconTextContainer>
+              </Text>
+              <Text fontSize="13px" color="#fff">
+                <IconTextContainer>
+                  <GiCheckMark
+                    style={{ color: "rgb(255,199,44)", marginRight: "10px" }}
+                  />
+                  industriel has a brilliant
+                  <br />
+                </IconTextContainer>
+                <IconTextContainer>
+                  <GiCheckMark
+                    style={{ color: "rgb(255,199,44)", marginRight: "10px" }}
+                  />
+                  Capitalise on low hanging fruit to identify
+                  <br />
+                </IconTextContainer>
+                <IconTextContainer>
+                  <GiCheckMark
+                    style={{ color: "rgb(255,199,44)", marginRight: "10px" }}
+                  />
+                  You get speed, flexibility and better control
+                  <br />
+                </IconTextContainer>
+              </Text>
+            </Flex>
+            <hr style={{ width: "100%", opacity: "0.2" }} />
+            <Flex direction="column">
+              <Flex>
+                <Flex direction="column">
+                  <Flex>
+                    <BsTools
+                      style={{ color: "rgb(215,186,47)", fontSize: "30px" }}
+                    />
+                    Product Listings
+                  </Flex>
+                  <Text
+                    style={{
+                      fontSize: "1.9rem",
+                      color: "white",
+                      fontWeight: "bold",
+                    }}
+                  >
+                    160
+                  </Text>
+                </Flex>
+                <Flex direction="column">
+                  <Flex>
+                    <GoGlobe
+                      style={{ color: "rgb(215,186,47)", fontSize: "30px" }}
+                    />
+                    Certifications & Award
+                  </Flex>
+                  <Text
+                    style={{
+                      fontSize: "1.9rem",
+                      color: "white",
+                      fontWeight: "bold",
+                    }}
+                  >
+                    80
+                  </Text>
+                </Flex>
+                <Flex direction="column">
+                  <Flex>
+                    <FaWpforms
+                      style={{ color: "rgb(215,186,47)", fontSize: "30px" }}
+                    />
+                    Brand Partners
+                  </Flex>
+                  <Text
+                    style={{
+                      fontSize: "1.9rem",
+                      color: "white",
+                      fontWeight: "bold",
+                    }}
+                  >
+                    60
+                  </Text>
+                </Flex>
+              </Flex>
+            </Flex>
           </Flex>
         </DeliverSectionDescription>
         <DeliverSectionImage>
           <Image
-            style={{ opacity: 0.5 }}
+            style={{ opacity: 0.2 }}
             src={checklistbg}
-            width={500}
-            height={100}
+            width={700}
+            height={600}
             alt="checklist background"
           />
         </DeliverSectionImage>
       </DeliverSection>
+      <WorkingSection>
+        <Text
+          style={{
+            fontSize: "1rem",
+            color: "#808080",
+            fontWeight: "bold",
+            width: "100%",
+          }}
+        >
+          WORKING WITH EXCELLENT
+        </Text>
+
+        <Text
+          style={{
+            fontSize: "2.4rem",
+            color: "rgba(0, 48, 100, 1)",
+            fontWeight: "bold",
+            width: "100%",
+          }}
+        >
+          Modern Electrical And Power Equipment Guaranteed
+        </Text>
+        <Flex justifyContent="center">
+          <Card>
+            {" "}
+            <Image
+              style={{ opacity: 1 }}
+              src={generatorSingle}
+              width={250}
+              height={250}
+              alt="checklist background"
+            />
+          </Card>
+          <Card>
+            {" "}
+            <Image
+              style={{ opacity: 1 }}
+              src={switchGear}
+              width={250}
+              height={250}
+              alt="checklist background"
+            />
+          </Card>
+          <Card>
+            {" "}
+            <Image
+              style={{ opacity: 1 }}
+              src={otherProducts}
+              width={250}
+              height={250}
+              alt="checklist background"
+            />
+          </Card>
+        </Flex>
+      </WorkingSection>
     </>
   );
 }

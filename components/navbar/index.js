@@ -2,6 +2,7 @@ import Layout from "antd/lib/layout";
 import Button from "antd/lib/button";
 import Popover from "antd/lib/popover";
 import styled from "styled-components";
+import Text from "antd/lib/typography/Text";
 import Image from "next/image";
 import logo from "../../assets/Nileco.png";
 import antDAnchor from "antd/lib/anchor";
@@ -14,6 +15,7 @@ const Header = styled("div")`
   justify-content: center;
   background: rgb(0, 44, 91);
   height: 3rem;
+  width: 100%;
 `;
 const Anchor = styled(antDAnchor)`
   .ant-anchor-ink::before {
@@ -62,7 +64,7 @@ const StyledButton = styled(Button)`
   }
 `;
 const LinkContainer = styled("div")`
-  width: 100%;
+  width: 70%;
   display: flex;
   align-item: center;
   justify-content: end;
@@ -77,6 +79,7 @@ const NavBar = () => (
   <>
     <Header style={{ display: "flex", alignItems: "center" }}>
       <LinkContainer>
+      <Text style={{color:"#fff", marginRight:"1rem"}}>Your Trusted Power Solutions Provider in Ethiopia</Text>
         <Anchor affix={false}>
           <AiOutlineMail style={{ color: "yellow", marginRight: "-10px" }} />{" "}
           <Link style={{ color: "#fff" }} href="#" title="info@nilecoeem.com" />
@@ -93,6 +96,7 @@ const NavBar = () => (
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
+        zIndex: "100",
       }}
     >
       <Header
@@ -100,7 +104,7 @@ const NavBar = () => (
           display: "flex",
           alignItems: "center",
           background: "#fff",
-          justifyContent: "space-between",
+          justifyContent: "center",
 
         }}
       >

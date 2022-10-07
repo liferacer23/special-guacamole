@@ -118,7 +118,7 @@ const WorkingSection = styled.div`
 const HeaderButtonContainer = styled.div`
   display: flex;
   align-item: center;
-  gap: 3rem;
+  gap: 4rem;
 `;
 const StyledButton = styled(Button)`
   background: ${(props) => props.background || "#fff"};
@@ -208,21 +208,21 @@ export default function Home() {
       <NavBar />
       <HeaderContainer className={styles.Section}>
         <div className={styles.SectionVertical}>
-          <Text fontSize={"14px"} color="yellow">
-            --Welcome to Nileco--
+          <Text fontSize={"16px"} color="rgb(253,201,55)" fontWeight="bold">
+            ---Welcome to Nileco---
           </Text>
-          <Text fontSize={"50px"} color="blue">
+          <Text fontSize={"50px"} color="rgb(1,44,90)" fontWeight="bold">
             We are leader in power and technology
           </Text>
-          <Text fontSize={"18px"} color="white">
+          <Text fontSize={"18px"} color="white" fontWeight="bold">
             We offer the most reliable power services in the country
           </Text>
           <HeaderButtonContainer>
-            <StyledButton background="yellow" color="white" border="none">
+            <StyledButton background="rgb(253,201,55)" color="white" border="none" height="3rem">
               {" "}
               About Us
             </StyledButton>
-            <StyledButton background="transparent" color="blue" border="blue">
+            <StyledButton background="transparent" color="rgb(1,44,90)" border="rgb(1,44,90)" height="3rem">
               {" "}
               Contact Us
             </StyledButton>

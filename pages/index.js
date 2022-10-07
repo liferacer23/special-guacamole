@@ -15,7 +15,8 @@ import { BiBuildings } from "react-icons/bi";
 import { FaPencilRuler } from "react-icons/fa";
 import { FaUsers } from "react-icons/fa";
 import { HiUserGroup } from "react-icons/hi";
-import {BsFillTelephoneFill} from "react-icons/bs";
+import { AiOutlineMail } from "react-icons/ai";
+import { BsFillTelephoneFill } from "react-icons/bs";
 import { RiUserSettingsLine } from "react-icons/ri";
 import AboutUs from "../assets/aboutus.jpg";
 import generatorSingle from "../assets/generatorSingle.jpg";
@@ -32,12 +33,25 @@ const Flex = styled.div`
   gap: ${(props) => props.gap || "10px"};
   flex-wrap: ${(props) => props.wrap || ""};
   width: ${(props) => props.width || "100%"};
+  margin: ${(props) => props.margin || "0px"};
   height: ${(props) => props.height || ""};
   padding: ${(props) => props.padding || "0px"};
   color: ${(props) => props.color || "#fff"};
   background: ${(props) => props.background || "transparent"};
   font-size: ${(props) => props.fontSize || "0.8rem"};
   font-weight: ${(props) => props.fontWeight || "400"};
+ 
+  @media (max-width: 768px) {
+    flex-direction: ${(props) => props.directionMobile || "column"};
+    align-items: ${(props) => props.alignItemsMobile || "center"};
+    justify-content: ${(props) => props.justifyContentMobile || "center"};
+    gap: ${(props) => props.gapMobile || "10px"};
+    width: ${(props) => props.widthMobile || "100%"};
+    height: ${(props) => props.heightMobile || ""};
+    padding: ${(props) => props.paddingMobile || "0px"};
+    font-size: ${(props) => props.fontSizeMobile || "0.8rem"};
+  }
+
 `;
 
 const HeaderContainer = styled.div``;
@@ -49,7 +63,7 @@ const IconTextContainer = styled.div`
   margin-bottom: 1rem;
 `;
 const VolvaContainer = styled.div`
-  height: 8rem;
+  height: 15rem;
   padding-left: 4rem;
   padding-top: 4rem;
 `;
@@ -57,17 +71,17 @@ const AboutUsContainer = styled.div`
   display: flex;
   align-item: center;
   justify-content: center;
-  gap: 40px;
   width: 100%;
-  padding-left: 4rem;
-  padding-top: 4rem;
+  gap: 2.2rem;
+
 `;
 const Description = styled.div`
   display: flex;
   align-item: center;
   justify-content: start;
   flex-direction: column;
-  width: 35%;
+  width: 40%;
+  padding-bottom: 2rem;
 `;
 const Text = styled.h1`
 font-size:${(props) => props.fontSize || "14px"}};
@@ -133,7 +147,6 @@ const StyledButton = styled(Button)`
   font-weight: ${(props) => props.fontWeight || "bold"};
   gap: 1rem;
   font-size: ${(props) => props.fontSize || "0.8rem"};
-
 `;
 const Card = styled.div`
   display: flex;
@@ -218,11 +231,21 @@ export default function Home() {
             We offer the most reliable power services in the country
           </Text>
           <HeaderButtonContainer>
-            <StyledButton background="rgb(253,201,55)" color="white" border="none" height="3rem">
+            <StyledButton
+              background="rgb(253,201,55)"
+              color="white"
+              border="none"
+              height="3rem"
+            >
               {" "}
               About Us
             </StyledButton>
-            <StyledButton background="transparent" color="rgb(1,44,90)" border="rgb(1,44,90)" height="3rem">
+            <StyledButton
+              background="transparent"
+              color="rgb(1,44,90)"
+              border="rgb(1,44,90)"
+              height="3rem"
+            >
               {" "}
               Contact Us
             </StyledButton>
@@ -234,11 +257,11 @@ export default function Home() {
       </VolvaContainer>
 
       <AboutUsContainer>
-        <Image src={generator} width={400} height={500} alt="generator" />
+        <Image src={generator} width={550} height={500} alt="generator" />
         <Description>
-          <Text fontSize="14px">About Us</Text>
-          <Text fontSize="30px">We Have Everything That You Needed</Text>
-          <Text fontSize="13px">
+          <Text fontSize="1.1rem" color="rgb(136,142,148)">About Us</Text>
+          <Text fontWeight="bold" fontSize="2.2rem" color="rgb(1,44,90)" width="100%">We Have Everything That You Needed</Text>
+          <Text fontSize="1.1rem" color="rgb(136,142,148)" width="100%">
             Nileco Electric Equipment Manufacturing PLC is your ultimate
             solution provider of generators, switchgears, and electrical spare
             parts.
@@ -252,6 +275,59 @@ export default function Home() {
             Industrial mercantile and feudal economies.ThDonec atnissim quis
             neque inter dum, quis porta sem ng the Industria
           </Text>
+          <Flex justifyContent="space-between">
+            <Flex
+              margin="10px 0 0 0"
+              direction="column"
+              alignItems="left"
+              gap="3px"
+            >
+              <BsFillTelephoneFill color="rgb(253,201,55)" fontSize="2rem" />
+              <span style={{ fontSize: "1.1rem", color: "#000" }}>
+                Phone Number
+              </span>
+              <span
+                style={{
+                  fontSize: "1.1rem",
+                  color: "rgb(1,44,90)",
+                  fontWeight: "bold",
+                }}
+              >
+                +251977805757
+              </span>
+            </Flex>
+
+            <div
+              style={{
+                borderLeft: "1px solid rgb(1,44,90)",
+                height: "100px",
+                margin: "0 3rem",
+              }}
+            >
+              
+
+            </div>
+            <Flex
+              margin="10px 0 0 0"
+              direction="column"
+              alignItems="left"
+              gap="3px"
+            >
+              <AiOutlineMail color="rgb(253,201,55)" fontSize="2rem" />
+              <span style={{ fontSize: "1.1rem", color: "#000" }}>
+                Email Address
+              </span>
+              <span
+                style={{
+                  fontSize: "1.1rem",
+                  color: "rgb(1,44,90)",
+                  fontWeight: "bold",
+                }}
+              >
+                info@nilecoeem.com
+              </span>
+            </Flex>
+          </Flex>
         </Description>
       </AboutUsContainer>
       <DeliverSection>
@@ -755,8 +831,23 @@ export default function Home() {
             and insured with a 100% satisfaction guarantee.
           </Text>
           <Flex justifyContent="center">
-          <StyledButton width="15rem" height="3rem" background="rgb(255,199,44)">Visit our Office</StyledButton>
-          <StyledButton width="15rem" height="3rem" background=" rgba(0, 48, 100, 1)" ><BsFillTelephoneFill style={{color:"rgb(255,199,44)",fontSize:"1rem"}}/>Call Us at +251977805757</StyledButton>
+            <StyledButton
+              width="15rem"
+              height="3rem"
+              background="rgb(255,199,44)"
+            >
+              Visit our Office
+            </StyledButton>
+            <StyledButton
+              width="15rem"
+              height="3rem"
+              background=" rgba(0, 48, 100, 1)"
+            >
+              <BsFillTelephoneFill
+                style={{ color: "rgb(255,199,44)", fontSize: "1rem" }}
+              />
+              Call Us at +251977805757
+            </StyledButton>
           </Flex>
         </Flex>
       </HospitalitySection>

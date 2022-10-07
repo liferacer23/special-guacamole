@@ -14,7 +14,7 @@ import { FaWpforms } from "react-icons/fa";
 import AboutUs from "../assets/aboutus.jpg";
 import generatorSingle from "../assets/generatorSingle.jpg";
 import switchGear from "../assets/switchgear.jpg";
-import otherProducts from "../assets/otherproducts.jpg";
+import otherProducts from "../assets/otherProducts.jpg";
 import { CgArrowLongRight } from "react-icons/cg";
 const Flex = styled.div`
   display: flex;

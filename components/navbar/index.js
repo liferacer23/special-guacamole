@@ -61,7 +61,7 @@ const StyledButton = styled(Button)`
     font-weight: bold !important;
   }
 `;
-const linkContainer = styled("div")`
+const LinkContainer = styled("div")`
   width: 100%;
   display: flex;
   align-item: center;
@@ -76,14 +76,14 @@ const content = (
 const NavBar = () => (
   <>
     <Header style={{ display: "flex", alignItems: "center" }}>
-      <linkContainer>
+      <LinkContainer>
         <Anchor affix={false}>
           <AiOutlineMail style={{ color: "yellow", marginRight: "-10px" }} />{" "}
           <Link style={{ color: "#fff" }} href="#" title="info@nilecoeem.com" />
           <BsTelephoneFill style={{ color: "yellow", marginRight: "-10px" }} />
           <Link style={{ color: "#fff" }} href="#" title="+251 977 80 5757" />
         </Anchor>
-      </linkContainer>
+      </LinkContainer>
     </Header>
     <Layout
       style={{

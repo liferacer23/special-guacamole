@@ -11,9 +11,15 @@ import { GiCheckMark } from "react-icons/gi";
 import { BsTools } from "react-icons/bs";
 import { GoGlobe } from "react-icons/go";
 import { FaWpforms } from "react-icons/fa";
+import { BiBuildings } from "react-icons/bi";
+import { FaPencilRuler } from "react-icons/fa";
+import { FaUsers } from "react-icons/fa";
+import { HiUserGroup } from "react-icons/hi";
+import { RiUserSettingsLine } from "react-icons/ri";
 import AboutUs from "../assets/aboutus.jpg";
 import generatorSingle from "../assets/generatorSingle.jpg";
 import switchGear from "../assets/switchgear.jpg";
+
 import otherProducts from "../assets/otherProducts.jpg";
 import { CgArrowLongRight } from "react-icons/cg";
 const Flex = styled.div`
@@ -23,7 +29,10 @@ const Flex = styled.div`
   align-items: ${(props) => props.alignItems || "center"};
   justify-content: ${(props) => props.justifyContent || "start"};
   gap: ${(props) => props.gap || "10px"};
+  flex-wrap: ${(props) => props.wrap || ""};
   width: ${(props) => props.width || "100%"};
+  height: ${(props) => props.height || ""};
+  padding: ${(props) => props.padding || "0px"};
   color: ${(props) => props.color || "#fff"};
   background: ${(props) => props.background || "transparent"};
   font-size: ${(props) => props.fontSize || "0.8rem"};
@@ -115,7 +124,8 @@ const StyledButton = styled(Button)`
   color: ${(props) => props.color || "#fff"};
   border: 2px solid ${(props) => props.border || "#fff"};
   height: 2.5rem;
-  width: 6rem;
+  width: ${(props) => props.width || "10rem"};
+
 `;
 const Card = styled.div`
   display: flex;
@@ -139,7 +149,7 @@ const CardButton = styled("div")`
   padding-left: 1rem;
   transition: 0.6s;
   &:hover {
-    background: rgb(255,199,44);
+    background: rgb(255, 199, 44);
     div {
       transition: 0.6s;
       background: rgba(0, 48, 100, 1);
@@ -150,9 +160,9 @@ const CardButton = styled("div")`
 const InnerText = styled("span")`
   color: rgba(0, 48, 100, 1);
   transition: 0.6s;
-  padding-left:10px;
+  padding-left: 10px;
   &:hover {
-    color: rgb(255,199,44);
+    color: rgb(255, 199, 44);
   }
 `;
 const AboutSection = styled.div`
@@ -163,15 +173,22 @@ const AboutSection = styled.div`
   margin-top: 4rem;
 `;
 const AboutSectionInsideContainer = styled.div`
-width:80%;
-height:80%;
+  width: 80%;
+  height: 80%;
+  padding: 4rem 0;
 `;
 const AboutSectionDescription = styled.div`
-background:red;
-height:100%;
-width:auto;
+  background: transparent;
+  height: 100%;
+  width: 70%;
 `;
-
+const HospitalitySection = styled.div`
+  min-height: 20rem;
+  position: relative;
+  display: flex;
+  align-item: center;
+  margin-top: 4rem;
+`;
 export default function Home() {
   return (
     <>
@@ -406,7 +423,7 @@ export default function Home() {
                 color: "#858585",
                 width: "100%",
                 marginTop: "20px",
-                marginLeft:"10px"
+                marginLeft: "10px",
               }}
             >
               Our diesel generators comprise of a Diesel Engine coupled to an
@@ -457,7 +474,7 @@ export default function Home() {
                 color: "#858585",
                 width: "100%",
                 marginTop: "20px",
-                marginLeft:"10px"
+                marginLeft: "10px",
               }}
             >
               Switchgears are effective solutions for a client seeking power at
@@ -507,7 +524,7 @@ export default function Home() {
                 color: "#858585",
                 width: "100%",
                 marginTop: "20px",
-                marginLeft:"10px"
+                marginLeft: "10px",
               }}
             >
               We provide quality and genuine spare parts paired with efficient
@@ -532,16 +549,209 @@ export default function Home() {
         </Flex>
       </WorkingSection>
       <AboutSection>
-                <Flex justifyContent="center" background="linear-gradient(90deg, rgb(255,199,44) 375px, rgba(0, 48, 100, 1) 0, rgba(0, 48, 100, 1) 70%);" width="100%" height="100%">
-<AboutSectionInsideContainer>
-  <Flex justifyContent="space-between">
-  <Image src={AboutUs} width={500} height={512} alt="Volva image" />
-  <AboutSectionDescription>msdkalm</AboutSectionDescription>
-  </Flex>
-</AboutSectionInsideContainer>
+        <Flex
+          justifyContent="center"
+          background="linear-gradient(90deg, rgb(255,199,44) 375px, rgba(0, 48, 100, 1) 0, rgba(0, 48, 100, 1) 70%);"
+          width="100%"
+          height="100%"
+        >
+          <AboutSectionInsideContainer>
+            <Flex justifyContent="space-between">
+              <Image src={AboutUs} width={700} height={712} alt="Volva image" />
+              <AboutSectionDescription>
+                <Flex direction="column" justifyContent="center">
+                  <Text
+                    style={{ fontSize: "1.5rem", width: "100%", color: "#fff" }}
+                  >
+                    ABOUT US
+                  </Text>
+                  <Text
+                    style={{
+                      fontSize: "2rem",
+                      width: "100%",
+                      color: "#fff",
+                      fontWeight: "bold",
+                    }}
+                  >
+                    Here At NILECO, We Value Quality And Customer Feedback
+                  </Text>
+                  <Text
+                    style={{ fontSize: "1.1rem", width: "100%", color: "#fff" }}
+                  >
+                    Your partner in energy and power
+                  </Text>
                 </Flex>
-             
+                <Flex gap="20px" wrap="wrap" justifyContent="center">
+                  <Flex
+                    background="rgb(10,53,96)"
+                    width="240px"
+                    height="150px"
+                    justifyContent="center"
+                    alignItems="center"
+                    padding="0px 20px"
+                  >
+                    <BiBuildings
+                      style={{ color: "rgb(255,199,44)", fontSize: "5rem" }}
+                    />
+                    <Flex direction="column" width="250px" gap="0px">
+                      <span
+                        style={{
+                          fontSize: "2.5rem",
+                          color: "white",
+                          fontWeight: "bold",
+                        }}
+                      >
+                        150
+                      </span>
+
+                      <span
+                        style={{
+                          fontSize: "0.9rem",
+                          color: "white",
+                          fontWeight: "bold",
+                        }}
+                      >
+                        Worker Employed
+                      </span>
+                    </Flex>
+                  </Flex>
+                  <Flex
+                    background="rgb(10,53,96)"
+                    width="240px"
+                    height="150px"
+                    justifyContent="center"
+                    alignItems="center"
+                    padding="0px 20px"
+                  >
+                    <FaPencilRuler
+                      style={{ color: "rgb(255,199,44)", fontSize: "5rem" }}
+                    />
+                    <Flex direction="column" width="250px" gap="0px">
+                      <span
+                        style={{
+                          fontSize: "2.5rem",
+                          color: "white",
+                          fontWeight: "bold",
+                        }}
+                      >
+                        11
+                      </span>
+
+                      <span
+                        style={{
+                          fontSize: "0.9rem",
+                          color: "white",
+                          fontWeight: "bold",
+                        }}
+                      >
+                        Years of Experience
+                      </span>
+                    </Flex>
+                  </Flex>
+                  <Flex
+                    background="rgb(10,53,96)"
+                    width="240px"
+                    height="150px"
+                    justifyContent="center"
+                    alignItems="center"
+                    padding="0px 20px"
+                  >
+                    <FaUsers
+                      style={{ color: "rgb(255,199,44)", fontSize: "5rem" }}
+                    />
+                    <Flex direction="column" width="250px" gap="0px">
+                      <span
+                        style={{
+                          fontSize: "2.5rem",
+                          color: "white",
+                          fontWeight: "bold",
+                        }}
+                      >
+                        485
+                      </span>
+
+                      <span
+                        style={{
+                          fontSize: "0.9rem",
+                          color: "white",
+                          fontWeight: "bold",
+                        }}
+                      >
+                        Happy Customers
+                      </span>
+                    </Flex>
+                  </Flex>
+                  <Flex
+                    background="rgb(10,53,96)"
+                    width="240px"
+                    height="150px"
+                    justifyContent="center"
+                    alignItems="center"
+                    padding="0px 20px"
+                  >
+                    <RiUserSettingsLine
+                      style={{ color: "rgb(255,199,44)", fontSize: "5rem" }}
+                    />
+                    <Flex direction="column" width="250px" gap="0px">
+                      <span
+                        style={{
+                          fontSize: "2.5rem",
+                          color: "white",
+                          fontWeight: "bold",
+                        }}
+                      >
+                        500
+                      </span>
+
+                      <span
+                        style={{
+                          fontSize: "0.9rem",
+                          color: "white",
+                          fontWeight: "bold",
+                        }}
+                      >
+                        Projects Served
+                      </span>
+                    </Flex>
+                  </Flex>
+                </Flex>
+              </AboutSectionDescription>
+            </Flex>
+          </AboutSectionInsideContainer>
+        </Flex>
       </AboutSection>
+      <HospitalitySection>
+        <Flex direction="column" justifyContent="center">
+          <HiUserGroup style={{ color: "rgb(1,44,90)", fontSize: "6rem" }} />
+          <Text
+            style={{
+              color: "rgb(1,44,90)",
+              fontSize: "2.7rem",
+              textAlign: "center",
+              fontWeight: "bold",
+              width: "70%",
+            }}
+          >
+            Trusted In Construction, Hospitality, and other engineering projects
+          </Text>
+          <Text
+            style={{
+              color: "rgb(125,135,145)",
+              fontSize: "1.1rem",
+              textAlign: "center",
+              fontWeight: "bold",
+              width: "70%",
+            }}
+          >
+            Our projects are fully tested, background checked, license validated
+            and insured with a 100% satisfaction guarantee.
+          </Text>
+          <Flex justifyContent="center">
+          <StyledButton background="rgb(255,199,44)">Visit our Office</StyledButton>
+          <StyledButton background=" rgba(0, 48, 100, 1)">+251977805757</StyledButton>
+          </Flex>
+        </Flex>
+      </HospitalitySection>
     </>
   );
 }

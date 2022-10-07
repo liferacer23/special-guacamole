@@ -15,6 +15,7 @@ import { BiBuildings } from "react-icons/bi";
 import { FaPencilRuler } from "react-icons/fa";
 import { FaUsers } from "react-icons/fa";
 import { HiUserGroup } from "react-icons/hi";
+import {BsFillTelephoneFill} from "react-icons/bs";
 import { RiUserSettingsLine } from "react-icons/ri";
 import AboutUs from "../assets/aboutus.jpg";
 import generatorSingle from "../assets/generatorSingle.jpg";
@@ -123,8 +124,15 @@ const StyledButton = styled(Button)`
   background: ${(props) => props.background || "#fff"};
   color: ${(props) => props.color || "#fff"};
   border: 2px solid ${(props) => props.border || "#fff"};
-  height: 2.5rem;
+  height: ${(props) => props.height || "2.5rem"};
   width: ${(props) => props.width || "10rem"};
+  padding: ${(props) => props.padding || "10px"};
+  display: flex;
+  align-item: center;
+  justify-content: center;
+  font-weight: ${(props) => props.fontWeight || "bold"};
+  gap: 1rem;
+  font-size: ${(props) => props.fontSize || "0.8rem"};
 
 `;
 const Card = styled.div`
@@ -737,7 +745,7 @@ export default function Home() {
           <Text
             style={{
               color: "rgb(125,135,145)",
-              fontSize: "1.1rem",
+              fontSize: "1.0rem",
               textAlign: "center",
               fontWeight: "bold",
               width: "70%",
@@ -747,8 +755,8 @@ export default function Home() {
             and insured with a 100% satisfaction guarantee.
           </Text>
           <Flex justifyContent="center">
-          <StyledButton background="rgb(255,199,44)">Visit our Office</StyledButton>
-          <StyledButton background=" rgba(0, 48, 100, 1)">+251977805757</StyledButton>
+          <StyledButton width="15rem" height="3rem" background="rgb(255,199,44)">Visit our Office</StyledButton>
+          <StyledButton width="15rem" height="3rem" background=" rgba(0, 48, 100, 1)" ><BsFillTelephoneFill style={{color:"rgb(255,199,44)",fontSize:"1rem"}}/>Call Us at +251977805757</StyledButton>
           </Flex>
         </Flex>
       </HospitalitySection>

@@ -1,7 +1,6 @@
 import styles from "../styles/Home.module.css";
 import Head from "next/head";
 import styled from "styled-components";
-import Button from "antd/lib/button";
 import Image from "next/image";
 import volva from "../assets/vol.jpg";
 import checklistbg from "../assets/checklistbg.png";
@@ -23,7 +22,7 @@ import switchGear from "../assets/switchgear.jpg";
 
 import otherProducts from "../assets/otherProducts.jpg";
 import { CgArrowLongRight } from "react-icons/cg";
-import {Flex,Text} from '../components/Base/'
+import {Flex,Text, Button} from '../components/Base/'
 
 const HeaderContainer = styled.div``;
 const IconTextContainer = styled.div`
@@ -101,20 +100,7 @@ const HeaderButtonContainer = styled.div`
   align-item: center;
   gap: 4rem;
 `;
-const StyledButton = styled(Button)`
-  background: ${(props) => props.background || "#fff"};
-  color: ${(props) => props.color || "#fff"};
-  border: 2px solid ${(props) => props.border || "#fff"};
-  height: ${(props) => props.height || "2.5rem"};
-  width: ${(props) => props.width || "10rem"};
-  padding: ${(props) => props.padding || "10px"};
-  display: flex;
-  align-item: center;
-  justify-content: center;
-  font-weight: ${(props) => props.fontWeight || "bold"};
-  gap: 1rem;
-  font-size: ${(props) => props.fontSize || "0.8rem"};
-`;
+
 const Card = styled.div`
   display: flex;
   align-item: center;
@@ -198,7 +184,7 @@ export default function Home() {
             We offer the most reliable power services in the country
           </Text>
           <HeaderButtonContainer>
-            <StyledButton
+            <Button
               background="rgb(253,201,55)"
               color="white"
               border="none"
@@ -206,8 +192,8 @@ export default function Home() {
             >
               {" "}
               About Us
-            </StyledButton>
-            <StyledButton
+            </Button>
+            <Button
               background="transparent"
               color="rgb(1,44,90)"
               border="rgb(1,44,90)"
@@ -215,7 +201,7 @@ export default function Home() {
             >
               {" "}
               Contact Us
-            </StyledButton>
+            </Button>
           </HeaderButtonContainer>
         </div>
       </HeaderContainer>
@@ -800,14 +786,14 @@ export default function Home() {
             and insured with a 100% satisfaction guarantee.
           </Text>
           <Flex justifyContent="center">
-            <StyledButton
+            <Button
               width="15rem"
               height="3rem"
               background="rgb(255,199,44)"
             >
               Visit our Office
-            </StyledButton>
-            <StyledButton
+            </Button>
+            <Button
               width="15rem"
               height="3rem"
               background=" rgba(0, 48, 100, 1)"
@@ -816,7 +802,7 @@ export default function Home() {
                 style={{ color: "rgb(255,199,44)", fontSize: "1rem" }}
               />
               Call Us at +251977805757
-            </StyledButton>
+            </Button>
           </Flex>
         </Flex>
       </HospitalitySection>

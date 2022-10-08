@@ -1,23 +1,28 @@
 import React from "react";
 import styled from "styled-components";
 import titleBar from "../assets/titlebar-bg.jpg";
-import { Flex, Text } from "../components/Base";
+import { Flex, Text, Button } from "../components/Base";
 import { AiOutlineHome } from "react-icons/ai";
 import Progress from "antd/lib/progress";
 import Collapse from "antd/lib/collapse";
 import powerSection from "../assets/About-Us-Main.jpg";
 import commitmentImage from "../assets/About-Us-Lowerf.jpg";
+import dotBackground from "../assets/dotbackground.png";
 import Image from "next/image";
 import Link from "next/link";
-import Head from "next/head";
-
+import Form from "antd/lib/form";
+import Input from "antd/lib/input";
+import Select from "antd/lib/select";
+import TextArea from "antd/lib/input/TextArea";
+import LowerImage from "../assets/Lower-3.jpg";
+import {GoLocation} from "react-icons/go";
+const { Option } = Select;
 const HeaderText = styled.span`
-  color:rgba(0, 48, 100, 1);
-    font-size:2.5rem;
-    font-weight:bold;
-    text-align:left;
-    @media
-    (max-width: 768px) {
+  color: rgba(0, 48, 100, 1);
+  font-size: 2.3rem;
+  font-weight: bold;
+  text-align: left;
+  @media (max-width: 768px) {
     font-size: 1rem;
   }
 `;
@@ -29,10 +34,9 @@ const text = `
 const { Panel: antDpanel } = Collapse;
 
 const Panel = styled(antDpanel)`
-  width: 30rem;
-
+  width: 35rem;
   @media (max-width: 768px) {
-    width: 95%;
+    width: 25rem;
   }
   &.ant-collapse-item-active {
     background: rgb(255, 199, 44);
@@ -66,14 +70,6 @@ const StyledDiv = styled.div`
   flex-direction: column;
   color: #fff;
   text-align: center;
-  h1 {
-    font-size: 4rem;
-    margin-bottom: 0;
-  }
-  p {
-    font-size: 2rem;
-    margin-top: 0;
-  }
 `;
 const PowerSectionContainer = styled.section`
   width: 100%;
@@ -121,7 +117,93 @@ const CommitmentContent = styled.div`
     height: 100%;
   }
 `;
+const ContactSectionHeader = styled.div`
+  background-image: url(${titleBar.src});
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 20rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #fff;
+  text-align: center;
+  z-index: -1;
+`;
+const ContactSection = styled.section`
+  width: 100%;
+  height: 100%;
+  position: relative;
+`;
+//center an absolute element
+const QuoteSection = styled.div`
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -16%);
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: url(${dotBackground.src});
+  z-index: 1;
+  @media (max-width: 768px) {
+    width: 100%;
+    position: relative;
+    transform: translate(-50%, -0%);
+  }
+`;
+const FormContainer = styled.div`
+  height: 100%;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 2rem;
+  @media (max-width: 768px) {
+    width: 100%;
+    height: 100%;
+  }
+`;
+const QuoteImageContaier = styled.div`
+  background-image: url(${LowerImage.src});
+  height: 34rem;
+  width: 40%;
+  background-size: contain;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  padding: 4rem 0;
+  flex-direction: column;
+  @media (max-width: 768px) {
+    width: 100%;
+    background: none;
+  }
+`;
+const OurFacility = styled.section`
+  width: 18rem;
+  height: 15rem;
+  background-color: rgb(255, 199, 44);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-left:-5rem;
+  @media (max-width: 768px) {
+    width: 100%;
+    margin:0;
+  }
+`;
 const About = () => {
+  const children = [];
+  for (let i = 10; i < 36; i++) {
+    children.push(
+      <Option key={i.toString(36) + i}>{i.toString(36) + i}</Option>
+    );
+  }
   return (
     <>
       <StyledDiv>
@@ -231,12 +313,9 @@ const About = () => {
           <CommitmentInsideSection></CommitmentInsideSection>
         </Flex>
         <CommitmentContent>
-          <Flex>
+          <Flex alignItems="start">
             <Flex direction="column" alignItems="start">
-              <HeaderText
-              >
-                Our Commitment To You
-              </HeaderText>
+              <HeaderText>Our Commitment To You</HeaderText>
               <Collapse accordion expandIconPosition="end">
                 <Panel header={"Dependable and Quanlity Products"} key="1">
                   <p>{text}</p>
@@ -292,6 +371,89 @@ const About = () => {
           </Flex>
         </CommitmentContent>
       </CommitmentSection>
+      <ContactSection>
+        <ContactSectionHeader>
+          <Flex direction="column">
+            <Text
+              color="rgb(255, 199, 44) "
+              fontSize="1rem"
+              fontWeight="bold"
+              width="100%"
+              textAlign="center"
+            >
+              CONTACT DETAILS
+            </Text>
+            <Text
+              color="#fff"
+              fontSize="2.5rem"
+              fontWeight="bold"
+              width="100%"
+              textAlign="center"
+            >
+              How can we help you ?
+            </Text>
+          </Flex>
+        </ContactSectionHeader>
+        <QuoteSection>
+          <Flex justifyContent="space-between">
+            <FormContainer>
+              <Text
+                color="rgb(136,142,148)"
+                fontSize="1.2rem"
+                fontWeight="bold"
+                width="100%"
+                textAlign="left"
+              >
+                Free Consultation
+              </Text>
+              <Text
+                color="rgba(0, 48, 100, 1)"
+                fontSize="2.5rem"
+                fontWeight="bold"
+                width="100%"
+                textAlign="left"
+              >
+                Get a free Quote?
+              </Text>
+              <Form layout="horizontal">
+                <Form.Item>
+                  <Input size="large" placeholder="Full Name" />
+                </Form.Item>
+                <Form.Item>
+                  <Input size="large" placeholder="Email" />
+                </Form.Item>
+                <Form.Item>
+                  <Input size="large" placeholder="Phone Number" />
+                </Form.Item>
+                <Form.Item>
+                  <Select size={"large"} defaultValue="Generators">
+                    {children}
+                  </Select>
+                </Form.Item>
+                <Form.Item>
+                  <TextArea placeholder="Your Message"></TextArea>
+                </Form.Item>
+                <Form.Item>
+                  <Button
+                    width="80%"
+                    background="rgb(255, 199, 44)"
+                    hoverBackground="rgba(0, 48, 100, 1)"
+                    height="3rem"
+                  >
+                    Get a free quote
+                  </Button>
+                </Form.Item>
+              </Form>
+            </FormContainer>
+            <QuoteImageContaier>
+                <OurFacility><GoLocation fontSize="2rem"/>
+                <Text color="#fff" fontSize="1.5rem" fontWeight="bold" width="100%" textAlign="center"> Visit Our Facility</Text>
+                <Text color="#fff" fontSize="1rem"  width="100%" textAlign="center"> Woreda 03, Bole Addis Ababa Zone, Ethiopia</Text>
+                </OurFacility>
+            </QuoteImageContaier>
+          </Flex>
+        </QuoteSection>
+      </ContactSection>
     </>
   );
 };

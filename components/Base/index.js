@@ -1,6 +1,22 @@
 import styled from 'styled-components';
-
-
+import antDButton from 'antd/lib/button';
+export const Button = styled(antDButton)`
+  background: ${(props) => props.background || "#fff"};
+  color: ${(props) => props.color || "#fff"};
+  border: 2px solid ${(props) => props.border || "#fff"};
+  height: ${(props) => props.height || "2.5rem"};
+  width: ${(props) => props.width || "10rem"};
+  padding: ${(props) => props.padding || "10px"};
+  display: flex;
+  align-item: center;
+  justify-content: center;
+  font-weight: ${(props) => props.fontWeight || "bold"};
+  gap: 1rem;
+  font-size: ${(props) => props.fontSize || "0.8rem"};
+  :&hover {
+    background: ${(props) => props.hoverBackground} !important;
+  }
+`;
 export const Text = styled.span`
 font-size:${(props) => props.fontSize || "14px"}};
 color: ${(props) => props.color || "#000000"};

@@ -206,7 +206,7 @@ const About = () => {
             </Text>
             <Text color="rgb(136,142,148)" fontSize="1rem" textAlign="left">
               Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard.
+              industry. Lorem Ipsum has been the industrys standard.
             </Text>
             <Text
               color="rgba(0, 48, 100, 1)"
@@ -218,9 +218,9 @@ const About = () => {
             </Text>
             <Text color="rgb(136,142,148)" fontSize="1rem" textAlign="left">
               Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard.Lorem Ipsum
+              industry. Lorem Ipsum has been the industrys standard.Lorem Ipsum
               is simply dummy text of the printing and typesetting industry.
-              Lorem Ipsum has been the industry's standard.Lorem Ipsum is simply
+              Lorem Ipsum has been the industrys standard.Lorem Ipsum is simply
               dummy.
             </Text>
           </AboutDescription>

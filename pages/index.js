@@ -430,6 +430,7 @@ export default function Home() {
             color: "#808080",
             fontWeight: "bold",
             width: "100%",
+            textAlign:"center"
           }}
         >
           WORKING WITH EXCELLENT
@@ -441,6 +442,7 @@ export default function Home() {
             color: "rgba(0, 48, 100, 1)",
             fontWeight: "bold",
             width: "100%",
+            textAlign:"center"
           }}
         >
           Modern Electrical And Power Equipment Guaranteed

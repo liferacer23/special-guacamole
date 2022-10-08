@@ -4,6 +4,7 @@ import Popover from "antd/lib/popover";
 import styled from "styled-components";
 import Text from "antd/lib/typography/Text";
 import Image from "next/image";
+import Links from "next/link";
 import logo from "../../assets/Nileco.png";
 import antDAnchor from "antd/lib/anchor";
 import { AiOutlineMail } from "react-icons/ai";
@@ -62,6 +63,9 @@ const StyledButton = styled(Button)`
     background: transparent !important;
     font-weight: bold !important;
   }
+  font-weight: bold !important;
+  font-size: 1rem !important;
+  color:rgb(0, 44, 91) !important;
 `;
 const LinkContainer = styled("div")`
   width: 70%;
@@ -79,7 +83,9 @@ const NavBar = () => (
   <>
     <Header style={{ display: "flex", alignItems: "center" }}>
       <LinkContainer>
-      <Text style={{color:"#fff", marginRight:"1rem"}}>Your Trusted Power Solutions Provider in Ethiopia</Text>
+        <Text style={{ color: "#fff", marginRight: "1rem" }}>
+          Your Trusted Power Solutions Provider in Ethiopia
+        </Text>
         <Anchor affix={false}>
           <AiOutlineMail style={{ color: "yellow", marginRight: "-10px" }} />{" "}
           <Link style={{ color: "#fff" }} href="#" title="info@nilecoeem.com" />
@@ -102,32 +108,30 @@ const NavBar = () => (
       <Header
         style={{
           display: "flex",
+          height:"5rem",
           alignItems: "center",
           background: "#fff",
-          justifyContent: "center",
-
+          justifyContent: "space-evenly",
+          
         }}
       >
         <Image src={logo} alt="Website logo image" width={180} height={35} />
         <HeaderItems>
-          <Popover content={content} title="Title">
-            <StyledButton>Home</StyledButton>
-          </Popover>
-          <Popover content={content} title="Title">
-            <StyledButton>About Us</StyledButton>
-          </Popover>
+          <Links href="/">
+          <StyledButton>Home</StyledButton>
+          </Links>
+          <Links href="/about">
+          <StyledButton>About Us</StyledButton>
+          </Links>
           <Popover content={content} title="Title">
             <StyledButton>Products</StyledButton>
           </Popover>
-          <Popover content={content} title="Title">
-            <StyledButton>Service</StyledButton>
-          </Popover>
-          <Popover content={content} title="Title">
-            <StyledButton>Gallery</StyledButton>
-          </Popover>
-          <Popover content={content} title="Title">
-            <StyledButton>Contact Us</StyledButton>
-          </Popover>
+
+          <StyledButton>Service</StyledButton>
+
+          <StyledButton>Gallery</StyledButton>
+
+          <StyledButton>Contact Us</StyledButton>
         </HeaderItems>
       </Header>
     </Layout>

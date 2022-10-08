@@ -17,6 +17,8 @@ const Header = styled("div")`
   background: rgb(0, 44, 91);
   height: 3rem;
   width: 100%;
+
+
 `;
 const Anchor = styled(antDAnchor)`
   .ant-anchor-ink::before {
@@ -47,6 +49,9 @@ const HeaderItems = styled.div`
   align-item: center;
   justify-content: center;
   gap: 10px;
+  @media (max-width: 1000px) {
+    display:none;
+   }
 `;
 
 const StyledButton = styled(Button)`
@@ -68,11 +73,22 @@ const StyledButton = styled(Button)`
   color:rgb(0, 44, 91) !important;
 `;
 const LinkContainer = styled("div")`
+
   width: 70%;
   display: flex;
   align-item: center;
   justify-content: end;
+  @media (max-width: 1000px) {
+    display:none;
+   }
+
 `;
+const Credentials = styled("div")`
+background: rgb(0, 44, 91);
+@media (max-width: 1000px) {
+  display:none;
+ }
+`
 const content = (
   <div>
     <p>Content</p>
@@ -81,7 +97,7 @@ const content = (
 );
 const NavBar = () => (
   <>
-    <Header style={{ display: "flex", alignItems: "center" }}>
+    <Credentials style={{ display: "flex", alignItems: "center" }}>
       <LinkContainer>
         <Text style={{ color: "#fff", marginRight: "1rem" }}>
           Your Trusted Power Solutions Provider in Ethiopia
@@ -93,7 +109,7 @@ const NavBar = () => (
           <Link style={{ color: "#fff" }} href="#" title="+251 977 80 5757" />
         </Anchor>
       </LinkContainer>
-    </Header>
+    </Credentials>
     <Layout
       style={{
         background: "transparent",

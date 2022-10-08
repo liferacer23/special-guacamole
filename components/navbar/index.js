@@ -1,6 +1,7 @@
+import React, { useState } from "react";
 import Layout from "antd/lib/layout";
 import Button from "antd/lib/button";
-import Popover from "antd/lib/popover";
+import antDPopover from "antd/lib/popover";
 import styled from "styled-components";
 import Text from "antd/lib/typography/Text";
 import Image from "next/image";
@@ -9,16 +10,14 @@ import logo from "../../assets/Nileco.png";
 import antDAnchor from "antd/lib/anchor";
 import { AiOutlineMail } from "react-icons/ai";
 import { BsTelephoneFill } from "react-icons/bs";
+import { GiHamburgerMenu } from "react-icons/gi";
+import Drawer from "antd/lib/drawer";
 const { Link } = antDAnchor;
-const Header = styled("div")`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: rgb(0, 44, 91);
-  height: 3rem;
-  width: 100%;
 
-
+const Popover = styled(antDPopover)`
+&.ant-popover-title {
+display: none !important;
+}
 `;
 const Anchor = styled(antDAnchor)`
   .ant-anchor-ink::before {
@@ -50,8 +49,8 @@ const HeaderItems = styled.div`
   justify-content: center;
   gap: 10px;
   @media (max-width: 1000px) {
-    display:none;
-   }
+    display: none;
+  }
 `;
 
 const StyledButton = styled(Button)`
@@ -60,7 +59,6 @@ const StyledButton = styled(Button)`
   }
   background: transparent !important;
   border: 0px solid transparent !important;
-  font-weight: medium !important;
   color: #000000 !important;
   font-size: 14px !important;
   &:hover {
@@ -68,90 +66,165 @@ const StyledButton = styled(Button)`
     background: transparent !important;
     font-weight: bold !important;
   }
-  font-weight: bold !important;
+  font-weight: 500 !important;
   font-size: 1rem !important;
-  color:rgb(0, 44, 91) !important;
+  color: rgb(0, 44, 91) !important;
 `;
 const LinkContainer = styled("div")`
-
   width: 70%;
   display: flex;
   align-item: center;
   justify-content: end;
   @media (max-width: 1000px) {
-    display:none;
-   }
-
+    display: none;
+  }
 `;
 const Credentials = styled("div")`
-background: rgb(0, 44, 91);
-@media (max-width: 1000px) {
-  display:none;
- }
-`
+  background: rgb(0, 44, 91);
+  height: 3rem;
+  @media (max-width: 1000px) {
+    display: none;
+    height: 0rem;
+  }
+`;
+const HamburgerMenu = styled("div")`
+  cursor: pointer;
+  display: none;
+  @media (max-width: 1000px) {
+    display: block;
+  }
+`;
+const NavBarContainer = styled("div")`
+  width: 100%;
+  display: flex;
+  height: 5rem;
+  align-items: center;
+  flex-direction:${(props) => (props.direction ? props.direction : "row")};
+  background: #fff;
+  justify-content: space-evenly;
+  @media (max-width: 1000px) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 1.5rem;
+    
+  }
+`;
 const content = (
   <div>
-    <p>Content</p>
-    <p>Content</p>
+    <p>Generators</p>
+    <p>Switch Gears</p>
+    <p>Other Products</p>
   </div>
 );
-const NavBar = () => (
-  <>
-    <Credentials style={{ display: "flex", alignItems: "center" }}>
-      <LinkContainer>
-        <Text style={{ color: "#fff", marginRight: "1rem" }}>
-          Your Trusted Power Solutions Provider in Ethiopia
-        </Text>
-        <Anchor affix={false}>
-          <AiOutlineMail style={{ color: "yellow", marginRight: "-10px" }} />{" "}
-          <Link style={{ color: "#fff" }} href="#" title="info@nilecoeem.com" />
-          <BsTelephoneFill style={{ color: "yellow", marginRight: "-10px" }} />
-          <Link style={{ color: "#fff" }} href="#" title="+251 977 80 5757" />
-        </Anchor>
-      </LinkContainer>
-    </Credentials>
-    <Layout
-      style={{
-        background: "transparent",
-        position: "sticky",
-        top: "0px",
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
-        zIndex: "100",
-      }}
-    >
-      <Header
-        style={{
-          display: "flex",
-          height:"5rem",
-          alignItems: "center",
-          background: "#fff",
-          justifyContent: "space-evenly",
-          
-        }}
+const text = <span>Products</span>;
+//create a hamburger menu for mobile view
+
+const NavBar = () => {
+  const [open, setOpen] = useState(false);
+
+  const showDrawer = () => {
+    setOpen(true);
+  };
+
+  const onClose = () => {
+    setOpen(false);
+  };
+  return (
+    <>
+      <Drawer
+        title={<Image src={logo} width={100} height={30} />}
+        placement="top"
+        onClose={onClose}
+        open={open}
       >
-        <Image src={logo} alt="Website logo image" width={180} height={35} />
-        <HeaderItems>
+        <NavBarContainer direction="column" style={{gap:"0.7rem"}}>
+          <Image src={logo} alt="Website logo image" width={180} height={35} />
           <Links href="/">
-          <StyledButton>Home</StyledButton>
+            <StyledButton>Home</StyledButton>
           </Links>
           <Links href="/about">
-          <StyledButton>About Us</StyledButton>
+            <StyledButton>About Us</StyledButton>
           </Links>
-          <Popover content={content} title="Title">
+          <Popover content={content} title={text}>
             <StyledButton>Products</StyledButton>
           </Popover>
-
           <StyledButton>Service</StyledButton>
-
           <StyledButton>Gallery</StyledButton>
-
           <StyledButton>Contact Us</StyledButton>
-        </HeaderItems>
-      </Header>
-    </Layout>
-  </>
-);
+        </NavBarContainer>
+      </Drawer>
+      <Credentials style={{ display: "flex", alignItems: "center" }}>
+        <LinkContainer>
+          <Text style={{ color: "#fff", marginRight: "1rem" }}>
+            Your Trusted Power Solutions Provider in Ethiopia
+          </Text>
+          <Anchor affix={false}>
+            <AiOutlineMail
+              style={{
+                fontSize: "1rem",
+                color: "rgb(255, 199, 44)",
+                marginRight: "-10px",
+              }}
+            />{" "}
+            <Link
+              style={{ color: "#fff", fontSize: "1.4rem" }}
+              href="#"
+              title="info@nilecoeem.com"
+            />
+            <BsTelephoneFill
+              style={{
+                fontSize: "1rem",
+                color: "rgb(255, 199, 44)",
+                marginRight: "-10px",
+              }}
+            />
+            <Link
+              style={{ color: "#fff", fontSize: "1.4rem" }}
+              href="#"
+              title="+251 977 80 5757"
+            />
+          </Anchor>
+        </LinkContainer>
+      </Credentials>
+      <Layout
+        style={{
+          background: "transparent",
+          position: "sticky",
+          top: "0px",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          zIndex: "100",
+        }}
+      >
+        <NavBarContainer>
+          <Image src={logo} alt="Website logo image" width={180} height={35} />
+          <HamburgerMenu onClick={showDrawer}>
+            <GiHamburgerMenu style={{ fontSize: "2rem" }} />
+          </HamburgerMenu>
+          <HeaderItems>
+            <Links href="/">
+              <StyledButton>Home</StyledButton>
+            </Links>
+            <Links href="/about">
+              <StyledButton>About Us</StyledButton>
+            </Links>
+            <Popover content={content} >
+              <StyledButton>Products</StyledButton>
+            </Popover>
+
+            <StyledButton>Service</StyledButton>
+
+            <StyledButton>Gallery</StyledButton>
+
+            <StyledButton>Contact Us</StyledButton>
+          </HeaderItems>
+        </NavBarContainer>
+      </Layout>
+    </>
+  );
+};
 
 export default NavBar;

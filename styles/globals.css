@@ -1,3 +1,7 @@
+body{
+  overflow-x: clip;
+}
+
 ::-webkit-scrollbar {
   width: 10px;
 }

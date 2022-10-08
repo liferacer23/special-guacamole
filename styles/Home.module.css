@@ -4,13 +4,6 @@
   height:80vh;
   width:100vw;
 }
-.SectionVertical{
-display:flex;
-justify-content:center;
-flex-direction:column;
-padding-left:6rem;
-padding-top:10rem;
-};
 
 .SectionHorizontal{
   width:100%;

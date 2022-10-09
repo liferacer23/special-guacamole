@@ -15,7 +15,7 @@ import Input from "antd/lib/input";
 import Select from "antd/lib/select";
 import TextArea from "antd/lib/input/TextArea";
 import LowerImage from "../assets/Lower-3.jpg";
-import {GoLocation} from "react-icons/go";
+import { GoLocation } from "react-icons/go";
 const { Option } = Select;
 const HeaderText = styled.span`
   color: rgba(0, 48, 100, 1);
@@ -74,6 +74,9 @@ const StyledDiv = styled.div`
 const PowerSectionContainer = styled.section`
   width: 100%;
   padding: 6rem;
+  @media (max-width: 768px) {
+    padding: 1rem;
+  }
 `;
 const AboutDescription = styled.div`
   display: flex;
@@ -88,7 +91,7 @@ const AboutDescription = styled.div`
   }
 `;
 const CommitmentSection = styled.section`
-  height: 40rem;
+  height: 100%;
   width: 100%;
   position: relative;
 `;
@@ -103,7 +106,7 @@ const CommitmentInsideSection = styled.section`
   }
 `;
 const CommitmentContent = styled.div`
-  height: 30rem;
+  
   width: 80rem;
   background-color: #fff;
   padding: 0 2rem;
@@ -191,10 +194,10 @@ const OurFacility = styled.section`
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-left:-5rem;
+  margin-left: -5rem;
   @media (max-width: 768px) {
     width: 100%;
-    margin:0;
+    margin: 0;
   }
 `;
 const About = () => {
@@ -209,42 +212,52 @@ const About = () => {
       <StyledDiv>
         <Flex direction="column">
           <Text
+            width="100%"
+            mobileWidth="100%"
             fontSize="2rem"
             color="#fff"
             textAlign="center"
             fontWeight="bold"
+            mobileTextAlign="center"
+            mobileFontSize="2rem"
           >
             About Us
           </Text>
-          <Flex width="14%" justifyContent="center">
-            <Link href="/">
+          <Flex width="100%" justifyContent="center" gap="0px">
+            <Flex width="20%" directionMobile="row" widthMobile="40%" gap="0px">
+              <Link href="/">
+                <Flex width="50%" directionMobile="row" widthMobile="40%">
+                  {" "}
+                  <AiOutlineHome style={{ fontSize: "1.5rem" }} />
+                  <Text
+                    color="#fff"
+                    fontSize="1rem"
+                    textAlign="center"
+                    fontWeight="bold"
+                    cursor="pointer"
+                  >
+                    Home
+                  </Text>
+                </Flex>
+              </Link>
+              /
+              <Flex width="50%" directionMobile="row" widthMobile="40%">
               <Text
-                color="#fff"
                 fontSize="1rem"
+                color="rgb(255, 199, 44)"
                 textAlign="center"
                 fontWeight="bold"
                 cursor="pointer"
               >
-                <AiOutlineHome style={{ fontSize: "1rem" }} />
-                <> </>
-                Home
-              </Text>
-            </Link>
-            /
-            <Text
-              fontSize="1rem"
-              color="rgb(255, 199, 44)"
-              textAlign="center"
-              fontWeight="bold"
-              cursor="pointer"
-            >
-              About Us
-            </Text>{" "}
+                About Us
+              </Text>{" "}
+              </Flex>
+            </Flex>
           </Flex>
         </Flex>
       </StyledDiv>
       <PowerSectionContainer>
-        <Flex alignItems="start" gap="1.5rem">
+        <Flex alignItems="start" gap="1.5rem" >
           <Image src={powerSection} width={550} height={550} />
           <AboutDescription>
             <Text
@@ -259,6 +272,7 @@ const About = () => {
             <Text
               color="rgba(0, 48, 100, 1)"
               fontSize="2rem"
+              mobileFontSize="2rem"
               fontWeight="bold"
               textAlign="left"
             >
@@ -281,6 +295,7 @@ const About = () => {
             <Text
               color="rgba(0, 48, 100, 1)"
               fontSize="1.3rem"
+              mobileFontSize="1.8rem"
               fontWeight="bold"
               textAlign="left"
             >
@@ -293,6 +308,7 @@ const About = () => {
             <Text
               color="rgba(0, 48, 100, 1)"
               fontSize="1.3rem"
+              mobileFontSize="1.8rem"
               fontWeight="bold"
               textAlign="left"
             >
@@ -315,7 +331,15 @@ const About = () => {
         <CommitmentContent>
           <Flex alignItems="start">
             <Flex direction="column" alignItems="start">
-              <HeaderText>Our Commitment To You</HeaderText>
+              <Text
+                
+                    color="rgba(0, 48, 100, 1)"
+                    fontSize="2.3rem"
+                    mobileFontSize="2rem"
+                    fontWeight="bold"
+                    textAlign="left"
+                  >
+             Our Commitment To You</Text>
               <Collapse accordion expandIconPosition="end">
                 <Panel header={"Dependable and Quanlity Products"} key="1">
                   <p>{text}</p>
@@ -329,7 +353,14 @@ const About = () => {
               </Collapse>
             </Flex>
             <Flex direction="column" alignItems="start">
-              <HeaderText>We Are The Experts In Power Solutions.</HeaderText>
+              <Text
+                   color="rgba(0, 48, 100, 1)"
+                   fontSize="2.3rem"
+                   mobileFontSize="2rem"
+                   fontWeight="bold"
+                   textAlign="left"
+                 >
+              We Are The Experts In Power Solutions.</Text>
               <Text color="rgb(136,142,148)" fontSize="1rem" textAlign="left">
                 We have a long and proud history of providing energy solutions
                 to various environments and fields.
@@ -340,7 +371,7 @@ const About = () => {
               <Progress
                 strokeColor={"rgb(255, 199, 44)"}
                 strokeWidth={11}
-                percent={30}
+                percent={96}
                 size="large"
                 status="active"
                 style={{ fontWeight: "bold", color: "rgba(0, 48, 100, 1)" }}
@@ -351,7 +382,7 @@ const About = () => {
               <Progress
                 strokeColor={"rgb(255, 199, 44)"}
                 strokeWidth={11}
-                percent={50}
+                percent={96}
                 size="large"
                 status="active"
                 style={{ fontWeight: "bold", color: "rgba(0, 48, 100, 1)" }}
@@ -362,7 +393,7 @@ const About = () => {
               <Progress
                 strokeColor={"rgb(255, 199, 44)"}
                 strokeWidth={11}
-                percent={12}
+                percent={94}
                 size="large"
                 status="active"
                 style={{ fontWeight: "bold", color: "rgba(0, 48, 100, 1)" }}
@@ -371,7 +402,7 @@ const About = () => {
           </Flex>
         </CommitmentContent>
       </CommitmentSection>
-      <ContactSection>
+      {/* <ContactSection>
         <ContactSectionHeader>
           <Flex direction="column">
             <Text
@@ -437,7 +468,7 @@ const About = () => {
                   <Button
                     width="80%"
                     background="rgb(255, 199, 44)"
-                    hoverBackground="rgba(0, 48, 100, 1)"
+                    hoverbackground="rgba(0, 48, 100, 1)"
                     height="3rem"
                   >
                     Get a free quote
@@ -446,14 +477,32 @@ const About = () => {
               </Form>
             </FormContainer>
             <QuoteImageContaier>
-                <OurFacility><GoLocation fontSize="2rem"/>
-                <Text color="#fff" fontSize="1.5rem" fontWeight="bold" width="100%" textAlign="center"> Visit Our Facility</Text>
-                <Text color="#fff" fontSize="1rem"  width="100%" textAlign="center"> Woreda 03, Bole Addis Ababa Zone, Ethiopia</Text>
-                </OurFacility>
+              <OurFacility>
+                <GoLocation fontSize="2rem" />
+                <Text
+                  color="#fff"
+                  fontSize="1.5rem"
+                  fontWeight="bold"
+                  width="100%"
+                  textAlign="center"
+                >
+                  {" "}
+                  Visit Our Facility
+                </Text>
+                <Text
+                  color="#fff"
+                  fontSize="1rem"
+                  width="100%"
+                  textAlign="center"
+                >
+                  {" "}
+                  Woreda 03, Bole Addis Ababa Zone, Ethiopia
+                </Text>
+              </OurFacility>
             </QuoteImageContaier>
           </Flex>
         </QuoteSection>
-      </ContactSection>
+      </ContactSection> */}
     </>
   );
 };

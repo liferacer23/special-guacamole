@@ -162,7 +162,6 @@ const AboutSection = styled.div`
   position: relative;
   display: flex;
   align-item: center;
-  background: red;
   margin-top: 4rem;
   @media (max-width: 768px) {
     flex-direction: column;
@@ -825,12 +824,12 @@ export default function Home() {
               Visit our Office
             </Button>
             <Button
-              width="15rem"
+              width="16rem"
               height="3rem"
               background=" rgba(0, 48, 100, 1)"
             >
               <BsFillTelephoneFill
-                style={{ color: "rgb(255,199,44)", fontSize: "1rem" }}
+                style={{ color: "rgb(255,199,44)", fontSize: "1.2rem" }}
               />
               Call Us at +251977805757
             </Button>

@@ -21,11 +21,13 @@ const MainContainer = styled(motion.div)`
   width: 100%;
   cursor: grab;
   overflow: hidden;
+  background: #fff;
 `;
 const Container = styled(motion.div)`
   display: flex;
   position: absolute;
   margin-top:1rem;
+  background: #fff;
 `;
 const ImageContainer = styled(motion.div)`
   pointer-events: none;

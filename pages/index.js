@@ -43,6 +43,7 @@ const IconTextContainer = styled.div`
 const AboutUsContainer = styled.div`
   display: flex;
   align-item: center;
+  background: #fff;
   justify-content: center;
   width: 100%;
   gap: 2.2rem;
@@ -166,7 +167,6 @@ const AboutSection = styled.div`
   position: relative;
   display: flex;
   align-item: center;
-  margin-top: 4rem;
   @media (max-width: 768px) {
     flex-direction: column;
   }
@@ -194,8 +194,10 @@ const HospitalitySection = styled.div`
   min-height: 20rem;
   position: relative;
   display: flex;
+  background: #fff;
   align-item: center;
-  margin-top: 4rem;
+  margin-top: -0.5rem;
+  padding-top: 4rem;
 `;
 const HeaderContent = styled.div`
   display: flex;
@@ -895,6 +897,11 @@ export default function Home() {
           </Flex>
         </Flex>
       </HospitalitySection>
+      <div
+      style={{height:"30rem"}}
+      >
+
+      </div>
     </>
   );
 }

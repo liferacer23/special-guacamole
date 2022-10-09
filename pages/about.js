@@ -208,7 +208,7 @@ const About = () => {
     );
   }
   return (
-    <>
+    <div>
       <StyledDiv>
         <Flex direction="column">
           <Text
@@ -503,7 +503,7 @@ const About = () => {
           </Flex>
         </QuoteSection>
       </ContactSection> */}
-    </>
+    </div>
   );
 };
 

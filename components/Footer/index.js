@@ -5,8 +5,18 @@ import { AiOutlineMail } from "react-icons/ai";
 import { GiCheckMark } from "react-icons/gi";
 import { BsTelephoneFill } from "react-icons/bs";
 import { GoGlobe } from "react-icons/go";
+import styled from "styled-components";
+
+
+const FooterContainer = styled.div`
+position: fixed;
+z-index: -10;
+bottom: 0;
+width: 100%;
+`;
 export default function Footer() {
   return (
+    <FooterContainer>
     <Flex
       background="rgba(0, 48, 100, 1)"
       padding="4rem"
@@ -221,5 +231,6 @@ export default function Footer() {
         </Flex>
       </Flex>
     </Flex>
+    </FooterContainer>
   );
 }

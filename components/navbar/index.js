@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Layout from "antd/lib/layout";
+import antDLayout from "antd/lib/layout";
 import Button from "antd/lib/button";
 import antDPopover from "antd/lib/popover";
 import styled from "styled-components";
@@ -11,13 +11,27 @@ import antDAnchor from "antd/lib/anchor";
 import { AiOutlineMail } from "react-icons/ai";
 import { BsTelephoneFill } from "react-icons/bs";
 import { GiHamburgerMenu } from "react-icons/gi";
+import { GoSearch } from "react-icons/go";
 import Drawer from "antd/lib/drawer";
+import Search from "antd/lib/input/Search";
 const { Link } = antDAnchor;
 
-const Popover = styled(antDPopover)`
-&.ant-popover-title {
-display: none !important;
+const Layout = styled(antDLayout)`
+background: transparent !important;
+position: sticky !important;
+top: 0px !important;
+display: flex !important;
+align-items: center !important;
+justify-content: center !important;
+z-index: 100 !important;
+@media (max-width: 768px) {
+  position: relative !important;
 }
+`;
+const Popover = styled(antDPopover)`
+  &.ant-popover-title {
+    display: none !important;
+  }
 `;
 const Anchor = styled(antDAnchor)`
   .ant-anchor-ink::before {
@@ -57,10 +71,12 @@ const StyledButton = styled(Button)`
   &.ant-btn {
     border: none !important;
   }
-  background: transparent !important;
+  width: ${(props) => props.width || ""} !important;
+  background: ${(props) => props.background || "transparent"} !important;
   border: 0px solid transparent !important;
   color: #000000 !important;
   font-size: 14px !important;
+  padding: ${(props) => props.padding || ""} !important;
   &:hover {
     color: #ffff00 !important;
     background: transparent !important;
@@ -97,9 +113,9 @@ const HamburgerMenu = styled("div")`
 const NavBarContainer = styled("div")`
   width: 100%;
   display: flex;
-  height: 5rem;
+  height: 6rem;
   align-items: center;
-  flex-direction:${(props) => (props.direction ? props.direction : "row")};
+  flex-direction: ${(props) => (props.direction ? props.direction : "row")};
   background: #fff;
   justify-content: space-evenly;
   @media (max-width: 1000px) {
@@ -108,7 +124,13 @@ const NavBarContainer = styled("div")`
     justify-content: space-between;
     width: 100%;
     padding: 0 1.5rem;
-    
+  }
+`;
+
+const SearchContainer = styled("div")`
+  display: none;
+  @media (max-width: 1000px) {
+    display: inline;
   }
 `;
 const content = (
@@ -118,6 +140,7 @@ const content = (
     <p>Other Products</p>
   </div>
 );
+const searchContent = <Search placeholder="input search text" enterButton />;
 const text = <span>Products</span>;
 //create a hamburger menu for mobile view
 
@@ -139,8 +162,8 @@ const NavBar = () => {
         onClose={onClose}
         open={open}
       >
-        <NavBarContainer direction="column" style={{gap:"0.7rem"}}>
-          <Image src={logo} alt="Website logo image" width={180} height={35} />
+        <NavBarContainer direction="column" style={{ gap: "0.7rem" }}>
+          <Image src={logo} alt="Website logo image" width={180} height={45} />
           <Links href="/">
             <StyledButton>Home</StyledButton>
           </Links>
@@ -189,21 +212,21 @@ const NavBar = () => {
         </LinkContainer>
       </Credentials>
       <Layout
-        style={{
-          background: "transparent",
-          position: "sticky",
-          top: "0px",
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-          zIndex: "100",
-        }}
+   
       >
         <NavBarContainer>
-          <Image src={logo} alt="Website logo image" width={180} height={35} />
           <HamburgerMenu onClick={showDrawer}>
             <GiHamburgerMenu style={{ fontSize: "2rem" }} />
           </HamburgerMenu>
+          <Image src={logo} alt="Website logo image" width={210} height={55} />
+          <SearchContainer>
+            <Popover content={searchContent} trigger="click" placement="bottom">
+              <StyledButton width="10px" padding="7px 0">
+                {" "}
+                <GoSearch color="rgba(0, 48, 100, 1)" />
+              </StyledButton>
+            </Popover>
+          </SearchContainer>
           <HeaderItems>
             <Links href="/">
               <StyledButton>Home</StyledButton>
@@ -211,7 +234,7 @@ const NavBar = () => {
             <Links href="/about">
               <StyledButton>About Us</StyledButton>
             </Links>
-            <Popover content={content} >
+            <Popover content={content}>
               <StyledButton>Products</StyledButton>
             </Popover>
 
@@ -220,6 +243,12 @@ const NavBar = () => {
             <StyledButton>Gallery</StyledButton>
 
             <StyledButton>Contact Us</StyledButton>
+            <Popover content={searchContent} trigger="click" placement="bottom">
+              <StyledButton width="10px" padding="7px 0">
+                {" "}
+                <GoSearch color="rgba(0, 48, 100, 1)" />
+              </StyledButton>
+            </Popover>
           </HeaderItems>
         </NavBarContainer>
       </Layout>

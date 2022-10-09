@@ -15,9 +15,15 @@ export const Button = styled(antDButton)`
   font-size: ${(props) => props.fontSize || "1rem"};
   &:hover {
     background: ${(props) =>
-      props.hoverBackground || "rgb(1,44,90)"} !important;
+      props.hoverbackground || "rgb(255, 199, 44)"} !important;
     color: ${(props) => props.hoverColor || "#fff"} !important;
     border: ${(props) => props.hoverBorder || "none"} !important;
+  
+  }
+  @media (max-width: 768px) {
+    width: ${(props) => props.mobileWidth || ""};
+    height: ${(props) => props.mobileHeight || ""};
+    font-size: ${(props) => props.mobileFontSize || "0.8rem"};
   }
 `;
 export const Text = styled.span`
@@ -27,11 +33,23 @@ font-weight: ${(props) => props.fontWeight || "#000000"};
 width: ${(props) => props.width || "100%"};
 text-align: ${(props) => props.textAlign || "left"};
 cursor: ${(props) => props.cursor || ""};
+margin: ${(props) => props.margin || "0"};
+white-space: ${(props) => props.whiteSpace || "nowrap"};
+&:hover {
+  background: ${(props) =>
+    props.hoverbackground || ""} !important;
+  color: ${(props) => props.hoverColor || ""} !important;
+  border: ${(props) => props.hoverBorder || ""} !important;
 
+}
 @media (max-width: 1000px) {
- text-align:center;
+ text-align:${(props) => props.mobileTextAlign || "left"};
+ display: ${(props) => props.mobileDisplay || ""};
  width: ${(props) => props.mobileWidth || "100%"};
  font-size:${(props) => props.mobileFontSize || "1rem"}};
+ white-space: ${(props) => props.mobileWhiteSpace || "normal"};
+ margin: ${(props) => props.mobileMargin || "0"};
+ gap: ${(props) => props.mobileGap || "0"};
 }
 `;
 export const Flex = styled.div`
@@ -44,6 +62,7 @@ export const Flex = styled.div`
   flex-wrap: ${(props) => props.wrap || ""};
   width: ${(props) => props.width || "100%"};
   margin: ${(props) => props.margin || "0px"};
+  align-self: ${(props) => props.alignSelf || ""};
   height: ${(props) => props.height || ""};
   padding: ${(props) => props.padding || "0px"};
   color: ${(props) => props.color || "#fff"};
@@ -59,5 +78,7 @@ export const Flex = styled.div`
     height: ${(props) => props.heightMobile || ""};
     padding: ${(props) => props.paddingMobile || "0px"};
     font-size: ${(props) => props.fontSizeMobile || "0.8rem"};
+    background: ${(props) => props.backgroundMobile || ""};
+    flex-wrap: ${(props) => props.wrapMobile || ""};
   }
 `;

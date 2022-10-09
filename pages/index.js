@@ -7,24 +7,32 @@ import generator from "../assets/generator.jpeg";
 import { GiCheckMark } from "react-icons/gi";
 import { BsTools } from "react-icons/bs";
 import { GoGlobe } from "react-icons/go";
+import { BiPhoneCall } from "react-icons/bi";
+import { GoMail } from "react-icons/go";
 import { FaWpforms } from "react-icons/fa";
 import { BiBuildings } from "react-icons/bi";
 import { FaPencilRuler } from "react-icons/fa";
 import { FaUsers } from "react-icons/fa";
 import { HiUserGroup } from "react-icons/hi";
-import { AiOutlineMail } from "react-icons/ai";
-import { BsFillTelephoneFill } from "react-icons/bs";
 import { RiUserSettingsLine } from "react-icons/ri";
 import AboutUs from "../assets/aboutus.jpg";
 import generatorSingle from "../assets/generatorSingle.jpg";
 import switchGear from "../assets/switchgear.jpg";
-
+import hero from "../assets/hero.png";
 import otherProducts from "../assets/otherProducts.jpg";
 import { CgArrowLongRight } from "react-icons/cg";
 import { Flex, Text, Button } from "../components/Base/";
 import HomeSlider from "../components/HomeSlider";
 
-const HeaderContainer = styled.div``;
+const HeaderContainer = styled.div`
+  background: url(${hero.src});
+  background-size: cover;
+  height: 90vh;
+  width: 100vw;
+  @media (max-width: 1000px) {
+    height: 53vh;
+  }
+`;
 const IconTextContainer = styled.div`
   display: flex;
   flex-direction: row;
@@ -32,17 +40,13 @@ const IconTextContainer = styled.div`
   justify-content: start;
   margin-bottom: 1rem;
 `;
-const VolvaContainer = styled.div`
-  height: 15rem;
-  padding-left: 4rem;
-  padding-top: 4rem;
-`;
 const AboutUsContainer = styled.div`
   display: flex;
   align-item: center;
   justify-content: center;
   width: 100%;
   gap: 2.2rem;
+  margin-top: -15rem;
   @media (max-width: 1000px) {
     flex-direction: column;
     padding: 1rem;
@@ -125,13 +129,13 @@ const Card = styled.div`
   justify-content: start;
   flex-direction: column;
   width: 390px;
-  height: 562px;
+  height: 482px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   margin-bottom: 1rem;
 `;
 const CardButton = styled("div")`
   margin-top: auto;
-  height: 3.5rem;
+  height: 3rem;
   line-height: 3.5rem;
   background: rgb(244, 245, 244);
   width: 100%;
@@ -171,11 +175,20 @@ const AboutSectionInsideContainer = styled.div`
   width: 80%;
   height: 80%;
   padding: 4rem 0;
+  @media (max-width: 768px) {
+    width: 95%;
+    height: 95%;
+    padding: 1rem 0;
+  }
 `;
 const AboutSectionDescription = styled.div`
   background: transparent;
   height: 100%;
   width: 70%;
+  @media (max-width: 768px) {
+    width: 100%;
+    padding-top:2rem;
+  }
 `;
 const HospitalitySection = styled.div`
   min-height: 20rem;
@@ -191,7 +204,7 @@ const HeaderContent = styled.div`
   padding-left: 6rem;
   padding-top: 5rem;
   @media (max-width: 1000px) {
-    padding: 3rem;
+    padding: 5rem 1rem;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -207,9 +220,14 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <HeaderContainer className={styles.Section}>
+      <HeaderContainer>
         <HeaderContent>
-          <Text fontSize={"16px"} color="rgb(253,201,55)" fontWeight="bold">
+          <Text
+            mobileDisplay="none"
+            fontSize={"16px"}
+            color="rgb(253,201,55)"
+            fontWeight="bold"
+          >
             ---Welcome to Nileco---
           </Text>
           <Text
@@ -219,10 +237,16 @@ export default function Home() {
             width="50%"
             mobileWidth="100%"
             mobileFontSize={"1.5rem"}
+            hoverbackground="transparent"
           >
             We are leader in power and technology
           </Text>
-          <Text fontSize={"18px"} color="white" fontWeight="bold">
+          <Text
+            mobileFontSize={"0.7rem"}
+            fontSize={"18px"}
+            color="white"
+            fontWeight="bold"
+          >
             We offer the most reliable power services in the country
           </Text>
           <HeaderButtonContainer>
@@ -231,6 +255,10 @@ export default function Home() {
               color="white"
               border="none"
               height="3rem"
+              mobileHeight="2.5rem"
+              mobileWidth="8rem"
+              fontSize="1rem"
+              mobileFontSize="0.7rem"
             >
               {" "}
               About Us
@@ -240,6 +268,10 @@ export default function Home() {
               color="rgb(1,44,90)"
               border="1px solid rgb(1,44,90)"
               height="3rem"
+              mobileHeight="2.5rem"
+              mobileWidth="8rem"
+              fontSize="1rem"
+              mobileFontSize="0.7rem"
             >
               {" "}
               Contact Us
@@ -250,7 +282,7 @@ export default function Home() {
       <HomeSlider />
 
       <AboutUsContainer>
-        <Image src={generator} width={550} height={500} alt="generator" />
+        <Image src={generator} width={550} height={650} alt="generator" />
         <Description>
           <Text fontSize="1.1rem" color="rgb(136,142,148)">
             About Us
@@ -258,12 +290,18 @@ export default function Home() {
           <Text
             fontWeight="bold"
             fontSize="2.2rem"
+            mobileFontSize="2.2rem"
             color="rgb(1,44,90)"
             width="100%"
           >
             We Have Everything That You Needed
           </Text>
-          <Text fontSize="1.1rem" color="rgb(136,142,148)" width="100%">
+          <Text
+            mobileFontSize="1rem"
+            fontSize="0.9rem"
+            color="rgb(136,142,148)"
+            width="100%"
+          >
             Nileco Electric Equipment Manufacturing PLC is your ultimate
             solution provider of generators, switchgears, and electrical spare
             parts.
@@ -277,14 +315,14 @@ export default function Home() {
             Industrial mercantile and feudal economies.ThDonec atnissim quis
             neque inter dum, quis porta sem ng the Industria
           </Text>
-          <Flex justifyContent="space-between">
+          <Flex justifyContent="space-between" directionMobile="row">
             <Flex
               margin="10px 0 0 0"
               direction="column"
               alignItems="left"
               gap="3px"
             >
-              <BsFillTelephoneFill color="rgb(253,201,55)" fontSize="2rem" />
+              <BiPhoneCall color="rgb(253,201,55)" fontSize="2rem" />
               <span style={{ fontSize: "1.1rem", color: "#000" }}>
                 Phone Number
               </span>
@@ -301,18 +339,39 @@ export default function Home() {
 
             <div
               style={{
-                borderLeft: "1px solid rgb(1,44,90)",
+                borderLeft: "1px solid rgb(1,44,90 , 0.2)",
                 height: "100px",
                 margin: "0 3rem",
+                position: "relative",
               }}
-            ></div>
+            >
+              <div
+                style={{
+                  position: "absolute",
+                  fontSize: "0.9rem",
+                  height: "30px",
+                  width: "30px",
+                  background: "#fff",
+                  borderRadius: "50%",
+                  color: "rgb(1,44,90)",
+                  top: "30%",
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  left: "-14px",
+                  boxShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)",
+                }}
+              >
+                or
+              </div>
+            </div>
             <Flex
               margin="10px 0 0 0"
               direction="column"
               alignItems="left"
               gap="3px"
             >
-              <AiOutlineMail color="rgb(253,201,55)" fontSize="2rem" />
+              <GoMail color="rgb(253,201,55)" fontSize="2rem" />
               <span style={{ fontSize: "1.1rem", color: "#000" }}>
                 Email Address
               </span>
@@ -333,10 +392,21 @@ export default function Home() {
         <DeliverSectionDescription>
           {" "}
           <Flex direction="column">
-            <Text fontSize="14px" color="#fff" style={{ width: "100%" }}>
+            <Text
+              fontWeight="bold"
+              fontSize="14px"
+              color="#fff"
+              style={{ width: "100%" }}
+            >
               WE DELIVER ON TIME ,ALL THE TIME
             </Text>
-            <Text fontSize="30px" color="#fff" style={{ width: "100%" }}>
+            <Text
+              fontSize="37px"
+              mobileFontSize="37px"
+              fontWeight="bold"
+              color="#fff"
+              style={{ width: "100%" }}
+            >
               Great Experience For Building Construction & Outdoor Projects
             </Text>
             <Flex justifyContent="start">
@@ -390,53 +460,56 @@ export default function Home() {
             <hr style={{ width: "100%", opacity: "0.2" }} />
             <Flex direction="column">
               <Flex>
-                <Flex direction="column">
-                  <Flex>
+              <Flex direction="column">
+                  <Flex directionMobile="row" justifyContentMobile="start">
                     <BsTools
-                      style={{ color: "rgb(255,199,44)", fontSize: "30px" }}
+                      style={{ color: "rgb(255,199,44)", fontSize: "40px" }}
                     />
-                    Product Listings
+                    Product Listing
                   </Flex>
                   <Text
                     style={{
-                      fontSize: "1.9rem",
+                      fontSize: "2rem",
                       color: "white",
                       fontWeight: "bold",
                     }}
+                    mobileMargin="-1.4rem 0 0 6rem"
                   >
                     160
                   </Text>
                 </Flex>
                 <Flex direction="column">
-                  <Flex>
+                  <Flex directionMobile="row" justifyContentMobile="start">
                     <GoGlobe
-                      style={{ color: "rgb(255,199,44)", fontSize: "30px" }}
+                      style={{ color: "rgb(255,199,44)", fontSize: "40px" }}
                     />
                     Certifications & Award
                   </Flex>
                   <Text
                     style={{
-                      fontSize: "1.9rem",
+                      fontSize: "2rem",
                       color: "white",
                       fontWeight: "bold",
                     }}
+                    mobileMargin="-1.4rem 0 0 6rem"
                   >
                     80
                   </Text>
                 </Flex>
                 <Flex direction="column">
-                  <Flex>
+                  <Flex directionMobile="row" justifyContentMobile="start">
                     <FaWpforms
-                      style={{ color: "rgb(255,199,44)", fontSize: "30px" }}
+                      style={{ color: "rgb(255,199,44)", fontSize: "40px" }}
                     />
                     Brand Partners
                   </Flex>
                   <Text
                     style={{
-                      fontSize: "1.9rem",
+                      fontSize: "2rem",
                       color: "white",
                       fontWeight: "bold",
                     }}
+                    mobileMargin="-1.4rem 0 0 6rem"
                   >
                     60
                   </Text>
@@ -503,10 +576,10 @@ export default function Home() {
             </Text>
             <Text
               style={{
-                fontSize: "1rem",
+                fontSize: "0.9rem",
                 textAlign: "left",
                 color: "#858585",
-                width: "100%",
+                width: "90%",
                 marginTop: "20px",
                 marginLeft: "10px",
               }}
@@ -526,7 +599,12 @@ export default function Home() {
               >
                 Learn More
               </Text>
-              <Flex width="30%" justifyContent="center">
+              <Flex
+                background="rgb(255,199,44)"
+                widthMobile="30%"
+                width="30%"
+                justifyContent="center"
+              >
                 <CgArrowLongRight style={{ fontSize: "30px", color: "#fff" }} />
               </Flex>
             </CardButton>
@@ -554,10 +632,10 @@ export default function Home() {
             </Text>
             <Text
               style={{
-                fontSize: "1rem",
+                fontSize: "0.9rem",
                 textAlign: "left",
                 color: "#858585",
-                width: "100%",
+                width: "90%",
                 marginTop: "20px",
                 marginLeft: "10px",
               }}
@@ -577,7 +655,12 @@ export default function Home() {
               >
                 Learn More
               </Text>
-              <Flex width="30%" justifyContent="center">
+              <Flex
+                background="rgb(255,199,44)"
+                widthMobile="30%"
+                width="30%"
+                justifyContent="center"
+              >
                 <CgArrowLongRight style={{ fontSize: "30px", color: "#fff" }} />
               </Flex>
             </CardButton>
@@ -604,10 +687,10 @@ export default function Home() {
             </Text>
             <Text
               style={{
-                fontSize: "1rem",
+                fontSize: "0.9rem",
                 textAlign: "left",
                 color: "#858585",
-                width: "100%",
+                width: "90%",
                 marginTop: "20px",
                 marginLeft: "10px",
               }}
@@ -626,7 +709,12 @@ export default function Home() {
               >
                 Learn More
               </Text>
-              <Flex width="30%" justifyContent="center">
+              <Flex
+                background="rgb(255,199,44)"
+                widthMobile="30%"
+                width="30%"
+                justifyContent="center"
+              >
                 <CgArrowLongRight style={{ fontSize: "30px", color: "#fff" }} />
               </Flex>
             </CardButton>
@@ -638,16 +726,15 @@ export default function Home() {
           justifyContent="center"
           background="linear-gradient(90deg, rgb(255,199,44) 375px, rgba(0, 48, 100, 1) 0, rgba(0, 48, 100, 1) 70%);"
           width="100%"
+          backgroundMobile="linear-gradient(180deg, rgb(255,199,44) 475px, rgba(0, 48, 100, 1) 0, rgba(0, 48, 100, 1) 70%);"
           height="100%"
         >
           <AboutSectionInsideContainer>
             <Flex justifyContent="space-between">
-              <Image src={AboutUs} width={700} height={712} alt="Volva image" />
+              <Image src={AboutUs} width={700} height={680} alt="Volva image" />
               <AboutSectionDescription>
-                <Flex direction="column" justifyContent="center">
-                  <Text
-                    style={{ fontSize: "1.5rem", width: "100%", color: "#fff" }}
-                  >
+                <Flex direction="column" justifyContent="center" justifyContentMobile="start" alignItemsMobile="">
+                  <Text fontSize="1.5rem" width="100%" color="#fff">
                     ABOUT US
                   </Text>
                   <Text
@@ -674,30 +761,19 @@ export default function Home() {
                     justifyContent="center"
                     alignItems="center"
                     padding="0px 20px"
+                    directionMobile="row"
                   >
                     <BiBuildings
                       style={{ color: "rgb(255,199,44)", fontSize: "5rem" }}
                     />
                     <Flex direction="column" width="250px" gap="0px">
-                      <span
-                        style={{
-                          fontSize: "2.5rem",
-                          color: "white",
-                          fontWeight: "bold",
-                        }}
-                      >
+                    <Text mobileFontSize="2.5rem" fontSize="2.5rem" color="white" fontWeight="bold">
                         150
-                      </span>
+                      </Text>
 
-                      <span
-                        style={{
-                          fontSize: "0.9rem",
-                          color: "white",
-                          fontWeight: "bold",
-                        }}
-                      >
-                        Worker Employed
-                      </span>
+                      <Text fontSize="0.9rem" color="white" fontWeight="bold">
+                       Workers Employed
+                      </Text>
                     </Flex>
                   </Flex>
                   <Flex
@@ -707,30 +783,19 @@ export default function Home() {
                     justifyContent="center"
                     alignItems="center"
                     padding="0px 20px"
+                    directionMobile="row"
                   >
                     <FaPencilRuler
                       style={{ color: "rgb(255,199,44)", fontSize: "5rem" }}
                     />
                     <Flex direction="column" width="250px" gap="0px">
-                      <span
-                        style={{
-                          fontSize: "2.5rem",
-                          color: "white",
-                          fontWeight: "bold",
-                        }}
-                      >
+                    <Text mobileFontSize="2.5rem" fontSize="2.5rem" color="white" fontWeight="bold">
                         11
-                      </span>
+                      </Text>
 
-                      <span
-                        style={{
-                          fontSize: "0.9rem",
-                          color: "white",
-                          fontWeight: "bold",
-                        }}
-                      >
+                      <Text fontSize="0.9rem" color="white" fontWeight="bold">
                         Years of Experience
-                      </span>
+                      </Text>
                     </Flex>
                   </Flex>
                   <Flex
@@ -740,12 +805,13 @@ export default function Home() {
                     justifyContent="center"
                     alignItems="center"
                     padding="10px 20px"
+                    directionMobile="row"
                   >
                     <FaUsers
                       style={{ color: "rgb(255,199,44)", fontSize: "5rem" }}
                     />
                     <Flex direction="column" width="250px" gap="0px">
-                      <Text fontSize="2.5rem" color="white" fontWeight="bold">
+                      <Text mobileFontSize="2.5rem" fontSize="2.5rem" color="white" fontWeight="bold">
                         485
                       </Text>
 
@@ -761,30 +827,19 @@ export default function Home() {
                     justifyContent="center"
                     alignItems="center"
                     padding="0px 20px"
+                    directionMobile="row"
                   >
                     <RiUserSettingsLine
                       style={{ color: "rgb(255,199,44)", fontSize: "5rem" }}
                     />
-                    <Flex direction="column" width="250px" gap="0px">
-                      <span
-                        style={{
-                          fontSize: "2.5rem",
-                          color: "white",
-                          fontWeight: "bold",
-                        }}
-                      >
+                    <Flex direction="column" width="250px" gap="0px" >
+                    <Text mobileFontSize="2.5rem" fontSize="2.5rem" color="white" fontWeight="bold">
                         500
-                      </span>
+                      </Text>
 
-                      <span
-                        style={{
-                          fontSize: "0.9rem",
-                          color: "white",
-                          fontWeight: "bold",
-                        }}
-                      >
-                        Projects Served
-                      </span>
+                      <Text fontSize="0.9rem" color="white" fontWeight="bold">
+                        Project Served
+                      </Text>
                     </Flex>
                   </Flex>
                 </Flex>
@@ -802,7 +857,7 @@ export default function Home() {
               fontSize: "2.7rem",
               textAlign: "center",
               fontWeight: "bold",
-              width: "70%",
+              width: "90%",
             }}
           >
             Trusted In Construction, Hospitality, and other engineering projects
@@ -813,23 +868,27 @@ export default function Home() {
               fontSize: "1.0rem",
               textAlign: "center",
               fontWeight: "bold",
-              width: "70%",
+              width: "90%",
             }}
           >
             Our projects are fully tested, background checked, license validated
             and insured with a 100% satisfaction guarantee.
           </Text>
-          <Flex justifyContent="center">
-            <Button width="15rem" height="3rem" background="rgb(255,199,44)">
+          <Flex justifyContent="center" margin="0 0 3rem 0">
+            <Button width="11rem" height="3rem" background="rgb(255,199,44)">
               Visit our Office
             </Button>
             <Button
               width="16rem"
               height="3rem"
-              background=" rgba(0, 48, 100, 1)"
+              background="transparent"
+              color="rgba(0, 48, 100, 1)"
+              border="2px solid rgba(0, 48, 100, 1)"
+              mobileFontSize="0.9rem"
+              fontSize="0.9rem"
             >
-              <BsFillTelephoneFill
-                style={{ color: "rgb(255,199,44)", fontSize: "1.2rem" }}
+              <BiPhoneCall
+                style={{ color: "rgba(0, 48, 100, 1)", fontSize: "1.2rem" }}
               />
               Call Us at +251977805757
             </Button>

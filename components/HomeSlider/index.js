@@ -31,7 +31,7 @@ const ImageContainer = styled(motion.div)`
   pointer-events: none;
   padding: 1rem;
   min-width: 15rem;
-  min-height: 16rem;
+  min-height: 8rem;
 `;
 
 export default function HomeSlider() {
@@ -78,8 +78,8 @@ export default function HomeSlider() {
                 key={index}
                 alt="images"
                 src={item}
-                width={410}
-                height={430}
+                width={110}
+                height={130}
                 priority
               />
             </ImageContainer>

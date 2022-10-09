@@ -187,7 +187,7 @@ const AboutSectionDescription = styled.div`
   width: 70%;
   @media (max-width: 768px) {
     width: 100%;
-    padding-top:2rem;
+    padding-top: 2rem;
   }
 `;
 const HospitalitySection = styled.div`
@@ -281,7 +281,10 @@ export default function Home() {
           </HeaderButtonContainer>
         </HeaderContent>
       </HeaderContainer>
-      <HomeSlider />
+      <Flex>
+        {" "}
+        <HomeSlider />
+      </Flex>
 
       <AboutUsContainer>
         <Image src={generator} width={550} height={650} alt="generator" />
@@ -462,7 +465,7 @@ export default function Home() {
             <hr style={{ width: "100%", opacity: "0.2" }} />
             <Flex direction="column">
               <Flex>
-              <Flex direction="column">
+                <Flex direction="column">
                   <Flex directionMobile="row" justifyContentMobile="start">
                     <BsTools
                       style={{ color: "rgb(255,199,44)", fontSize: "40px" }}
@@ -735,7 +738,12 @@ export default function Home() {
             <Flex justifyContent="space-between">
               <Image src={AboutUs} width={700} height={680} alt="Volva image" />
               <AboutSectionDescription>
-                <Flex direction="column" justifyContent="center" justifyContentMobile="start" alignItemsMobile="">
+                <Flex
+                  direction="column"
+                  justifyContent="center"
+                  justifyContentMobile="start"
+                  alignItemsMobile=""
+                >
                   <Text fontSize="1.5rem" width="100%" color="#fff">
                     ABOUT US
                   </Text>
@@ -769,12 +777,17 @@ export default function Home() {
                       style={{ color: "rgb(255,199,44)", fontSize: "5rem" }}
                     />
                     <Flex direction="column" width="250px" gap="0px">
-                    <Text mobileFontSize="2.5rem" fontSize="2.5rem" color="white" fontWeight="bold">
+                      <Text
+                        mobileFontSize="2.5rem"
+                        fontSize="2.5rem"
+                        color="white"
+                        fontWeight="bold"
+                      >
                         150
                       </Text>
 
                       <Text fontSize="0.9rem" color="white" fontWeight="bold">
-                       Workers Employed
+                        Workers Employed
                       </Text>
                     </Flex>
                   </Flex>
@@ -791,7 +804,12 @@ export default function Home() {
                       style={{ color: "rgb(255,199,44)", fontSize: "5rem" }}
                     />
                     <Flex direction="column" width="250px" gap="0px">
-                    <Text mobileFontSize="2.5rem" fontSize="2.5rem" color="white" fontWeight="bold">
+                      <Text
+                        mobileFontSize="2.5rem"
+                        fontSize="2.5rem"
+                        color="white"
+                        fontWeight="bold"
+                      >
                         11
                       </Text>
 
@@ -813,7 +831,12 @@ export default function Home() {
                       style={{ color: "rgb(255,199,44)", fontSize: "5rem" }}
                     />
                     <Flex direction="column" width="250px" gap="0px">
-                      <Text mobileFontSize="2.5rem" fontSize="2.5rem" color="white" fontWeight="bold">
+                      <Text
+                        mobileFontSize="2.5rem"
+                        fontSize="2.5rem"
+                        color="white"
+                        fontWeight="bold"
+                      >
                         485
                       </Text>
 
@@ -834,8 +857,13 @@ export default function Home() {
                     <RiUserSettingsLine
                       style={{ color: "rgb(255,199,44)", fontSize: "5rem" }}
                     />
-                    <Flex direction="column" width="250px" gap="0px" >
-                    <Text mobileFontSize="2.5rem" fontSize="2.5rem" color="white" fontWeight="bold">
+                    <Flex direction="column" width="250px" gap="0px">
+                      <Text
+                        mobileFontSize="2.5rem"
+                        fontSize="2.5rem"
+                        color="white"
+                        fontWeight="bold"
+                      >
                         500
                       </Text>
 
@@ -897,11 +925,7 @@ export default function Home() {
           </Flex>
         </Flex>
       </HospitalitySection>
-      <div
-      style={{height:"30rem"}}
-      >
-
-      </div>
+      <div style={{ height: "30rem" }}></div>
     </>
   );
 }

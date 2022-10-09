@@ -17,11 +17,12 @@ import Image from "next/image";
 
 const MainContainer = styled(motion.div)`
   position: relative;
-  height: 28rem;
+  height: 13rem;
+  background: #fff;
   width: 100%;
   cursor: grab;
   overflow: hidden;
-  background: #fff;
+  margin-bottom: 15rem;
 `;
 const Container = styled(motion.div)`
   display: flex;

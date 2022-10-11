@@ -17,16 +17,16 @@ import Search from "antd/lib/input/Search";
 const { Link } = antDAnchor;
 
 const Layout = styled(antDLayout)`
-background: transparent !important;
-position: sticky !important;
-top: 0px !important;
-display: flex !important;
-align-items: center !important;
-justify-content: center !important;
-z-index: 100 !important;
-@media (max-width: 768px) {
-  position: relative !important;
-}
+  background: transparent !important;
+  position: sticky !important;
+  top: 0px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  z-index: 100 !important;
+  @media (max-width: 768px) {
+    position: relative !important;
+  }
 `;
 const Popover = styled(antDPopover)`
   &.ant-popover-title {
@@ -165,19 +165,23 @@ const NavBar = () => {
         <NavBarContainer direction="column" style={{ gap: "0.7rem" }}>
           <Image src={logo} alt="Website logo image" width={180} height={45} />
           <Links href="/">
-            <StyledButton  onClick={onClose}>Home</StyledButton>
+            <StyledButton onClick={onClose}>Home</StyledButton>
           </Links>
           <Links href="/about">
-            <StyledButton  onClick={onClose}>About Us</StyledButton>
+            <StyledButton onClick={onClose}>About Us</StyledButton>
           </Links>
           <Popover content={content} title={text}>
-            <StyledButton  onClick={onClose} >Products</StyledButton>
+            <StyledButton onClick={onClose}>Products</StyledButton>
           </Popover>
-          <Links href="/service" >
+          <Links href="/service">
             <StyledButton onClick={onClose}>Service</StyledButton>
-            </Links>
-          <StyledButton  onClick={onClose}>Gallery</StyledButton>
-          <StyledButton  onClick={onClose}>Contact Us</StyledButton>
+          </Links>
+
+          <StyledButton onClick={onClose}>Gallery</StyledButton>
+
+          <Links href="/contact">
+            <StyledButton onClick={onClose}>Contact Us</StyledButton>
+          </Links>
         </NavBarContainer>
       </Drawer>
       <Credentials style={{ display: "flex", alignItems: "center" }}>
@@ -213,9 +217,7 @@ const NavBar = () => {
           </Anchor>
         </LinkContainer>
       </Credentials>
-      <Layout
-   
-      >
+      <Layout>
         <NavBarContainer>
           <HamburgerMenu onClick={showDrawer}>
             <GiHamburgerMenu style={{ fontSize: "2rem" }} />
@@ -240,11 +242,13 @@ const NavBar = () => {
               <StyledButton>Products</StyledButton>
             </Popover>
             <Links href="/service">
-            <StyledButton>Service</StyledButton>
+              <StyledButton>Service</StyledButton>
             </Links>
             <StyledButton>Gallery</StyledButton>
 
-            <StyledButton>Contact Us</StyledButton>
+            <Links href="/contact">
+              <StyledButton onClick={onClose}>Contact Us</StyledButton>
+            </Links>
             <Popover content={searchContent} trigger="click" placement="bottom">
               <StyledButton width="10px" padding="7px 0">
                 {" "}

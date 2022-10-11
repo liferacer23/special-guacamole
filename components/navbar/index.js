@@ -111,7 +111,7 @@ const HamburgerMenu = styled("div")`
   }
 `;
 const NavBarContainer = styled("div")`
-  width: 100%;
+  width: 100vw;
   display: flex;
   height: 6rem;
   align-items: center;
@@ -133,20 +133,20 @@ const SearchContainer = styled("div")`
     display: inline;
   }
 `;
-const content = (
-  <div>
-    <p>Generators</p>
-    <p>Switch Gears</p>
-    <p>Other Products</p>
-  </div>
-);
+
 const searchContent = <Search placeholder="input search text" enterButton />;
 const text = <span>Products</span>;
 //create a hamburger menu for mobile view
 
 const NavBar = () => {
   const [open, setOpen] = useState(false);
-
+  const content = (
+    <div>
+      <p>Generators</p>
+      <p>Switch Gears</p>
+      <p>Other Products</p>
+    </div>
+  );
   const showDrawer = () => {
     setOpen(true);
   };
@@ -165,17 +165,19 @@ const NavBar = () => {
         <NavBarContainer direction="column" style={{ gap: "0.7rem" }}>
           <Image src={logo} alt="Website logo image" width={180} height={45} />
           <Links href="/">
-            <StyledButton>Home</StyledButton>
+            <StyledButton  onClick={onClose}>Home</StyledButton>
           </Links>
           <Links href="/about">
-            <StyledButton>About Us</StyledButton>
+            <StyledButton  onClick={onClose}>About Us</StyledButton>
           </Links>
           <Popover content={content} title={text}>
-            <StyledButton>Products</StyledButton>
+            <StyledButton  onClick={onClose} >Products</StyledButton>
           </Popover>
-          <StyledButton>Service</StyledButton>
-          <StyledButton>Gallery</StyledButton>
-          <StyledButton>Contact Us</StyledButton>
+          <Links href="/service" >
+            <StyledButton onClick={onClose}>Service</StyledButton>
+            </Links>
+          <StyledButton  onClick={onClose}>Gallery</StyledButton>
+          <StyledButton  onClick={onClose}>Contact Us</StyledButton>
         </NavBarContainer>
       </Drawer>
       <Credentials style={{ display: "flex", alignItems: "center" }}>
@@ -237,9 +239,9 @@ const NavBar = () => {
             <Popover content={content}>
               <StyledButton>Products</StyledButton>
             </Popover>
-
+            <Links href="/service">
             <StyledButton>Service</StyledButton>
-
+            </Links>
             <StyledButton>Gallery</StyledButton>
 
             <StyledButton>Contact Us</StyledButton>

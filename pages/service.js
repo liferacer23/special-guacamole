@@ -58,6 +58,12 @@ const StyledDiv = styled.div`
   color: #fff;
   text-align: center;
 `;
+const FooterHeader = styled.div`
+  height: 30rem;
+  @media (max-width: 768px) {
+    height: 52rem;
+  }
+`;
 export default function services() {
   const children = [];
   for (let i = 10; i < 36; i++) {
@@ -138,6 +144,7 @@ export default function services() {
         
         </Flex>
       </Flex>
+      <FooterHeader></FooterHeader>
     </>
   );
 }

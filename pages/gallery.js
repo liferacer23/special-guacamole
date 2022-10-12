@@ -198,22 +198,22 @@ export default function gallery() {
           <Tabs defaultActiveKey="1">
             <Tabs.TabPane tab=" Generator" key="1">
               <ImageWrapper style={{marginLeft:"2rem"}}>
-                {GeneratorImages.map((image) => (
-                  <Image src={image.src} width="300px" height="300px" />
+                {GeneratorImages.map((image,index) => (
+                  <Image key={index}  src={image.src} width="300px" height="300px"  alt="generator image"/>
                 ))}
               </ImageWrapper>
             </Tabs.TabPane>
             <Tabs.TabPane tab="Switch Gears" key="2">
             <ImageWrapper style={{marginLeft:"2rem"}}>
-                {SwitchGearImages.map((image) => (
-                  <Image src={image.src} width="300px" height="300px" />
+                {SwitchGearImages.map((image,index) => (
+                  <Image  key={index} src={image.src} width="300px" height="300px"  alt=" switchgear image"/>
                 ))}
               </ImageWrapper>
             </Tabs.TabPane>
             <Tabs.TabPane tab="Spare Parts" key="3">
             <ImageWrapper style={{marginLeft:"2rem"}}>
-                {SparePartImages.map((image) => (
-                  <Image src={image.src} width="300px" height="300px" />
+                {SparePartImages.map((image,index) => (
+                  <Image key={index}  src={image.src} width="300px" height="300px"  alt="sparePart Image"/>
                 ))}
               </ImageWrapper>
             </Tabs.TabPane>

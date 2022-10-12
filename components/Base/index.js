@@ -58,6 +58,7 @@ export const Flex = styled.div`
   flex-direction: ${(props) => props.direction || "row"};
   align-items: ${(props) => props.alignItems || "center"};
   justify-content: ${(props) => props.justifyContent || "start"};
+  border-radius: ${(props) => props.borderRadius || "0"};
   gap: ${(props) => props.gap || "10px"};
   flex-wrap: ${(props) => props.wrap || ""};
   width: ${(props) => props.width || "100%"};

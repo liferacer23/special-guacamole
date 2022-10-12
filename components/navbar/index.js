@@ -244,8 +244,9 @@ const NavBar = () => {
             <Links href="/service">
               <StyledButton>Service</StyledButton>
             </Links>
+            <Links href="/gallery">
             <StyledButton>Gallery</StyledButton>
-
+            </Links>
             <Links href="/contact">
               <StyledButton onClick={onClose}>Contact Us</StyledButton>
             </Links>

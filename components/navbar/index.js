@@ -29,6 +29,11 @@ const Layout = styled(antDLayout)`
   }
 `;
 const Popover = styled(antDPopover)`
+&.ant-popover > .ant-popover-content > .ant-popover-inner-content {
+  padding: 0px 0px !important;
+  color: rgba(0, 0, 0, 0.85);
+}
+
   &.ant-popover-title {
     display: none !important;
   }
@@ -78,7 +83,7 @@ const StyledButton = styled(Button)`
   font-size: 14px !important;
   padding: ${(props) => props.padding || ""} !important;
   &:hover {
-    color: #ffff00 !important;
+    color: rgb(255, 199, 44) !important;
     background: transparent !important;
     font-weight: bold !important;
   }
@@ -134,6 +139,29 @@ const SearchContainer = styled("div")`
   }
 `;
 
+const Content = styled("span")`
+display: flex;
+flex-direction: column;
+align-items: start;
+justify-content: start;
+width:180px;
+padding:0px;
+background:transparent;
+`;
+const ContentItem = styled("div")`
+display: flex;
+align-items: center;
+justify-content: start;
+cursor: pointer;
+padding: 0rem 0.5rem;
+margin: 0rem -1rem;
+width:150px;
+height: 40px;
+
+&:hover{
+  border-left: 3px solid rgb(255, 199, 44);
+}
+`;
 const searchContent = <Search placeholder="input search text" enterButton />;
 const text = <span>Products</span>;
 //create a hamburger menu for mobile view
@@ -141,11 +169,17 @@ const text = <span>Products</span>;
 const NavBar = () => {
   const [open, setOpen] = useState(false);
   const content = (
-    <div>
-      <p>Generators</p>
-      <p>Switch Gears</p>
-      <p>Other Products</p>
-    </div>
+    <Content>
+      <Links href='/products/generators'>
+      <ContentItem>Generators</ContentItem>
+      </Links>
+      <Links href='/products/switchgears'>
+      <ContentItem>Switch Gears</ContentItem>
+      </Links>
+      <Links href='/products/other'>
+      <ContentItem>Other Products</ContentItem>
+      </Links>
+    </Content>
   );
   const showDrawer = () => {
     setOpen(true);

@@ -79,8 +79,8 @@ text-align: center;
 `;
 const FooterHeader = styled.div`
 height: 30rem;
-@media (max-width: 768px) {
-  height: 52rem;
+@media (max-width: 1000px) {
+  display: none;
 }
 `;
 export default function contact() {

@@ -1,11 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import { Flex, Text, Button } from "../components/Base";
 import { AiOutlineHome } from "react-icons/ai";
+import antDModal from "antd/lib/modal";
 import Link from "next/link";
 import titleBar from "../assets/titlebar-bg.jpg";
+
 import Head from "next/head";
-import Image from "next/image";
+import nextImage from "next/image";
 import antDTabs from "antd/lib/tabs";
 import generator1 from "../assets/generators/generator6.jpg";
 import generator2 from "../assets/generators/generator5.jpg";
@@ -23,17 +25,28 @@ import generator13 from "../assets/generators/generator1.jpg";
 import generator14 from "../assets/generators/rental.jpg";
 import switchGear1 from "../assets/generators/generator21.jpg";
 import switchGear2 from "../assets/generators/generator20.jpg";
-import switchGear3 from "../assets/generators/generator19.jpg";
-import switchGear4 from "../assets/generators/generator18.jpg";
-import switchGear5 from "../assets/generators/generator17.jpg";
+import switchGear7 from "../assets/generators/generator22.jpg";
+import switchGear8 from "../assets/generators/generator23.jpg";
+import switchGear9 from "../assets/generators/generator24.jpg";
+import switchGear10 from "../assets/generators/generator25.jpg";
+import switchGear11 from "../assets/generators/generator26.jpg";
+import switchGear12 from "../assets/generators/generator27.jpg";
+import switchGear13 from "../assets/generators/generator28.jpg";
+import switchGear14 from "../assets/generators/generator29.jpg";
 import sparePart1 from "../assets/generators/generator7.jpg";
 import sparePart2 from "../assets/generators/generator8.jpg";
-import sparePart3 from "../assets/generators/generator9.jpg";
+import sparePart4 from "../assets/generators/generator30.jpg";
+import sparePart5 from "../assets/generators/generator31.jpg";
+import sparePart6 from "../assets/generators/generator32.jpg";
+import sparePart8 from "../assets/generators/generator34.jpg";
+import sparePart10 from "../assets/generators/generator36.jpg";
+import sparePart11 from "../assets/generators/generator37.jpg";
+import sparePart12 from "../assets/generators/generator38.jpg";
 
 const Tabs = styled(antDTabs)`
-display: flex !important;
-align-items: center !important;
-justify-content: center !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
   .ant-tabs-tab {
     width: 250px;
     height: 80px;
@@ -86,15 +99,61 @@ const TabContainer = styled.div`
 const ImageWrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 0.5rem;
 `;
 const FooterHeader = styled.div`
   height: 30rem;
-  @media (max-width: 768px) {
-    height: 52rem;
+  @media (max-width: 1000px) {
+    display: none;
   }
 `;
-export default function gallery() {
+const Image = styled(nextImage)`
+  cursor: pointer !important;
+`;
+const Modal = styled(antDModal)`
+
+  .ant-modal-content {
+    width: 500px !important;
+    height: 400px !important;
+    background: transparent !important;
+    @media (max-width: 1000px) {
+      width: 100% !important
+      height: 100% !important;
+    }
+  }
+  .ant-modal-body {
+    width: 500px !important;
+    height: 400px !important;
+    background: transparent !important;
+    @media (max-width: 1000px) {
+      width: 100% !important
+      height: 100% !important;
+    }
+    padding: 0.5rem !important;
+    box-shadow: 0 0 0px 0 rgba(0, 0, 0, 0);
+  }
+  .ant-modal-close-x {
+    width: 2rem !important;
+    height: 2rem !important;
+    right: 0.5rem !important;
+    color: #fff !important;
+    font-size: 1.5rem !important;
+    margin-left: 1.5rem !important;
+  }
+  .ant-modal-footer {
+    display: none !important;
+  }
+`;
+
+export default function Gallery() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [modalImage, setModalImage] = useState("");
+  const showModal = () => {
+    setIsModalOpen(true);
+  };
+  const handleCancel = () => {
+    setIsModalOpen(false);
+  };
   const GeneratorImages = [
     generator1,
     generator2,
@@ -114,13 +173,40 @@ export default function gallery() {
   const SwitchGearImages = [
     switchGear1,
     switchGear2,
-    switchGear3,
-    switchGear4,
-    switchGear5,
+    switchGear7,
+    switchGear8,
+    switchGear9,
+    switchGear10,
+    switchGear11,
+    switchGear12,
+    switchGear13,
+    switchGear14,
   ];
-  const SparePartImages = [sparePart1, sparePart2, sparePart3];
+  const SparePartImages = [
+    sparePart1,
+    sparePart2,
+    sparePart4,
+    sparePart5,
+    sparePart6,
+
+    sparePart8,
+
+    sparePart10,
+    sparePart11,
+    sparePart12,
+  ];
   return (
     <>
+      <Modal title="" open={isModalOpen} onCancel={handleCancel}>
+        <Flex justifyContent="center">
+          <Image
+            src={modalImage}
+            width="500px"
+            height="400px"
+            alt="selected Image"
+          />
+        </Flex>
+      </Modal>
       <Head>
         <title>Gallery</title>
         <meta name="description" content="Generated by create next app" />
@@ -194,26 +280,64 @@ export default function gallery() {
             Nileco Electric Equipment Manufacturing PLC
           </Text>
         </Flex>
-        <Flex justifyContent="center">
+        <Flex
+          justifyContent="center"
+          alignItems="center"
+          alignItemsMobile="center"
+          justifyContentMobile="center"
+        >
           <Tabs defaultActiveKey="1">
             <Tabs.TabPane tab=" Generator" key="1">
-              <ImageWrapper style={{marginLeft:"2rem"}}>
-                {GeneratorImages.map((image,index) => (
-                  <Image key={index}  src={image.src} width="300px" height="300px"  alt="generator image"/>
+              <ImageWrapper style={{ marginLeft: "2rem" }}>
+                {GeneratorImages.map((image, index) => (
+                  <Image
+                    onClick={() => {
+                      setModalImage(image.src);
+                      showModal();
+                    }}
+                    style={{ pointer: "cursor" }}
+                    key={index}
+                    src={image.src}
+                    width="300px"
+                    height="280px"
+                    alt="generator image"
+                  />
                 ))}
               </ImageWrapper>
             </Tabs.TabPane>
             <Tabs.TabPane tab="Switch Gears" key="2">
-            <ImageWrapper style={{marginLeft:"2rem"}}>
-                {SwitchGearImages.map((image,index) => (
-                  <Image  key={index} src={image.src} width="300px" height="300px"  alt=" switchgear image"/>
+              <ImageWrapper style={{ marginLeft: "2rem" }}>
+                {SwitchGearImages.map((image, index) => (
+                  <Image
+                    onClick={() => {
+                      setModalImage(image.src);
+                      showModal();
+                    }}
+                    style={{ pointer: "cursor" }}
+                    key={index}
+                    src={image.src}
+                    width="300px"
+                    height="280px"
+                    alt=" switchgear image"
+                  />
                 ))}
               </ImageWrapper>
             </Tabs.TabPane>
             <Tabs.TabPane tab="Spare Parts" key="3">
-            <ImageWrapper style={{marginLeft:"2rem"}}>
-                {SparePartImages.map((image,index) => (
-                  <Image key={index}  src={image.src} width="300px" height="300px"  alt="sparePart Image"/>
+              <ImageWrapper style={{ marginLeft: "2rem" }}>
+                {SparePartImages.map((image, index) => (
+                  <Image
+                    onClick={() => {
+                      setModalImage(image.src);
+                      showModal();
+                    }}
+                    style={{ pointer: "cursor" }}
+                    key={index}
+                    src={image.src}
+                    width="300px"
+                    height="280px"
+                    alt="sparePart Image"
+                  />
                 ))}
               </ImageWrapper>
             </Tabs.TabPane>

@@ -1,12 +1,42 @@
-import React from "react";
-import Head from "next/head";
-import styled from "styled-components";
-import titleBar from "../../../assets/titlebar-bg.jpg";
-import { Flex, Text, Button } from "../../../components/Base/";
-import { AiOutlineHome } from "react-icons/ai";
+/* eslint-disable react-hooks/rules-of-hooks */
+import antDCarousel from "antd/lib/Carousel";
 import Collapse from "antd/lib/collapse";
+import Head from "next/head";
+import Image from "next/image";
 import Link from "next/link";
+import React, { useRef } from "react";
+import { AiOutlineHome } from "react-icons/ai";
+import styled from "styled-components";
+import generator from "../../../assets/generators/generator1.jpg";
+import titleBar from "../../../assets/titlebar-bg.jpg";
+import { Flex, Text } from "../../../components/Base/";
+import { LeftOutlined } from "@ant-design/icons";
+import { RightOutlined } from "@ant-design/icons";
 
+const Carousel = styled(antDCarousel)`
+  width: 50rem !important;
+  height:40rem !important;
+  @media (max-width: 1000px) {
+    width: 24rem !important;
+    height:24rem !important;
+  }
+  @media (max-width: 763px) {
+    width: 20rem !important;
+    height: 20rem !important;
+  }
+  > .slick-dots li button {
+    width: 18px;
+    height: 18px;
+    border-radius: 100%;
+  }
+  > .slick-dots li.slick-active button {
+    width: 14px;
+    height: 14px;
+    border-radius: 100%;
+    background: #808080ff;
+    border:1px solid #0002
+  }
+`;
 const text = `
   A dog is a type of domesticated animal.
   Known for its loyalty and faithfulness,
@@ -16,11 +46,11 @@ const { Panel: antDpanel } = Collapse;
 
 const Panel = styled(antDpanel)`
   width: 70rem;
-    margin-top:0.5rem;
+  margin-top: 0.5rem;
   @media (max-width: 1000px) {
     width: 24rem;
   }
-  @media (max-width:763px) {
+  @media (max-width: 763px) {
     width: 20rem;
   }
   &.ant-collapse-item-active {
@@ -57,6 +87,7 @@ const StyledDiv = styled.div`
   text-align: center;
 `;
 export default function index() {
+  const carouselRef = useRef(null);
   return (
     <>
       <Head>
@@ -176,24 +207,92 @@ export default function index() {
             <Panel header={"Perkins Generators"} key="1">
               <p>{text}</p>
             </Panel>
+          </Collapse>
+          <Collapse>
             <Panel header={"Cummins Generators"} key="2">
               <p>{text}</p>
             </Panel>
+          </Collapse>
+          <Collapse>
             <Panel header={"Diesel Generators"} key="3">
               <p>{text}</p>
             </Panel>
+          </Collapse>
+          <Collapse>
             <Panel header={"Open Diesel Generators"} key="4">
-              <p>{text}</p>
+              <Flex style={{position:'relative'}} justifyContent="center" alignItems="center" justifyContentMobile="center" alignItemsMobile="center" width="100%">
+                {" "}
+                <LeftOutlined
+                  style={{ color: "#808080", fontSize: "2rem", cursor: "pointer",position:'absolute',left:'0',zIndex:'1' }}
+                  onClick={() => {
+                    carouselRef.current.prev();
+                  }}
+                />
+                <Carousel
+                  ref={carouselRef}
+                  style={{ height: "800px", width: "100%" }}
+                >
+                  <Flex justifyContent="center">
+                    <Image
+                    style={{zIndex:"-1"}}
+                      src={generator}
+                      alt="sliderImage"
+                      height="700px"
+                      width="800px"
+                    />
+                  </Flex>
+                  <Flex justifyContent="center">
+                    <Image
+                    style={{zIndex:"-1"}}
+                      src={generator}
+                      alt="sliderImage"
+                      height="700px"
+                      width="800px"
+                    />
+                  </Flex>
+                  <Flex justifyContent="center">
+                    <Image
+                    style={{zIndex:"-1"}}
+                      src={generator}
+                      alt="sliderImage"
+                      height="700px"
+                      width="800px"
+                    />
+                  </Flex>
+                  <Flex justifyContent="center">
+                    <Image
+                      src={generator}
+                      alt="sliderImage"
+                      height="700px"
+                      width="800px"
+                    />
+                  </Flex>
+                </Carousel>
+                <RightOutlined
+                  style={{ color: "#808080", fontSize: "2rem", cursor: "pointer",position:'absolute',right:'0',zIndex:'1' }}
+                  onClick={() => {
+                    carouselRef.current.next();
+                  }}
+                />
+              </Flex>
             </Panel>
+          </Collapse>
+          <Collapse>
             <Panel header={"Canopy/Soundproof Generators"} key="5">
               <p>{text}</p>
             </Panel>
+          </Collapse>
+          <Collapse>
             <Panel header={"Super Silent Generators"} key="6">
               <p>{text}</p>
             </Panel>
+          </Collapse>
+          <Collapse>
             <Panel header={"Mobile/ Portable Type Generators"} key="7">
               <p>{text}</p>
             </Panel>
+          </Collapse>
+          <Collapse>
             <Panel header={"Light Towel Generators"} key="8">
               <p>{text}</p>
             </Panel>
@@ -203,3 +302,5 @@ export default function index() {
     </>
   );
 }
+
+// react slider component

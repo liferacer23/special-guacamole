@@ -23,7 +23,7 @@ import otherProducts from "../assets/otherProducts.jpg";
 import { CgArrowLongRight } from "react-icons/cg";
 import { Flex, Text, Button } from "../components/Base/";
 import HomeSlider from "../components/HomeSlider";
-
+import { useState,useEffect } from "react";
 const HeaderContainer = styled.div`
   background: url(${hero.src});
   background-size: cover;
@@ -222,6 +222,23 @@ const FooterHeader = styled.div`
   }
 `;
 export default function Home() {
+// let counter;
+//   const useCounter = (start, end, duration) => {
+//     const [count, setCount] = useState(start);
+//     const step = 1;
+  
+//     useEffect(() => {
+//       const timer = setInterval(() => {
+//         setCount((c) => c + step);
+//       }, 1);
+  
+//       return () => clearInterval(timer);
+//     }, [start, end, duration]);
+  
+//     counter = count;
+//   }
+//   useCounter(100, 200, 100);
+
   return (
     <>
       <Head>
@@ -512,6 +529,7 @@ export default function Home() {
                     mobileTextAlign="left"
                     mobileWidth="70%"
                   >
+               
                     80
                   </Text>
                 </Flex>
@@ -799,7 +817,7 @@ export default function Home() {
                         color="white"
                         fontWeight="bold"
                       >
-                        150
+                       500
                       </Text>
 
                       <Text fontSize="0.9rem" color="white" fontWeight="bold">
@@ -945,3 +963,6 @@ export default function Home() {
     </>
   );
 }
+
+
+

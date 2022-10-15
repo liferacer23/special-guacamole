@@ -191,7 +191,7 @@ const NavBar = () => {
   return (
     <>
       <Drawer
-        title={<Image src={logo} width={100} height={30} />}
+        title={<Image src={logo} width={100} height={30} alt="drawer image" />}
         placement="top"
         onClose={onClose}
         open={open}

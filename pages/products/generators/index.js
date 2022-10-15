@@ -1,5 +1,5 @@
 /* eslint-disable react-hooks/rules-of-hooks */
-import antDCarousel from "antd/lib/Carousel";
+import antDCarousel from "antd/lib/carousel";
 import Collapse from "antd/lib/collapse";
 import Head from "next/head";
 import Image from "next/image";

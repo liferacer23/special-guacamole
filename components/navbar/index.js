@@ -129,7 +129,7 @@ const NavBarContainer = styled("div")`
     justify-content: space-between;
     background: #fff;
     width: 100%;
-    padding: 0 2rem;
+    padding: 0 3rem 0rem 2rem;
   }
 `;
 

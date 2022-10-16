@@ -71,6 +71,7 @@ export const Flex = styled.div`
   font-size: ${(props) => props.fontSize || "0.8rem"};
   font-weight: ${(props) => props.fontWeight || "400"};
   @media (max-width: 768px) {
+    margin: ${(props) => props.marginMobile || "0px"};
     flex-direction: ${(props) => props.directionMobile || "column"};
     align-items: ${(props) => props.alignItemsMobile || "center"};
     justify-content: ${(props) => props.justifyContentMobile || "center"};

@@ -1,4 +1,3 @@
-
 import Head from "next/head";
 import styled from "styled-components";
 import Image from "next/image";
@@ -23,7 +22,7 @@ import otherProducts from "../assets/otherProducts.jpg";
 import { CgArrowLongRight } from "react-icons/cg";
 import { Flex, Text, Button } from "../components/Base/";
 import HomeSlider from "../components/HomeSlider";
-import { useState,useEffect } from "react";
+import { useState, useEffect } from "react";
 const HeaderContainer = styled.div`
   background: url(${hero.src});
   background-size: cover;
@@ -221,8 +220,23 @@ const FooterHeader = styled.div`
     display: none;
   }
 `;
+const OrDiv = styled.div`
+  position: absolute;
+  font-size: 0.9rem;
+  height: 30px;
+  width: 30px;
+  background: #fff;
+border-radius: 50%;
+color: rgb(1,44,90);
+  top: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: -14px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+`;
 export default function Home() {
-//function that increases a number every millisecond and sets it to a state
+  //function that increases a number every millisecond and sets it to a state
   const [count1, setCount1] = useState(0);
   const [count2, setCount2] = useState(0);
   const [count3, setCount3] = useState(0);
@@ -255,9 +269,16 @@ export default function Home() {
       }
     }, 100);
     return () => clearInterval(interval);
-  }, [count1,count2,count3,count4, setCount1,setCount2,setCount3,setCount4]);
-
-
+  }, [
+    count1,
+    count2,
+    count3,
+    count4,
+    setCount1,
+    setCount2,
+    setCount3,
+    setCount4,
+  ]);
 
   return (
     <>
@@ -365,7 +386,7 @@ export default function Home() {
             Industrial mercantile and feudal economies.ThDonec atnissim quis
             neque inter dum, quis porta sem ng the Industria
           </Text>
-          <Flex justifyContent="space-between" directionMobile="row" >
+          <Flex justifyContent="space-between" directionMobile="row">
             <Flex
               margin="10px 0 0 0"
               direction="column"
@@ -386,7 +407,7 @@ export default function Home() {
                 +251977805757
               </span>
             </Flex>
-            <Flex margin="0 -6rem 0 0">
+            <Flex margin="0 -6rem 0 0" marginMobile="0 0 0 0">
               {" "}
               <div
                 style={{
@@ -395,25 +416,7 @@ export default function Home() {
                   position: "relative",
                 }}
               >
-                <div
-                  style={{
-                    position: "absolute",
-                    fontSize: "0.9rem",
-                    height: "30px",
-                    width: "30px",
-                    background: "#fff",
-                    borderRadius: "50%",
-                    color: "rgb(1,44,90)",
-                    top: "30%",
-                    display: "flex",
-                    justifyContent: "center",
-                    alignItems: "center",
-                    left: "-14px",
-                    boxShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)",
-                  }}
-                >
-                  or
-                </div>
+                <OrDiv>or</OrDiv>
               </div>
             </Flex>
 
@@ -549,7 +552,6 @@ export default function Home() {
                     mobileTextAlign="left"
                     mobileWidth="70%"
                   >
-               
                     {count6}
                   </Text>
                 </Flex>
@@ -837,7 +839,7 @@ export default function Home() {
                         color="white"
                         fontWeight="bold"
                       >
-                       {count1}
+                        {count1}
                       </Text>
 
                       <Text fontSize="0.9rem" color="white" fontWeight="bold">
@@ -864,7 +866,7 @@ export default function Home() {
                         color="white"
                         fontWeight="bold"
                       >
-                       {count2}
+                        {count2}
                       </Text>
 
                       <Text fontSize="0.9rem" color="white" fontWeight="bold">
@@ -891,7 +893,7 @@ export default function Home() {
                         color="white"
                         fontWeight="bold"
                       >
-                       {count3}
+                        {count3}
                       </Text>
 
                       <Text fontSize="0.9rem" color="white" fontWeight="bold">
@@ -983,6 +985,3 @@ export default function Home() {
     </>
   );
 }
-
-
-

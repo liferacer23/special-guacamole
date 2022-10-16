@@ -5,7 +5,7 @@ import titleBar from "../assets/titlebar-bg.jpg";
 import { Flex, Text, Button } from "../components/Base";
 import { AiOutlineHome } from "react-icons/ai";
 import Progress from "antd/lib/progress";
-import Collapse from "antd/lib/collapse";
+import antDCollapse from "antd/lib/collapse";
 import commitmentImage from "../assets/About-Us-Lowerf.jpg";
 import dotBackground from "../assets/dotbackground.png";
 import Image from "next/image";
@@ -25,7 +25,13 @@ import compworkers5 from "../assets/companyWorkers/compworkers5.jpg";
 import compworkers6 from "../assets/companyWorkers/compworkers6.jpg";
 import compworkers7 from "../assets/companyWorkers/compworkers7.jpg";
 const { Option } = Select;
+const Collapse = styled(antDCollapse)`
 
+&.ant-collapse {
+  background: #fff !important;
+  
+}
+`;
 const Carousel = styled(antDCarousel)`
 width: 500px !important;
 height: 500px !important;
@@ -50,7 +56,7 @@ const text = `
 Generators don't actually create electricity. Instead, they convert mechanical or chemical energy into electrical energy. They do this by capturing the power of motion and turning it into electrical energy by forcing electrons from the external source through an electrical circuit.
 
 `;
-const { Panel: antDpanel } = Collapse;
+const { Panel: antDpanel } = antDCollapse;
 
 const Panel = styled(antDpanel)`
   width: 35rem;
@@ -413,12 +419,12 @@ const About = () => {
                     <p>{text}</p>
                   </Panel>
                   </Collapse>
-                  <Collapse>
+                  <Collapse expandIconPosition="right">
                   <Panel header={"End to End Customizable Solutions"} key="2">
                     <p>{text}</p>
                   </Panel>
                   </Collapse>
-                  <Collapse>
+                  <Collapse expandIconPosition="right">
                   <Panel
                     header={"Efficient and Expect Customer Support"}
                     key="3"

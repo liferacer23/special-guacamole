@@ -4,14 +4,20 @@ import styled from "styled-components";
 import titleBar from "../../../assets/titlebar-bg.jpg";
 import { Flex, Text, Button } from "../../../components/Base/";
 import { AiOutlineHome } from "react-icons/ai";
-import Collapse from "antd/lib/collapse";
+import antDCollapse from "antd/lib/collapse";
 import Link from "next/link";
 
 const text = `
 Generators don't actually create electricity. Instead, they convert mechanical or chemical energy into electrical energy. They do this by capturing the power of motion and turning it into electrical energy by forcing electrons from the external source through an electrical circuit.
 `;
-const { Panel: antDpanel } = Collapse;
+const { Panel: antDpanel } = antDCollapse;
+const Collapse = styled(antDCollapse)`
 
+&.ant-collapse {
+  background: #fff !important;
+  
+}
+`;
 const Panel = styled(antDpanel)`
   width: 70rem;
   margin-top: 0.5rem;

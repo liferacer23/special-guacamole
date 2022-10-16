@@ -1,6 +1,6 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 import antDCarousel from "antd/lib/carousel";
-import Collapse from "antd/lib/collapse";
+import antDCollapse from "antd/lib/collapse";
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
@@ -12,36 +12,54 @@ import titleBar from "../../../assets/titlebar-bg.jpg";
 import { Flex, Text } from "../../../components/Base/";
 import { LeftOutlined } from "@ant-design/icons";
 import { RightOutlined } from "@ant-design/icons";
-
+import generator11 from "../../../assets/generators/generator11.jpg";
+import generator12 from "../../../assets/generators/generator12.jpg";
+import generator13 from "../../../assets/generators/generator13.jpg";
+import generator10 from "../../../assets/generators/generator10.jpg";
+import generator9 from "../../../assets/generators/rental.jpg";
+import generator8 from "../../../assets/generators/generator8.jpg";
+import generator7 from "../../../assets/generators/generator7.jpg";
+import generator6 from "../../../assets/generators/generator6.jpg";
+import generator4 from "../../../assets/generators/generator4.jpg";
+import generator5 from "../../../assets/generators/generator5.jpg";
+import generator36 from "../../../assets/generators/generator36.jpg";
 const Carousel = styled(antDCarousel)`
   width: 50rem !important;
-  height:40rem !important;
+  height: 40rem !important;
   @media (max-width: 1000px) {
     width: 24rem !important;
-    height:24rem !important;
+    height: 24rem !important;
   }
   @media (max-width: 763px) {
     width: 20rem !important;
     height: 20rem !important;
   }
   > .slick-dots li button {
-    width: 18px;
-    height: 18px;
+    width: 14px;
+    height: 14px;
+    background: #808080ff;
     border-radius: 100%;
+    border: 1px solid #fff;
   }
   > .slick-dots li.slick-active button {
     width: 14px;
     height: 14px;
     border-radius: 100%;
     background: #808080ff;
-    border:1px solid #0002
+    border: 1px solid ##808080ff;
   }
 `;
 const text = `
 Generators don't actually create electricity. Instead, they convert mechanical or chemical energy into electrical energy. They do this by capturing the power of motion and turning it into electrical energy by forcing electrons from the external source through an electrical circuit.
 `;
-const { Panel: antDpanel } = Collapse;
+const { Panel: antDpanel } = antDCollapse;
+const Collapse = styled(antDCollapse)`
 
+&.ant-collapse {
+  background: #fff !important;
+  
+}
+`;
 const Panel = styled(antDpanel)`
   width: 70rem;
   margin-top: 0.5rem;
@@ -206,68 +224,168 @@ export default function index() {
               <p>{text}</p>
             </Panel>
           </Collapse>
-          <Collapse>
+          <Collapse expandIconPosition="right">
             <Panel header={"Cummins Generators"} key="2">
               <p>{text}</p>
             </Panel>
           </Collapse>
-          <Collapse>
+          <Collapse expandIconPosition="right">
             <Panel header={"Diesel Generators"} key="3">
               <p>{text}</p>
             </Panel>
           </Collapse>
-          <Collapse>
+          <Collapse expandIconPosition="right">
             <Panel header={"Open Diesel Generators"} key="4">
-              <Flex style={{position:'relative'}} justifyContent="center" alignItems="center" justifyContentMobile="center" alignItemsMobile="center" width="100%">
+              <Text color="#808080" fontSize="0.9rem">
+                Nileco Electric Equipment Manufacturing PLC mainly assembles
+                Diesel Generators but we take great pride in the canopies that
+                we fabricate and soundproofing of those canopies. The standard
+                canopies are GI Steel minimum 2mm thick, attenuated down to 85
+                dB @ 1 m. The enclosure not only protects the generator set but
+                serves as general weather protection and since it is galvanized
+                it prevents rusting. The epoxy coating powder is used for
+                maximum life and finishing. Rain or dust & sand, our canopy will
+                stand strong through it. We can support different IP ratings
+                such IP43 for the outer enclosure as per the requirement but we
+                are generally making IP23. Control Panel sections can be much
+                higher as IP65.
+                <br />
+                <br />
+                Features:
+                <br />
+                <br />
+                <ul>
+                  <li>Less powerconsumption </li>
+                  <li>Require less maintenance Sturdy construction</li>
+
+                  <li>
+                    Sturdiness Long operational life Excellent performance{" "}
+                  </li>
+
+                  <li>
+                    Require less maintenance Long service life Compact design
+                    High functionality Efficient performance Long service life
+                  </li>
+
+                  <li>
+                    Automatic starting system Single and 3 phase Battery
+                    charging
+                  </li>
+
+                  <li>
+                    Alternator Factory load testing Mainline circuit breaker
+                    Skid mounted with fuel tank Rubber mounted vibration
+                    isolator
+                  </li>
+
+                  <li>Industrial engine Industrial muffler </li>
+
+                  <li>
+                    Full digital control panel with wide range of controllers to
+                    cover all your requirements and features, power indicator
+                    light, fuel light
+                  </li>
+
+                  <li>
+                    Emergency shutdown for low oil pressure and high water
+                    temperature Large bottom fuel tank to ensure long working
+                    time
+                  </li>
+
+                  <li>
+                    Capability to connect it to ATS Capability to add
+                    auxiliaries systems{" "}
+                  </li>
+
+                  <li>Ability to connect the genset to the network </li>
+
+                  <li>
+                    Fuel monitoring and feeding system, oil monitoring and
+                    feeding system, auto dummy load system etc.
+                  </li>
+
+                  <li>
+                    Start from receiving SMS and e-mails for the basic
+                    controllers upto full controlling & monitoring.
+                  </li>
+                </ul>
+              </Text>
+
+              <Flex
+                style={{ position: "relative" }}
+                justifyContent="center"
+                alignItems="center"
+                justifyContentMobile="center"
+                alignItemsMobile="center"
+                width="100%"
+              >
                 {" "}
                 <LeftOutlined
-                  style={{ color: "#808080", fontSize: "2rem", cursor: "pointer",position:'absolute',left:'0',zIndex:'1' }}
+                  style={{
+                    color: "#808080",
+                    fontSize: "2rem",
+                    cursor: "pointer",
+                    position: "absolute",
+                    left: "0",
+                    zIndex: "1",
+                  }}
                   onClick={() => {
                     carouselRef.current.prev();
                   }}
                 />
                 <Carousel
                   ref={carouselRef}
-                  style={{ height: "800px", width: "100%" }}
+                  style={{ height: "700px", width: "100%" }}
                 >
                   <Flex justifyContent="center">
                     <Image
-                    style={{zIndex:"-1"}}
+                      objectFit="cover"
+                      style={{ zIndex: "-1" }}
                       src={generator}
                       alt="sliderImage"
-                      height="700px"
+                      height="500px"
                       width="800px"
                     />
                   </Flex>
                   <Flex justifyContent="center">
                     <Image
-                    style={{zIndex:"-1"}}
+                      style={{ zIndex: "-1" }}
                       src={generator}
                       alt="sliderImage"
-                      height="700px"
+                      height="500px"
                       width="800px"
                     />
                   </Flex>
                   <Flex justifyContent="center">
                     <Image
-                    style={{zIndex:"-1"}}
+                      objectFit="cover"
+                      style={{ zIndex: "-1" }}
                       src={generator}
                       alt="sliderImage"
-                      height="700px"
+                      height="500px"
                       width="800px"
                     />
                   </Flex>
                   <Flex justifyContent="center">
                     <Image
+                      objectFit="cover"
+                      style={{ zIndex: "-1" }}
                       src={generator}
                       alt="sliderImage"
-                      height="700px"
+                      height="500px"
                       width="800px"
                     />
                   </Flex>
                 </Carousel>
                 <RightOutlined
-                  style={{ color: "#808080", fontSize: "2rem", cursor: "pointer",position:'absolute',right:'0',zIndex:'1' }}
+                  style={{
+                    color: "#808080",
+                    fontSize: "2rem",
+                    cursor: "pointer",
+                    position: "absolute",
+                    right: "0",
+                    zIndex: "1",
+                  }}
                   onClick={() => {
                     carouselRef.current.next();
                   }}
@@ -275,24 +393,730 @@ export default function index() {
               </Flex>
             </Panel>
           </Collapse>
-          <Collapse>
+          <Collapse expandIconPosition="right">
             <Panel header={"Canopy/Soundproof Generators"} key="5">
-              <p>{text}</p>
+              <Text color="#808080" fontSize="0.9rem">
+                Nileco Electric Equipment Manufacturing PLC is providing our
+                esteemed clients with excellent quality of Open Diesel Generator
+                Set. The offered set is extensively used for emergency
+                conditions. Our experts manufacture this set by making use of
+                excellent quality components and advanced technology. The
+                offered set is available in different designs and other related
+                specifications, in order to meet varied expectations of our
+                valuable customers. Furthermore, our clients can avail of this
+                set from us at market leading prices.
+                <br />
+                <br />
+                Our enclosures are designed with calculated ventilation and
+                exhaust limits which enables smooth heat dissipation safe
+                temperatures for the whole set.
+                <br />
+                <br />
+                There is a built-in base tank to allow 10-12 hours running
+                without refueling. The base frame has forklift pockets and is
+                thick enough for enduring the weight of the DG as well as not
+                permitting any leakage from the fuel tan
+                <br />
+                <br />
+                <Text color="#808080" fontSize="1rem">
+                  Salient features:
+                </Text>
+                <br />
+                <br />
+                <ul>
+                  <li>Modular design</li>
+                  <li>Interior insulation covered by GI perforated sheets</li>
+                  <li>Forklift pockets </li>
+                  <li>Built-in Fuel Tank</li>
+                  <li>Enhanced vibration reduction in large gensets</li>
+                  <li>External Emergency stop button</li>
+                  <li>Door stopper </li>
+                  <li>Industrial silencer</li>
+                  <li>External fuel inlet and return provision</li>
+                  <br />
+                  <Text color="#808080" fontSize="1rem">
+                    {" "}
+                    Upgraded features:
+                  </Text>
+                  <br />
+                  <li>Fire extinguishers</li>
+                  <li>
+                    Fluorescent light along inner-walls with lighting switch
+                    conduit
+                  </li>
+                  <li>Air-inlet and outlet with acoustical louvers </li>
+                  <li>ISO standard heavy-duty locks</li>
+                  <li>Extra Emergency Stop button</li>
+                  <br />
+                  <br />
+                </ul>
+                <Text color="rgba(0, 48, 100, 1)" fontSize="1.8rem">
+                  {" "}
+                  Containerized Generator
+                </Text>
+                <br />
+                <br />
+                <br />
+                <br />
+                The bigger the generator the more extreme the heat, higher
+                moisture air, unstable vibrations, and of course deafening
+                engines sounds. Containerized generator sets should be built
+                tough just like the engines running inside them, that’s why ITTS
+                manufacturers heavy duty generator containers that absorb all
+                the extra noise and endure the harshest conditions coming from
+                the generator. Moreover, these units can be carried by vehicles
+                to any remote site for the most isolated power needs. The
+                dimensions of a containerized generator are as standard
+                containers (20ft, 40ft, and 40ft HC).
+                <br />
+                <br />
+                There are two types:
+                <br />
+                <li>
+                  Step-in containerized generator station with an operating
+                  room, maintenance room, and duty room
+                </li>
+                <li>Non-step-in is compactly designed.</li>
+                <br />
+                <Text color="rgba(0, 48, 100, 1)" fontSize="1.8rem">
+                  Container canopies
+                </Text>
+                <br />
+                <br />
+                In addition to our standard acoustic enclosures and ISO 20, 40
+                HQ containers, we custom design and manufacture silenced and
+                super-silenced containers for any size or brand of diesel power
+                gen set, leaving the ISO lifting and transportation points
+                intact.
+                <br />
+                <br />
+                <Text color="rgba(0, 48, 100, 1)" fontSize="1.8rem">
+                  {" "}
+                  Specifications:
+                </Text>
+                <br />
+                <br />
+                <li>
+                  The Unit body is made from brand new standard 20ft/40ft high
+                  cube container modified to be sound proof enclosure.
+                </li>
+                <li>
+                  Designed to have optimum serviceability. Air inlet louvers
+                  specially designed to operate at rated load even at 50 deg. C
+                  enclosure temp.
+                </li>
+                <li>
+                  All containers are ISO as standard with 4 No. ISO type lifting
+                  points fitted at each corner for ease of installation to final
+                  site locations.
+                </li>
+                <li>
+                  Two service doors, one at each side and connected by earthing
+                  cable to the container body.
+                </li>
+                <li>
+                  Inlet and outlet air louvers areas are made to be enough for
+                  your generator requirements, and they are made to be removed
+                  for easy service.
+                </li>
+                <li>
+                  All doors have a water proof sealant that prevents water from
+                  going inside the containe
+                </li>
+                <li>
+                  The container is lined from inside by 1 inch. glass wool
+                  covered by perforated sheet metal, this material will work as
+                  an acoustic liner..
+                </li>
+                <li>
+                  Air inlets are equipped with bird mesh, the inside of the
+                  container is lighted with heat resistant light fixtures, all
+                  wiring conduits are made of 20mm galvanized steel pipes
+                </li>
+                <li>
+                  The container will be equipped with two outside emergency stop
+                  button, outside fuel supply and return, Power cable outlet
+                </li>
+                <li>
+                  Floor is lined with steel checkered plates and having a
+                  drainage point. fuel supply and return, Power cable outlet
+                </li>
+                <br />
+                <br />
+                <Text color="rgba(0, 48, 100, 1)" fontSize="1.8rem">
+                  {" "}
+                  Sound-proof Canopies
+                </Text>
+                <br />
+                <br />
+                <Text color="#808080" fontSize="1rem">
+                  Features:
+                </Text>
+                <br />
+                <br />
+                <li>
+                  High fuel efficiency: Fewer fuel consumption at leading level
+                  than other competitive product
+                </li>
+                <li>
+                  The turbocharger with waste gated design: Optimizes operation
+                  across the torque curve resulting in excellent low-end torque.
+                </li>
+                <li>
+                  Compacted yet durable and dependable engine: Cummins engines
+                  contain up to 40% fewer parts than competitive engines in its
+                  class. This results in a better power-to-weight ratio, a less
+                  chance of failure and lower repair cost.
+                </li>
+                <li>
+                  Advanced design and manufacturing: Make the engine delivers
+                  superior performance and lower cost than competitive engines.
+                </li>
+                <li>
+                  Excellent cold start performance: Optional assistant cold
+                  starter with improved 6.6KW starter and intake air heater
+                </li>
+                <li>
+                  Excellent performance and advantage: Adopt advanced design to
+                  achieve higher horsepower and lower weight
+                </li>
+                <br />
+                <br />
+                <Text color="rgba(0, 48, 100, 1)" fontSize="1.8rem">
+                  {" "}
+                  Containerized Generator
+                </Text>
+                <br />
+                <br />
+                Containerized generator set integrates the generator with
+                container of a compact structure, including the cooling system,
+                fuel supply system and control system, which can be carried by
+                vehicles. The dimension of containerized generator station is
+                the same with standard containers (20ft, 40ft, and 40ft HC),
+                there are two types: step-in containerized generator station
+                with operating room, maintenance room and duty room; non-step-in
+                is compactly design
+                <Text color="#808080" fontSize="1rem">
+                  Performance Feature
+                </Text>
+                <br />
+                <br />
+                <li>
+                  Engine and alternator shall be mounted on a same frame steel
+                  skid.
+                </li>
+                <li>Built-in damper for anti-vibration.</li>
+                <li>
+                  Small size, low weight, easy to operating, installation and
+                  maintenance.
+                </li>
+                <li>World most famous brand diesel engine.</li>
+                <li>
+                  World famous brand AC alternator: Stamford, Marathon, Leroy
+                  Somer, MVC.
+                </li>
+                <li>
+                  Advanced and reliable control module: Key start, Auto start,
+                  Remote control by PC with RS232/485
+                </li>
+                <li>
+                  Full range protects function and alarm shutdown
+                  feature.RS232/485
+                </li>
+                Our company is well known as reliable diesel generators
+                manufacturer whose main objective is customer’s satisfaction and
+                long-term cooperation. We care about our reputation and brand
+                name, therefore all components are original genuine and in
+                partnership with industry leaders such as Perkins, Leroy Somer,
+                Stamford, Scania, MAN, etc.
+              </Text>
+              <Flex
+                style={{ position: "relative" }}
+                justifyContent="center"
+                alignItems="center"
+                justifyContentMobile="center"
+                alignItemsMobile="center"
+                width="100%"
+              >
+                {" "}
+                <LeftOutlined
+                  style={{
+                    color: "#808080",
+                    fontSize: "2rem",
+                    cursor: "pointer",
+                    position: "absolute",
+                    left: "0",
+                    zIndex: "1",
+                  }}
+                  onClick={() => {
+                    carouselRef.current.prev();
+                  }}
+                />
+                <Carousel
+                  ref={carouselRef}
+                  style={{ height: "700px", width: "100%" }}
+                >
+                  <Flex justifyContent="center">
+                    <Image
+                      objectFit="cover"
+                      style={{ zIndex: "-1" }}
+                      src={generator}
+                      alt="sliderImage"
+                      height="500px"
+                      width="800px"
+                    />
+                  </Flex>
+                  <Flex justifyContent="center">
+                    <Image
+                      style={{ zIndex: "-1" }}
+                      src={generator}
+                      alt="sliderImage"
+                      height="500px"
+                      width="800px"
+                    />
+                  </Flex>
+                  <Flex justifyContent="center">
+                    <Image
+                      objectFit="cover"
+                      style={{ zIndex: "-1" }}
+                      src={generator}
+                      alt="sliderImage"
+                      height="500px"
+                      width="800px"
+                    />
+                  </Flex>
+                  <Flex justifyContent="center">
+                    <Image
+                      objectFit="cover"
+                      style={{ zIndex: "-1" }}
+                      src={generator}
+                      alt="sliderImage"
+                      height="500px"
+                      width="800px"
+                    />
+                  </Flex>
+                </Carousel>
+                <RightOutlined
+                  style={{
+                    color: "#808080",
+                    fontSize: "2rem",
+                    cursor: "pointer",
+                    position: "absolute",
+                    right: "0",
+                    zIndex: "1",
+                  }}
+                  onClick={() => {
+                    carouselRef.current.next();
+                  }}
+                />
+              </Flex>
             </Panel>
           </Collapse>
-          <Collapse>
+          <Collapse expandIconPosition="right">
             <Panel header={"Super Silent Generators"} key="6">
-              <p>{text}</p>
+              <Text color="#808080" fontSize="0.9rem">
+                When we say Super Silent Generator Canopies, we mean literally
+                whispering levels of sound from our canopies. Your generator
+                with our protective cover, which makes the generator not only
+                secure & safe but sound-proof. An option for those seeking
+                generators without the sound presence. We have our own special
+                design to absorb the sound further while allowing air to travel
+                in and out freely. For the small generators, we can bring it
+                down to 68 dB(A) @ 1 meter, for larger generators we can go to
+                68 dB(A) @ 3 meters.
+              </Text>
+              <Flex
+                style={{ position: "relative" }}
+                justifyContent="center"
+                alignItems="center"
+                justifyContentMobile="center"
+                alignItemsMobile="center"
+                width="100%"
+              >
+                {" "}
+                <LeftOutlined
+                  style={{
+                    color: "#808080",
+                    fontSize: "2rem",
+                    cursor: "pointer",
+                    position: "absolute",
+                    left: "0",
+                    zIndex: "1",
+                  }}
+                  onClick={() => {
+                    carouselRef.current.prev();
+                  }}
+                />
+                <Carousel
+                  ref={carouselRef}
+                  style={{ height: "700px", width: "100%" }}
+                >
+                  <Flex justifyContent="center">
+                    <Image
+                      objectFit="cover"
+                      style={{ zIndex: "-1" }}
+                      src={generator10}
+                      alt="sliderImage"
+                      height="500px"
+                      width="800px"
+                    />
+                  </Flex>
+                  <Flex justifyContent="center">
+                    <Image
+                      style={{ zIndex: "-1" }}
+                      src={generator11}
+                      alt="sliderImage"
+                      height="500px"
+                      width="800px"
+                    />
+                  </Flex>
+                  <Flex justifyContent="center">
+                    <Image
+                      objectFit="cover"
+                      style={{ zIndex: "-1" }}
+                      src={generator12}
+                      alt="sliderImage"
+                      height="500px"
+                      width="800px"
+                    />
+                  </Flex>
+                  <Flex justifyContent="center">
+                    <Image
+                      objectFit="cover"
+                      style={{ zIndex: "-1" }}
+                      src={generator13}
+                      alt="sliderImage"
+                      height="500px"
+                      width="800px"
+                    />
+                  </Flex>
+                  <Flex justifyContent="center">
+                    <Image
+                      objectFit="cover"
+                      style={{ zIndex: "-1" }}
+                      src={generator4}
+                      alt="sliderImage"
+                      height="500px"
+                      width="800px"
+                    />
+                  </Flex>
+                  <Flex justifyContent="center">
+                    <Image
+                      objectFit="cover"
+                      style={{ zIndex: "-1" }}
+                      src={generator5}
+                      alt="sliderImage"
+                      height="500px"
+                      width="800px"
+                    />
+                  </Flex>
+                </Carousel>
+                <RightOutlined
+                  style={{
+                    color: "#808080",
+                    fontSize: "2rem",
+                    cursor: "pointer",
+                    position: "absolute",
+                    right: "0",
+                    zIndex: "1",
+                  }}
+                  onClick={() => {
+                    carouselRef.current.next();
+                  }}
+                />
+              </Flex>
             </Panel>
           </Collapse>
-          <Collapse>
+          <Collapse expandIconPosition="right">
             <Panel header={"Mobile/ Portable Type Generators"} key="7">
-              <p>{text}</p>
+              <Text color="#808080" fontSize="0.9rem">
+                Nileco Electric Equipment Manufacturing PLC provide Portable
+                generators provide electricity by running a gas-powered engine.
+                That turns an on-board alternator to generate electrical power.
+                Power outlets on the unit allow you to plug extension cords,
+                electric-powered tools, and appliances into it. In general, the
+                more powerful the generator, the more outlet combinations are
+                available.
+                <br />
+                <br />A typical portable generator contains the following
+                primary components assembled onto a metal frame in a single
+                unit:
+                <br />
+                <br />
+                <ol>
+                  <li>Internal combustion engine</li>
+                  <li>Alternator</li>
+                  <li>Starter</li>
+                  <li>Fuel tank</li>
+                  <li>Outlets</li>
+                </ol>
+                <br />
+                <br />
+                Unlike standby generator systems, portable generators are not
+                permanently installed, can be easily moved from place to place,
+                and must be manually started. Portable generators are rated by
+                the amount of power they produce called watts.
+                <br />
+                <br />
+                There are two kinds of watts:
+                <br />
+                <br />
+                Running Watts – The continuous watts produced to keep items
+                running. Starting Watts – The extra power needed to start large
+                motor-driven appliances or multiple items. Typically, the more
+                watts – the more items you can power up.
+                <br />
+                <br />
+                <Text color="rgba(0, 48, 100, 1)" fontSize="1.8rem">
+                  The power behind your portable generator – engines matter
+                </Text>
+                <br />
+                <br />
+                The engine that powers your portable generator plays a pivotal
+                role in product performance, reliability and user experience.
+                You can rest assured that your engine i
+                <ul>
+                  <li>Easy to start</li>
+                  <li>Powerful</li>
+                  <li>Durable</li>
+                  <li>Reliable</li>
+                  <li>Rated to meet or exceed environmental standards</li>
+                  <li>
+                    Backed by experienced service engine dealers worldwide
+                  </li>
+                </ul>
+                <br />
+                <br />
+                <Text color="rgba(0, 48, 100, 1)" fontSize="1.8rem">
+                  Portable Type
+                </Text>
+                <br />
+                <br />
+                Delivering prime power solutions in a wide range of power nodes,
+                Nileco Electric Equipment Manufacturing PLC mobile generators
+                are designed and engineered to support a variety of projects,
+                regardless of the weather conditions. Our generators are
+                configured to meet your needs, including choice of containment,
+                cold weather packages and trailer options. For ultimate
+                flexibility, most of our mobile generators come parallel-ready,
+                enabling a scalable approach to power – parallel up to 32 units.
+                International Technical Trading Services mobile generators are
+                manufactured to deliver the reliable power you need, when and
+                where you need it.
+                <br />
+                <br />
+                By harnessing wellhead gas as fuel, our gaseous generators are
+                able to minimize emissions issues on oil and gas worksites and
+                provide the most cost effective power available. International
+                Technical Trading Services gaseous generators feature an
+                innovative design that allows users to switch between natural
+                gas (NG), liquid propane (LP) and wellhead gas. NILECO is the
+                global leader in gaseous power generation. Count on NILECO
+                Mobile Products for power solutions for projects big and small.
+                <br />
+                <br />
+                <Text color="rgba(0, 48, 100, 1)" fontSize="1.8rem">
+                  Diesel Mobile Generators
+                </Text>
+                <br />
+                <br />
+                Delivering prime power solutions in a wide range of power nodes,
+                Generac Magnum mobile generators are designed and engineered to
+                support a variety of projects, regardless of the weather
+                conditions. Our generators are configured to meet your needs,
+                including choice of containment, cold weather packages and
+                trailer options. For ultimate flexibility, most of our mobile
+                generators come parallel-ready, enabling a scalable approach to
+                power – parallel up to 32 units. Generac Magnum mobile
+                generators are manufactured to deliver the reliable power you
+                need, when and where you need it.
+                <br />
+                <br />
+                By harnessing wellhead gas as fuel, our gaseous generators are
+                able to minimize emissions issues on oil and gas worksites and
+                provide the most cost effective power available. Generac Magnum
+                gaseous generators feature an innovative design that allows
+                users to switch between natural gas (NG), liquid propane (LP)
+                and wellhead gas. Generac is the global leader in gaseous power
+                generation. Count on Generac Mobile Products for power solutions
+                for projects big and small.
+                <br />
+                <br />
+                Our mobile towable generators from Aksa, Hipower, Kohler,
+                Kubota, Magnum, MQ Power, Winco, and Winpower, provide
+                transportable power for all kinds of industrial, construction,
+                disaster relief, oil field, and military applications. Mobile
+                Gaseous models offer up to 105 kW of power using Natural Gas, LP
+                Gas, or LP Liquid Withdrawal. Our large selection of Mobile
+                Diesel models offer up to 610 kW of power. Containerized Diesel
+                models are mounted in semi-trailer containers and offer up to
+                2000 kW of power
+                <br />
+                <br />
+              </Text>
+              <Flex
+                style={{ position: "relative" }}
+                justifyContent="center"
+                alignItems="center"
+                justifyContentMobile="center"
+                alignItemsMobile="center"
+                width="100%"
+              >
+                {" "}
+                <LeftOutlined
+                  style={{
+                    color: "#808080",
+                    fontSize: "2rem",
+                    cursor: "pointer",
+                    position: "absolute",
+                    left: "0",
+                    zIndex: "1",
+                  }}
+                  onClick={() => {
+                    carouselRef.current.prev();
+                  }}
+                />
+                <Carousel
+                  ref={carouselRef}
+                  style={{ height: "700px", width: "100%" }}
+                >
+                  <Flex justifyContent="center">
+                    <Image
+                      objectFit="cover"
+                      style={{ zIndex: "-1" }}
+                      src={generator6}
+                      alt="sliderImage"
+                      height="500px"
+                      width="800px"
+                    />
+                  </Flex>
+                  <Flex justifyContent="center">
+                    <Image
+                      style={{ zIndex: "-1" }}
+                      src={generator7}
+                      alt="sliderImage"
+                      height="500px"
+                      width="800px"
+                    />
+                  </Flex>
+                  <Flex justifyContent="center">
+                    <Image
+                      objectFit="cover"
+                      style={{ zIndex: "-1" }}
+                      src={generator8}
+                      alt="sliderImage"
+                      height="500px"
+                      width="800px"
+                    />
+                  </Flex>
+                  <Flex justifyContent="center">
+                    <Image
+                      objectFit="cover"
+                      style={{ zIndex: "-1" }}
+                      src={generator9}
+                      alt="sliderImage"
+                      height="500px"
+                      width="800px"
+                    />
+                  </Flex>
+                </Carousel>
+                <RightOutlined
+                  style={{
+                    color: "#808080",
+                    fontSize: "2rem",
+                    cursor: "pointer",
+                    position: "absolute",
+                    right: "0",
+                    zIndex: "1",
+                  }}
+                  onClick={() => {
+                    carouselRef.current.next();
+                  }}
+                />
+              </Flex>
             </Panel>
           </Collapse>
-          <Collapse>
+          <Collapse expandIconPosition="right">
             <Panel header={"Light Towel Generators"} key="8">
-              <p>{text}</p>
+            <Text color="#808080" fontSize="0.9rem">
+                NILECO Magnum leads the industry in innovative light tower
+                solutions. Our vertical mast and compact light towers have
+                revolutionized industrial mobile lighting. Easy to setup,
+                operate and maintain, our light towers provide maximum power in
+                a minimal footprint. With extended run times and service
+                intervals, LED safety features, innovative engine technologies
+                and programmable controls, our products can be trusted to
+                maximize uptime and return on your investment. Durability,
+                reliability and ease of use – put your trust in the largest
+                light tower manufacturer in the world. With zero localized
+                emissions and linking capability, LINKTower provides ultimate
+                versatility in lighting events and jobsites – indoors and out.
+                Compact, cost-effective LED light tower with an extended runtime
+                for a wide variety of events and jobsites. Extended runtime LED
+                light tower designed for remote locations and extreme
+                temperatures. The NILECO AL™4 model line offers heavy-duty light
+                towers to fit virtually any lighting need — from construction
+                sites and sporting events to mining and oil field applications.
+                The 30 ft (9.14 m) extended-height floodlight tower of the AL™4
+                provides 4,000 Watts of light and is designed to maximize uptime
+                with quick disconnect lights and ballasts, 359º non-continuous
+                tower rotation, heavy duty axles and chassis, and galvanized
+                masts and outriggers.
+              </Text>
+              <Flex
+                style={{ position: "relative" }}
+                justifyContent="center"
+                alignItems="center"
+                justifyContentMobile="center"
+                alignItemsMobile="center"
+                width="100%"
+              >
+                {" "}
+                {/* <LeftOutlined
+                  style={{
+                    color: "#808080",
+                    fontSize: "2rem",
+                    cursor: "pointer",
+                    position: "absolute",
+                    left: "0",
+                    zIndex: "1",
+                  }}
+                  onClick={() => {
+                    carouselRef.current.prev();
+                  }}
+                /> */}
+                <Carousel
+                  ref={carouselRef}
+                  style={{ height: "700px", width: "100%" }}
+                >
+                  <Flex justifyContent="center">
+                    <Image
+                      objectFit="contain"
+                      style={{ zIndex: "-1" }}
+                      src={generator36}
+                      alt="sliderImage"
+                      height="500px"
+                      width="800px"
+                    />
+                  </Flex>
+
+
+
+                </Carousel>
+                {/* <RightOutlined
+                  style={{
+                    color: "#808080",
+                    fontSize: "2rem",
+                    cursor: "pointer",
+                    position: "absolute",
+                    right: "0",
+                    zIndex: "1",
+                  }}
+                  onClick={() => {
+                    carouselRef.current.next();
+                  }}
+                /> */}
+              </Flex>
             </Panel>
           </Collapse>
         </Flex>

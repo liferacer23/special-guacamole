@@ -200,6 +200,7 @@ export default function Gallery() {
       <Modal title="" open={isModalOpen} onCancel={handleCancel}>
         <Flex justifyContent="center">
           <Image
+            objectFit="cover"
             src={modalImage}
             width="500px"
             height="400px"
@@ -291,6 +292,7 @@ export default function Gallery() {
               <ImageWrapper style={{ marginLeft: "2rem" }}>
                 {GeneratorImages.map((image, index) => (
                   <Image
+                    objectFit="cover"
                     onClick={() => {
                       setModalImage(image.src);
                       showModal();
@@ -309,6 +311,7 @@ export default function Gallery() {
               <ImageWrapper style={{ marginLeft: "2rem" }}>
                 {SwitchGearImages.map((image, index) => (
                   <Image
+                    objectFit="cover"
                     onClick={() => {
                       setModalImage(image.src);
                       showModal();
@@ -327,6 +330,7 @@ export default function Gallery() {
               <ImageWrapper style={{ marginLeft: "2rem" }}>
                 {SparePartImages.map((image, index) => (
                   <Image
+                    objectFit="cover"
                     onClick={() => {
                       setModalImage(image.src);
                       showModal();

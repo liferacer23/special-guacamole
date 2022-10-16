@@ -4,7 +4,7 @@ import titleBar from "../assets/titlebar-bg.jpg";
 import { Flex, Text, Button } from "../components/Base";
 import { AiOutlineHome } from "react-icons/ai";
 import Head from "next/head";
-import Collapse from "antd/lib/collapse";
+import antDCollapse from "antd/lib/collapse";
 
 import Link from "next/link";
 
@@ -15,8 +15,14 @@ const { Option } = Select;
 const text = `
 Generators don't actually create electricity. Instead, they convert mechanical or chemical energy into electrical energy. They do this by capturing the power of motion and turning it into electrical energy by forcing electrons from the external source through an electrical circuit.
 `;
-const { Panel: antDpanel } = Collapse;
+const { Panel: antDpanel } = antDCollapse;
+const Collapse = styled(antDCollapse)`
 
+&.ant-collapse {
+  background: #fff !important;
+  
+}
+`;
 const Panel = styled(antDpanel)`
   width: 65rem;
 
@@ -141,7 +147,7 @@ export default function services() {
               <p>{text}</p>
             </Panel>
             </Collapse>
-            <Collapse>
+            <Collapse expandIconPosition="right">
             <Panel header={"Warranty support"} key="2">
               <p>{text}</p>
             </Panel>

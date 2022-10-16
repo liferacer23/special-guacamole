@@ -50,9 +50,11 @@ width: 65%;
 display: flex;
 align-items: center;
 justify-content: center;
+margin-top: -4rem;
 
 @media (max-width: 1000px) {
   width: 100%;
+  margin-top: 0rem;
 }
 `;
 const ContactUsForm = styled.div`

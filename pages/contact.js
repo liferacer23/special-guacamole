@@ -108,7 +108,7 @@ export default function contact() {
             Contact Us
           </Text>
           <Flex width="100%" justifyContent="center" gap="0px">
-            <Flex width="20%" directionMobile="row" widthMobile="40%" gap="0px">
+            <Flex width="20%" directionMobile="row" widthMobile="60%" gap="0px">
               <Link href="/">
                 <Flex width="50%" directionMobile="row" widthMobile="40%">
                   {" "}
@@ -124,7 +124,7 @@ export default function contact() {
                   </Text>
                 </Flex>
               </Link>
-              /
+          /
               <Flex width="50%" directionMobile="row" widthMobile="40%">
                 <Text
                   fontSize="1rem"
@@ -133,7 +133,7 @@ export default function contact() {
                   fontWeight="bold"
                   cursor="pointer"
                 >
-                  Contact Uss
+                  Contact Us
                 </Text>{" "}
               </Flex>
             </Flex>

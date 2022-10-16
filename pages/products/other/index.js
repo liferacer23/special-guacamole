@@ -160,12 +160,12 @@ export default function index() {
               <p>{text}</p>
             </Panel>
           </Collapse>
-          <Collapse>
+          <Collapse  expandIconPosition="end">
             <Panel header={"Digital Controllers"} key="2">
               <p>{text}</p>
             </Panel>
           </Collapse>
-          <Collapse>
+          <Collapse expandIconPosition="end">
             <Panel header={"Electrical Parts"} key="3">
               <p>{text}</p>
             </Panel>

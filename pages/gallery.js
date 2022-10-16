@@ -5,7 +5,7 @@ import { AiOutlineHome } from "react-icons/ai";
 import antDModal from "antd/lib/modal";
 import Link from "next/link";
 import titleBar from "../assets/titlebar-bg.jpg";
-
+import antDCollapse from "antd/lib/collapse";
 import Head from "next/head";
 import nextImage from "next/image";
 import antDTabs from "antd/lib/tabs";
@@ -43,10 +43,54 @@ import sparePart10 from "../assets/generators/generator36.jpg";
 import sparePart11 from "../assets/generators/generator37.jpg";
 import sparePart12 from "../assets/generators/generator38.jpg";
 
+const { Panel: antDpanel } = antDCollapse;
+const Collapse = styled(antDCollapse)`
+display: none !important;
+@media (max-width: 1000px) {
+  display: block !important;
+}
+&.ant-collapse {
+  background: #fff !important;
+  
+}
+`;
+const Panel = styled(antDpanel)`
+display: none;
+  width: 70rem;
+  margin-top: 0.5rem;
+  @media (max-width: 1000px) {
+    width: 24rem;
+    display: block;
+  }
+  @media (max-width: 763px) {
+    width: 20rem;
+  }
+  &.ant-collapse-item-active {
+    background: rgb(255, 199, 44);
+    font-size: 1rem;
+    color: #fff !important;
+    .ant-collapse-header {
+      fontsize: 25px;
+      color: #fff !important;
+      font-weight: bold;
+    }
+  }
+  &.ant-collapse-item {
+    font-size: 1rem;
+    .ant-collapse-header {
+      font-size: 1rem;
+      color: rgba(0, 48, 100, 1);
+      font-weight: bold;
+    }
+  }
+`;
 const Tabs = styled(antDTabs)`
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
+  @media (max-width: 1000px) {
+ display: none !important;
+  }
   .ant-tabs-tab {
     width: 250px;
     height: 80px;
@@ -345,6 +389,65 @@ export default function Gallery() {
               Events
             </Tabs.TabPane>
           </Tabs>
+          <Collapse expandIconPosition="end">
+            <Panel header={" Generator"} key="3">
+            <ImageWrapper style={{ marginLeft: "2rem" }}>
+                {GeneratorImages.map((image, index) => (
+                  <Image
+                    objectFit="cover"
+                    onClick={() => {
+                      setModalImage(image.src);
+                      showModal();
+                    }}
+                    style={{ pointer: "cursor" }}
+                    key={index}
+                    src={image.src}
+                    width="300px"
+                    height="280px"
+                    alt="generator image"
+                  />
+                ))}
+              </ImageWrapper>
+            </Panel>
+            <Panel header={"Switch Gears"} key="3">
+            <ImageWrapper style={{ marginLeft: "2rem" }}>
+                {SwitchGearImages.map((image, index) => (
+                  <Image
+                    objectFit="cover"
+                    onClick={() => {
+                      setModalImage(image.src);
+                      showModal();
+                    }}
+                    style={{ pointer: "cursor" }}
+                    key={index}
+                    src={image.src}
+                    width="300px"
+                    height="280px"
+                    alt=" switchgear image"
+                  />
+                ))}
+              </ImageWrapper>
+            </Panel>
+            <Panel header={"Spare Parts"} key="3">
+            <ImageWrapper style={{ marginLeft: "2rem" }}>
+                {SparePartImages.map((image, index) => (
+                  <Image
+                    objectFit="cover"
+                    onClick={() => {
+                      setModalImage(image.src);
+                      showModal();
+                    }}
+                    style={{ pointer: "cursor" }}
+                    key={index}
+                    src={image.src}
+                    width="300px"
+                    height="280px"
+                    alt="sparePart Image"
+                  />
+                ))}
+              </ImageWrapper>
+            </Panel>
+          </Collapse>
         </Flex>
       </TabContainer>
       <FooterHeader></FooterHeader>

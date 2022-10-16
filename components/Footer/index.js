@@ -233,6 +233,7 @@ export default function Footer() {
             >
               <Text
                 width="12%"
+                mobileWidth="12%"
                 hoverColor="rgb(255, 199, 44)"
                 color="#fff"
                 fontSize="0.8rem"
@@ -242,6 +243,7 @@ export default function Footer() {
               </Text>
               <Text
                 width="12%"
+                mobileWidth="18%"
                 hoverColor="rgb(255, 199, 44)"
                 color="#fff"
                 fontSize="0.8rem"
@@ -252,6 +254,7 @@ export default function Footer() {
               </Text>
               <Text
                 width="12%"
+                mobileWidth="18%"
                 hoverColor="rgb(255, 199, 44)"
                 color="#fff"
                 fontSize="0.8rem"
@@ -262,6 +265,7 @@ export default function Footer() {
               </Text>
               <Text
                 width="12%"
+                mobileWidth="18%"
                 hoverColor="rgb(255, 199, 44)"
                 color="#fff"
                 fontSize="0.8rem"
@@ -272,6 +276,7 @@ export default function Footer() {
               </Text>
               <Text
                 width="12%"
+                mobileWidth="16%"
                 hoverColor="rgb(255, 199, 44)"
                 color="#fff"
                 fontSize="0.8rem"
@@ -282,6 +287,7 @@ export default function Footer() {
               </Text>
               <Text
                 width="13%"
+                mobileWidth="17%"
                 hoverColor="rgb(255, 199, 44)"
                 color="#fff"
                 fontSize="0.8rem"

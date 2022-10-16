@@ -320,10 +320,11 @@ const NavBar = () => {
               <StyledButton onClick={onClose}>Contact Us</StyledButton>
             </Links>
             <Popover content={searchContent} trigger="click" placement="bottom">
-              <StyledButton width="30px" padding="7px 0">
-                {" "}
-                <GoSearch color="rgba(0, 48, 100, 1)" style={{marginRight:'1rem'}}/>
-              </StyledButton>
+              {" "}
+              <GoSearch
+                color="rgba(0, 48, 100, 1)"
+                style={{ marginRight: "1rem" }}
+              />
             </Popover>
           </HeaderItems>
         </NavBarContainer>

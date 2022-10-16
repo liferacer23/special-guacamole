@@ -13,9 +13,7 @@ import Select from "antd/lib/select";
 
 const { Option } = Select;
 const text = `
-  A dog is a type of domesticated animal.
-  Known for its loyalty and faithfulness,
-  it can be found as a welcome guest in many households across the world.
+Generators don't actually create electricity. Instead, they convert mechanical or chemical energy into electrical energy. They do this by capturing the power of motion and turning it into electrical energy by forcing electrons from the external source through an electrical circuit.
 `;
 const { Panel: antDpanel } = Collapse;
 
@@ -142,6 +140,8 @@ export default function services() {
             <Panel header={"After Sales"} key="1">
               <p>{text}</p>
             </Panel>
+            </Collapse>
+            <Collapse>
             <Panel header={"Warranty support"} key="2">
               <p>{text}</p>
             </Panel>

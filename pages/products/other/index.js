@@ -8,19 +8,17 @@ import Collapse from "antd/lib/collapse";
 import Link from "next/link";
 
 const text = `
-  A dog is a type of domesticated animal.
-  Known for its loyalty and faithfulness,
-  it can be found as a welcome guest in many households across the world.
+Generators don't actually create electricity. Instead, they convert mechanical or chemical energy into electrical energy. They do this by capturing the power of motion and turning it into electrical energy by forcing electrons from the external source through an electrical circuit.
 `;
 const { Panel: antDpanel } = Collapse;
 
 const Panel = styled(antDpanel)`
   width: 70rem;
-    margin-top:0.5rem;
+  margin-top: 0.5rem;
   @media (max-width: 1000px) {
     width: 24rem;
   }
-  @media (max-width:763px) {
+  @media (max-width: 763px) {
     width: 20rem;
   }
   &.ant-collapse-item-active {
@@ -73,25 +71,27 @@ export default function index() {
             fontSize="2rem"
             color="#fff"
             textAlign="center"
-            fontWeight="bold"
             mobileTextAlign="center"
+            fontWeight="bold"
             mobileFontSize="2rem"
           >
-           Other Products
+            Other Products
           </Text>
-          <Flex width="70%" justifyContent="center" gap="0px">
-            <Flex width="30%" directionMobile="row" widthMobile="40%" gap="0px">
+          <Flex width="100%" justifyContent="center" gap="0px">
+            <Flex width="20%" directionMobile="row" widthMobile="40%" gap="5px">
               <Link href="/">
-                <Flex width="30%" directionMobile="row" widthMobile="40%">
+                <Flex width="50%" directionMobile="row" widthMobile="40%">
                   {" "}
                   <AiOutlineHome style={{ fontSize: "1.5rem" }} />
                   <Text
                     color="#fff"
-                    fontSize="0.8rem"
+                    fontSize="1rem"
                     mobileFontSize="0.8rem"
                     textAlign="center"
+                    mobileTextAlign="left"
                     fontWeight="bold"
                     cursor="pointer"
+                    mobileWidth="25%"
                   >
                     Home
                   </Text>
@@ -101,12 +101,14 @@ export default function index() {
               <Link href="/products">
                 <Flex width="30%" directionMobile="row" widthMobile="40%">
                   <Text
-                    fontSize="0.8rem"
+                    fontSize="1rem"
                     color="#fff"
                     textAlign="center"
+                    mobileTextAlign="left"
                     mobileFontSize="0.8rem"
                     fontWeight="bold"
                     cursor="pointer"
+                    mobileWidth="25%"
                   >
                     Products
                   </Text>{" "}
@@ -115,12 +117,13 @@ export default function index() {
               /
               <Flex width="50%" directionMobile="row" widthMobile="40%">
                 <Text
-                  fontSize="0.8rem"
+                  fontSize="1rem"
                   color="rgb(255, 199, 44)"
                   textAlign="center"
                   fontWeight="bold"
                   mobileFontSize="0.8rem"
                   cursor="pointer"
+                  mobileWidth="25%"
                 >
                   Other Products
                 </Text>{" "}
@@ -151,14 +154,16 @@ export default function index() {
             <Panel header={"Genuine Spare Parts"} key="1">
               <p>{text}</p>
             </Panel>
+          </Collapse>
+          <Collapse>
             <Panel header={"Digital Controllers"} key="2">
               <p>{text}</p>
             </Panel>
+          </Collapse>
+          <Collapse>
             <Panel header={"Electrical Parts"} key="3">
               <p>{text}</p>
             </Panel>
-    
-     
           </Collapse>
         </Flex>
       </Flex>

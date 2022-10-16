@@ -29,10 +29,10 @@ const Layout = styled(antDLayout)`
   }
 `;
 const Popover = styled(antDPopover)`
-&.ant-popover > .ant-popover-content > .ant-popover-inner-content {
-  padding: 0px 0px !important;
-  color: rgba(0, 0, 0, 0.85);
-}
+  &.ant-popover > .ant-popover-content > .ant-popover-inner-content {
+    padding: 0px 0px !important;
+    color: rgba(0, 0, 0, 0.85);
+  }
 
   &.ant-popover-title {
     display: none !important;
@@ -127,6 +127,7 @@ const NavBarContainer = styled("div")`
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background: #fff;
     width: 100%;
     padding: 0 1.5rem;
   }
@@ -140,27 +141,27 @@ const SearchContainer = styled("div")`
 `;
 
 const Content = styled("span")`
-display: flex;
-flex-direction: column;
-align-items: start;
-justify-content: start;
-width:180px;
-padding:0px;
-background:transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  width: 180px;
+  padding: 0px;
+  background: transparent;
 `;
 const ContentItem = styled("div")`
-display: flex;
-align-items: center;
-justify-content: start;
-cursor: pointer;
-padding: 0rem 0.5rem;
-margin: 0rem -1rem;
-width:150px;
-height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  cursor: pointer;
+  padding: 0rem 0.5rem;
+  margin: 0rem -1rem;
+  width: 150px;
+  height: 40px;
 
-&:hover{
-  border-left: 3px solid rgb(255, 199, 44);
-}
+  &:hover {
+    border-left: 3px solid rgb(255, 199, 44);
+  }
 `;
 const searchContent = <Search placeholder="input search text" enterButton />;
 const text = <span>Products</span>;
@@ -168,19 +169,8 @@ const text = <span>Products</span>;
 
 const NavBar = () => {
   const [open, setOpen] = useState(false);
-  const content = (
-    <Content>
-      <Links href='/products/generators'>
-      <ContentItem>Generators</ContentItem>
-      </Links>
-      <Links href='/products/switchgears'>
-      <ContentItem>Switch Gears</ContentItem>
-      </Links>
-      <Links href='/products/other'>
-      <ContentItem>Other Products</ContentItem>
-      </Links>
-    </Content>
-  );
+  const [popoverOpen, setPopoverOpen] = useState(false);
+
   const showDrawer = () => {
     setOpen(true);
   };
@@ -188,6 +178,41 @@ const NavBar = () => {
   const onClose = () => {
     setOpen(false);
   };
+  const content = (
+    <Content>
+      <Links href="/products/generators">
+        <ContentItem
+          onClick={() => {
+            setPopoverOpen(false);
+            onClose();
+          }}
+        >
+          Generators
+        </ContentItem>
+      </Links>
+      <Links href="/products/switchgears">
+        <ContentItem
+          onClick={() => {
+            setPopoverOpen(false);
+            onClose();
+          }}
+        >
+          Switch Gears
+        </ContentItem>
+      </Links>
+      <Links href="/products/other">
+        <ContentItem
+          onClick={() => {
+            setPopoverOpen(false);
+            onClose();
+          }}
+        >
+          Other Products
+        </ContentItem>
+      </Links>
+    </Content>
+  );
+
   return (
     <>
       <Drawer
@@ -204,8 +229,19 @@ const NavBar = () => {
           <Links href="/about">
             <StyledButton onClick={onClose}>About Us</StyledButton>
           </Links>
-          <Popover content={content} title={text}>
-            <StyledButton onClick={onClose}>Products</StyledButton>
+          <Popover
+            trigger="click"
+            content={content}
+            placement="bottom"
+            visible={popoverOpen}
+          >
+            <StyledButton
+              onClick={() => {
+                setPopoverOpen((prev) => !prev);
+              }}
+            >
+              Products
+            </StyledButton>
           </Popover>
           <Links href="/service">
             <StyledButton onClick={onClose}>Service</StyledButton>
@@ -279,7 +315,7 @@ const NavBar = () => {
               <StyledButton>Service</StyledButton>
             </Links>
             <Links href="/gallery">
-            <StyledButton>Gallery</StyledButton>
+              <StyledButton>Gallery</StyledButton>
             </Links>
             <Links href="/contact">
               <StyledButton onClick={onClose}>Contact Us</StyledButton>

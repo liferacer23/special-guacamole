@@ -8,19 +8,17 @@ import Collapse from "antd/lib/collapse";
 import Link from "next/link";
 
 const text = `
-  A dog is a type of domesticated animal.
-  Known for its loyalty and faithfulness,
-  it can be found as a welcome guest in many households across the world.
+Generators don't actually create electricity. Instead, they convert mechanical or chemical energy into electrical energy. They do this by capturing the power of motion and turning it into electrical energy by forcing electrons from the external source through an electrical circuit.
 `;
 const { Panel: antDpanel } = Collapse;
 
 const Panel = styled(antDpanel)`
   width: 70rem;
-    margin-top:0.5rem;
+  margin-top: 0.5rem;
   @media (max-width: 1000px) {
     width: 24rem;
   }
-  @media (max-width:763px) {
+  @media (max-width: 763px) {
     width: 20rem;
   }
   &.ant-collapse-item-active {
@@ -141,23 +139,28 @@ export default function index() {
             textAlign="left"
             width="90%"
           >
-           Switchgears
+            Switchgears
           </Text>
 
           <Collapse accordion expandIconPosition="end">
             <Panel header={"Synchronization Panels"} key="1">
               <p>{text}</p>
             </Panel>
+          </Collapse>
+          <Collapse>
             <Panel header={"Transfer Switch Panel"} key="2">
               <p>{text}</p>
             </Panel>
+          </Collapse>
+          <Collapse>
             <Panel header={"Distribution Panel"} key="3">
               <p>{text}</p>
             </Panel>
+          </Collapse>
+          <Collapse>
             <Panel header={"Control Panel"} key="4">
               <p>{text}</p>
             </Panel>
-      
           </Collapse>
         </Flex>
       </Flex>

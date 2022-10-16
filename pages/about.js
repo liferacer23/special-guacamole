@@ -29,6 +29,10 @@ const { Option } = Select;
 const Carousel = styled(antDCarousel)`
 width: 500px !important;
 height: 500px !important;
+@media (max-width: 1000px) {
+  width: 400px !important;
+  height: 500px !important;
+}
 `
 const HeaderText = styled.span`
   color: rgba(0, 48, 100, 1);
@@ -39,10 +43,12 @@ const HeaderText = styled.span`
     font-size: 1rem;
   }
 `;
+
+
+
 const text = `
-  A dog is a type of domesticated animal.
-  Known for its loyalty and faithfulness,
-  it can be found as a welcome guest in many households across the world.
+Generators don't actually create electricity. Instead, they convert mechanical or chemical energy into electrical energy. They do this by capturing the power of motion and turning it into electrical energy by forcing electrons from the external source through an electrical circuit.
+
 `;
 const { Panel: antDpanel } = Collapse;
 
@@ -271,7 +277,7 @@ const About = () => {
               <Flex
                 width="20%"
                 directionMobile="row"
-                widthMobile="40%"
+                widthMobile="60%"
                 gap="0px"
               >
                 <Link href="/">
@@ -406,9 +412,13 @@ const About = () => {
                   <Panel header={"Dependable and Quanlity Products"} key="1">
                     <p>{text}</p>
                   </Panel>
+                  </Collapse>
+                  <Collapse>
                   <Panel header={"End to End Customizable Solutions"} key="2">
                     <p>{text}</p>
                   </Panel>
+                  </Collapse>
+                  <Collapse>
                   <Panel
                     header={"Efficient and Expect Customer Support"}
                     key="3"

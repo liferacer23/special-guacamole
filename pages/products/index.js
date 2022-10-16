@@ -4,7 +4,6 @@ import styled from "styled-components";
 import titleBar from "../../assets/titlebar-bg.jpg";
 import { Flex, Text, Button } from "../../components/Base/";
 import { AiOutlineHome } from "react-icons/ai";
-import Collapse from "antd/lib/collapse";
 import Link from "next/link";
 
 const StyledDiv = styled.div`

@@ -116,7 +116,7 @@ const HamburgerMenu = styled("div")`
   }
 `;
 const NavBarContainer = styled("div")`
-  width: 100vw;
+  width: 100%;
   display: flex;
   height: 6rem;
   align-items: center;
@@ -129,7 +129,7 @@ const NavBarContainer = styled("div")`
     justify-content: space-between;
     background: #fff;
     width: 100%;
-    padding: 0 1.5rem;
+    padding: 0 2rem;
   }
 `;
 

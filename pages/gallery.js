@@ -390,7 +390,7 @@ export default function Gallery() {
             </Tabs.TabPane>
           </Tabs>
           <Collapse expandIconPosition="end">
-            <Panel header={" Generator"} key="3">
+            <Panel header={" Generator"} key="1">
             <ImageWrapper style={{ marginLeft: "2rem" }}>
                 {GeneratorImages.map((image, index) => (
                   <Image
@@ -409,7 +409,7 @@ export default function Gallery() {
                 ))}
               </ImageWrapper>
             </Panel>
-            <Panel header={"Switch Gears"} key="3">
+            <Panel header={"Switch Gears"} key="2">
             <ImageWrapper style={{ marginLeft: "2rem" }}>
                 {SwitchGearImages.map((image, index) => (
                   <Image

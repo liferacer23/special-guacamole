@@ -127,9 +127,8 @@ const NavBarContainer = styled("div")`
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: #fff;
     width: 100%;
-    padding: 0 3rem 0rem 2rem;
+    padding: 0 1rem 0rem 1rem;
   }
 `;
 
@@ -321,9 +320,9 @@ const NavBar = () => {
               <StyledButton onClick={onClose}>Contact Us</StyledButton>
             </Links>
             <Popover content={searchContent} trigger="click" placement="bottom">
-              <StyledButton width="10px" padding="7px 0">
+              <StyledButton width="30px" padding="7px 0">
                 {" "}
-                <GoSearch color="rgba(0, 48, 100, 1)" />
+                <GoSearch color="rgba(0, 48, 100, 1)" style={{marginRight:'1rem'}}/>
               </StyledButton>
             </Popover>
           </HeaderItems>

@@ -287,16 +287,18 @@ const About = () => {
                 gap="0px"
               >
                 <Link href="/">
-                  <Flex width="50%" directionMobile="row" widthMobile="40%">
-                    {" "}
-                    <AiOutlineHome style={{ fontSize: "1.5rem" }} />
-                    <Text
-                      color="#fff"
-                      fontSize="1rem"
-                      textAlign="center"
-                      fontWeight="bold"
-                      cursor="pointer"
-                    >
+                <Flex width="50%" directionMobile="row" widthMobile="50%" justifyContent="center" gap="0px">
+                  {" "}
+                  <AiOutlineHome style={{ fontSize: "1.5rem" }} />
+                  <Text
+                    color="#fff"
+                    fontSize="1rem"
+                    textAlign="center"
+                    fontWeight="bold"
+                    cursor="pointer"
+                    width="50%"
+                    mobileWidth="60%"
+                  >
                       Home
                     </Text>
                   </Flex>

@@ -129,7 +129,7 @@ export default function index() {
           <Flex width="100%" justifyContent="center" gap="0px">
             <Flex width="20%" directionMobile="row" widthMobile="40%" gap="5px">
               <Link href="/">
-                <Flex width="50%" directionMobile="row" widthMobile="40%">
+              <Flex width="50%" directionMobile="row" widthMobile="50%" justifyContent="center" gap="0px">
                   {" "}
                   <AiOutlineHome style={{ fontSize: "1.5rem" }} />
                   <Text
@@ -138,8 +138,10 @@ export default function index() {
                     textAlign="center"
                     fontWeight="bold"
                     cursor="pointer"
+                    width="50%"
+                    mobileWidth="60%"
                   >
-                    Home
+                    Home{" "}
                   </Text>
                 </Flex>
               </Link>

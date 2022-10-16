@@ -230,12 +230,7 @@ export default function Gallery() {
           <Flex width="100%" justifyContent="center" gap="0px">
             <Flex width="20%" directionMobile="row" widthMobile="40%" gap="0px">
               <Link href="/">
-                <Flex
-                  width="50%"
-                  justifyContent="center"
-                  directionMobile="row"
-                  widthMobile="40%"
-                >
+              <Flex width="50%" directionMobile="row" widthMobile="50%" justifyContent="center" gap="0px">
                   {" "}
                   <AiOutlineHome style={{ fontSize: "1.5rem" }} />
                   <Text
@@ -244,7 +239,8 @@ export default function Gallery() {
                     textAlign="center"
                     fontWeight="bold"
                     cursor="pointer"
-                    width="40%"
+                    width="50%"
+                    mobileWidth="60%"
                   >
                     Home
                   </Text>

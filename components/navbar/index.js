@@ -37,29 +37,7 @@ const Popover = styled(antDPopover)`
     display: none !important;
   }
 `;
-const Anchor = styled(antDAnchor)`
-  .ant-anchor-ink::before {
-    display: none;
-  }
-  .ant-anchor-link-title {
-    color: #e6f7ff;
-    font-size: 12px;
-    :&hover  {
-      color: yellow !important;
-    }
-  }
 
-  .ant-anchor {
-    display: flex;
-    width: 100%;
-    justify-content: end;
-    align-items: center;
-    gap: 20px;
-  }
-  .ant-anchor-ink-ball.visible {
-    display: none;
-  }
-`;
 
 const HeaderItems = styled.div`
   display: flex;
@@ -226,14 +204,14 @@ const NavBar = () => {
         open={open}
       >
         <NavBarContainer direction="column">
-          <Link href="/">
+          <Links href="/">
             <Image
               src={logo}
               alt="Website logo image"
               width={180}
               height={45}
             />
-          </Link>
+          </Links>
           <Links href="/">
             <StyledButton onClick={onClose}>Home</StyledButton>
           </Links>
@@ -304,14 +282,14 @@ const NavBar = () => {
           <HamburgerMenu onClick={showDrawer}>
             <GiHamburgerMenu style={{ fontSize: "2rem" }} />
           </HamburgerMenu>
-          <Link href="/">
+          <Links href="/">
             <Image
               src={logo}
               alt="Website logo image"
               width={210}
               height={55}
             />
-          </Link>
+          </Links>
           <SearchContainer>
             <Popover content={searchContent} trigger="click" placement="bottom">
               <Flex width="30px" height="30px" margin="5px 15px">

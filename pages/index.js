@@ -23,6 +23,7 @@ import { CgArrowLongRight } from "react-icons/cg";
 import { Flex, Text, Button } from "../components/Base/";
 import HomeSlider from "../components/HomeSlider";
 import { useState, useEffect } from "react";
+import { Overlay } from "antd/lib/popconfirm/PurePanel";
 
 const HeaderContainer = styled.div`
   background: url(${hero.src});
@@ -31,9 +32,18 @@ const HeaderContainer = styled.div`
   background-repeat: no-repeat;
   height: 90vh;
   width: 100vw;
+  postion: relative;
   @media (max-width: 1000px) {
     height: 53vh;
   }
+`;
+const OverlayContainer = styled.div`
+height:100%;
+width:100%;
+position:absolute;
+inset:0;
+background:#000;
+opacity:0.3;
 `;
 const IconTextContainer = styled.div`
   display: flex;
@@ -290,7 +300,9 @@ export default function Home() {
       </Head>
 
       <HeaderContainer>
+     
         <HeaderContent>
+          <OverlayContainer/>
           <Text
             mobileDisplay="none"
             fontSize={"16px"}
@@ -300,12 +312,12 @@ export default function Home() {
             ---Welcome to Nileco---
           </Text>
           <Text
-            fontSize={"3.2rem"}
+            fontSize={"3.4rem"}
             color="rgb(1,44,90)"
             fontWeight="bold"
             width="50%"
             mobileWidth="100%"
-            mobileFontSize={"1.5rem"}
+            mobileFontSize={"1.6rem"}
             hoverbackground="transparent"
           >
             We are leader in power and technology

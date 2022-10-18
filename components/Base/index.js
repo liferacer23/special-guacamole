@@ -69,7 +69,7 @@ export const Flex = styled.div`
   color: ${(props) => props.color || "#fff"};
   background: ${(props) => props.background || "transparent"};
   font-size: ${(props) => props.fontSize || "0.8rem"};
-  font-weight: ${(props) => props.fontWeight || "400"};
+  font-weight: ${(props) => props.fontWeight || "500"};
   @media (max-width: 768px) {
     margin: ${(props) => props.marginMobile || "0px"};
     flex-direction: ${(props) => props.directionMobile || "column"};

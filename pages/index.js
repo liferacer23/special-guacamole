@@ -78,7 +78,7 @@ const DeliverSection = styled.div`
   justify-content: start;
   @media (max-width: 1000px) {
     flex-direction: column;
-    padding:1rem;
+    padding: 1rem;
   }
 `;
 const DeliverSectionDescription = styled.div`
@@ -121,7 +121,7 @@ const WorkingSection = styled.div`
   text-align: center;
   justify-content: start;
   @media (max-width: 1000px) {
-    padding:1rem;
+    padding: 1rem;
   }
 `;
 const HeaderButtonContainer = styled.div`
@@ -140,6 +140,9 @@ const Card = styled.div`
   height: 482px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   margin-bottom: 1rem;
+  @media (max-width: 1000px) {
+    margin:1rem;
+  }
 `;
 const CardButton = styled("div")`
   margin-top: auto;
@@ -176,7 +179,6 @@ const AboutSection = styled.div`
   align-item: center;
   @media (max-width: 768px) {
     flex-direction: column;
-   
   }
 `;
 const AboutSectionInsideContainer = styled.div`
@@ -207,7 +209,7 @@ const HospitalitySection = styled.div`
   margin-top: -0.5rem;
   padding-top: 4rem;
   @media (max-width: 768px) {
-    padding:1rem;
+    padding: 1rem;
   }
 `;
 const HeaderContent = styled.div`

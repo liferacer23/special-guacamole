@@ -112,7 +112,7 @@ const DeliverSectionImage = styled.div`
 const WorkingSection = styled.div`
   min-height: 30rem;
   padding-top: 4rem;
-  width: 100%;
+  width: 95%;
   background: #fff;
   position: relative;
   display: flex;
@@ -163,6 +163,9 @@ const CardButton = styled("div")`
     }
   }
   cursor: pointer;
+  @media (max-width: 1000px) {
+    margin:1rem;
+  }
 `;
 const InnerText = styled("span")`
   color: rgba(0, 48, 100, 1);

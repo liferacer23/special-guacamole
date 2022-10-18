@@ -23,7 +23,7 @@ import { CgArrowLongRight } from "react-icons/cg";
 import { Flex, Text, Button } from "../components/Base/";
 import HomeSlider from "../components/HomeSlider";
 import { useState, useEffect } from "react";
-import { Overlay } from "antd/lib/popconfirm/PurePanel";
+
 
 const HeaderContainer = styled.div`
   background: url(${hero.src});
@@ -247,49 +247,48 @@ color: rgb(1,44,90);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 `;
 export default function Home() {
-  //function that increases a number every millisecond and sets it to a state
-  const [count1, setCount1] = useState(0);
-  const [count2, setCount2] = useState(0);
-  const [count3, setCount3] = useState(0);
-  const [count4, setCount4] = useState(0);
-  const [count5, setCount5] = useState(0);
-  const [count6, setCount6] = useState(0);
-  const [count7, setCount7] = useState(0);
-  useEffect(() => {
-    const interval = setInterval(() => {
-      if (count1 < 150) {
-        setCount1(count1 + 1);
-      }
-      if (count2 < 11) {
-        setCount2(count2 + 5);
-      }
-      if (count3 < 485) {
-        setCount3(count3 + 5);
-      }
-      if (count4 < 500) {
-        setCount4(count4 + 10);
-      }
-      if (count5 < 160) {
-        setCount5(count5 + 5);
-      }
-      if (count6 < 80) {
-        setCount6(count6 + 1);
-      }
-      if (count7 < 60) {
-        setCount7(count7 + 1);
-      }
-    }, 100);
-    return () => clearInterval(interval);
-  }, [
-    count1,
-    count2,
-    count3,
-    count4,
-    setCount1,
-    setCount2,
-    setCount3,
-    setCount4,
-  ]);
+  // const [count1, setCount1] = useState(0);
+  // const [count2, setCount2] = useState(0);
+  // const [count3, setCount3] = useState(0);
+  // const [count4, setCount4] = useState(0);
+  // const [count5, setCount5] = useState(0);
+  // const [count6, setCount6] = useState(0);
+  // const [count7, setCount7] = useState(0);
+  // useEffect(() => {
+  //   const interval = setInterval(() => {
+  //     if (count1 < 150) {
+  //       setCount1(count1 + 1);
+  //     }
+  //     if (count2 < 11) {
+  //       setCount2(count2 + 5);
+  //     }
+  //     if (count3 < 485) {
+  //       setCount3(count3 + 5);
+  //     }
+  //     if (count4 < 500) {
+  //       setCount4(count4 + 10);
+  //     }
+  //     if (count5 < 160) {
+  //       setCount5(count5 + 5);
+  //     }
+  //     if (count6 < 80) {
+  //       setCount6(count6 + 1);
+  //     }
+  //     if (count7 < 60) {
+  //       setCount7(count7 + 1);
+  //     }
+  //   }, 100);
+  //   return () => clearInterval(interval);
+  // }, [
+  //   count1,
+  //   count2,
+  //   count3,
+  //   count4,
+  //   setCount1,
+  //   setCount2,
+  //   setCount3,
+  //   setCount4,
+  // ]);
 
   return (
     <>
@@ -545,7 +544,7 @@ export default function Home() {
                     mobileTextAlign="left"
                     mobileWidth="70%"
                   >
-                    {count5}
+                    160
                   </Text>
                 </Flex>
                 <Flex direction="column">
@@ -565,7 +564,7 @@ export default function Home() {
                     mobileTextAlign="left"
                     mobileWidth="70%"
                   >
-                    {count6}
+                   80
                   </Text>
                 </Flex>
                 <Flex direction="column">
@@ -585,7 +584,7 @@ export default function Home() {
                     mobileTextAlign="left"
                     mobileWidth="70%"
                   >
-                    {count7}
+                    60
                   </Text>
                 </Flex>
               </Flex>
@@ -852,7 +851,7 @@ export default function Home() {
                         color="white"
                         fontWeight="bold"
                       >
-                        {count1}
+                       150
                       </Text>
 
                       <Text fontSize="0.9rem" color="white" fontWeight="bold">
@@ -879,7 +878,7 @@ export default function Home() {
                         color="white"
                         fontWeight="bold"
                       >
-                        {count2}
+                        11
                       </Text>
 
                       <Text fontSize="0.9rem" color="white" fontWeight="bold">
@@ -906,7 +905,7 @@ export default function Home() {
                         color="white"
                         fontWeight="bold"
                       >
-                        {count3}
+                        485
                       </Text>
 
                       <Text fontSize="0.9rem" color="white" fontWeight="bold">
@@ -933,7 +932,7 @@ export default function Home() {
                         color="white"
                         fontWeight="bold"
                       >
-                        {count4}
+                       500
                       </Text>
 
                       <Text fontSize="0.9rem" color="white" fontWeight="bold">

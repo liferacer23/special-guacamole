@@ -23,6 +23,7 @@ import { CgArrowLongRight } from "react-icons/cg";
 import { Flex, Text, Button } from "../components/Base/";
 import HomeSlider from "../components/HomeSlider";
 import { useState, useEffect } from "react";
+
 const HeaderContainer = styled.div`
   background: url(${hero.src});
   background-size: cover;

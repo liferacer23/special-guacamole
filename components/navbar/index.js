@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import antDLayout from "antd/lib/layout";
-import Button from "antd/lib/button";
 import antDPopover from "antd/lib/popover";
 import styled from "styled-components";
 import Image from "next/image";
@@ -10,7 +9,7 @@ import antDAnchor from "antd/lib/anchor";
 import { AiOutlineMail } from "react-icons/ai";
 import { BsTelephoneFill } from "react-icons/bs";
 import { GiHamburgerMenu } from "react-icons/gi";
-import { Flex, Text } from "../Base";
+import { Flex, Text,Button } from "../Base";
 import { GoSearch } from "react-icons/go";
 import Drawer from "antd/lib/drawer";
 import Search from "antd/lib/input/Search";
@@ -91,16 +90,16 @@ const StyledButton = styled(Button)`
   font-size: 1rem !important;
   color: rgb(0, 44, 91) !important;
 `;
-const LinkContainer = styled("div")`
-  width: 100%;
-  height: 50%;
-  display: flex;
-  align-item: center;
-  justify-content: end;
-  @media (max-width: 1000px) {
-    display: none;
-  }
-`;
+// const LinkContainer = styled("div")`
+//   width: 100%;
+//   height: 50%;
+//   display: flex;
+//   align-item: center;
+//   justify-content: end;
+//   @media (max-width: 1000px) {
+//     display: none;
+//   }
+// `;
 const Credentials = styled("div")`
   background: rgb(0, 44, 91) !important;
   height: 3rem !important;
@@ -168,7 +167,7 @@ const ContentItem = styled("div")`
   }
 `;
 const searchContent = <Search placeholder="input search text" enterButton />;
-const text = <span>Products</span>;
+
 //create a hamburger menu for mobile view
 
 const NavBar = () => {
@@ -239,13 +238,13 @@ const NavBar = () => {
             placement="bottom"
             visible={popoverOpen}
           >
-            <StyledButton
+            <Button
               onClick={() => {
                 setPopoverOpen((prev) => !prev);
               }}
             >
               Products
-            </StyledButton>
+            </Button>
           </Popover>
           <Links href="/service">
             <StyledButton onClick={onClose}>Service</StyledButton>
@@ -300,10 +299,10 @@ const NavBar = () => {
           <Image src={logo} alt="Website logo image" width={210} height={55} />
           <SearchContainer>
             <Popover content={searchContent} trigger="click" placement="bottom">
-              <StyledButton width="10px" padding="7px 0">
-                {" "}
+              <Button width="30px" height="30px" padding="5px 5px" margin="1rem 0 0 0" hoverbackground="none" border="none">
+              
                 <GoSearch color="rgba(0, 48, 100, 1)" />
-              </StyledButton>
+              </Button>
             </Popover>
           </SearchContainer>
           <HeaderItems>

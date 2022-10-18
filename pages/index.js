@@ -78,6 +78,7 @@ const DeliverSection = styled.div`
   justify-content: start;
   @media (max-width: 1000px) {
     flex-direction: column;
+    padding:1rem;
   }
 `;
 const DeliverSectionDescription = styled.div`
@@ -119,6 +120,9 @@ const WorkingSection = styled.div`
   align-item: center;
   text-align: center;
   justify-content: start;
+  @media (max-width: 1000px) {
+    padding:1rem;
+  }
 `;
 const HeaderButtonContainer = styled.div`
   display: flex;
@@ -172,6 +176,7 @@ const AboutSection = styled.div`
   align-item: center;
   @media (max-width: 768px) {
     flex-direction: column;
+   
   }
 `;
 const AboutSectionInsideContainer = styled.div`
@@ -201,6 +206,9 @@ const HospitalitySection = styled.div`
   align-item: center;
   margin-top: -0.5rem;
   padding-top: 4rem;
+  @media (max-width: 768px) {
+    padding:1rem;
+  }
 `;
 const HeaderContent = styled.div`
   display: flex;

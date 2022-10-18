@@ -622,7 +622,7 @@ export default function Home() {
         >
           Modern Electrical And Power Equipment Guaranteed
         </Text>
-        <Flex justifyContent="center" padding="1rem">
+        <Flex direction="column" alignItems="center" justifyContent="center" padding="1rem">
           <Card>
             {" "}
             <Image

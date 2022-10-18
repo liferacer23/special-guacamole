@@ -3,7 +3,6 @@ import antDLayout from "antd/lib/layout";
 import Button from "antd/lib/button";
 import antDPopover from "antd/lib/popover";
 import styled from "styled-components";
-import Text from "antd/lib/typography/Text";
 import Image from "next/image";
 import Links from "next/link";
 import logo from "../../assets/Nileco.png";
@@ -11,6 +10,7 @@ import antDAnchor from "antd/lib/anchor";
 import { AiOutlineMail } from "react-icons/ai";
 import { BsTelephoneFill } from "react-icons/bs";
 import { GiHamburgerMenu } from "react-icons/gi";
+import { Flex, Text } from "../Base";
 import { GoSearch } from "react-icons/go";
 import Drawer from "antd/lib/drawer";
 import Search from "antd/lib/input/Search";
@@ -92,7 +92,8 @@ const StyledButton = styled(Button)`
   color: rgb(0, 44, 91) !important;
 `;
 const LinkContainer = styled("div")`
-  width: 70%;
+  width: 100%;
+  height: 50%;
   display: flex;
   align-item: center;
   justify-content: end;
@@ -101,11 +102,15 @@ const LinkContainer = styled("div")`
   }
 `;
 const Credentials = styled("div")`
-  background: rgb(0, 44, 91);
-  height: 3rem;
+  background: rgb(0, 44, 91) !important;
+  height: 3rem !important;
+  width: 100vw !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: end !important;
   @media (max-width: 1000px) {
-    display: none;
-    height: 0rem;
+    display: none !important;
+    height: 0rem !important;
   }
 `;
 const HamburgerMenu = styled("div")`
@@ -116,7 +121,7 @@ const HamburgerMenu = styled("div")`
   }
 `;
 const NavBarContainer = styled("div")`
-  width: 100%;
+  width: 100vw;
   display: flex;
   height: 6rem;
   align-items: center;
@@ -220,7 +225,7 @@ const NavBar = () => {
         onClose={onClose}
         open={open}
       >
-        <NavBarContainer direction="column" style={{ gap: "0.7rem" }}>
+        <NavBarContainer direction="column">
           <Image src={logo} alt="Website logo image" width={180} height={45} />
           <Links href="/">
             <StyledButton onClick={onClose}>Home</StyledButton>
@@ -253,40 +258,41 @@ const NavBar = () => {
           </Links>
         </NavBarContainer>
       </Drawer>
-      <Credentials style={{ display: "flex", alignItems: "center" }}>
-        <LinkContainer>
-          <Text style={{ color: "#fff", marginRight: "1rem" }}>
+      <Credentials>
+        <Flex gap="20px" width="80%" justifyContent="end">
+          <Text fontSize="0.7rem" color="#fff" width="50%" textAlign="right">
             Your Trusted Power Solutions Provider in Ethiopia
           </Text>
-          <Anchor affix={false}>
-            <AiOutlineMail
-              style={{
-                fontSize: "1rem",
-                color: "rgb(255, 199, 44)",
-                marginRight: "-10px",
-              }}
-            />{" "}
-            <Link
-              style={{ color: "#fff", fontSize: "1.4rem" }}
-              href="#"
-              title="info@nilecoeem.com"
-            />
-            <BsTelephoneFill
-              style={{
-                fontSize: "1rem",
-                color: "rgb(255, 199, 44)",
-                marginRight: "-10px",
-              }}
-            />
-            <Link
-              style={{ color: "#fff", fontSize: "1.4rem" }}
-              href="#"
-              title="+251 977 80 5757"
-            />
-          </Anchor>
-        </LinkContainer>
+          <Flex  width="50%" justifyContent="center">
+            <Flex width="250px" gap="1rem">
+              <AiOutlineMail
+                style={{
+                  fontSize: "1rem",
+                  color: "rgb(255, 199, 44)",
+                  marginRight: "-10px",
+                }}
+              />{" "}
+              <Text fontSize="0.7rem" color="#fff" width="40%">
+                info@nilecoeem.com
+              </Text>
+            </Flex>
+            <Flex width="250px" gap="1rem">
+              <BsTelephoneFill
+                style={{
+                  fontSize: "1rem",
+                  color: "rgb(255, 199, 44)",
+                  marginRight: "-10px",
+                }}
+              />
+              <Text fontSize="0.7rem" color="#fff" width="50%">
+                {" "}
+                +251 977 80 5757
+              </Text>
+            </Flex>
+          </Flex>
+        </Flex>
       </Credentials>
-      <Layout>
+      <Layout style={{ width: "100vw", height: "5rem" }}>
         <NavBarContainer>
           <HamburgerMenu onClick={showDrawer}>
             <GiHamburgerMenu style={{ fontSize: "2rem" }} />

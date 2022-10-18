@@ -77,7 +77,7 @@ export default function HomeSlider() {
               className="pointer-events-none p-3 min-w-[25rem] min-h-[40rem]"
             >
               <Image
-                style={{ width: "100%", height: "100%" }}
+            
                 key={index}
                 alt="images"
                 src={item}

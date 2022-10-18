@@ -224,7 +224,7 @@ const NavBar = () => {
             placement="bottom"
             visible={popoverOpen}
           >
-            <Button
+            <StyledButton 
             color="rgba(0, 48, 100, 1)"
             hoverbackground="none"
               onClick={() => {
@@ -232,7 +232,7 @@ const NavBar = () => {
               }}
             >
               Products
-            </Button>
+            </StyledButton>
           </Popover>
           <Links href="/service">
             <StyledButton onClick={onClose}>Service</StyledButton>

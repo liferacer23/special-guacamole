@@ -225,6 +225,8 @@ const NavBar = () => {
             visible={popoverOpen}
           >
             <Button
+            color="rgba(0, 48, 100, 1)"
+            hoverbackground="none"
               onClick={() => {
                 setPopoverOpen((prev) => !prev);
               }}

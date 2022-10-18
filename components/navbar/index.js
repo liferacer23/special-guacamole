@@ -299,10 +299,10 @@ const NavBar = () => {
           <Image src={logo} alt="Website logo image" width={210} height={55} />
           <SearchContainer>
             <Popover content={searchContent} trigger="click" placement="bottom">
-              <Button width="30px" height="30px" padding="5px 5px" margin="1rem 0 0 0" hoverbackground="none" border="none">
+              <Flex width="30px" height="30px" margin="5px 15px" >
               
                 <GoSearch color="rgba(0, 48, 100, 1)" />
-              </Button>
+              </Flex>
             </Popover>
           </SearchContainer>
           <HeaderItems>

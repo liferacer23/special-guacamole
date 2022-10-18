@@ -9,7 +9,7 @@ import antDAnchor from "antd/lib/anchor";
 import { AiOutlineMail } from "react-icons/ai";
 import { BsTelephoneFill } from "react-icons/bs";
 import { GiHamburgerMenu } from "react-icons/gi";
-import { Flex, Text,Button } from "../Base";
+import { Flex, Text, Button } from "../Base";
 import { GoSearch } from "react-icons/go";
 import Drawer from "antd/lib/drawer";
 import Search from "antd/lib/input/Search";
@@ -64,7 +64,8 @@ const Anchor = styled(antDAnchor)`
 const HeaderItems = styled.div`
   display: flex;
   align-item: center;
-  justify-content: center;
+  justify-content: end;
+  width: 50%;
   gap: 10px;
   @media (max-width: 1000px) {
     display: none;
@@ -225,7 +226,14 @@ const NavBar = () => {
         open={open}
       >
         <NavBarContainer direction="column">
-          <Image src={logo} alt="Website logo image" width={180} height={45} />
+          <Link href="/">
+            <Image
+              src={logo}
+              alt="Website logo image"
+              width={180}
+              height={45}
+            />
+          </Link>
           <Links href="/">
             <StyledButton onClick={onClose}>Home</StyledButton>
           </Links>
@@ -262,7 +270,7 @@ const NavBar = () => {
           <Text fontSize="0.7rem" color="#fff" width="50%" textAlign="right">
             Your Trusted Power Solutions Provider in Ethiopia
           </Text>
-          <Flex  width="50%" justifyContent="center">
+          <Flex width="50%" justifyContent="center">
             <Flex width="250px" gap="1rem">
               <AiOutlineMail
                 style={{
@@ -296,11 +304,17 @@ const NavBar = () => {
           <HamburgerMenu onClick={showDrawer}>
             <GiHamburgerMenu style={{ fontSize: "2rem" }} />
           </HamburgerMenu>
-          <Image src={logo} alt="Website logo image" width={210} height={55} />
+          <Link href="/">
+            <Image
+              src={logo}
+              alt="Website logo image"
+              width={210}
+              height={55}
+            />
+          </Link>
           <SearchContainer>
             <Popover content={searchContent} trigger="click" placement="bottom">
-              <Flex width="30px" height="30px" margin="5px 15px" >
-              
+              <Flex width="30px" height="30px" margin="5px 15px">
                 <GoSearch color="rgba(0, 48, 100, 1)" />
               </Flex>
             </Popover>
@@ -328,7 +342,7 @@ const NavBar = () => {
               {" "}
               <GoSearch
                 color="rgba(0, 48, 100, 1)"
-                style={{ marginRight: "1rem" }}
+                style={{ marginRight: "1rem", marginTop: "1rem" }}
               />
             </Popover>
           </HeaderItems>

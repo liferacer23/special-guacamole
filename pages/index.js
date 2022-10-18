@@ -43,7 +43,7 @@ width:100%;
 position:absolute;
 inset:0;
 background:#000;
-opacity:0.3;
+opacity:0.2;
 `;
 const IconTextContainer = styled.div`
   display: flex;

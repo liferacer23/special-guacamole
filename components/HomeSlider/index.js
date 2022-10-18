@@ -74,7 +74,6 @@ export default function HomeSlider() {
               animate={{ opacity: 1 }}
               initial={{ opacity: 0 }}
               transition={{ duration: 0.8 }}
-              className="pointer-events-none p-3 min-w-[25rem] min-h-[40rem]"
             >
               <Image
             

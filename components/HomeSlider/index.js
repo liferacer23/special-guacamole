@@ -80,8 +80,8 @@ export default function HomeSlider() {
                 key={index}
                 alt="images"
                 src={item}
-                width={110}
-                height={130}
+                width="110px"
+                height="130px"
                 priority
               />
             </ImageContainer>

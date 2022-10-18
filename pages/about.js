@@ -328,8 +328,8 @@ const About = () => {
                   objectFit="contain"
                     key={index}
                     src={worker}
-                    width={550}
-                    height={550}
+                    width="550px"
+                    height="550px"
                     alt="compony workers"
                   />
                 );

@@ -208,8 +208,8 @@ const NavBar = () => {
             <Image
               src={logo}
               alt="Website logo image"
-              width={180}
-              height={45}
+              width="180px"
+              height="45px"
             />
           </Links>
           <Links href="/">
@@ -286,8 +286,8 @@ const NavBar = () => {
             <Image
               src={logo}
               alt="Website logo image"
-              width={210}
-              height={55}
+              width="210px"
+              height="55px"
             />
           </Links>
           <SearchContainer>

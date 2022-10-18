@@ -362,7 +362,7 @@ export default function Home() {
       </Flex>
 
       <AboutUsContainer>
-        <Image src={generator} width={550} height={650} alt="generator" />
+        <Image src={generator} width="550px" height="650px" alt="generator" />
         <Description>
           <Text fontSize="1.1rem" color="rgb(136,142,148)">
             About Us
@@ -622,7 +622,7 @@ export default function Home() {
         >
           Modern Electrical And Power Equipment Guaranteed
         </Text>
-        <Flex justifyContent="center">
+        <Flex justifyContent="center" padding="1rem">
           <Card>
             {" "}
             <Image

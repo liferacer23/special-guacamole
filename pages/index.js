@@ -22,8 +22,6 @@ import otherProducts from "../assets/otherProducts.jpg";
 import { CgArrowLongRight } from "react-icons/cg";
 import { Flex, Text, Button } from "../components/Base/";
 import HomeSlider from "../components/HomeSlider";
-import { useState, useEffect } from "react";
-
 
 const HeaderContainer = styled.div`
   background: url(${hero.src});
@@ -37,14 +35,7 @@ const HeaderContainer = styled.div`
     height: 53vh;
   }
 `;
-const OverlayContainer = styled.div`
-height:100%;
-width:100%;
-position:absolute;
-inset:0;
-background:#000;
-opacity:0.2;
-`;
+
 const IconTextContainer = styled.div`
   display: flex;
   flex-direction: row;
@@ -237,8 +228,8 @@ const OrDiv = styled.div`
   height: 30px;
   width: 30px;
   background: #fff;
-border-radius: 50%;
-color: rgb(1,44,90);
+  border-radius: 50%;
+  color: rgb(1, 44, 90);
   top: 30%;
   display: flex;
   justify-content: center;
@@ -299,9 +290,7 @@ export default function Home() {
       </Head>
 
       <HeaderContainer>
-     
         <HeaderContent>
-          <OverlayContainer/>
           <Text
             mobileDisplay="none"
             fontSize={"16px"}
@@ -564,7 +553,7 @@ export default function Home() {
                     mobileTextAlign="left"
                     mobileWidth="70%"
                   >
-                   80
+                    80
                   </Text>
                 </Flex>
                 <Flex direction="column">
@@ -851,7 +840,7 @@ export default function Home() {
                         color="white"
                         fontWeight="bold"
                       >
-                       150
+                        150
                       </Text>
 
                       <Text fontSize="0.9rem" color="white" fontWeight="bold">
@@ -932,7 +921,7 @@ export default function Home() {
                         color="white"
                         fontWeight="bold"
                       >
-                       500
+                        500
                       </Text>
 
                       <Text fontSize="0.9rem" color="white" fontWeight="bold">

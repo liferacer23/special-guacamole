@@ -120,9 +120,7 @@ const WorkingSection = styled.div`
   align-item: center;
   text-align: center;
   justify-content: start;
-  @media (max-width: 1000px) {
-    padding: 1rem;
-  }
+
 `;
 const HeaderButtonContainer = styled.div`
   display: flex;
@@ -141,7 +139,7 @@ const Card = styled.div`
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   margin-bottom: 1rem;
   @media (max-width: 1000px) {
-    margin:1rem;
+    margin:2rem;
   }
 `;
 const CardButton = styled("div")`
@@ -163,9 +161,6 @@ const CardButton = styled("div")`
     }
   }
   cursor: pointer;
-  @media (max-width: 1000px) {
-    margin:1rem;
-  }
 `;
 const InnerText = styled("span")`
   color: rgba(0, 48, 100, 1);

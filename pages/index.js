@@ -592,8 +592,8 @@ export default function Home() {
           <Image
             style={{ opacity: 0.2 }}
             src={checklistbg}
-            width={700}
-            height={600}
+            width="700px"
+            height="600px"
             alt="checklist background"
           />
         </DeliverSectionImage>
@@ -626,10 +626,10 @@ export default function Home() {
           <Card>
             {" "}
             <Image
-              style={{ opacity: 1 }}
+              
               src={generatorSingle}
-              width={250}
-              height={250}
+              width="250px"
+              height="250px"
               alt="generator Icon"
             />
             <Text
@@ -682,10 +682,10 @@ export default function Home() {
           <Card>
             {" "}
             <Image
-              style={{ opacity: 1 }}
+             
               src={switchGear}
-              width={250}
-              height={250}
+              width="250px"
+              height="250px"
               alt="switch gear"
             />
             <Text
@@ -738,10 +738,10 @@ export default function Home() {
           <Card>
             {" "}
             <Image
-              style={{ opacity: 1 }}
+            
               src={otherProducts}
-              width={250}
-              height={250}
+              width="250px"
+              height="250px"
               alt="other products"
             />
             <Text
@@ -801,7 +801,7 @@ export default function Home() {
         >
           <AboutSectionInsideContainer>
             <Flex justifyContent="space-between">
-              <Image src={AboutUs} width={700} height={680} alt="Volva image" />
+              <Image src={AboutUs} width="700px" height="680px" alt="Volva image" />
               <AboutSectionDescription>
                 <Flex
                   direction="column"

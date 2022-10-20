@@ -23,18 +23,18 @@ import { CgArrowLongRight } from "react-icons/cg";
 import { Flex, Text, Button } from "../components/Base/";
 import HomeSlider from "../components/HomeSlider";
 
-// const HeaderContainer = styled.div`
-//   background: url(${hero.src});
-//   background-size: cover;
-//   background-position: center;
-//   background-repeat: no-repeat;
-//   height: 90vh;
-//   width: 100vw;
-//   postion: relative;
-//   @media (max-width: 1000px) {
-//     height: 70vh;
-//   }
-// `;
+const HeaderContainer = styled.div`
+  background: url(${hero.src});
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 90vh;
+  width: 100vw;
+  postion: relative;
+  @media (max-width: 1000px) {
+    height: 70vh;
+  }
+`;
 
 const IconTextContainer = styled.div`
   display: flex;
@@ -296,7 +296,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      {/* <HeaderContainer>
+      <HeaderContainer>
         <HeaderContent>
           <Text
             mobileDisplay="none"
@@ -354,10 +354,10 @@ export default function Home() {
             </Button>
           </HeaderButtonContainer>
         </HeaderContent>
-      </HeaderContainer> */}
+      </HeaderContainer>
       <Flex>
         {" "}
-        {/* <HomeSlider /> */}
+        <HomeSlider />
       </Flex>
 
       <AboutUsContainer>

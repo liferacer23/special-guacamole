@@ -33,8 +33,8 @@ const Container = styled(motion.div)`
 const ImageContainer = styled(motion.div)`
   pointer-events: none;
   padding: 1rem;
-  width: 15rem;
-  height: 15rem;
+  width: 12rem;
+  height: 12Srem;
   @media (max-width: 1000px) {
     width: 8rem;
     height: 8rem;

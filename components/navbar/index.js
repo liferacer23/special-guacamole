@@ -38,7 +38,6 @@ const Popover = styled(antDPopover)`
   }
 `;
 
-
 const HeaderItems = styled.div`
   display: flex;
   align-item: center;
@@ -224,9 +223,9 @@ const NavBar = () => {
             placement="bottom"
             visible={popoverOpen}
           >
-            <StyledButton 
-            color="rgba(0, 48, 100, 1)"
-            hoverbackground="none"
+            <StyledButton
+              color="rgba(0, 48, 100, 1)"
+              hoverbackground="none"
               onClick={() => {
                 setPopoverOpen((prev) => !prev);
               }}
@@ -285,12 +284,19 @@ const NavBar = () => {
             <GiHamburgerMenu style={{ fontSize: "2rem" }} />
           </HamburgerMenu>
           <Links href="/">
-            <Image
-              src={logo}
-              alt="Website logo image"
-              width="210px"
-              height="55px"
-            />
+            <div
+              style={{ width: "210px", height: "55px", position: "relative" }}
+            >
+              <Image
+                src={logo}
+                alt="Website logo image"
+                layout="fill"
+                objectFit="contain"
+                sizes="(min-width: 768px) 100vw,
+                (max-width: 1200px) 50vw,
+                33vw"
+              />
+            </div>
           </Links>
           <SearchContainer>
             <Popover content={searchContent} trigger="click" placement="bottom">

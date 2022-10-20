@@ -27,14 +27,16 @@ const MainContainer = styled(motion.div)`
 const Container = styled(motion.div)`
   display: flex;
   position: absolute;
-  margin-top:1rem;
+  margin-top: 1rem;
   background: #fff;
 `;
 const ImageContainer = styled(motion.div)`
   pointer-events: none;
   padding: 1rem;
- width: 5rem;
+  width: 5rem;
   height: 8rem;
+
+  position: relative;
 `;
 
 export default function HomeSlider() {
@@ -76,12 +78,14 @@ export default function HomeSlider() {
               transition={{ duration: 0.8 }}
             >
               <Image
-            
                 key={index}
                 alt="images"
                 src={item}
-                width="110"
-                height="130"
+                layout="fill"
+                objectFit="contain"
+                sizes="(min-width: 768px) 100vw,
+                (max-width: 1200px) 50vw,
+                33vw"
                 priority
               />
             </ImageContainer>

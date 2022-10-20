@@ -848,7 +848,7 @@ export default function Home() {
               <div
                 style={{
                   position: "relative",
-                  width: "700px",
+                  width: "400px",
                   height: "680px",
                 }}
               >

@@ -1,4 +1,4 @@
-import React, { useRef }from "react";
+import React, { useRef } from "react";
 import Head from "next/head";
 import styled from "styled-components";
 import titleBar from "../../../assets/titlebar-bg.jpg";
@@ -124,7 +124,13 @@ export default function index() {
           <Flex width="100%" justifyContent="center" gap="0px">
             <Flex width="20%" directionMobile="row" widthMobile="40%" gap="5px">
               <Link href="/">
-              <Flex width="50%" directionMobile="row" widthMobile="50%" justifyContent="center" gap="0px">
+                <Flex
+                  width="50%"
+                  directionMobile="row"
+                  widthMobile="50%"
+                  justifyContent="center"
+                  gap="0px"
+                >
                   {" "}
                   <AiOutlineHome style={{ fontSize: "1.5rem" }} />
                   <Text
@@ -233,93 +239,156 @@ export default function index() {
                   ref={carouselRef}
                   style={{ height: "700px", width: "100%" }}
                 >
-                  <Flex justifyContent="center">
+                  <Flex
+                    justifyContent="center"
+                    height="500px"
+                    width="800px"
+                    position="relative"
+                  >
                     <Image
                       objectFit="cover"
                       style={{ zIndex: "-1" }}
                       src={generator17}
                       alt="sliderImage"
-                      height="500px"
-                      width="800px"
+                      layout="fill"
+                      sizes="(min-width: 768px) 100vw,
+              (max-width: 1200px) 50vw,
+              33vw"
                     />
                   </Flex>
-                  <Flex justifyContent="center">
+                  <Flex
+                    justifyContent="center"
+                    height="500px"
+                    width="800px"
+                    position="relative"
+                  >
                     <Image
                       style={{ zIndex: "-1" }}
                       src={generator18}
                       alt="sliderImage"
-                      height="500px"
-                      width="800px"
+                      layout="fill"
+                      sizes="(min-width: 768px) 100vw,
+              (max-width: 1200px) 50vw,
+              33vw"
                     />
                   </Flex>
-                  <Flex justifyContent="center">
+                  <Flex
+                    justifyContent="center"
+                    height="500px"
+                    width="800px"
+                    position="relative"
+                  >
                     <Image
                       objectFit="cover"
                       style={{ zIndex: "-1" }}
                       src={generator19}
                       alt="sliderImage"
-                      height="500px"
-                      width="800px"
+                      layout="fill"
+                      sizes="(min-width: 768px) 100vw,
+              (max-width: 1200px) 50vw,
+              33vw"
                     />
                   </Flex>
-                  <Flex justifyContent="center">
+                  <Flex
+                    justifyContent="center"
+                    height="500px"
+                    width="800px"
+                    position="relative"
+                  >
                     <Image
                       objectFit="cover"
                       style={{ zIndex: "-1" }}
                       src={generator20}
                       alt="sliderImage"
-                      height="500px"
-                      width="800px"
+                      layout="fill"
+                      sizes="(min-width: 768px) 100vw,
+              (max-width: 1200px) 50vw,
+              33vw"
                     />
                   </Flex>
-                  <Flex justifyContent="center">
+                  <Flex
+                    justifyContent="center"
+                    height="500px"
+                    width="800px"
+                    position="relative"
+                  >
                     <Image
                       objectFit="cover"
                       style={{ zIndex: "-1" }}
                       src={generator24}
                       alt="sliderImage"
-                      height="500px"
-                      width="800px"
+                      layout="fill"
+                      sizes="(min-width: 768px) 100vw,
+              (max-width: 1200px) 50vw,
+              33vw"
                     />
                   </Flex>
-                  <Flex justifyContent="center">
+                  <Flex
+                    justifyContent="center"
+                    height="500px"
+                    width="800px"
+                    position="relative"
+                  >
                     <Image
                       objectFit="cover"
                       style={{ zIndex: "-1" }}
                       src={generator25}
                       alt="sliderImage"
-                      height="500px"
-                      width="800px"
+                      layout="fill"
+                      sizes="(min-width: 768px) 100vw,
+              (max-width: 1200px) 50vw,
+              33vw"
                     />
                   </Flex>
-                  <Flex justifyContent="center">
+                  <Flex
+                    justifyContent="center"
+                    height="500px"
+                    width="800px"
+                    position="relative"
+                  >
                     <Image
                       objectFit="cover"
                       style={{ zIndex: "-1" }}
                       src={generator26}
                       alt="sliderImage"
-                      height="500px"
-                      width="800px"
+                      layout="fill"
+                      sizes="(min-width: 768px) 100vw,
+              (max-width: 1200px) 50vw,
+              33vw"
                     />
                   </Flex>
-                  <Flex justifyContent="center">
+                  <Flex
+                    justifyContent="center"
+                    height="500px"
+                    width="800px"
+                    position="relative"
+                  >
                     <Image
                       objectFit="cover"
                       style={{ zIndex: "-1" }}
                       src={generator27}
                       alt="sliderImage"
-                      height="500px"
-                      width="800px"
+                      layout="fill"
+                      sizes="(min-width: 768px) 100vw,
+              (max-width: 1200px) 50vw,
+              33vw"
                     />
                   </Flex>
-                  <Flex justifyContent="center">
+                  <Flex
+                    justifyContent="center"
+                    height="500px"
+                    width="800px"
+                    position="relative"
+                  >
                     <Image
                       objectFit="cover"
                       style={{ zIndex: "-1" }}
                       src={generator28}
                       alt="sliderImage"
-                      height="500px"
-                      width="800px"
+                      layout="fill"
+                      sizes="(min-width: 768px) 100vw,
+              (max-width: 1200px) 50vw,
+              33vw"
                     />
                   </Flex>
                 </Carousel>

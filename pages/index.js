@@ -120,7 +120,6 @@ const WorkingSection = styled.div`
   align-item: center;
   text-align: center;
   justify-content: start;
-
 `;
 const HeaderButtonContainer = styled.div`
   display: flex;
@@ -362,7 +361,13 @@ export default function Home() {
       </Flex>
 
       <AboutUsContainer>
-        <Image layout="intrinsic" src={generator} width="550" height="650" alt="generator" />
+        <Image
+          placeholder="blur"
+          src={generator}
+          width="550px"
+          height="650px"
+          alt="generator"
+        />
         <Description>
           <Text fontSize="1.1rem" color="rgb(136,142,148)">
             About Us
@@ -590,11 +595,11 @@ export default function Home() {
         </DeliverSectionDescription>
         <DeliverSectionImage>
           <Image
-          layout="intrinsic"
+           placeholder="blur"
             style={{ opacity: 0.2 }}
             src={checklistbg}
-            width="700"
-            height="600"
+            width="700px"
+            height="600px"
             alt="checklist background"
           />
         </DeliverSectionImage>
@@ -623,14 +628,19 @@ export default function Home() {
         >
           Modern Electrical And Power Equipment Guaranteed
         </Text>
-        <Flex direction="column" alignItems="center" justifyContent="center" padding="1rem">
+        <Flex
+          direction="column"
+          alignItems="center"
+          justifyContent="center"
+          padding="1rem"
+        >
           <Card>
             {" "}
             <Image
-              layout="intrinsic"
+             placeholder="blur"
               src={generatorSingle}
-              width="250"
-              height="250"
+              width="250px"
+              height="250px"
               alt="generator Icon"
             />
             <Text
@@ -683,10 +693,10 @@ export default function Home() {
           <Card>
             {" "}
             <Image
-             layout="intrinsic"
+             placeholder="blur"
               src={switchGear}
-              width="250"
-              height="250"
+              width="250px"
+              height="250px"
               alt="switch gear"
             />
             <Text
@@ -739,10 +749,10 @@ export default function Home() {
           <Card>
             {" "}
             <Image
-            layout="intrinsic"
+             placeholder="blur"
               src={otherProducts}
-              width="250"
-              height="250"
+              width="250px"
+              height="250px"
               alt="other products"
             />
             <Text
@@ -802,7 +812,13 @@ export default function Home() {
         >
           <AboutSectionInsideContainer>
             <Flex justifyContent="space-between">
-              <Image layout="intrinsic" src={AboutUs} width="700" height="680" alt="Volva image" />
+              <Image
+               placeholder="blur"
+                src={AboutUs}
+                width="700px"
+                height="680px"
+                alt="Volva image"
+              />
               <AboutSectionDescription>
                 <Flex
                   direction="column"

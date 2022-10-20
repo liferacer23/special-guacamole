@@ -362,6 +362,7 @@ export default function Home() {
 
       <AboutUsContainer>
         <Image
+        
           placeholder="blur"
           src={generator}
           width="550px"
@@ -593,7 +594,7 @@ export default function Home() {
             </Flex>
           </Flex>
         </DeliverSectionDescription>
-        <DeliverSectionImage>
+        {/* <DeliverSectionImage>
           <Image
            placeholder="blur"
             style={{ opacity: 0.2 }}
@@ -602,7 +603,7 @@ export default function Home() {
             height="600px"
             alt="checklist background"
           />
-        </DeliverSectionImage>
+        </DeliverSectionImage> */}
       </DeliverSection>
       <WorkingSection>
         <Text

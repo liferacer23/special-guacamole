@@ -32,7 +32,7 @@ const HeaderContainer = styled.div`
   width: 100vw;
   postion: relative;
   @media (max-width: 1000px) {
-    height: 53vh;
+    height: 70vh;
   }
 `;
 
@@ -112,7 +112,7 @@ const DeliverSectionImage = styled.div`
 const WorkingSection = styled.div`
   min-height: 30rem;
   padding-top: 4rem;
-  width: 95%;
+  width: 100%;
   background: #fff;
   position: relative;
   display: flex;
@@ -357,18 +357,22 @@ export default function Home() {
       </HeaderContainer>
       <Flex>
         {" "}
-        {/* <HomeSlider /> */}
+        <HomeSlider />
       </Flex>
 
       <AboutUsContainer>
-        <Image
-        
-          placeholder="blur"
-          src={generator}
-          width="550px"
-          height="650px"
-          alt="generator"
-        />
+        <div style={{ position: "relative", width: "400px", height: "650px" }}>
+          <Image
+            placeholder="blur"
+            src={generator}
+            layout="fill"
+            objectFit="contain"
+            alt="generator"
+            sizes="(min-width: 768px) 100vw,
+            (max-width: 1200px) 50vw,
+            33vw"
+          />
+        </div>
         <Description>
           <Text fontSize="1.1rem" color="rgb(136,142,148)">
             About Us
@@ -595,14 +599,21 @@ export default function Home() {
           </Flex>
         </DeliverSectionDescription>
         <DeliverSectionImage>
-          <Image
-           placeholder="blur"
-            style={{ opacity: 0.2 }}
-            src={checklistbg}
-            width="700px"
-            height="600px"
-            alt="checklist background"
-          />
+          <div
+            style={{ position: "relative", height: "700px", width: "600px" }}
+          >
+            <Image
+              placeholder="blur"
+              style={{ opacity: 0.2 }}
+              src={checklistbg}
+              layout="fill"
+              objectFit="contain"
+              sizes="(min-width: 768px) 100vw,
+              (max-width: 1200px) 50vw,
+              33vw"
+              alt="checklist background"
+            />
+          </div>
         </DeliverSectionImage>
       </DeliverSection>
       <WorkingSection>
@@ -637,13 +648,20 @@ export default function Home() {
         >
           <Card>
             {" "}
-            <Image
-             placeholder="blur"
-              src={generatorSingle}
-              width="250px"
-              height="250px"
-              alt="generator Icon"
-            />
+            <div
+              style={{ position: "relative", width: "250px", height: "250px" }}
+            >
+              <Image
+                placeholder="blur"
+                src={generatorSingle}
+                layout="fill"
+                objectFit="contain"
+                alt="generator Icon"
+                sizes="(min-width: 768px) 100vw,
+                (max-width: 1200px) 50vw,
+                33vw"
+              />
+            </div>
             <Text
               style={{
                 fontSize: "1.5rem",
@@ -693,13 +711,20 @@ export default function Home() {
           </Card>
           <Card>
             {" "}
-            <Image
-             placeholder="blur"
-              src={switchGear}
-              width="250px"
-              height="250px"
-              alt="switch gear"
-            />
+            <div
+              style={{ position: "relative", width: "250px", height: "250px" }}
+            >
+              <Image
+                placeholder="blur"
+                src={switchGear}
+                layout="fill"
+                objectFit="contain"
+                alt="switch gear"
+                sizes="(min-width: 768px) 100vw,
+                (max-width: 1200px) 50vw,
+                33vw"
+              />
+            </div>
             <Text
               style={{
                 fontSize: "1.5rem",
@@ -749,13 +774,20 @@ export default function Home() {
           </Card>
           <Card>
             {" "}
-            <Image
-             placeholder="blur"
-              src={otherProducts}
-              width="250px"
-              height="250px"
-              alt="other products"
-            />
+            <div
+              style={{ position: "relative", width: "250px", height: "250px" }}
+            >
+              <Image
+                placeholder="blur"
+                src={otherProducts}
+                layout="fill"
+                objectFit="contain"
+                alt="other products"
+                sizes="(min-width: 768px) 100vw,
+                (max-width: 1200px) 50vw,
+                33vw"
+              />
+            </div>
             <Text
               style={{
                 fontSize: "1.5rem",
@@ -813,13 +845,24 @@ export default function Home() {
         >
           <AboutSectionInsideContainer>
             <Flex justifyContent="space-between">
-              <Image
-               placeholder="blur"
-                src={AboutUs}
-                width="700px"
-                height="680px"
-                alt="Volva image"
-              />
+              <div
+                style={{
+                  position: "relative",
+                  width: "700px",
+                  height: "680px",
+                }}
+              >
+                <Image
+                  placeholder="blur"
+                  src={AboutUs}
+                  layout="fill"
+                  objectFit="contain"
+                  alt="Volva image"
+                  sizes="(min-width: 768px) 100vw,
+                  (max-width: 1200px) 50vw,
+                  33vw"
+                />
+              </div>
               <AboutSectionDescription>
                 <Flex
                   direction="column"

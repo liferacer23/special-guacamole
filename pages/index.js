@@ -357,7 +357,7 @@ export default function Home() {
       </HeaderContainer> */}
       <Flex>
         {" "}
-        <HomeSlider />
+        {/* <HomeSlider /> */}
       </Flex>
 
       <AboutUsContainer>

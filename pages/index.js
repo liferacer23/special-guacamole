@@ -24,7 +24,7 @@ import { Flex, Text, Button } from "../components/Base/";
 import HomeSlider from "../components/HomeSlider";
 
 const HeaderContainer = styled.div`
-  background: url(${hero.src});
+  position: relative;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -211,10 +211,13 @@ const HospitalitySection = styled.div`
 `;
 const HeaderContent = styled.div`
   display: flex;
+  position: absolute;
   justify-content: center;
   flex-direction: column;
   padding-left: 6rem;
   padding-top: 5rem;
+  top:1rem;
+  left: 1rem;
   @media (max-width: 1000px) {
     padding: 5rem 1rem;
     display: flex;
@@ -297,6 +300,15 @@ export default function Home() {
       </Head>
 
       <HeaderContainer>
+        <Image
+          layout="fill"
+          objectFit="cover"
+          src={hero} alt="hero image"
+           priority
+          sizes="(min-width: 768px) 100vw,
+            (max-width: 1200px) 50vw,
+            33vw"
+        />{" "}
         <HeaderContent>
           <Text
             mobileDisplay="none"

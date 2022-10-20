@@ -1,6 +1,5 @@
 import styled from "styled-components";
-import antDButton from "antd/lib/button";
-export const Button = styled(antDButton)`
+export const Button = styled("button")`
   background: ${(props) => props.background || "#fff"};
   color: ${(props) => props.color || "#fff"};
   border: ${(props) => props.border || "2px solid #fff"};

@@ -1,11 +1,9 @@
 import React, { useState } from "react";
-import antDLayout from "antd/lib/layout";
 import antDPopover from "antd/lib/popover";
 import styled from "styled-components";
 import Image from "next/image";
 import Links from "next/link";
 import logo from "../../assets/Nileco.png";
-import antDAnchor from "antd/lib/anchor";
 import { AiOutlineMail } from "react-icons/ai";
 import { BsTelephoneFill } from "react-icons/bs";
 import { GiHamburgerMenu } from "react-icons/gi";
@@ -13,15 +11,16 @@ import { Flex, Text, Button } from "../Base";
 import { GoSearch } from "react-icons/go";
 import Drawer from "antd/lib/drawer";
 import Search from "antd/lib/input/Search";
-const { Link } = antDAnchor;
 
-const Layout = styled(antDLayout)`
+const Layout = styled("div")`
   background: transparent !important;
   position: sticky !important;
   top: 0px !important;
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
+  width: 100vw !important;
+  height: 10vh !important;
   z-index: 100 !important;
   @media (max-width: 768px) {
     position: relative !important;
@@ -49,10 +48,7 @@ const HeaderItems = styled.div`
   }
 `;
 
-const StyledButton = styled(Button)`
-  &.ant-btn {
-    border: none !important;
-  }
+const StyledButton = styled("button")`
   width: ${(props) => props.width || ""} !important;
   background: ${(props) => props.background || "transparent"} !important;
   border: 0px solid transparent !important;

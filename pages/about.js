@@ -26,20 +26,18 @@ import compworkers6 from "../assets/companyWorkers/compworkers6.jpg";
 import compworkers7 from "../assets/companyWorkers/compworkers7.jpg";
 const { Option } = Select;
 const Collapse = styled(antDCollapse)`
-
-&.ant-collapse {
-  background: #fff !important;
-  
-}
+  &.ant-collapse {
+    background: #fff !important;
+  }
 `;
 const Carousel = styled(antDCarousel)`
-width: 500px !important;
-height: 500px !important;
-@media (max-width: 1000px) {
-  width: 400px !important;
+  width: 500px !important;
   height: 500px !important;
-}
-`
+  @media (max-width: 1000px) {
+    width: 400px !important;
+    height: 500px !important;
+  }
+`;
 const HeaderText = styled.span`
   color: rgba(0, 48, 100, 1);
   font-size: 2.3rem;
@@ -49,8 +47,6 @@ const HeaderText = styled.span`
     font-size: 1rem;
   }
 `;
-
-
 
 const text = `
 Generators don't actually create electricity. Instead, they convert mechanical or chemical energy into electrical energy. They do this by capturing the power of motion and turning it into electrical energy by forcing electrons from the external source through an electrical circuit.
@@ -287,18 +283,24 @@ const About = () => {
                 gap="0px"
               >
                 <Link href="/">
-                <Flex width="50%" directionMobile="row" widthMobile="50%" justifyContent="center" gap="0px">
-                  {" "}
-                  <AiOutlineHome style={{ fontSize: "1.5rem" }} />
-                  <Text
-                    color="#fff"
-                    fontSize="1rem"
-                    textAlign="center"
-                    fontWeight="bold"
-                    cursor="pointer"
+                  <Flex
                     width="50%"
-                    mobileWidth="60%"
+                    directionMobile="row"
+                    widthMobile="50%"
+                    justifyContent="center"
+                    gap="0px"
                   >
+                    {" "}
+                    <AiOutlineHome style={{ fontSize: "1.5rem" }} />
+                    <Text
+                      color="#fff"
+                      fontSize="1rem"
+                      textAlign="center"
+                      fontWeight="bold"
+                      cursor="pointer"
+                      width="50%"
+                      mobileWidth="60%"
+                    >
                       Home
                     </Text>
                   </Flex>
@@ -325,11 +327,13 @@ const About = () => {
               {workers.map((worker, index) => {
                 return (
                   <Image
-                  objectFit="contain"
+                    objectFit="contain"
+                    layout="fill"
+                    sizes="(min-width: 768px) 100vw,
+            (max-width: 1200px) 50vw,
+            33vw"
                     key={index}
                     src={worker}
-                    width="550px"
-                    height="550px"
                     alt="compony workers"
                   />
                 );
@@ -420,13 +424,13 @@ const About = () => {
                   <Panel header={"Dependable and Quanlity Products"} key="1">
                     <p>{text}</p>
                   </Panel>
-                  </Collapse>
-                  <Collapse expandIconPosition="right">
+                </Collapse>
+                <Collapse expandIconPosition="right">
                   <Panel header={"End to End Customizable Solutions"} key="2">
                     <p>{text}</p>
                   </Panel>
-                  </Collapse>
-                  <Collapse expandIconPosition="right">
+                </Collapse>
+                <Collapse expandIconPosition="right">
                   <Panel
                     header={"Efficient and Expect Customer Support"}
                     key="3"

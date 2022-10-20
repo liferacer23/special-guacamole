@@ -193,7 +193,20 @@ const NavBar = () => {
   return (
     <>
       <Drawer
-        title={<Image src={logo} width={100} height={30} alt="drawer image" />}
+        title={
+          <div style={{ position: "relative", height: "40px", width: "90%", display:'flex',justifyContent:"center" }}>
+            <Image
+              src={logo}
+              layout="fill"
+              objectFit="contain"
+              sizes="(min-width: 768px) 100vw,
+        (max-width: 1200px) 50vw,
+        33vw"
+              
+              alt="drawer image"
+            />
+          </div>
+        }
         placement="top"
         onClose={onClose}
         open={open}

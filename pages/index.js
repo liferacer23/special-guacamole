@@ -120,6 +120,7 @@ const WorkingSection = styled.div`
   align-item: center;
   text-align: center;
   justify-content: start;
+
 `;
 const HeaderButtonContainer = styled.div`
   display: flex;
@@ -361,15 +362,7 @@ export default function Home() {
       </Flex>
 
       <AboutUsContainer>
-        <div style={{ width: "550px", height: "650px", position: "relative" }}>
-          <Image
-            src={generator}
-            layout="fill"
-            alt="generator"
-            objectFit="cover"
-          />
-        </div>
-
+        <Image src={generator} width="550px" height="650px" alt="generator" />
         <Description>
           <Text fontSize="1.1rem" color="rgb(136,142,148)">
             About Us
@@ -596,17 +589,13 @@ export default function Home() {
           </Flex>
         </DeliverSectionDescription>
         <DeliverSectionImage>
-          <div
-            style={{ width: "700px", height: "600px", position: "relative" }}
-          >
-            <Image
-              style={{ opacity: 0.2 }}
-              src={checklistbg}
-              objectFit="cover"
-              layout="fill"
-              alt="checklist background"
-            />
-          </div>
+          <Image
+            style={{ opacity: 0.2 }}
+            src={checklistbg}
+            width={700}
+            height={600}
+            alt="checklist background"
+          />
         </DeliverSectionImage>
       </DeliverSection>
       <WorkingSection>
@@ -633,24 +622,16 @@ export default function Home() {
         >
           Modern Electrical And Power Equipment Guaranteed
         </Text>
-        <Flex
-          direction="column"
-          alignItems="center"
-          justifyContent="center"
-          padding="1rem"
-        >
+        <Flex direction="column" alignItems="center" justifyContent="center" padding="1rem">
           <Card>
             {" "}
-            <div
-              style={{ width: "250px", height: "250px", position: "relative" }}
-            >
-              <Image
-                layout="fill"
-                objectFit="cover"
-                src={generatorSingle}
-                alt="generator Icon"
-              />
-            </div>
+            <Image
+              style={{ opacity: 1 }}
+              src={generatorSingle}
+              width={250}
+              height={250}
+              alt="generator Icon"
+            />
             <Text
               style={{
                 fontSize: "1.5rem",
@@ -700,16 +681,13 @@ export default function Home() {
           </Card>
           <Card>
             {" "}
-            <div
-              style={{ width: "250px", height: "250px", position: "relative" }}
-            >
-              <Image
-                layout="fill"
-                objectFit="cover"
-                src={switchGear}
-                alt="switch gear"
-              />
-            </div>
+            <Image
+              style={{ opacity: 1 }}
+              src={switchGear}
+              width={250}
+              height={250}
+              alt="switch gear"
+            />
             <Text
               style={{
                 fontSize: "1.5rem",
@@ -759,16 +737,13 @@ export default function Home() {
           </Card>
           <Card>
             {" "}
-            <div
-              style={{ width: "250px", height: "250px", position: "relative" }}
-            >
-              <Image
-                src={otherProducts}
-                objectFit="cover"
-                layout="fill"
-                alt="other products"
-              />
-            </div>
+            <Image
+              style={{ opacity: 1 }}
+              src={otherProducts}
+              width={250}
+              height={250}
+              alt="other products"
+            />
             <Text
               style={{
                 fontSize: "1.5rem",
@@ -826,10 +801,7 @@ export default function Home() {
         >
           <AboutSectionInsideContainer>
             <Flex justifyContent="space-between">
-            <div style={{ width: "700px", height: "680px",position:"relative" }}>
-
-              <Image src={AboutUs} objectFit="cover" layout="fill" alt="Volva image" />
-            </div>
+              <Image src={AboutUs} width={700} height={680} alt="Volva image" />
               <AboutSectionDescription>
                 <Flex
                   direction="column"

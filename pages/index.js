@@ -628,8 +628,8 @@ export default function Home() {
             <Image
               style={{ opacity: 1 }}
               src={generatorSingle}
-              width={250}
-              height={250}
+              width="250px"
+              height="250px"
               alt="generator Icon"
             />
             <Text
@@ -684,8 +684,8 @@ export default function Home() {
             <Image
               style={{ opacity: 1 }}
               src={switchGear}
-              width={250}
-              height={250}
+              width="250px"
+              height="250px"
               alt="switch gear"
             />
             <Text
@@ -740,8 +740,8 @@ export default function Home() {
             <Image
               style={{ opacity: 1 }}
               src={otherProducts}
-              width={250}
-              height={250}
+              width="250px"
+              height="250px"
               alt="other products"
             />
             <Text

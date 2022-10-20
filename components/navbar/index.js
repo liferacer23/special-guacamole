@@ -76,14 +76,15 @@ const StyledButton = styled("button")`
 // `;
 const Credentials = styled("div")`
   background: rgb(0, 44, 91) !important;
-  height: 3rem !important;
-  width: 100vw !important;
-  display: flex !important;
-  align-items: center !important;
-  justify-content: end !important;
+  height: 4rem;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   @media (max-width: 1000px) {
-    display: none !important;
-    height: 0rem !important;
+    display: none;
+    height: 0rem;
   }
 `;
 const HamburgerMenu = styled("div")`
@@ -194,7 +195,15 @@ const NavBar = () => {
     <>
       <Drawer
         title={
-          <div style={{ position: "relative", height: "40px", width: "90%", display:'flex',justifyContent:"center" }}>
+          <div
+            style={{
+              position: "relative",
+              height: "40px",
+              width: "90%",
+              display: "flex",
+              justifyContent: "center",
+            }}
+          >
             <Image
               src={logo}
               layout="fill"
@@ -202,7 +211,6 @@ const NavBar = () => {
               sizes="(min-width: 768px) 100vw,
         (max-width: 1200px) 50vw,
         33vw"
-              
               alt="drawer image"
             />
           </div>

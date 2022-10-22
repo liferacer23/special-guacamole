@@ -3,6 +3,7 @@
 }
 @font-face {
   font-family: "Poppins";
+  font-display: swap;
   src: url("./fonts/Poppins-Light.ttf");
   src: url("./fonts/Poppins-Bold.ttf");
   src: url("./fonts/Poppins-Medium.ttf");

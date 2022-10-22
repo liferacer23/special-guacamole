@@ -45,16 +45,17 @@ import sparePart12 from "../assets/generators/generator38.jpg";
 
 const { Panel: antDpanel } = antDCollapse;
 const Collapse = styled(antDCollapse)`
-  display: none !important;
-  @media (max-width: 1000px) {
-    display: block !important;
-  }
-  &.ant-collapse {
-    background: #fff !important;
-  }
+display: none !important;
+@media (max-width: 1000px) {
+  display: block !important;
+}
+&.ant-collapse {
+  background: #fff !important;
+  
+}
 `;
 const Panel = styled(antDpanel)`
-  display: none;
+display: none;
   width: 70rem;
   margin-top: 0.5rem;
   @media (max-width: 1000px) {
@@ -88,7 +89,7 @@ const Tabs = styled(antDTabs)`
   align-items: center !important;
   justify-content: center !important;
   @media (max-width: 1000px) {
-    display: none !important;
+ display: none !important;
   }
   .ant-tabs-tab {
     width: 250px;
@@ -142,11 +143,8 @@ const TabContainer = styled.div`
 const ImageWrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
-  position: relative;
   gap: 0.5rem;
   marginLeft="2rem;
-  width:300px;
-  height:280px;
 `;
 const FooterHeader = styled.div`
   height: 30rem;
@@ -245,19 +243,12 @@ export default function Gallery() {
   return (
     <>
       <Modal title="" open={isModalOpen} onCancel={handleCancel}>
-        <Flex
-          justifyContent="center"
-          width="500px"
-          height="400px"
-          position="relative"
-        >
+        <Flex justifyContent="center">
           <Image
             objectFit="cover"
-            layout="fill"
-            sizes="(min-width: 768px) 100vw,
-    (max-width: 1200px) 50vw,
-    33vw"
             src={modalImage}
+            width="500px"
+            height="400px"
             alt="selected Image"
           />
         </Flex>
@@ -284,13 +275,7 @@ export default function Gallery() {
           <Flex width="100%" justifyContent="center" gap="0px">
             <Flex width="20%" directionMobile="row" widthMobile="40%" gap="0px">
               <Link href="/">
-                <Flex
-                  width="50%"
-                  directionMobile="row"
-                  widthMobile="50%"
-                  justifyContent="center"
-                  gap="0px"
-                >
+              <Flex width="50%" directionMobile="row" widthMobile="50%" justifyContent="center" gap="0px">
                   {" "}
                   <AiOutlineHome style={{ fontSize: "1.5rem" }} />
                   <Text
@@ -345,63 +330,57 @@ export default function Gallery() {
         >
           <Tabs defaultActiveKey="1">
             <Tabs.TabPane tab=" Generator" key="1">
-              <ImageWrapper>
+            <ImageWrapper style={{ marginLeft: "2rem" }}>
                 {GeneratorImages.map((image, index) => (
                   <Image
                     objectFit="cover"
-                    layout="fill"
-                    sizes="(min-width: 768px) 100vw,
-          (max-width: 1200px) 50vw,
-          33vw"
                     onClick={() => {
                       setModalImage(image.src);
                       showModal();
                     }}
-                    style={{ pointer: "cursor" }}
+                    style={{ pointer: "cursor",marginLeft:"0.5rem" }}
                     key={index}
                     src={image.src}
+                    width="300px"
+                    height="280px"
                     alt="generator image"
                   />
                 ))}
               </ImageWrapper>
             </Tabs.TabPane>
             <Tabs.TabPane tab="Switch Gears" key="2">
-              <ImageWrapper>
+            <ImageWrapper style={{ marginLeft: "2rem" }}>
                 {SwitchGearImages.map((image, index) => (
                   <Image
                     objectFit="cover"
-                    layout="fill"
-                    sizes="(min-width: 768px) 100vw,
-        (max-width: 1200px) 50vw,
-        33vw"
                     onClick={() => {
                       setModalImage(image.src);
                       showModal();
                     }}
-                    style={{ pointer: "cursor" }}
+                    style={{ pointer: "cursor",marginLeft:"0.5rem" }}
                     key={index}
                     src={image.src}
+                    width="300px"
+                    height="280px"
                     alt=" switchgear image"
                   />
                 ))}
               </ImageWrapper>
             </Tabs.TabPane>
             <Tabs.TabPane tab="Spare Parts" key="3">
-              <ImageWrapper>
+            <ImageWrapper style={{ marginLeft: "2rem" }}>
                 {SparePartImages.map((image, index) => (
                   <Image
                     objectFit="cover"
-                    layout="fill"
-                    sizes="(min-width: 768px) 100vw,
-        (max-width: 1200px) 50vw,
-        33vw"
                     onClick={() => {
                       setModalImage(image.src);
                       showModal();
                     }}
-                    style={{ pointer: "cursor" }}
+                    style={{ pointer: "cursor",marginLeft:"0.5rem" }}
                     key={index}
                     src={image.src}
+                    width="300px"
+                    height="280px"
                     alt="sparePart Image"
                   />
                 ))}
@@ -413,63 +392,57 @@ export default function Gallery() {
           </Tabs>
           <Collapse expandIconPosition="end">
             <Panel header={" Generator"} key="1">
-              <ImageWrapper>
+            <ImageWrapper style={{ marginLeft: "2rem" }}>
                 {GeneratorImages.map((image, index) => (
                   <Image
                     objectFit="cover"
-                    layout="fill"
-                    sizes="(min-width: 768px) 100vw,
-        (max-width: 1200px) 50vw,
-        33vw"
                     onClick={() => {
                       setModalImage(image.src);
                       showModal();
                     }}
-                    style={{ pointer: "cursor" }}
+                    style={{ pointer: "cursor",marginLeft:"0.5rem" }}
                     key={index}
                     src={image.src}
+                    width="300px"
+                    height="280px"
                     alt="generator image"
                   />
                 ))}
               </ImageWrapper>
             </Panel>
             <Panel header={"Switch Gears"} key="2">
-              <ImageWrapper>
+            <ImageWrapper style={{ marginLeft: "2rem" }}>
                 {SwitchGearImages.map((image, index) => (
                   <Image
                     objectFit="cover"
-                    layout="fill"
-                    sizes="(min-width: 768px) 100vw,
-        (max-width: 1200px) 50vw,
-        33vw"
                     onClick={() => {
                       setModalImage(image.src);
                       showModal();
                     }}
-                    style={{ pointer: "cursor" }}
+                    style={{ pointer: "cursor",marginLeft:"0.5rem" }}
                     key={index}
                     src={image.src}
+                    width="300px"
+                    height="280px"
                     alt=" switchgear image"
                   />
                 ))}
               </ImageWrapper>
             </Panel>
             <Panel header={"Spare Parts"} key="3">
-              <ImageWrapper>
+            <ImageWrapper style={{ marginLeft: "2rem" }}>
                 {SparePartImages.map((image, index) => (
                   <Image
                     objectFit="cover"
-                    layout="fill"
-                    sizes="(min-width: 768px) 100vw,
-        (max-width: 1200px) 50vw,
-        33vw"
                     onClick={() => {
                       setModalImage(image.src);
                       showModal();
                     }}
-                    style={{ pointer: "cursor" }}
+                    style={{ pointer: "cursor",marginLeft:"0.5rem" }}
                     key={index}
                     src={image.src}
+                    width="300px"
+                    height="280px"
                     alt="sparePart Image"
                   />
                 ))}

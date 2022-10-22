@@ -28,11 +28,11 @@ const HeaderContainer = styled.div`
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 90vh;
-  width: 100vw;
+  min-height: 90vh;
+  min-width: 100vw;
   postion: relative;
   @media (max-width: 1000px) {
-    height: 70vh;
+    min-height: 50vh;
   }
 `;
 
@@ -304,7 +304,7 @@ export default function Home() {
           layout="fill"
           objectFit="cover"
           src={hero} alt="hero image"
-          blur
+          placeholder="blur"
           sizes="(min-width: 768px) 100vw,
             (max-width: 1200px) 50vw,
             33vw"
@@ -653,7 +653,8 @@ export default function Home() {
           Modern Electrical And Power Equipment Guaranteed
         </Text>
         <Flex
-          direction="column"
+          direction="row"
+          directionMobile="column"
           alignItems="center"
           justifyContent="center"
           padding="1rem"

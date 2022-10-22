@@ -76,15 +76,15 @@ const StyledButton = styled("button")`
 // `;
 const Credentials = styled("div")`
   background: rgb(0, 44, 91) !important;
-  height: 4rem;
-  width: 100vw;
+  min-height: 4rem;
+  min-width: 100vw;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   @media (max-width: 1000px) {
     display: none;
-    height: 0rem;
+    min-height: 0rem;
   }
 `;
 const HamburgerMenu = styled("div")`
@@ -262,8 +262,8 @@ const NavBar = () => {
         </NavBarContainer>
       </Drawer>
       <Credentials>
-        <Flex gap="20px" width="80%" justifyContent="end">
-          <Text fontSize="0.7rem" color="#fff" width="50%" textAlign="right">
+        <Flex gap="20px" width="80vw" justifyContent="end">
+          <Text fontSize="0.7rem" color="#fff" width="50vw" textAlign="right">
             Your Trusted Power Solutions Provider in Ethiopia
           </Text>
           <Flex width="50%" justifyContent="center">

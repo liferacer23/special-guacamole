@@ -315,7 +315,7 @@ export default function Home() {
           layout="fill"
           objectFit="cover"
           src={hero}
-          alt="hero image"
+          alt="hero image.jpg"
           priority
           placeholder="blur"
           sizes="(min-width: 768px) 100vw,

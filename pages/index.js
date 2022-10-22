@@ -22,7 +22,15 @@ import otherProducts from "../assets/otherProducts.jpg";
 import { CgArrowLongRight } from "react-icons/cg";
 import { Flex, Text, Button } from "../components/Base/";
 import HomeSlider from "../components/HomeSlider";
-
+const ImageContainer = styled.div`
+  width: ${(props) => props.width || "500px"};
+  height: ${(props) => props.height || "720px"};
+  position: relative;
+  @media (max-width: 1000px) {
+    width: ${(props) => props.mobileWidth || "360px"};
+    height: ${(props) => props.mobileHeight || "680px"};
+  }
+`;
 const HeaderContainer = styled.div`
   position: relative;
   background-size: cover;
@@ -170,7 +178,7 @@ const InnerText = styled("span")`
   }
 `;
 const AboutSection = styled.div`
-  min-height: 40rem;
+  min-height: 37rem;
   position: relative;
   display: flex;
   align-item: center;
@@ -179,9 +187,9 @@ const AboutSection = styled.div`
   }
 `;
 const AboutSectionInsideContainer = styled.div`
-  width: 80%;
+  width: 90vw;
   height: 100%;
-  padding: 4rem 0;
+  padding: 2rem 0;
   @media (max-width: 768px) {
     width: 95%;
     height: 95%;
@@ -216,7 +224,7 @@ const HeaderContent = styled.div`
   flex-direction: column;
   padding-left: 6rem;
   padding-top: 5rem;
-  top:1rem;
+  top: 1rem;
   left: 1rem;
   @media (max-width: 1000px) {
     padding: 5rem 1rem;
@@ -303,7 +311,8 @@ export default function Home() {
         <Image
           layout="fill"
           objectFit="cover"
-          src={hero} alt="hero image"
+          src={hero}
+          alt="hero image"
           placeholder="blur"
           sizes="(min-width: 768px) 100vw,
             (max-width: 1200px) 50vw,
@@ -373,7 +382,7 @@ export default function Home() {
       </Flex>
 
       <AboutUsContainer>
-        <div style={{ position: "relative", width: "400px", height: "650px" }}>
+        <ImageContainer>
           <Image
             placeholder="blur"
             src={generator}
@@ -384,7 +393,7 @@ export default function Home() {
             (max-width: 1200px) 50vw,
             33vw"
           />
-        </div>
+        </ImageContainer>
         <Description>
           <Text fontSize="1.1rem" color="rgb(136,142,148)">
             About Us
@@ -858,13 +867,7 @@ export default function Home() {
         >
           <AboutSectionInsideContainer>
             <Flex justifyContent="space-between">
-              <div
-                style={{
-                  position: "relative",
-                  width: "400px",
-                  height: "680px",
-                }}
-              >
+              <ImageContainer width="600px" height="750px">
                 <Image
                   placeholder="blur"
                   src={AboutUs}
@@ -875,7 +878,7 @@ export default function Home() {
                   (max-width: 1200px) 50vw,
                   33vw"
                 />
-              </div>
+              </ImageContainer>
               <AboutSectionDescription>
                 <Flex
                   direction="column"

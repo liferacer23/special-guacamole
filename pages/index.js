@@ -33,9 +33,6 @@ const ImageContainer = styled.div`
 `;
 const HeaderContainer = styled.div`
   position: relative;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
   min-height: 90vh;
   min-width: 100vw;
   postion: relative;
@@ -319,6 +316,7 @@ export default function Home() {
           objectFit="cover"
           src={hero}
           alt="hero image"
+          priority
           placeholder="blur"
           sizes="(min-width: 768px) 100vw,
             (max-width: 1200px) 50vw,

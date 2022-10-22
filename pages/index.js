@@ -337,8 +337,8 @@ export default function Home() {
             fontSize={"3.4rem"}
             color="rgb(1,44,90)"
             fontWeight="bold"
-            width="50%"
-            mobileWidth="100%"
+            width="50vw"
+            mobileWidth="100vw"
             mobileFontSize={"1.6rem"}
             hoverbackground="transparent"
           >

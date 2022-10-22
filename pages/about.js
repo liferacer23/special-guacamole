@@ -50,15 +50,6 @@ const Carousel = styled(antDCarousel)`
     height: 500px !important;
   }
 `;
-const HeaderText = styled.span`
-  color: rgba(0, 48, 100, 1);
-  font-size: 2.3rem;
-  font-weight: bold;
-  text-align: left;
-  @media (max-width: 1000px) {
-    font-size: 1rem;
-  }
-`;
 
 const text = `
 Generators don't actually create electricity. Instead, they convert mechanical or chemical energy into electrical energy. They do this by capturing the power of motion and turning it into electrical energy by forcing electrons from the external source through an electrical circuit.

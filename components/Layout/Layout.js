@@ -4,7 +4,7 @@ import Footer from "../Footer/";
 export default function Layout({ children }) {
   return (
     <>
-      <NavBar />
+      <NavBar priority/>
       {children}
       <Footer />
     </>

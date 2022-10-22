@@ -248,7 +248,7 @@ export default function Gallery() {
             objectFit="cover"
             src={modalImage}
             width="500px"
-            height="400px"
+            height="401px"
             alt="selected Image"
           />
         </Flex>

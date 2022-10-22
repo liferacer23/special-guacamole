@@ -49,7 +49,7 @@ const IconTextContainer = styled.div`
   flex-direction: row;
   align-items: center;
   justify-content: start;
-  margin-bottom: 1rem;
+  margin-bottom: 1.1rem;
 `;
 const AboutUsContainer = styled.div`
   display: flex;

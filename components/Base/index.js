@@ -17,7 +17,6 @@ export const Button = styled("button")`
       props.hoverbackground || "rgb(255, 199, 44)"} !important;
     color: ${(props) => props.hoverColor || "#fff"} !important;
     border: ${(props) => props.hoverBorder || "none"} !important;
-  
   }
   @media (max-width: 768px) {
     width: ${(props) => props.mobileWidth || ""};
@@ -35,8 +34,7 @@ cursor: ${(props) => props.cursor || ""};
 margin: ${(props) => props.margin || "0"};
 white-space: ${(props) => props.whiteSpace || "nowrap"};
 &:hover {
-  background: ${(props) =>
-    props.hoverbackground || ""} !important;
+  background: ${(props) => props.hoverbackground || ""} !important;
   color: ${(props) => props.hoverColor || ""} !important;
   border: ${(props) => props.hoverBorder || ""} !important;
 

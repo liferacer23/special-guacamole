@@ -1,8 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;&display=swap');
-
-body{
+* {
+  font-family: "Poppins", sans-serif;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("./fonts/Poppins-Light.ttf");
+  src: url("./fonts/Poppins-Bold.ttf");
+  src: url("./fonts/Poppins-Medium.ttf");
+  font-weight: 500;
+  font-style: normal;
+}
+body {
   overflow-x: clip;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 ::-webkit-scrollbar {

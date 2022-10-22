@@ -24,7 +24,7 @@ import { Flex, Text, Button } from "../components/Base/";
 import HomeSlider from "../components/HomeSlider";
 const ImageContainer = styled.div`
   width: ${(props) => props.width || "500px"};
-  height: ${(props) => props.height || "720px"};
+  height: ${(props) => props.height || "520px"};
   position: relative;
   @media (max-width: 1000px) {
     width: ${(props) => props.mobileWidth || "360px"};
@@ -57,11 +57,13 @@ const AboutUsContainer = styled.div`
   background: #fff;
   justify-content: center;
   width: 100%;
+  height:30rem;
   gap: 2.2rem;
   margin-top: -15rem;
   @media (max-width: 1000px) {
     flex-direction: column;
     padding: 1rem;
+    height:55rem;
   }
 `;
 const Description = styled.div`
@@ -70,6 +72,9 @@ const Description = styled.div`
   justify-content: start;
   flex-direction: column;
   width: 40%;
+  height: 100%;
+  background: #fff;
+  height:1rem
   padding-bottom: 2rem;
   @media (max-width: 1000px) {
     width: 100%;
@@ -188,7 +193,7 @@ const AboutSection = styled.div`
 `;
 const AboutSectionInsideContainer = styled.div`
   width: 90vw;
-  height: 100%;
+  height: 50vw;
   padding: 2rem 0;
   @media (max-width: 768px) {
     width: 95%;

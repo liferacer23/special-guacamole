@@ -304,7 +304,7 @@ export default function Home() {
           layout="fill"
           objectFit="cover"
           src={hero} alt="hero image"
-           priority
+          blur
           sizes="(min-width: 768px) 100vw,
             (max-width: 1200px) 50vw,
             33vw"

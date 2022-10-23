@@ -77,6 +77,7 @@ const Description = styled.div`
   padding-bottom: 2rem;
   @media (max-width: 1000px) {
     width: 100%;
+    text-align: center;
   }
 `;
 
@@ -419,10 +420,11 @@ export default function Home() {
           />
         </ImageContainer>
         <Description>
-          <Text fontSize="1.1rem" color="rgb(136,142,148)">
+          <Text fontSize="1.1rem" color="rgb(136,142,148)" mobileTextAlign="center">
             About Us
           </Text>
           <Text
+          mobileTextAlign="center"
             fontWeight="bold"
             fontSize="2.2rem"
             mobileFontSize="1.8rem"
@@ -432,6 +434,7 @@ export default function Home() {
             We Have Everything That You Needed
           </Text>
           <Text
+        
             mobileFontSize="0.8rem"
             fontSize="0.9rem"
             color="rgb(136,142,148)"

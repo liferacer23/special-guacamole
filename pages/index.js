@@ -871,7 +871,7 @@ export default function Home() {
         >
           <AboutSectionInsideContainer>
             <Flex justifyContent="space-between">
-              <ImageContainer width="600px" height="700px">
+              <ImageContainer width="600px" height="700px" mobileWidth="320px">
                 <Image
                   placeholder="blur"
                   width="600px" 

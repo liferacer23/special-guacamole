@@ -39,7 +39,7 @@ const HeaderContainer = styled.div`
   min-width: 100vw;
   postion: relative;
   @media (max-width: 1000px) {
-    min-height: 20rem;
+    min-height: 19rem;
   }
 `;
 
@@ -928,21 +928,23 @@ export default function Home() {
                   justifyContentMobile="start"
                   alignItemsMobile=""
                 >
-                  <Text fontSize="1.5rem" width="100%" color="#fff">
+                  <Text fontSize="1.5rem" width="100%" color="#fff" mobileTextAlign="center">
                     ABOUT US
                   </Text>
                   <Text
-                    style={{
-                      fontSize: "2rem",
-                      width: "100%",
-                      color: "#fff",
-                      fontWeight: "bold",
-                    }}
+                   
+                      fontSize="2rem"
+                      mobileFontSize="1.5rem"
+                      mobileTextAlign="center"
+                      width="100%"
+                      color= "#fff"
+                      fontWeight="bold"
+                   
                   >
                     Here At NILECO, We Value Quality And Customer Feedback
                   </Text>
                   <Text
-                    style={{ fontSize: "1.1rem", width: "100%", color: "#fff" }}
+                     fontSize="1.1rem" width="100%" color="#fff" mobileTextAlign="center" mobileFontSize="0.8rem"
                   >
                     Your partner in energy and power
                   </Text>
@@ -962,7 +964,7 @@ export default function Home() {
                     />
                     <Flex direction="column" width="250px" gap="0px">
                       <Text
-                        mobileFontSize="2.5rem"
+                        mobileFontSize="1.5rem"
                         fontSize="2.5rem"
                         color="white"
                         fontWeight="bold"
@@ -985,11 +987,11 @@ export default function Home() {
                     directionMobile="row"
                   >
                     <FaPencilRuler
-                      style={{ color: "rgb(255,199,44)", fontSize: "5rem" }}
+                      style={{ color: "rgb(255,199,44)", fontSize: "4rem" }}
                     />
                     <Flex direction="column" width="250px" gap="0px">
-                      <Text
-                        mobileFontSize="2.5rem"
+                    <Text
+                        mobileFontSize="1.5rem"
                         fontSize="2.5rem"
                         color="white"
                         fontWeight="bold"
@@ -1012,11 +1014,11 @@ export default function Home() {
                     directionMobile="row"
                   >
                     <FaUsers
-                      style={{ color: "rgb(255,199,44)", fontSize: "5rem" }}
+                      style={{ color: "rgb(255,199,44)", fontSize: "4rem" }}
                     />
                     <Flex direction="column" width="250px" gap="0px">
-                      <Text
-                        mobileFontSize="2.5rem"
+                    <Text
+                        mobileFontSize="1.5rem"
                         fontSize="2.5rem"
                         color="white"
                         fontWeight="bold"
@@ -1039,7 +1041,7 @@ export default function Home() {
                     directionMobile="row"
                   >
                     <RiUserSettingsLine
-                      style={{ color: "rgb(255,199,44)", fontSize: "5rem" }}
+                      style={{ color: "rgb(255,199,44)", fontSize: "4rem" }}
                     />
                     <Flex direction="column" width="250px" gap="0px">
                       <Text

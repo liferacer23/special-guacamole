@@ -35,7 +35,7 @@ const ImageContainer = styled.div`
 `;
 const HeaderContainer = styled.div`
   position: relative;
-  min-height: 90vh;
+  min-height: 85vh;
   min-width: 100vw;
   postion: relative;
   @media (max-width: 1000px) {
@@ -62,7 +62,7 @@ const AboutUsContainer = styled.div`
   @media (max-width: 1000px) {
     flex-direction: column;
     padding: 1rem;
-    height:55rem;
+    height:50rem;
   }
 `;
 const Description = styled.div`

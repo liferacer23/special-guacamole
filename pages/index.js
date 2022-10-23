@@ -240,15 +240,17 @@ const HeaderContent = styled.div`
   position: absolute;
   justify-content: center;
   flex-direction: column;
+  height: 30rem;
+  width: 100%;
   padding-left: 6rem;
   padding-top: 5rem;
-
   top: 1rem;
   left: 1rem;
   @media (max-width: 1000px) {
     top: -3rem;
     left: 0rem;
-    padding: 5rem 1rem;
+    padding: 5rem 1rem 1rem 2rem;
+    height: 17rem;
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
@@ -331,7 +333,7 @@ export default function Home() {
       </Head>
 
       <HeaderContainer>
-        <HeroImageContainer width="100%" height="100%">
+        <HeroImageContainer width="100vw" height="30rem">
                   <Image
           layout="fill"
           objectFit="cover"

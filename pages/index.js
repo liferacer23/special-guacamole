@@ -318,7 +318,7 @@ export default function Home() {
           alt="hero image.jpg"
           priority
           placeholder="blur"
-          sizes="(min-width: 768px) 100vw,
+          sizes="(min-width: 100vw) 100vw,
             (max-width: 1200px) 50vw,
             33vw"
         />{" "}
@@ -871,7 +871,7 @@ export default function Home() {
         >
           <AboutSectionInsideContainer>
             <Flex justifyContent="space-between">
-              <ImageContainer width="600px" height="750px">
+              <ImageContainer width="600px" height="700px">
                 <Image
                   placeholder="blur"
                   priority
@@ -879,8 +879,8 @@ export default function Home() {
                   layout="fill"
                   objectFit="contain"
                   alt="Volva image"
-                  sizes="(min-width: 768px) 100vw,
-                  (max-width: 1200px) 50vw,
+                  sizes="(min-width: 600px) 100vw,
+                  (max-width: 750px) 50vw,
                   33vw"
                 />
               </ImageContainer>

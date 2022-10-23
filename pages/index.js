@@ -39,7 +39,7 @@ const HeaderContainer = styled.div`
   min-width: 100%;
   postion: relative;
   @media (max-width: 1000px) {
-    min-height: 19rem;
+    min-height: 15rem;
     min-width: 100%;
   }
 `;
@@ -237,9 +237,11 @@ const HeaderContent = styled.div`
   top: 1rem;
   left: 1rem;
   @media (max-width: 1000px) {
+    top: -3rem;
+    left: 0rem;
     padding: 5rem 1rem;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     flex-direction: column;
     align-items: center;
   }

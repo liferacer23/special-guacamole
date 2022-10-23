@@ -874,6 +874,8 @@ export default function Home() {
               <ImageContainer width="600px" height="700px">
                 <Image
                   placeholder="blur"
+                  width="600px" 
+                  height="700px"
                   priority
                   src={AboutUs}
                   layout="fill"

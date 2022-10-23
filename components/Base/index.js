@@ -24,7 +24,7 @@ export const Button = styled("button")`
     font-size: ${(props) => props.mobileFontSize || "0.8rem"};
   }
 `;
-export const Text = styled.span`
+export const Text = styled.p`
 font-size:${(props) => props.fontSize || "14px"}};
 color: ${(props) => props.color || "#000000"};
 font-weight: ${(props) => props.fontWeight || "#000000"};

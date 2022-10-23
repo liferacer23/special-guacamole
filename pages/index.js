@@ -21,7 +21,17 @@ import hero from "../assets/hero.jpg";
 import otherProducts from "../assets/otherProducts.jpg";
 import { CgArrowLongRight } from "react-icons/cg";
 import { Flex, Text, Button } from "../components/Base/";
-import HomeSlider from "../components/HomeSlider";
+
+
+
+import dynamic from 'next/dynamic';
+import PreDynamicState from './PreDynamicState';
+
+const HomeSlider  = dynamic(() => import('../components/HomeSlider'), {
+  ssr: false,
+  loading: () => <PreDynamicState />
+});
+
 const ImageContainer = styled.div`
   width: ${(props) => props.width || "500px"};
   height: ${(props) => props.height || "520px"};

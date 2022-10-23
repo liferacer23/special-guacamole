@@ -86,7 +86,7 @@ export default function index() {
             Other Products
           </Text>
           <Flex width="100%" justifyContent="center" gap="0px">
-            <Flex width="20%" directionMobile="row" widthMobile="40%" gap="5px">
+          <Flex width="25%" directionMobile="row" widthMobile="40%" gap="5px">
               <Link href="/">
               <Flex width="50%" directionMobile="row" widthMobile="50%" justifyContent="center" gap="0px">
                   {" "}
@@ -122,7 +122,7 @@ export default function index() {
                 </Flex>
               </Link>
               /
-              <Flex width="50%" directionMobile="row" widthMobile="40%">
+              <Flex width="60%" directionMobile="row" widthMobile="40%">
                 <Text
                   fontSize="1rem"
                   color="rgb(255, 199, 44)"

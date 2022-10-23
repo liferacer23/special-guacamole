@@ -124,7 +124,7 @@ export default function index() {
             Switchgears
           </Text>
           <Flex width="100%" justifyContent="center" gap="0px">
-            <Flex width="20%" directionMobile="row" widthMobile="40%" gap="5px">
+          <Flex width="25%" directionMobile="row" widthMobile="40%" gap="5px">
               <Link href="/">
                 <Flex
                   width="50%"

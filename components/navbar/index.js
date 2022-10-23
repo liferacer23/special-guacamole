@@ -50,11 +50,13 @@ const HeaderItems = styled.div`
 `;
 
 const StyledButton = styled("button")`
-  width: ${(props) => props.width || ""} !important;
-  background: ${(props) => props.background || "transparent"} !important;
+  width: ${(props) => props.width || "7rem"} !important;
+  height: ${(props) => props.height || "2.5rem"} !important;
+background: ${(props) => props.background || "transparent"} !important;
   border: 0px solid transparent !important;
   color: #000000 !important;
   font-size: 14px !important;
+  cursor: pointer !important;
   padding: ${(props) => props.padding || ""} !important;
   &:hover {
     color: rgb(255, 199, 44) !important;
@@ -136,12 +138,12 @@ const ContentItem = styled("div")`
   justify-content: start;
   cursor: pointer;
   padding: 0rem 0.5rem;
-  margin: 0rem -1rem;
-  width: 150px;
+  margin: 0rem 0rem 0rem -0.5rem;
+  width: 100%;
   height: 40px;
 
   &:hover {
-    border-left: 3px solid rgb(255, 199, 44);
+    border-left: 10px solid rgb(255, 199, 44);
   }
 `;
 const searchContent = <Search placeholder="input search text" enterButton />;
@@ -332,7 +334,7 @@ const NavBar = () => {
             <Links href="/about">
               <StyledButton>About Us</StyledButton>
             </Links>
-            <Popover content={content}>
+            <Popover content={content} placement="bottomRight" trigger="hover">
               <StyledButton>Products</StyledButton>
             </Popover>
             <Links href="/service">

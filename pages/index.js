@@ -17,7 +17,7 @@ import { RiUserSettingsLine } from "react-icons/ri";
 import AboutUs from "../assets/aboutus.jpg";
 import generatorSingle from "../assets/generatorSingle.jpg";
 import switchGear from "../assets/switchgear.jpg";
-import hero from "../assets/hero.jpg";
+import hero from "../assets/hero.webp";
 import otherProducts from "../assets/otherProducts.jpg";
 import { CgArrowLongRight } from "react-icons/cg";
 import { Flex, Text, Button } from "../components/Base/";

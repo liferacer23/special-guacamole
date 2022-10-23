@@ -21,15 +21,15 @@ import hero from "../assets/hero.jpg";
 import otherProducts from "../assets/otherProducts.jpg";
 import { CgArrowLongRight } from "react-icons/cg";
 import { Flex, Text, Button } from "../components/Base/";
-
+import PreHomeSlider from "../components/HomeSlider";
 
 
 import dynamic from 'next/dynamic';
-import PreDynamicState from './PreDynamicState';
+
 
 const HomeSlider  = dynamic(() => import('../components/HomeSlider'), {
   ssr: false,
-  loading: () => <PreDynamicState />
+  loading: () => <PreHomeSlider />
 });
 
 const ImageContainer = styled.div`
@@ -143,6 +143,8 @@ const WorkingSection = styled.div`
 `;
 const HeaderButtonContainer = styled.div`
   display: flex;
+  width: 100vw;
+  justify-content: flex-start;
   align-item: center;
   gap: 4rem;
   margin-top: 2rem;
@@ -346,7 +348,9 @@ export default function Home() {
             color="rgb(1,44,90)"
             fontWeight="bold"
             width="50vw"
-            mobileWidth="100vw"
+            height="5vh"
+            mobileWidth="90vw"
+            mobileHeight="10vh"
             mobileFontSize={"1.6rem"}
             hoverbackground="transparent"
           >

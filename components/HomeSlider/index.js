@@ -31,16 +31,16 @@ const Container = styled(motion.div)`
   background: #fff;
   width: 120vw;
   height: 12rem;
+  @media (max-width: 1000px) {
+    height: 12rem;
+    width: 200vw;
+  }
 `;
 const ImageContainer = styled(motion.div)`
   pointer-events: none;
   padding: 1rem;
   width: 15rem;
-
-  @media (max-width: 1000px) {
-    width: 8rem;
-    height: 8rem;
-  }
+  height: 10rem;
   position: relative;
 `;
 
@@ -88,8 +88,8 @@ export default function HomeSlider() {
                 src={item}
                 layout="fill"
                 objectFit="contain"
-                sizes="(min-width: 768px) 100vw,
-                (max-width: 1200px) 50vw,
+                sizes="(min-width: 1768px) 100vw,
+                (mim-width: 1200px) 50vw,
                 33vw"
                 placeholder="blur"
               />

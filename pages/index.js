@@ -22,6 +22,7 @@ import otherProducts from "../assets/otherProducts.jpg";
 import { CgArrowLongRight } from "react-icons/cg";
 import { Flex, Text, Button } from "../components/Base/";
 import HomeSlider from "../components/HomeSlider";
+import Link from "next/link";
 
 const ImageContainer = styled.div`
   width: ${(props) => props.width || "500px"};
@@ -229,6 +230,7 @@ const HeaderContent = styled.div`
   flex-direction: column;
   padding-left: 6rem;
   padding-top: 5rem;
+
   top: 1rem;
   left: 1rem;
   @media (max-width: 1000px) {
@@ -339,7 +341,7 @@ export default function Home() {
             color="rgb(1,44,90)"
             fontWeight="bold"
             width="50vw"
-            height="5vh"
+            height="28vh"
             mobileWidth="90vw"
             mobileHeight="10vh"
             mobileFontSize={"1.6rem"}
@@ -352,10 +354,16 @@ export default function Home() {
             fontSize={"18px"}
             color="white"
             fontWeight="bold"
+            width="50vw"
+            height="7vh"
+            mobileWidth="90vw"
+            mobileHeight="4vh"
+       
           >
             We offer the most reliable power services in the country
           </Text>
           <HeaderButtonContainer>
+            <Link href="/about">
             <Button
               background="rgb(253,201,55)"
               color="white"
@@ -365,10 +373,12 @@ export default function Home() {
               mobileWidth="8rem"
               fontSize="1rem"
               mobileFontSize="0.7rem"
-            >
+              >
               {" "}
               About Us
             </Button>
+              </Link>
+            <Link href="/contact">
             <Button
               background="transparent"
               color="rgb(1,44,90)"
@@ -382,6 +392,7 @@ export default function Home() {
               {" "}
               Contact Us
             </Button>
+            </Link>
           </HeaderButtonContainer>
         </HeaderContent>
       </HeaderContainer>

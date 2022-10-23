@@ -99,6 +99,7 @@ const NavBarContainer = styled("div")`
   width: 100vw;
   display: flex;
   height: 6rem;
+  gap: 1rem;
   align-items: center;
   flex-direction: ${(props) => (props.direction ? props.direction : "row")};
   background: #fff;
@@ -124,6 +125,7 @@ const Content = styled("span")`
   flex-direction: column;
   align-items: start;
   justify-content: start;
+  gap: 1rem;
   width: 180px;
   padding: 0px;
   background: transparent;

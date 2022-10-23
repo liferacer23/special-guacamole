@@ -310,7 +310,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <HeaderContainer>
+      {/* <HeaderContainer>
         <Image
           layout="fill"
           objectFit="cover"
@@ -379,13 +379,13 @@ export default function Home() {
             </Button>
           </HeaderButtonContainer>
         </HeaderContent>
-      </HeaderContainer>
-      <Flex>
+      </HeaderContainer> */}
+      <>
         {" "}
         <HomeSlider />
-      </Flex>
+      </>
 
-      <AboutUsContainer>
+      {/* <AboutUsContainer>
         <ImageContainer>
           <Image
             placeholder="blur"
@@ -640,7 +640,7 @@ export default function Home() {
             />
           </div>
         </DeliverSectionImage>
-      </DeliverSection>
+      </DeliverSection> */}
       <WorkingSection>
         <Text
           style={{

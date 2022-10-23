@@ -33,15 +33,6 @@ const ImageContainer = styled.div`
     height: ${(props) => props.mobileHeight || "680px"};
   }
 `;
-const HeroImageContainer = styled.div`
-  width: ${(props) => props.width || "500px"};
-  height: ${(props) => props.height || "520px"};
-  position: relative;
-  @media (max-width: 1000px) {
-    display: none;
-  
-  }
-`;
 const HeaderContainer = styled.div`
   position: relative;
   min-height: 30rem;
@@ -240,22 +231,19 @@ const HeaderContent = styled.div`
   position: absolute;
   justify-content: center;
   flex-direction: column;
-  height: 30rem;
-  width: 100%;
   padding-left: 6rem;
   padding-top: 5rem;
+
   top: 1rem;
   left: 1rem;
   @media (max-width: 1000px) {
     top: -3rem;
     left: 0rem;
-    padding: 5rem 1rem 1rem 2rem;
-    height: 17rem;
+    padding: 5rem 1rem;
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
     align-items: center;
-    background: linear-gradient(90deg, #8d84bb, #aba7d2, #cbc9e9, #ededff);
   }
 `;
 const FooterHeader = styled.div`
@@ -333,8 +321,7 @@ export default function Home() {
       </Head>
 
       <HeaderContainer>
-        <HeroImageContainer width="100vw" height="30rem">
-                  <Image
+        <Image
           layout="fill"
           objectFit="cover"
           src={hero}
@@ -344,9 +331,7 @@ export default function Home() {
           sizes="(min-width: 100vw) 100vw,
             (max-width: 1200px) 50vw,
             33vw"
-        />
-        </HeroImageContainer>
-{" "}
+        />{" "}
         <HeaderContent>
           <Text
             mobileDisplay="none"

@@ -405,11 +405,10 @@ export default function Home() {
 
       <AboutUsContainer>
       <ImageContainer width="600px" height="600px" mobileHeight="500px" mobileWidth="400px">
-                <Image
-                  placeholder="blur"
-                  width="600px" 
-                  height="700px"
-       
+       <Image
+             placeholder="blur"
+             width="600px" 
+             height="700px"
             src={generator}
             layout="fill"
             objectFit="contain"

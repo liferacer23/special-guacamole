@@ -1,4 +1,4 @@
-import React,{useState} from "react";
+import React from "react";
 import { Text, Flex, Button } from "../Base";
 import { GoLocation } from "react-icons/go";
 import { AiOutlineMail } from "react-icons/ai";

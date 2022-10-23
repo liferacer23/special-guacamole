@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "antd/dist/antd.css";
 import antDPopover from "antd/lib/popover";
 import styled from "styled-components";
 import Image from "next/image";

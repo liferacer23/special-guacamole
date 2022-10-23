@@ -907,12 +907,11 @@ export default function Home() {
         >
           <AboutSectionInsideContainer>
             <Flex justifyContent="space-between">
-              <ImageContainer width="600px" height="700px" mobileWidth="320px">
+              <ImageContainer width="600px" height="700px" mobileWidth="360px" mobileHeight="360px">
                 <Image
                   placeholder="blur"
                   width="600px" 
                   height="700px"
-                  priority
                   src={AboutUs}
                   layout="fill"
                   objectFit="contain"

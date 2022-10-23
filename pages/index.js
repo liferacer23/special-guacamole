@@ -400,9 +400,12 @@ export default function Home() {
       </>
 
       <AboutUsContainer>
-        <ImageContainer>
-          <Image
-            placeholder="blur"
+      <ImageContainer width="600px" height="700px" mobileWidth="320px">
+                <Image
+                  placeholder="blur"
+                  width="600px" 
+                  height="700px"
+       
             src={generator}
             layout="fill"
             objectFit="contain"
@@ -885,7 +888,7 @@ export default function Home() {
         >
           <AboutSectionInsideContainer>
             <Flex justifyContent="space-between">
-              {/* <ImageContainer width="600px" height="700px" mobileWidth="320px">
+              <ImageContainer width="600px" height="700px" mobileWidth="320px">
                 <Image
                   placeholder="blur"
                   width="600px" 
@@ -899,7 +902,7 @@ export default function Home() {
                   (max-width: 750px) 50vw,
                   33vw"
                 />
-              </ImageContainer> */}
+              </ImageContainer>
               <AboutSectionDescription>
                 <Flex
                   direction="column"

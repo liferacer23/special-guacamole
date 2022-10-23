@@ -29,12 +29,14 @@ const Container = styled(motion.div)`
   position: absolute;
   margin-top: 1rem;
   background: #fff;
+  width: 120vw;
+  height: 12rem;
 `;
 const ImageContainer = styled(motion.div)`
   pointer-events: none;
   padding: 1rem;
-  width: 12rem;
-  height: 12Srem;
+  width: 15rem;
+
   @media (max-width: 1000px) {
     width: 8rem;
     height: 8rem;

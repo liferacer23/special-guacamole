@@ -62,7 +62,7 @@ const AboutUsContainer = styled.div`
   @media (max-width: 1000px) {
     flex-direction: column;
     padding: 1rem;
-    height:65rem;
+    height:55rem;
   }
 `;
 const Description = styled.div`
@@ -410,7 +410,7 @@ export default function Home() {
        
             src={generator}
             layout="fill"
-            objectFit="cover"
+            objectFit="contain"
             alt="generator"
             sizes="(min-width: 600px) 100vw,
             (max-width: 700px) 50vw,

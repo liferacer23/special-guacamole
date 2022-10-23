@@ -127,7 +127,6 @@ const WorkingSection = styled.div`
   width: 100%;
   background: #fff;
   position: relative;
-  padding: 1rem;
   display: flex;
   flex-direction: column;
   align-item: center;
@@ -425,14 +424,14 @@ export default function Home() {
           <Text
             fontWeight="bold"
             fontSize="2.2rem"
-            mobileFontSize="1.8rem"
+            mobileFontSize="2.2rem"
             color="rgb(1,44,90)"
             width="100%"
           >
             We Have Everything That You Needed
           </Text>
           <Text
-            mobileFontSize="0.8rem"
+            mobileFontSize="1rem"
             fontSize="0.9rem"
             color="rgb(136,142,148)"
             width="100%"
@@ -515,7 +514,7 @@ export default function Home() {
             </Text>
             <Text
               fontSize="37px"
-              mobileFontSize="30px"
+              mobileFontSize="37px"
               fontWeight="bold"
               color="#fff"
               style={{ width: "100%" }}
@@ -523,7 +522,7 @@ export default function Home() {
               Great Experience For Building Construction & Outdoor Projects
             </Text>
             <Flex justifyContent="start">
-              <Text fontSize="13px" color="#fff"  mobileFontSize="10px">
+              <Text fontSize="13px" color="#fff">
                 <IconTextContainer>
                   <GiCheckMark
                     style={{ color: "rgb(255,199,44)", marginRight: "10px" }}
@@ -546,7 +545,7 @@ export default function Home() {
                   <br />
                 </IconTextContainer>
               </Text>
-              <Text fontSize="13px" color="#fff" mobileFontSize="10px">
+              <Text fontSize="13px" color="#fff">
                 <IconTextContainer>
                   <GiCheckMark
                     style={{ color: "rgb(255,199,44)", marginRight: "10px" }}
@@ -581,12 +580,11 @@ export default function Home() {
                     Product Listing
                   </Flex>
                   <Text
-                   
-                      fontSize= "2rem"
-                      mobileFontSize="1.2rem"
-                      color= "white"
-                      fontWeight= "bold"
-                 
+                    style={{
+                      fontSize: "2rem",
+                      color: "white",
+                      fontWeight: "bold",
+                    }}
                     mobileMargin="0rem 0 0 0rem"
                     mobileTextAlign="left"
                     mobileWidth="70%"
@@ -602,16 +600,15 @@ export default function Home() {
                     Certifications & Award
                   </Flex>
                   <Text
-                   
-                   fontSize= "2rem"
-                   mobileFontSize="1.2rem"
-                   color= "white"
-                   fontWeight= "bold"
-              
-                 mobileMargin="0rem 0 0 0rem"
-                 mobileTextAlign="left"
-                 mobileWidth="70%"
-               >
+                    style={{
+                      fontSize: "2rem",
+                      color: "white",
+                      fontWeight: "bold",
+                    }}
+                    mobileMargin="0rem 0 0 0rem"
+                    mobileTextAlign="left"
+                    mobileWidth="70%"
+                  >
                     80
                   </Text>
                 </Flex>
@@ -623,16 +620,15 @@ export default function Home() {
                     Brand Partners
                   </Flex>
                   <Text
-                   
-                   fontSize= "2rem"
-                   mobileFontSize="1.2rem"
-                   color= "white"
-                   fontWeight= "bold"
-              
-                 mobileMargin="0rem 0 0 0rem"
-                 mobileTextAlign="left"
-                 mobileWidth="70%"
-               >
+                    style={{
+                      fontSize: "2rem",
+                      color: "white",
+                      fontWeight: "bold",
+                    }}
+                    mobileMargin="0rem 0 0 0rem"
+                    mobileTextAlign="left"
+                    mobileWidth="70%"
+                  >
                     60
                   </Text>
                 </Flex>
@@ -672,16 +668,13 @@ export default function Home() {
         </Text>
 
         <Text
-          
-            fontSize= "2.4rem"
-            mobileFontSize="1.4rem"
-            color= "rgba(0, 48, 100, 1)"
-            fontWeight= "bold"
-            width= "100%"
-            mobileWidth="100%"
-            textAlign="center"
-            mobileTextAlign="center"
-       
+          style={{
+            fontSize: "2.4rem",
+            color: "rgba(0, 48, 100, 1)",
+            fontWeight: "bold",
+            width: "100%",
+            textAlign: "center",
+          }}
         >
           Modern Electrical And Power Equipment Guaranteed
         </Text>
@@ -709,30 +702,26 @@ export default function Home() {
               />
             </div>
             <Text
-           
-                fontSize="1.5rem"
-                mobileFontSize="1.2rem"
-                textAlign= "left"
-                color= "rgba(0, 48, 100, 1)"
-                fontWeight="bold"
-                width="100%"
-                marginTop="20px"
-                mobileTextAlign="center"
-            
+              style={{
+                fontSize: "1.5rem",
+                textAlign: "left",
+                color: "rgba(0, 48, 100, 1)",
+                fontWeight: "bold",
+                width: "100%",
+                marginTop: "20px",
+              }}
             >
               <InnerText>Generators</InnerText>{" "}
             </Text>
             <Text
-           
-                fontSize= "0.9rem"
-                mobileFontSize="0.9rem"
-                mobileTextAlign="center"
-                textAlign= "left"
-                color="#858585"
-                width= "90%"
-                marginTop= "30px"
-                marginLeft="10px"
-           
+              style={{
+                fontSize: "0.9rem",
+                textAlign: "left",
+                color: "#858585",
+                width: "90%",
+                marginTop: "20px",
+                marginLeft: "10px",
+              }}
             >
               Our diesel generators comprise of a Diesel Engine coupled to an
               Alternator, mounted over a common base frame with Anti-Vibration
@@ -776,31 +765,27 @@ export default function Home() {
               />
             </div>
             <Text
-           
-           fontSize="1.5rem"
-           mobileFontSize="1.2rem"
-           textAlign= "left"
-           color= "rgba(0, 48, 100, 1)"
-           fontWeight="bold"
-           width="100%"
-           marginTop="20px"
-           mobileTextAlign="center"
-       
-       >
+              style={{
+                fontSize: "1.5rem",
+                textAlign: "left",
+                color: "rgba(0, 48, 100, 1)",
+                fontWeight: "bold",
+                width: "100%",
+                marginTop: "20px",
+              }}
+            >
               <InnerText>Switch Gears</InnerText>{" "}
             </Text>
             <Text
-           
-           fontSize= "0.9rem"
-           mobileFontSize="0.9rem"
-           mobileTextAlign="center"
-           textAlign= "left"
-           color="#858585"
-           width= "90%"
-           marginTop= "30px"
-           marginLeft="10px"
-      
-       >
+              style={{
+                fontSize: "0.9rem",
+                textAlign: "left",
+                color: "#858585",
+                width: "90%",
+                marginTop: "20px",
+                marginLeft: "10px",
+              }}
+            >
               Switchgears are effective solutions for a client seeking power at
               cyclic conditions or generally to get efficient higher rating
               power.
@@ -843,31 +828,26 @@ export default function Home() {
               />
             </div>
             <Text
-           
-                fontSize="1.5rem"
-                mobileFontSize="1.2rem"
-                textAlign= "left"
-                color= "rgba(0, 48, 100, 1)"
-                fontWeight="bold"
-                width="100%"
-                marginTop="20px"
-                mobileTextAlign="center"
-            
+              style={{
+                fontSize: "1.5rem",
+                textAlign: "left",
+                color: "rgba(0, 48, 100, 1)",
+                width: "100%",
+                marginTop: "20px",
+              }}
             >
               <InnerText>Other Products</InnerText>
             </Text>
             <Text
-           
-           fontSize= "0.9rem"
-           mobileFontSize="0.9rem"
-           mobileTextAlign="center"
-           textAlign= "left"
-           color="#858585"
-           width= "90%"
-           marginTop= "30px"
-           marginLeft="10px"
-      
-       >
+              style={{
+                fontSize: "0.9rem",
+                textAlign: "left",
+                color: "#858585",
+                width: "90%",
+                marginTop: "20px",
+                marginLeft: "10px",
+              }}
+            >
               We provide quality and genuine spare parts paired with efficient
               after-sales service to keep your machines in great condition
             </Text>

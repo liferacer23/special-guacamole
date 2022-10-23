@@ -62,7 +62,7 @@ const AboutUsContainer = styled.div`
   @media (max-width: 1000px) {
     flex-direction: column;
     padding: 1rem;
-    height:55rem;
+    height:65rem;
   }
 `;
 const Description = styled.div`
@@ -457,18 +457,12 @@ export default function Home() {
               gap="3px"
             >
               <BiPhoneCall color="rgb(253,201,55)" fontSize="2rem" />
-              <span style={{ fontSize: "0.9rem", color: "#000" }}>
+              <Text fontSize="1.1rem" color="#000" mobileFontSize="0.7rem">
                 Phone Number
-              </span>
-              <span
-                style={{
-                  fontSize: "0.9rem",
-                  color: "rgb(1,44,90)",
-                  fontWeight: "bold",
-                }}
-              >
+              </Text>
+              <Text fontSize="1.1rem" color="#000" mobileFontSize="0.7rem">
                 +251977805757
-              </span>
+              </Text>
             </Flex>
             <Flex margin="0 -6rem 0 0" marginMobile="0 0 0 0">
               {" "}
@@ -490,18 +484,18 @@ export default function Home() {
               gap="3px"
             >
               <GoMail color="rgb(253,201,55)" fontSize="2rem" />
-              <span style={{ fontSize: "1.1rem", color: "#000" }}>
+              <Text fontSize="1.1rem" color="#000" mobileFontSize="0.7rem">
                 Email Address
-              </span>
-              <span
-                style={{
-                  fontSize: "0.9rem",
-                  color: "rgb(1,44,90)",
-                  fontWeight: "bold",
-                }}
+              </Text>
+              <Text
+                
+                  fontSize= "0.9rem"
+                  color="rgb(1,44,90)"
+                  fontWeight="bold"
+                 mobileFontSize="0.7rem"
               >
                 info@nilecoeem.com
-              </span>
+              </Text>
             </Flex>
           </Flex>
         </Description>

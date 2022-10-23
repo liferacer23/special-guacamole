@@ -321,6 +321,7 @@ export default function Home() {
       </Head>
 
       <HeaderContainer>
+      <ImageContainer width="100%" height="700px" mobileWidth="100%" mobileHeight="250px">
         <Image
           layout="fill"
           objectFit="cover"
@@ -332,6 +333,7 @@ export default function Home() {
             (max-width: 1200px) 50vw,
             33vw"
         />{" "}
+        </ImageContainer>
         <HeaderContent>
           <Text
             mobileDisplay="none"

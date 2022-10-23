@@ -33,7 +33,7 @@ const Container = styled(motion.div)`
   height: 12rem;
   @media (max-width: 1000px) {
     height: 12rem;
-    width: 200vw;
+    width: 120vw;
   }
 `;
 const ImageContainer = styled(motion.div)`

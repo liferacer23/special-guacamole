@@ -42,6 +42,10 @@ const ImageContainer = styled(motion.div)`
   width: 15rem;
   height: 10rem;
   position: relative;
+  @media (max-width: 1000px) {
+    width: 15rem;
+    height: 10rem;
+  }
 `;
 
 export default function HomeSlider() {

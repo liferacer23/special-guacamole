@@ -33,6 +33,15 @@ const ImageContainer = styled.div`
     height: ${(props) => props.mobileHeight || "680px"};
   }
 `;
+const HeroImageContainer = styled.div`
+  width: ${(props) => props.width || "500px"};
+  height: ${(props) => props.height || "520px"};
+  position: relative;
+  @media (max-width: 1000px) {
+    display: none;
+  
+  }
+`;
 const HeaderContainer = styled.div`
   position: relative;
   min-height: 30rem;
@@ -244,6 +253,7 @@ const HeaderContent = styled.div`
     justify-content: flex-start;
     flex-direction: column;
     align-items: center;
+    background: linear-gradient(90deg, #8d84bb, #aba7d2, #cbc9e9, #ededff);
   }
 `;
 const FooterHeader = styled.div`
@@ -321,7 +331,8 @@ export default function Home() {
       </Head>
 
       <HeaderContainer>
-        <Image
+        <HeroImageContainer width="100%" height="100%">
+                  <Image
           layout="fill"
           objectFit="cover"
           src={hero}
@@ -331,7 +342,9 @@ export default function Home() {
           sizes="(min-width: 100vw) 100vw,
             (max-width: 1200px) 50vw,
             33vw"
-        />{" "}
+        />
+        </HeroImageContainer>
+{" "}
         <HeaderContent>
           <Text
             mobileDisplay="none"

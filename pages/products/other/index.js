@@ -1,4 +1,5 @@
 import React from "react";
+import "antd/dist/antd.css";
 import Head from "next/head";
 import styled from "styled-components";
 import titleBar from "../../../assets/titlebar-bg.jpg";

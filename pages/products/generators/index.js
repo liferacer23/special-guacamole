@@ -1,4 +1,5 @@
 /* eslint-disable react-hooks/rules-of-hooks */
+import "antd/dist/antd.css";
 import antDCarousel from "antd/lib/carousel";
 import antDCollapse from "antd/lib/collapse";
 import Head from "next/head";

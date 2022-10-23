@@ -21,16 +21,7 @@ import hero from "../assets/hero.jpg";
 import otherProducts from "../assets/otherProducts.jpg";
 import { CgArrowLongRight } from "react-icons/cg";
 import { Flex, Text, Button } from "../components/Base/";
-import PreHomeSlider from "../components/HomeSlider";
-
-
-import dynamic from 'next/dynamic';
-
-
-const HomeSlider  = dynamic(() => import('../components/HomeSlider'), {
-  ssr: false,
-  loading: () => <PreHomeSlider />
-});
+import HomeSlider from "../components/HomeSlider";
 
 const ImageContainer = styled.div`
   width: ${(props) => props.width || "500px"};
@@ -400,7 +391,7 @@ export default function Home() {
       </>
 
       <AboutUsContainer>
-      <ImageContainer width="600px" height="700px" mobileWidth="320px">
+      <ImageContainer width="600px" height="800px" >
                 <Image
                   placeholder="blur"
                   width="600px" 
@@ -408,10 +399,10 @@ export default function Home() {
        
             src={generator}
             layout="fill"
-            objectFit="contain"
+            objectFit="cover"
             alt="generator"
-            sizes="(min-width: 768px) 100vw,
-            (max-width: 1200px) 50vw,
+            sizes="(min-width: 600px) 100vw,
+            (max-width: 700px) 50vw,
             33vw"
           />
         </ImageContainer>

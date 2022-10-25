@@ -267,6 +267,7 @@ const OrDiv = styled.div`
   left: -14px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 `;
+
 export default function Home() {
   // const [count1, setCount1] = useState(0);
   // const [count2, setCount2] = useState(0);
@@ -529,8 +530,8 @@ export default function Home() {
             >
               Great Experience For Building Construction & Outdoor Projects
             </Text>
-            <Flex justifyContent="start">
-              <Text fontSize="13px" color="#fff"  mobileFontSize="10px">
+            <Flex justifyContent="flex-start" alignItemsMobile="flex-start">
+              <div style={{ fontSize:"13px", color:"#fff",  mobileFontSize:"10px"}}>
                 <IconTextContainer>
                   <GiCheckMark
                     style={{ color: "rgb(255,199,44)", marginRight: "10px" }}
@@ -552,8 +553,8 @@ export default function Home() {
                   We work to reduce air emissions
                   <br />
                 </IconTextContainer>
-              </Text>
-              <Text fontSize="13px" color="#fff" mobileFontSize="10px">
+              </div>
+              <div style={{ fontSize:"13px", color:"#fff",  mobileFontSize:"10px"}}>
                 <IconTextContainer>
                   <GiCheckMark
                     style={{ color: "rgb(255,199,44)", marginRight: "10px" }}
@@ -575,7 +576,7 @@ export default function Home() {
                   You get speed, flexibility and better control
                   <br />
                 </IconTextContainer>
-              </Text>
+              </div>
             </Flex>
             <hr style={{ width: "100%", opacity: "0.2" }} />
             <Flex direction="column">

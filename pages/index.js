@@ -349,10 +349,11 @@ export default function Home() {
             fontSize={"3.4rem"}
             color="rgb(1,44,90)"
             fontWeight="bold"
-            width="50vw"
-            height="28vh"
-            mobileWidth="90vw"
-            mobileHeight="10vh"
+            width="40rem"
+            height="12rem"
+            mobileWidth="30rem"
+            mobileHeight="5rem"
+            mobileTextAlign="left"
             mobileFontSize={"1.6rem"}
             hoverbackground="transparent"
           >

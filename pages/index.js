@@ -231,9 +231,10 @@ const HeaderContent = styled.div`
   position: absolute;
   justify-content: center;
   flex-direction: column;
+  width: 100%;
+  height: 100%;
   padding-left: 6rem;
   padding-top: 5rem;
-
   top: 1rem;
   left: 1rem;
   @media (max-width: 1000px) {

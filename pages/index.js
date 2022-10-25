@@ -35,17 +35,16 @@ const ImageContainer = styled.div`
 `;
 const HeaderContainer = styled.div`
   position: relative;
-  max-height: 30rem;
+  min-height: 30rem;
   min-width: 100%;
   postion: relative;
   @media (max-width: 1000px) {
-    max-height: 15rem;
+    min-height: 15rem;
     min-width: 100%;
   }
 `;
 
 const IconTextContainer = styled.div`
-
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -311,7 +310,6 @@ export default function Home() {
   //   setCount3,
   //   setCount4,
   // ]);
-// look for hydration error fix
 
   return (
     <>
@@ -349,11 +347,10 @@ export default function Home() {
             fontSize={"3.4rem"}
             color="rgb(1,44,90)"
             fontWeight="bold"
-            width="40rem"
-            height="12rem"
-            mobileWidth="30rem"
-            mobileHeight="5rem"
-            mobileTextAlign="left"
+            width="50vw"
+            height="28vh"
+            mobileWidth="90vw"
+            mobileHeight="10vh"
             mobileFontSize={"1.6rem"}
             hoverbackground="transparent"
           >
@@ -532,8 +529,8 @@ export default function Home() {
             >
               Great Experience For Building Construction & Outdoor Projects
             </Text>
-            <Flex justifyContent="start" alignItemsMobile="flex-start">
-              <Flex direction="column" justifyContent="center" alignItems="flex-start" alignItemsMobile="flex-start">
+            <Flex justifyContent="start">
+              <Text fontSize="13px" color="#fff"  mobileFontSize="10px">
                 <IconTextContainer>
                   <GiCheckMark
                     style={{ color: "rgb(255,199,44)", marginRight: "10px" }}
@@ -555,8 +552,8 @@ export default function Home() {
                   We work to reduce air emissions
                   <br />
                 </IconTextContainer>
-              </Flex>
-              <Flex direction="column" justifyContent="center" alignItems="flex-start" alignItemsMobile="flex-start">
+              </Text>
+              <Text fontSize="13px" color="#fff" mobileFontSize="10px">
                 <IconTextContainer>
                   <GiCheckMark
                     style={{ color: "rgb(255,199,44)", marginRight: "10px" }}
@@ -578,7 +575,7 @@ export default function Home() {
                   You get speed, flexibility and better control
                   <br />
                 </IconTextContainer>
-              </Flex>
+              </Text>
             </Flex>
             <hr style={{ width: "100%", opacity: "0.2" }} />
             <Flex direction="column">

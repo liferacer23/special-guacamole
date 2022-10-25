@@ -530,7 +530,7 @@ export default function Home() {
               Great Experience For Building Construction & Outdoor Projects
             </Text>
             <Flex justifyContent="start">
-            
+              <Text fontSize="13px" color="#fff"  mobileFontSize="10px">
                 <IconTextContainer>
                   <GiCheckMark
                     style={{ color: "rgb(255,199,44)", marginRight: "10px" }}
@@ -552,8 +552,8 @@ export default function Home() {
                   We work to reduce air emissions
                   <br />
                 </IconTextContainer>
-           
-    
+              </Text>
+              <Text fontSize="13px" color="#fff" mobileFontSize="10px">
                 <IconTextContainer>
                   <GiCheckMark
                     style={{ color: "rgb(255,199,44)", marginRight: "10px" }}
@@ -575,7 +575,7 @@ export default function Home() {
                   You get speed, flexibility and better control
                   <br />
                 </IconTextContainer>
-              
+              </Text>
             </Flex>
             <hr style={{ width: "100%", opacity: "0.2" }} />
             <Flex direction="column">

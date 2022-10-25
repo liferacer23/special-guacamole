@@ -231,10 +231,9 @@ const HeaderContent = styled.div`
   position: absolute;
   justify-content: center;
   flex-direction: column;
-  width: 100%;
-  height: 100%;
   padding-left: 6rem;
   padding-top: 5rem;
+
   top: 1rem;
   left: 1rem;
   @media (max-width: 1000px) {
@@ -268,7 +267,6 @@ const OrDiv = styled.div`
   left: -14px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 `;
-
 export default function Home() {
   // const [count1, setCount1] = useState(0);
   // const [count2, setCount2] = useState(0);
@@ -531,7 +529,7 @@ export default function Home() {
             >
               Great Experience For Building Construction & Outdoor Projects
             </Text>
-            <Flex justifyContent="flex-start" alignItemsMobile="flex-start">
+            <Flex justifyContent="start">
               <div style={{ fontSize:"13px", color:"#fff",  mobileFontSize:"10px"}}>
                 <IconTextContainer>
                   <GiCheckMark

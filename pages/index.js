@@ -35,11 +35,11 @@ const ImageContainer = styled.div`
 `;
 const HeaderContainer = styled.div`
   position: relative;
-  min-height: 30rem;
+  max-height: 30rem;
   min-width: 100%;
   postion: relative;
   @media (max-width: 1000px) {
-    min-height: 15rem;
+    max-height: 15rem;
     min-width: 100%;
   }
 `;

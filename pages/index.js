@@ -562,7 +562,7 @@ export default function Home() {
                   <br />
                 </IconTextContainer>
      
-              <Text fontSize="13px" color="#fff" mobileFontSize="10px">
+             
                 <IconTextContainer>
                   <GiCheckMark
                     style={{ color: "rgb(255,199,44)", marginRight: "10px" }}
@@ -593,7 +593,7 @@ export default function Home() {
                         </Text>
                   <br />
                 </IconTextContainer>
-              </Text>
+       
             </Flex>
             <hr style={{ width: "100%", opacity: "0.2" }} />
             <Flex direction="column">

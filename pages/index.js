@@ -531,78 +531,52 @@ export default function Home() {
               Great Experience For Building Construction & Outdoor Projects
             </Text>
             <Flex justifyContent="start">
-             <>
+              <Text fontSize="13px" color="#fff"  mobileFontSize="10px">
                 <IconTextContainer>
                   <GiCheckMark
                     style={{ color: "rgb(255,199,44)", marginRight: "10px" }}
                   />
-                   <Text fontSize="13px" color="#fff"  mobileFontSize="10px">
                   The Easiest Way To Get What Need
                   <br />
-                  </Text>
                 </IconTextContainer>
-                </>
-                <>
                 <IconTextContainer>
                   <GiCheckMark
                     style={{ color: "rgb(255,199,44)", marginRight: "10px" }}
                   />
-                        <Text fontSize="13px" color="#fff"  mobileFontSize="10px">
-
                   Need It Fast? We Can Help.
-                        </Text>
                   <br />
                 </IconTextContainer>
-                </>
-                <>
                 <IconTextContainer>
                   <GiCheckMark
                     style={{ color: "rgb(255,199,44)", marginRight: "10px" }}
                   />
-                        <Text fontSize="13px" color="#fff"  mobileFontSize="10px">
-
                   We work to reduce air emissions
-                        </Text>
                   <br />
                 </IconTextContainer>
-                </>
-     
-             <>
+              </Text>
+              <Text fontSize="13px" color="#fff" mobileFontSize="10px">
                 <IconTextContainer>
                   <GiCheckMark
                     style={{ color: "rgb(255,199,44)", marginRight: "10px" }}
                   />
-                        <Text fontSize="13px" color="#fff"  mobileFontSize="10px">
-
                   industriel has a brilliant
-                        </Text>
                   <br />
                 </IconTextContainer>
-                </>
-                <>
                 <IconTextContainer>
                   <GiCheckMark
                     style={{ color: "rgb(255,199,44)", marginRight: "10px" }}
                   />
-                        <Text fontSize="13px" color="#fff"  mobileFontSize="10px">
-
                   Capitalise on low hanging fruit to identify
-                        </Text>
                   <br />
                 </IconTextContainer>
-                </>
-                <>
                 <IconTextContainer>
                   <GiCheckMark
                     style={{ color: "rgb(255,199,44)", marginRight: "10px" }}
                   />
-                        <Text fontSize="13px" color="#fff"  mobileFontSize="10px">
-
                   You get speed, flexibility and better control
-                        </Text>
                   <br />
                 </IconTextContainer>
-                </>
+              </Text>
             </Flex>
             <hr style={{ width: "100%", opacity: "0.2" }} />
             <Flex direction="column">

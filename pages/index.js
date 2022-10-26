@@ -138,11 +138,15 @@ const WorkingSection = styled.div`
 `;
 const HeaderButtonContainer = styled.div`
   display: flex;
-  width: 100vw;
-  justify-content: flex-start;
-  align-item: center;
+  width: 25rem;
+  height:4rem;
+  justify-content: center;
+  align-items: center;
   gap: 4rem;
-  margin-top: 2rem;
+  margin-top: 1rem;
+  @media (max-width:1000px){
+    margin-top:-1rem;
+  }
 `;
 
 const Card = styled.div`
@@ -347,10 +351,10 @@ export default function Home() {
             fontSize={"3.4rem"}
             color="rgb(1,44,90)"
             fontWeight="bold"
-            width="50vw"
-            height="28vh"
-            mobileWidth="90vw"
-            mobileHeight="10vh"
+            width="40rem"
+            height="12rem"
+            mobileWidth="30rem"
+            mobileHeight="5rem"
             mobileFontSize={"1.6rem"}
             hoverbackground="transparent"
           >
@@ -361,10 +365,10 @@ export default function Home() {
             fontSize={"18px"}
             color="white"
             fontWeight="bold"
-            width="50vw"
-            height="7vh"
-            mobileWidth="90vw"
-            mobileHeight="4vh"
+            width="35rem"
+            height="2rem"
+            mobileWidth="30rem"
+            mobileHeight="2rem"
        
           >
             We offer the most reliable power services in the country

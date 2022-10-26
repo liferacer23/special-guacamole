@@ -329,7 +329,7 @@ export default function Home() {
           alt="hero image.jpg"
           priority
           placeholder="blur"
-          sizes="(min-width: 100vw) 100vw,
+          sizes="(min-width: 760px) 100vw,
             (max-width: 1200px) 50vw,
             33vw"
         />{" "}

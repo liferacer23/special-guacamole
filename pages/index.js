@@ -142,7 +142,7 @@ const HeaderButtonContainer = styled.div`
   justify-content: flex-start;
   align-item: center;
   gap: 4rem;
-  margin-top: 2rem;
+  margin-top: -0.5rem;
 `;
 
 const Card = styled.div`

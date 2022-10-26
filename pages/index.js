@@ -321,7 +321,7 @@ export default function Home() {
       </Head>
 
       <HeaderContainer>
-      <ImageContainer width="100%" height="700px" mobileWidth="100%" mobileHeight="250px">
+      <ImageContainer width="100%" height="700px" mobileWidth="100%" mobileHeight="200px">
         <Image
           layout="fill"
           objectFit="cover"
@@ -412,6 +412,7 @@ export default function Home() {
       <ImageContainer width="600px" height="600px" mobileHeight="500px" mobileWidth="400px">
        <Image
              placeholder="blur"
+             priority
              width="600px" 
              height="700px"
             src={generator}

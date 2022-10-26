@@ -146,7 +146,7 @@ const ContentItem = styled("div")`
     border-left: 10px solid rgb(255, 199, 44);
   }
 `;
-const searchContent = <Search placeholder="input search text" enterButton />;
+const searchContent = <Search style={{width:"200px"}} placeholder="input search text" enterButton />;
 
 //create a hamburger menu for mobile view
 
@@ -329,22 +329,22 @@ const NavBar = () => {
           </SearchContainer>
           <HeaderItems>
             <Links href="/">
-              <StyledButton>Home</StyledButton>
+              <StyledButton width="7rem" height="2.5rem">Home</StyledButton>
             </Links>
             <Links href="/about">
-              <StyledButton>About Us</StyledButton>
+              <StyledButton width="7rem" height="2.5rem">About Us</StyledButton>
             </Links>
             <Popover content={content} placement="bottomRight" trigger="hover">
               <StyledButton>Products</StyledButton>
             </Popover>
             <Links href="/service">
-              <StyledButton>Service</StyledButton>
+              <StyledButton width="7rem" height="2.5rem">Service</StyledButton>
             </Links>
             <Links href="/gallery">
-              <StyledButton>Gallery</StyledButton>
+              <StyledButton width="7rem" height="2.5rem">Gallery</StyledButton>
             </Links>
             <Links href="/contact">
-              <StyledButton onClick={onClose}>Contact Us</StyledButton>
+              <StyledButton width="7rem" height="2.5rem">Contact Us</StyledButton>
             </Links>
             <Popover content={searchContent} trigger="click" placement="bottom">
               {" "}

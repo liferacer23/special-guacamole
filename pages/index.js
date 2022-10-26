@@ -531,7 +531,7 @@ export default function Home() {
               Great Experience For Building Construction & Outdoor Projects
             </Text>
             <Flex justifyContent="start">
-             
+             <>
                 <IconTextContainer>
                   <GiCheckMark
                     style={{ color: "rgb(255,199,44)", marginRight: "10px" }}
@@ -541,6 +541,8 @@ export default function Home() {
                   <br />
                   </Text>
                 </IconTextContainer>
+                </>
+                <>
                 <IconTextContainer>
                   <GiCheckMark
                     style={{ color: "rgb(255,199,44)", marginRight: "10px" }}
@@ -551,6 +553,8 @@ export default function Home() {
                         </Text>
                   <br />
                 </IconTextContainer>
+                </>
+                <>
                 <IconTextContainer>
                   <GiCheckMark
                     style={{ color: "rgb(255,199,44)", marginRight: "10px" }}
@@ -561,8 +565,9 @@ export default function Home() {
                         </Text>
                   <br />
                 </IconTextContainer>
+                </>
      
-             
+             <>
                 <IconTextContainer>
                   <GiCheckMark
                     style={{ color: "rgb(255,199,44)", marginRight: "10px" }}
@@ -573,6 +578,8 @@ export default function Home() {
                         </Text>
                   <br />
                 </IconTextContainer>
+                </>
+                <>
                 <IconTextContainer>
                   <GiCheckMark
                     style={{ color: "rgb(255,199,44)", marginRight: "10px" }}
@@ -583,6 +590,8 @@ export default function Home() {
                         </Text>
                   <br />
                 </IconTextContainer>
+                </>
+                <>
                 <IconTextContainer>
                   <GiCheckMark
                     style={{ color: "rgb(255,199,44)", marginRight: "10px" }}
@@ -593,7 +602,7 @@ export default function Home() {
                         </Text>
                   <br />
                 </IconTextContainer>
-       
+                </>
             </Flex>
             <hr style={{ width: "100%", opacity: "0.2" }} />
             <Flex direction="column">

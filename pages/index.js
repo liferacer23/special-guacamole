@@ -1107,6 +1107,11 @@ export default function Home() {
               border="2px solid rgba(0, 48, 100, 1)"
               mobileFontSize="0.9rem"
               fontSize="0.9rem"
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+              }}
             >
               <BiPhoneCall
                 style={{ color: "rgba(0, 48, 100, 1)", fontSize: "1.2rem" }}

@@ -44,7 +44,7 @@ const HeaderContainer = styled.div`
   }
 `;
 
-const IconTextContainer = styled.span`
+const IconTextContainer = styled.p`
   display: flex;
   flex-direction: row;
   align-items: center;

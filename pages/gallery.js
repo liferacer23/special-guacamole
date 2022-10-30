@@ -275,7 +275,7 @@ export default function Gallery() {
             Gallery
           </Text>
           <Flex width="100%" justifyContent="center" gap="0px">
-            <Flex width="20%" directionMobile="row" widthMobile="40%" gap="0px">
+            <Flex width="20%" directionMobile="row" widthMobile="50%" gap="0px">
               <Link href="/">
               <Flex width="50%" directionMobile="row" widthMobile="50%" justifyContent="center" gap="0px">
                   {" "}

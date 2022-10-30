@@ -85,7 +85,7 @@ export default function services() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <StyledDiv>
-        <Flex direction="column">
+        <Flex direction="column" >
           <Text
             width="100%"
             mobileWidth="100%"
@@ -95,11 +95,12 @@ export default function services() {
             fontWeight="bold"
             mobileTextAlign="center"
             mobileFontSize="2rem"
+            
           >
             Services
           </Text>
           <Flex width="100%" justifyContent="center" gap="0px" >
-            <Flex width="20%" directionMobile="row" widthMobile="40%" gap="0px" >
+            <Flex width="20%" directionMobile="row" widthMobile="50%" gap="0px" >
               <Link href="/">
               <Flex width="50%" directionMobile="row" widthMobile="50%" justifyContent="center" gap="0px">
                   {" "}

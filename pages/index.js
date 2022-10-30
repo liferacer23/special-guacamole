@@ -1097,7 +1097,13 @@ export default function Home() {
             and insured with a 100% satisfaction guarantee.
           </Text>
           <Flex justifyContent="center" margin="0 0 3rem 0" directionMobile="row">
-            <Button width="11rem" height="3rem" background="rgb(255,199,44)">
+            <Button       style={{
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                padding: "1.6rem 1rem",
+              }}
+               width="11rem" height="3rem" background="rgb(255,199,44)" mobileHeight="3rem">
               Visit our Office
             </Button>
             <Button

@@ -1095,7 +1095,7 @@ export default function Home() {
             Our projects are fully tested, background checked, license validated
             and insured with a 100% satisfaction guarantee.
           </Text>
-          <Flex justifyContent="center" margin="0 0 3rem 0">
+          <Flex justifyContent="center" margin="0 0 3rem 0" directionMobile="row">
             <Button width="11rem" height="3rem" background="rgb(255,199,44)">
               Visit our Office
             </Button>

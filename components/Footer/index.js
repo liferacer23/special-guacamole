@@ -11,7 +11,7 @@ const FooterContainer = styled.div`
   position: fixed;
   z-index: -10;
   bottom: 0;
-  width: 100%;
+  width: 100vw;
   @media (max-width: 1000px) {
     position: relative;
   }
@@ -30,6 +30,8 @@ export default function Footer() {
           paddingMobile="1rem"
           direction="column"
           gap="3rem"
+          width="100%"
+          
         >
           <Flex justifyContent="start" alignItems="start">
             <Flex justifyContent="start" alignItems="start">

@@ -56,7 +56,7 @@ const AboutUsContainer = styled.div`
   align-item: center;
   background: #fff;
   justify-content: center;
-  width: 100%;
+  width: 100vw;
   height:30rem;
   gap: 2.2rem;
   margin-top: -15rem;

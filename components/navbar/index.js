@@ -322,7 +322,7 @@ const NavBar = () => {
           </Links>
           <SearchContainer>
             <Popover content={searchContent} trigger="click" placement="bottom">
-              <Flex width="30px" height="30px" margin="5px 15px">
+              <Flex width="30px" height="30px" margin="0px 15px">
                 <GoSearch color="rgba(0, 48, 100, 1)" />
               </Flex>
             </Popover>

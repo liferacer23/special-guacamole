@@ -39,7 +39,7 @@ const HeaderContainer = styled.div`
   min-width: 100%;
   postion: relative;
   @media (max-width: 1000px) {
-    min-height: 15rem;
+    min-height: 17rem;
     min-width: 100%;
   }
 `;
@@ -148,7 +148,7 @@ const HeaderButtonContainer = styled.div`
 const Card = styled.div`
   display: flex;
   align-item: center;
-  justify-content: start;
+  justify-content: center;
   flex-direction: column;
   width: 390px;
   height: 482px;
@@ -321,7 +321,7 @@ export default function Home() {
       </Head>
 
       <HeaderContainer>
-      <ImageContainer width="100%" height="700px" mobileWidth="100%" mobileHeight="200px">
+      <ImageContainer width="100%" height="700px" mobileWidth="100%" mobileHeight="250px">
         <Image
           layout="fill"
           objectFit="cover"
@@ -703,7 +703,7 @@ export default function Home() {
           <Card>
             {" "}
             <div
-              style={{ position: "relative", width: "250px", height: "250px" }}
+              style={{ position: "relative", width: "370px", height: "250px" }}
             >
               <Image
                 placeholder="blur"
@@ -770,7 +770,7 @@ export default function Home() {
           <Card>
             {" "}
             <div
-              style={{ position: "relative", width: "250px", height: "250px" }}
+              style={{ position: "relative", width: "370px",height: "250px" }}
             >
               <Image
                 placeholder="blur"
@@ -837,7 +837,8 @@ export default function Home() {
           <Card>
             {" "}
             <div
-              style={{ position: "relative", width: "250px", height: "250px" }}
+              style={{ position: "relative", width: "370px", height: "250px",
+            }}
             >
               <Image
                 placeholder="blur"

@@ -204,7 +204,7 @@ const NavBar = () => {
             style={{
               position: "relative",
               height: "40px",
-              width: "26rem",
+              width: "20rem",
               display: "flex",
               justifyContent: "center",
             }}

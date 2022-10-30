@@ -44,7 +44,7 @@ const HeaderContainer = styled.div`
   }
 `;
 
-const IconTextContainer = styled.div`
+const IconTextContainer = styled.span`
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -348,9 +348,9 @@ export default function Home() {
             color="rgb(1,44,90)"
             fontWeight="bold"
             width="50vw"
-            height="28vh"
+            height="10rem"
             mobileWidth="90vw"
-            mobileHeight="10vh"
+            mobileHeight="5rem"
             mobileFontSize={"1.6rem"}
             hoverbackground="transparent"
           >
@@ -362,9 +362,9 @@ export default function Home() {
             color="white"
             fontWeight="bold"
             width="50vw"
-            height="7vh"
+            height="5rem"
             mobileWidth="90vw"
-            mobileHeight="4vh"
+            mobileHeight="3rem"
        
           >
             We offer the most reliable power services in the country
@@ -519,7 +519,7 @@ export default function Home() {
               color="#fff"
               style={{ width: "100%" }}
             >
-              WE DELIVER ON TIME ,ALL THE TIME
+              WE DELIVER ON TIME, ALL THE TIME
             </Text>
             <Text
               fontSize="37px"

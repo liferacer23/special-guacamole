@@ -6,7 +6,7 @@ import { GiCheckMark } from "react-icons/gi";
 import { BsTelephoneFill } from "react-icons/bs";
 import { GoGlobe } from "react-icons/go";
 import styled from "styled-components";
-
+import Link from "next/link";
 const FooterContainer = styled.div`
   position: fixed;
   z-index: -10;
@@ -138,7 +138,7 @@ export default function Footer() {
                   <Text
                     color="#fff"
                     fontSize="1rem"
-                    width="40%"
+                    width="50%"
                     mobileWhiteSpace="nowrap"
                   >
                     <GiCheckMark
@@ -164,7 +164,7 @@ export default function Footer() {
                   <Text
                     color="#fff"
                     fontSize="1rem"
-                    width="30%"
+                    width="40%"
                     mobileWhiteSpace="nowrap"
                   >
                     <GiCheckMark
@@ -223,7 +223,7 @@ export default function Footer() {
             </Flex>
           </Flex>
           <Flex justifyContent="space-between" width="100%">
-            <Text color="#fff">
+            <Text color="#fff"    mobileFontSize="0.6rem">
               Copyright © 2022 Nilecoeem All rights reserved. Designed by
               Localmedia.ae
             </Text>
@@ -233,71 +233,83 @@ export default function Footer() {
               alignItems="start"
               directionMobile="row"
             >
+              <Link href='/'>
               <Text
                 width="12%"
                 mobileWidth="12%"
                 hoverColor="rgb(255, 199, 44)"
                 color="#fff"
                 fontSize="0.8rem"
-                mobileFontSize="0.7rem"
+                mobileFontSize="0.6rem"
               >
                 Home |
               </Text>
+              </Link>
+              <Link href="/about">
               <Text
                 width="12%"
                 mobileWidth="18%"
                 hoverColor="rgb(255, 199, 44)"
                 color="#fff"
                 fontSize="0.8rem"
-                mobileFontSize="0.7rem"
+                mobileFontSize="0.6rem"
               >
                 {" "}
                 About Us |
               </Text>
+              </Link>
+              <Link href='/products'>
               <Text
                 width="12%"
                 mobileWidth="18%"
                 hoverColor="rgb(255, 199, 44)"
                 color="#fff"
                 fontSize="0.8rem"
-                mobileFontSize="0.7rem"
+                mobileFontSize="0.6rem"
               >
                 {" "}
                 Products |
               </Text>
+              </Link>
+              <Link href='/service'>
               <Text
                 width="12%"
                 mobileWidth="18%"
                 hoverColor="rgb(255, 199, 44)"
                 color="#fff"
                 fontSize="0.8rem"
-                mobileFontSize="0.7rem"
+                mobileFontSize="0.6rem"
               >
                 {" "}
                 Services |
               </Text>
+              </Link>
+              <Link href="/gallery">
               <Text
                 width="12%"
                 mobileWidth="16%"
                 hoverColor="rgb(255, 199, 44)"
                 color="#fff"
                 fontSize="0.8rem"
-                mobileFontSize="0.7rem"
+                mobileFontSize="0.6rem"
               >
                 {" "}
                 Gallery |
               </Text>
+              </Link>
+              <Link href="/contact">
               <Text
                 width="13%"
-                mobileWidth="17%"
+                mobileWidth="18%"
                 hoverColor="rgb(255, 199, 44)"
                 color="#fff"
                 fontSize="0.8rem"
-                mobileFontSize="0.7em"
+                mobileFontSize="0.6rem"
               >
                 {" "}
                 Contact Us |
               </Text>
+              </Link>
             </Flex>
           </Flex>
         </Flex>

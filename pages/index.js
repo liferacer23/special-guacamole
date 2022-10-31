@@ -248,6 +248,7 @@ const HeaderContent = styled.div`
 `;
 const FooterHeader = styled.div`
   height: 30rem;
+  opacity: 0;
   @media (max-width: 1000px) {
     display: none;
   }

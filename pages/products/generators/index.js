@@ -126,26 +126,27 @@ export default function index() {
           >
             Generators
           </Text>
-          <Flex width="100%" justifyContent="center" gap="0px">
-            <Flex width="25%" directionMobile="row" widthMobile="40%" gap="5px">
+          <Flex width="100%" justifyContent="center" gap="0px"  widthMobile="80%">
+          <Flex width="25%" directionMobile="row" widthMobile="80%" gap="5px">
               <Link href="/">
                 <Flex
-                  width="50%"
-                  directionMobile="row"
-                  widthMobile="50%"
-                  justifyContent="center"
-                  gap="0px"
+                       width="50%"
+                       directionMobile="row"
+                       widthMobile="80%"
+                       justifyContent="center"
+                       gap="0px"
                 >
                   {" "}
                   <AiOutlineHome style={{ fontSize: "1.5rem" }} />
                   <Text
-                    color="#fff"
-                    fontSize="1rem"
-                    textAlign="center"
-                    fontWeight="bold"
-                    cursor="pointer"
-                    width="50%"
-                    mobileWidth="60%"
+                   color="#fff"
+                   fontSize="1rem"
+                   mobileFontSize="0.8rem"
+                   textAlign="center"
+                   fontWeight="bold"
+                   cursor="pointer"
+                   width="50%"
+                   mobileWidth="50%"
                   >
                     Home{" "}
                   </Text>
@@ -153,26 +154,28 @@ export default function index() {
               </Link>
               /
               <Link href="/products">
-                <Flex width="50%" directionMobile="row" widthMobile="40%">
+              <Flex width="50%" directionMobile="row" widthMobile="60%">
                   <Text
-                    fontSize="1rem"
-                    color="#fff"
-                    textAlign="center"
-                    fontWeight="bold"
-                    cursor="pointer"
+                   fontSize="1rem"
+                   mobileFontSize="0.8rem"
+                   color="#fff"
+                   textAlign="center"
+                   fontWeight="bold"
+                   cursor="pointer"
                   >
                     Products
                   </Text>{" "}
                 </Flex>
               </Link>
               /
-              <Flex width="50%" directionMobile="row" widthMobile="40%">
+              <Flex width="50%" directionMobile="row" widthMobile="70%">
                 <Text
-                  fontSize="1rem"
-                  color="rgb(255, 199, 44)"
-                  textAlign="center"
-                  fontWeight="bold"
-                  cursor="pointer"
+                fontSize="1rem"
+                mobileFontSize="0.8rem"
+                color="rgb(255, 199, 44)"
+                textAlign="center"
+                fontWeight="bold"
+                cursor="pointer"
                 >
                   Generators
                 </Text>{" "}
@@ -195,11 +198,13 @@ export default function index() {
             fontWeight="bold"
             textAlign="left"
             width="90%"
+            style={{marginLeft:'1rem'}}
           >
             Generator Supplier
           </Text>
 
           <Text
+          style={{padding:'1rem'}}
             color="rgb(136,142,148)"
             fontSize="0.9rem"
             textAlign="left"

@@ -123,13 +123,13 @@ export default function index() {
           >
             Switchgears
           </Text>
-          <Flex width="100%" justifyContent="center" gap="0px">
-          <Flex width="25%" directionMobile="row" widthMobile="40%" gap="5px">
+          <Flex width="100%" justifyContent="center" gap="0px"  widthMobile="80%">
+          <Flex width="25%" directionMobile="row" widthMobile="90%" gap="5px">
               <Link href="/">
                 <Flex
                   width="50%"
                   directionMobile="row"
-                  widthMobile="50%"
+                  widthMobile="80%"
                   justifyContent="center"
                   gap="0px"
                 >
@@ -138,6 +138,7 @@ export default function index() {
                   <Text
                     color="#fff"
                     fontSize="1rem"
+                    mobileFontSize="0.8rem"
                     textAlign="center"
                     fontWeight="bold"
                     cursor="pointer"
@@ -150,9 +151,10 @@ export default function index() {
               </Link>
               /
               <Link href="/products">
-                <Flex width="50%" directionMobile="row" widthMobile="40%">
+                <Flex width="50%" directionMobile="row" widthMobile="60%">
                   <Text
                     fontSize="1rem"
+                    mobileFontSize="0.8rem"
                     color="#fff"
                     textAlign="center"
                     fontWeight="bold"
@@ -163,9 +165,10 @@ export default function index() {
                 </Flex>
               </Link>
               /
-              <Flex width="50%" directionMobile="row" widthMobile="40%">
+              <Flex width="50%" directionMobile="row" widthMobile="70%">
                 <Text
                   fontSize="1rem"
+                  mobileFontSize="0.8rem"
                   color="rgb(255, 199, 44)"
                   textAlign="center"
                   fontWeight="bold"
@@ -192,13 +195,14 @@ export default function index() {
             fontWeight="bold"
             textAlign="left"
             width="90%"
+            style={{marginLeft:'1rem'}}
           >
             Switchgears
           </Text>
 
           <Collapse accordion expandIconPosition="end">
             <Panel header={"Synchronization Panels"} key="1">
-              <Text color="#808080" fontSize="0.9rem">
+              <Text color="#808080" fontSize="0.9rem"           style={{padding:'1rem'}}>
                 Synchronization Panels are effective solutions for a client
                 seeking power at cyclic conditions or generally to get efficient
                 higher rating power. Synchronization lengthens generator life as

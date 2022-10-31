@@ -142,10 +142,14 @@ const TabContainer = styled.div`
   padding: 1rem;
 `;
 const ImageWrapper = styled.div`
+  margin-left: 2rem;
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
-  marginLeft="2rem;
+  @media (max-width: 1000px) {
+    margin-left: 0rem;
+  }
+
 `;
 const FooterHeader = styled.div`
   height: 30rem;
@@ -332,7 +336,7 @@ export default function Gallery() {
         >
           <Tabs defaultActiveKey="1">
             <Tabs.TabPane tab=" Generator" key="1">
-            <ImageWrapper style={{ marginLeft: "2rem" }}>
+            <ImageWrapper >
                 {GeneratorImages.map((image, index) => (
                   <Image
                     objectFit="cover"
@@ -351,7 +355,7 @@ export default function Gallery() {
               </ImageWrapper>
             </Tabs.TabPane>
             <Tabs.TabPane tab="Switch Gears" key="2">
-            <ImageWrapper style={{ marginLeft: "2rem" }}>
+            <ImageWrapper >
                 {SwitchGearImages.map((image, index) => (
                   <Image
                     objectFit="cover"
@@ -370,7 +374,7 @@ export default function Gallery() {
               </ImageWrapper>
             </Tabs.TabPane>
             <Tabs.TabPane tab="Spare Parts" key="3">
-            <ImageWrapper style={{ marginLeft: "2rem" }}>
+            <ImageWrapper>
                 {SparePartImages.map((image, index) => (
                   <Image
                     objectFit="cover"
@@ -394,7 +398,7 @@ export default function Gallery() {
           </Tabs>
           <Collapse expandIconPosition="end">
             <Panel header={" Generator"} key="1">
-            <ImageWrapper style={{ marginLeft: "2rem" }}>
+            <ImageWrapper >
                 {GeneratorImages.map((image, index) => (
                   <Image
                     objectFit="cover"
@@ -413,7 +417,7 @@ export default function Gallery() {
               </ImageWrapper>
             </Panel>
             <Panel header={"Switch Gears"} key="2">
-            <ImageWrapper style={{ marginLeft: "2rem" }}>
+            <ImageWrapper >
                 {SwitchGearImages.map((image, index) => (
                   <Image
                     objectFit="cover"
@@ -432,7 +436,7 @@ export default function Gallery() {
               </ImageWrapper>
             </Panel>
             <Panel header={"Spare Parts"} key="3">
-            <ImageWrapper style={{ marginLeft: "2rem" }}>
+            <ImageWrapper >
                 {SparePartImages.map((image, index) => (
                   <Image
                     objectFit="cover"

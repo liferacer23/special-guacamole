@@ -105,6 +105,7 @@ const PowerSectionContainer = styled.section`
   }
 `;
 const AboutDescription = styled.div`
+padding: 1rem;
   display: flex;
   align-items: start;
   justify-content: start;
@@ -229,9 +230,9 @@ const OurFacility = styled.section`
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-left: -5rem;
+;
   @media (max-width: 1000px) {
-    width: 100%;
+    width: 90%;
     margin: 0;
   }
 `;
@@ -280,7 +281,7 @@ const About = () => {
             >
               About Us
             </Text>
-            <Flex width="100%" justifyContent="center" gap="0px">
+            <Flex width="100%" justifyContent="center" gap="0px" >
               <Flex
                 width="20%"
                 directionMobile="row"
@@ -304,7 +305,7 @@ const About = () => {
                       fontWeight="bold"
                       cursor="pointer"
                       width="50%"
-                      mobileWidth="60%"
+                      mobileWidth="40%"
                     >
                       Home
                     </Text>

@@ -85,20 +85,26 @@ export default function index() {
           >
             Other Products
           </Text>
-          <Flex width="100%" justifyContent="center" gap="0px">
-          <Flex width="25%" directionMobile="row" widthMobile="40%" gap="5px">
+          <Flex width="100%" justifyContent="center" gap="0px"  widthMobile="90%">
+          <Flex width="25%" directionMobile="row" widthMobile="90%" gap="5px">
               <Link href="/">
-              <Flex width="50%" directionMobile="row" widthMobile="50%" justifyContent="center" gap="0px">
-                  {" "}
+              <Flex
+                  width="50%"
+                  directionMobile="row"
+                  widthMobile="80%"
+                  justifyContent="center"
+                  gap="0px"
+                >
                   <AiOutlineHome style={{ fontSize: "1.5rem" }} />
                   <Text
-                    color="#fff"
-                    fontSize="1rem"
-                    textAlign="center"
-                    fontWeight="bold"
-                    cursor="pointer"
-                    width="50%"
-                    mobileWidth="60%"
+              color="#fff"
+              fontSize="1rem"
+              mobileFontSize="0.8rem"
+              textAlign="center"
+              fontWeight="bold"
+              cursor="pointer"
+              width="50%"
+              mobileWidth="60%"
                   >
                     Home
                   </Text>
@@ -106,31 +112,28 @@ export default function index() {
               </Link>
               /
               <Link href="/products">
-                <Flex width="30%" directionMobile="row" widthMobile="40%">
+              <Flex width="50%" directionMobile="row" widthMobile="60%">
                   <Text
-                    fontSize="1rem"
-                    color="#fff"
-                    textAlign="center"
-                    mobileTextAlign="left"
-                    mobileFontSize="0.8rem"
-                    fontWeight="bold"
-                    cursor="pointer"
-                    mobileWidth="25%"
+                        fontSize="1rem"
+                        mobileFontSize="0.8rem"
+                        color="#fff"
+                        textAlign="center"
+                        fontWeight="bold"
+                        cursor="pointer"
                   >
                     Products
                   </Text>{" "}
                 </Flex>
               </Link>
               /
-              <Flex width="60%" directionMobile="row" widthMobile="40%">
+              <Flex width="50%" directionMobile="row" widthMobile="90%">
                 <Text
-                  fontSize="1rem"
-                  color="rgb(255, 199, 44)"
-                  textAlign="center"
-                  fontWeight="bold"
-                  mobileFontSize="0.8rem"
-                  cursor="pointer"
-                  mobileWidth="25%"
+        fontSize="1rem"
+        mobileFontSize="0.8rem"
+        color="rgb(255, 199, 44)"
+        textAlign="center"
+        fontWeight="bold"
+        cursor="pointer"
                 >
                   Other Products
                 </Text>{" "}
@@ -153,6 +156,7 @@ export default function index() {
             fontWeight="bold"
             textAlign="left"
             width="90%"
+            style={{ marginLeft: "1rem" }}
           >
             Other Products
           </Text>

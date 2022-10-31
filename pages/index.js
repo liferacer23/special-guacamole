@@ -1123,7 +1123,7 @@ export default function Home() {
               <BiPhoneCall
                 style={{ color: "rgba(0, 48, 100, 1)", fontSize: "1.2rem" }}
               />
-                      <Text fontSize="0.9rem" color="rgba(0, 48, 100, 1)" fontWeight="bold" mobileFontSize="0.7rem">
+                      <Text fontSize="0.9rem" color="rgba(0, 48, 100, 1)" fontWeight="bold" mobileFontSize="0.6rem">
                       Call Us at +251977805757
                       </Text>
            

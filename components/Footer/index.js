@@ -223,7 +223,7 @@ export default function Footer() {
             </Flex>
           </Flex>
           <Flex justifyContent="space-between" width="100%">
-            <Text color="#fff"    mobileFontSize="0.6rem">
+            <Text color="#fff"    mobileFontSize="0.5rem">
               Copyright © 2022 Nilecoeem All rights reserved. Designed by
               Localmedia.ae
             </Text>
@@ -235,12 +235,12 @@ export default function Footer() {
             >
               <Link href='/'>
               <Text
-                width="13%"
-                mobileWidth="12%"
+                width="12%"
+                mobileWidth="13%"
                 hoverColor="rgb(255, 199, 44)"
                 color="#fff"
                 fontSize="0.8rem"
-                mobileFontSize="0.6rem"
+                mobileFontSize="0.5rem"
               >
                 Home |
               </Text>
@@ -252,7 +252,7 @@ export default function Footer() {
                 hoverColor="rgb(255, 199, 44)"
                 color="#fff"
                 fontSize="0.8rem"
-                mobileFontSize="0.6rem"
+                mobileFontSize="0.5rem"
               >
                 {" "}
                 About Us |
@@ -265,7 +265,7 @@ export default function Footer() {
                 hoverColor="rgb(255, 199, 44)"
                 color="#fff"
                 fontSize="0.8rem"
-                mobileFontSize="0.6rem"
+                mobileFontSize="0.5rem"
               >
                 {" "}
                 Products |
@@ -278,7 +278,7 @@ export default function Footer() {
                 hoverColor="rgb(255, 199, 44)"
                 color="#fff"
                 fontSize="0.8rem"
-                mobileFontSize="0.6rem"
+                mobileFontSize="0.5rem"
               >
                 {" "}
                 Services |
@@ -291,7 +291,7 @@ export default function Footer() {
                 hoverColor="rgb(255, 199, 44)"
                 color="#fff"
                 fontSize="0.8rem"
-                mobileFontSize="0.6rem"
+                mobileFontSize="0.5rem"
               >
                 {" "}
                 Gallery |
@@ -304,7 +304,7 @@ export default function Footer() {
                 hoverColor="rgb(255, 199, 44)"
                 color="#fff"
                 fontSize="0.8rem"
-                mobileFontSize="0.6rem"
+                mobileFontSize="0.5rem"
               >
                 {" "}
                 Contact Us |

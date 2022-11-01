@@ -235,7 +235,7 @@ export default function Footer() {
             >
               <Link href='/'>
               <Text
-                width="12%"
+                width="13%"
                 mobileWidth="12%"
                 hoverColor="rgb(255, 199, 44)"
                 color="#fff"
@@ -299,7 +299,7 @@ export default function Footer() {
               </Link>
               <Link href="/contact">
               <Text
-                width="13%"
+                width="14%"
                 mobileWidth="18%"
                 hoverColor="rgb(255, 199, 44)"
                 color="#fff"

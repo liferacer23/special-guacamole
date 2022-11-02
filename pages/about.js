@@ -18,7 +18,6 @@ import TextArea from "antd/lib/input/TextArea";
 import LowerImage from "../assets/Lower-3.jpg";
 import { GoLocation } from "react-icons/go";
 import antDCarousel from "antd/lib/carousel";
-import compworkers1 from "../assets/companyWorkers//compworkers1.jpg";
 import compworkers2 from "../assets/companyWorkers/compworkers2.jpg";
 import compworkers3 from "../assets/companyWorkers/compworkers3.jpg";
 import compworkers4 from "../assets/companyWorkers/compworkers4.jpg";
@@ -101,7 +100,7 @@ const PowerSectionContainer = styled.section`
   padding: 6rem;
   background: #fff;
   @media (max-width: 1000px) {
-    padding: 1rem;
+    padding: 0.5rem;
   }
 `;
 const AboutDescription = styled.div`
@@ -145,7 +144,7 @@ const CommitmentContent = styled.div`
   @media (max-width: 1000px) {
     padding: 2rem;
     width: 100%;
-    height: 100rem;
+
     inset: 0;
   }
 `;
@@ -163,6 +162,10 @@ const ContactSectionHeader = styled.div`
   color: #fff;
   text-align: center;
   z-index: -1;
+  padding: 1rem;
+  @media (max-width: 1000px) {
+    margin-top: 20rem;
+  }
 `;
 const ContactSection = styled.section`
   width: 100%;
@@ -230,10 +233,11 @@ const OurFacility = styled.section`
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding: 1rem;
 ;
   @media (max-width: 1000px) {
     width: 90%;
-    margin: 0;
+    margin: 1rem;
   }
 `;
 const FooterHeader = styled.div`
@@ -244,7 +248,6 @@ const FooterHeader = styled.div`
 `;
 const About = () => {
   const workers = [
-    compworkers1,
     compworkers2,
     compworkers3,
     compworkers4,
@@ -332,7 +335,7 @@ const About = () => {
             <Carousel autoplay dots={false}>
               {workers.map((worker, index) => {
                 return (
-                  <ImageContainer key={index}>
+                  <ImageContainer key={index} height="500px">
                     <Image
                       objectFit="contain"
                       layout="fill"

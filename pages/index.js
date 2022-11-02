@@ -23,7 +23,7 @@ import { CgArrowLongRight } from "react-icons/cg";
 import { Flex, Text, Button } from "../components/Base/";
 import HomeSlider from "../components/HomeSlider";
 import Link from "next/link";
-
+import Footer from "../components/Footer" ;
 const ImageContainer = styled.div`
   width: ${(props) => props.width || "500px"};
   height: ${(props) => props.height || "520px"};
@@ -1132,7 +1132,7 @@ export default function Home() {
           </Flex>
         </Flex>
       </HospitalitySection>
-      <FooterHeader></FooterHeader>
+      {/* <FooterHeader></FooterHeader> */}
     </>
   );
 }

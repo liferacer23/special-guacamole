@@ -8,12 +8,6 @@ import { GoGlobe } from "react-icons/go";
 import styled from "styled-components";
 import Link from "next/link";
 const FooterContainer = styled.div`
-position: sticky;
-z-index: -1;
-bottom: 0;
-left: 0;
-right: 0;
-  width: 100vw;
   @media (max-width: 1000px) {
     position: relative;
   }

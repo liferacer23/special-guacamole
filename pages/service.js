@@ -160,7 +160,7 @@ export default function services() {
         
         </Flex>
       </Flex>
-      <FooterHeader></FooterHeader>
+      {/* <FooterHeader></FooterHeader> */}
     </>
   );
 }

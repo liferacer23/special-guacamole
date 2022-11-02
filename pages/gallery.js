@@ -457,7 +457,7 @@ export default function Gallery() {
           </Collapse>
         </Flex>
       </TabContainer>
-      <FooterHeader></FooterHeader>
+     
     </>
   );
 }

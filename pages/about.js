@@ -617,7 +617,7 @@ const About = () => {
           </QuoteSection>
         </ContactSection>
       </div>
-      <FooterHeader></FooterHeader>
+      {/* <FooterHeader></FooterHeader> */}
     </>
   );
 };

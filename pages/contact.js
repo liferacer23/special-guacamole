@@ -341,7 +341,7 @@ export default function contact() {
         </ContactUsFormContainer>
       </ContactUsContainer>
 
-      <FooterHeader></FooterHeader>
+    
     </>
   );
 }

@@ -3,10 +3,10 @@ import NavBar from "../navbar";
 import Footer from "../Footer/";
 export default function Layout({ children }) {
   return (
-    <>
+    <div style={{position:'relative', minHeight:'100vh'}}>
       <NavBar priority/>
-      {children}
+      <div style={{zIndex:"1000"}}>{children}</div>
       <Footer />
-    </>
+    </div>
   );
 }

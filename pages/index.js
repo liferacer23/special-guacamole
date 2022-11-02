@@ -23,7 +23,7 @@ import { CgArrowLongRight } from "react-icons/cg";
 import { Flex, Text, Button } from "../components/Base/";
 import HomeSlider from "../components/HomeSlider";
 import Link from "next/link";
-import Footer from "../components/Footer" ;
+
 const ImageContainer = styled.div`
   width: ${(props) => props.width || "500px"};
   height: ${(props) => props.height || "520px"};
@@ -404,10 +404,9 @@ export default function Home() {
           </HeaderButtonContainer>
         </HeaderContent>
       </HeaderContainer>
-      <>
-        {" "}
+   
         <HomeSlider />
-      </>
+  
 
       <AboutUsContainer>
       <ImageContainer width="600px" height="600px" mobileHeight="500px" mobileWidth="400px">

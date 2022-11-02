@@ -1,5 +1,6 @@
 import styled from "styled-components";
 export const Button = styled("button")`
+cursor: pointer;
   background: ${(props) => props.background || "#fff"};
   color: ${(props) => props.color || "#fff"};
   border: ${(props) => props.border || "2px solid #fff"};

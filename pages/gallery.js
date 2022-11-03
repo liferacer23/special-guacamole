@@ -373,7 +373,7 @@ export default function Gallery() {
                 ))}
               </ImageWrapper>
             </Tabs.TabPane>
-            <Tabs.TabPane tab="Spare Parts" key="3">
+            {/* <Tabs.TabPane tab="Spare Parts" key="3">
             <ImageWrapper>
                 {SparePartImages.map((image, index) => (
                   <Image
@@ -394,7 +394,7 @@ export default function Gallery() {
             </Tabs.TabPane>
             <Tabs.TabPane tab="Events" key="4">
               Events
-            </Tabs.TabPane>
+            </Tabs.TabPane> */}
           </Tabs>
           <Collapse expandIconPosition="end">
             <Panel header={" Generator"} key="1">

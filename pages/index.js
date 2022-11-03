@@ -25,6 +25,12 @@ import HomeSlider from "../components/HomeSlider";
 import Link from "next/link";
 
 const ImageContainer = styled.div`
+display: flex;
+align-items: flex-start;
+justify-content: flex-start;
+align-items: ${props => props.alignItems};
+justify-content: ${props => props.justifyContent};
+flex-direction: ${props => props.flexDirection};
   width: ${(props) => props.width || "500px"};
   height: ${(props) => props.height || "520px"};
   position: relative;
@@ -53,11 +59,11 @@ const IconTextContainer = styled.p`
 `;
 const AboutUsContainer = styled.div`
   display: flex;
-  align-item: center;
+  align-item: flex-start;
   background: #fff;
   justify-content: center;
   width: 100vw;
-  height:30rem;
+  height:33rem;
   gap: 2.2rem;
   margin-top: -15rem;
   @media (max-width: 1000px) {
@@ -152,6 +158,7 @@ const Card = styled.div`
   flex-direction: column;
   width: 390px;
   height: 482px;
+  padding: 0.5rem;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   margin-bottom: 1rem;
   @media (max-width: 1000px) {
@@ -233,8 +240,7 @@ const HeaderContent = styled.div`
   flex-direction: column;
   padding-left: 6rem;
   padding-top: 5rem;
-
-  top: 1rem;
+  top: 8rem;
   left: 1rem;
   @media (max-width: 1000px) {
     top: -3rem;
@@ -261,11 +267,10 @@ const OrDiv = styled.div`
   background: #fff;
   border-radius: 50%;
   color: rgb(1, 44, 90);
-  top: 30%;
   display: flex;
   justify-content: center;
   align-items: center;
-  left: -14px;
+  left: 2rem;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 `;
 export default function Home() {
@@ -325,7 +330,7 @@ export default function Home() {
       <ImageContainer width="100%" height="700px" mobileWidth="100%" mobileHeight="250px">
         <Image
           layout="fill"
-          objectFit="cover"
+          objectFit="fill"
           src={hero}
           alt="hero image.jpg"
           priority
@@ -346,7 +351,7 @@ export default function Home() {
           </Text>
           <Text
             fontSize={"3.4rem"}
-            color="rgb(1,44,90)"
+            color="rgb(0,44,90)"
             fontWeight="bold"
             width="50vw"
             height="10rem"
@@ -355,7 +360,7 @@ export default function Home() {
             mobileFontSize={"1.6rem"}
             hoverbackground="transparent"
           >
-            We are leader in power and technology
+            We are the leaders in power and technology
           </Text>
           <Text
             mobileFontSize={"0.7rem"}
@@ -409,7 +414,7 @@ export default function Home() {
   
 
       <AboutUsContainer>
-      <ImageContainer width="600px" height="600px" mobileHeight="500px" mobileWidth="400px">
+      <ImageContainer display='flex' alignItems="flex-start" justifyContent="flext-start" flexDirection="column" width="700px" height="600px" mobileHeight="350px" mobileWidth="400px">
        <Image
              placeholder="blur"
              priority
@@ -473,17 +478,19 @@ export default function Home() {
                 +251977805757
               </Text>
             </Flex>
-            <Flex margin="0 -6rem 0 0" marginMobile="0 0 0 0">
+            <Flex style={{position:'relative'}} margin="0 -6rem 0 0" marginMobile="0 0 0 0">
               {" "}
               <div
                 style={{
                   borderLeft: "1px solid rgb(1,44,90 , 0.2)",
                   height: "100px",
-                  position: "relative",
-                }}
+                  position: "absolute",
+                  left:'2.8rem'
+                 }}
               >
-                <OrDiv>or</OrDiv>
+              
               </div>
+              <OrDiv>or</OrDiv>
             </Flex>
 
             <Flex
@@ -738,14 +745,15 @@ export default function Home() {
                 textAlign= "left"
                 color="#858585"
                 width= "90%"
-                marginTop= "30px"
-                marginLeft="10px"
+                margin= "30px 10px"
+          
            
             >
               Our diesel generators comprise of a Diesel Engine coupled to an
               Alternator, mounted over a common base frame with Anti-Vibration
               mounting
             </Text>
+            <Link href={"/products/generators"}>
             <CardButton>
               <Text
                 style={{
@@ -766,6 +774,7 @@ export default function Home() {
                 <CgArrowLongRight style={{ fontSize: "30px", color: "#fff" }} />
               </Flex>
             </CardButton>
+            </Link>
           </Card>
           <Card>
             {" "}
@@ -813,6 +822,7 @@ export default function Home() {
               cyclic conditions or generally to get efficient higher rating
               power.
             </Text>
+            <Link href={"/products/switchgears"}>
             <CardButton>
               <Text
                 style={{
@@ -833,6 +843,7 @@ export default function Home() {
                 <CgArrowLongRight style={{ fontSize: "30px", color: "#fff" }} />
               </Flex>
             </CardButton>
+            </Link>
           </Card>
           <Card>
             {" "}
@@ -880,6 +891,7 @@ export default function Home() {
               We provide quality and genuine spare parts paired with efficient
               after-sales service to keep your machines in great condition
             </Text>
+            <Link href={"/products/other"}>
             <CardButton>
               <Text
                 style={{
@@ -900,6 +912,7 @@ export default function Home() {
                 <CgArrowLongRight style={{ fontSize: "30px", color: "#fff" }} />
               </Flex>
             </CardButton>
+            </Link>
           </Card>
         </Flex>
       </WorkingSection>

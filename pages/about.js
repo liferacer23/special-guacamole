@@ -389,11 +389,16 @@ const About = () => {
                 fontWeight="bold"
                 textAlign="left"
               >
-                Meet With Our Mission
+                What is Our Mission
               </Text>
               <Text color="rgb(136,142,148)" fontSize="1rem" textAlign="left">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industrys standard.
+              To develop lasting client 
+relationship by providing 
+exceptional service and 
+products.
+Our main objective being 
+lighting up all of Africa with 
+our high quality Generators.
               </Text>
               <Text
                 color="rgba(0, 48, 100, 1)"
@@ -405,11 +410,14 @@ const About = () => {
                 What Is Our Vision?
               </Text>
               <Text color="rgb(136,142,148)" fontSize="1rem" textAlign="left">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industrys standard.Lorem
-                Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industrys standard.Lorem
-                Ipsum is simply dummy.
+              To be the benchmark for 
+Diesel engine Generator, 
+production, assembly and 
+maintenance world wide. 
+Starting from Ethiopia, we 
+wish to be recognized for 
+the values that we stand 
+for as a humble company
               </Text>
             </AboutDescription>
           </Flex>
@@ -432,12 +440,39 @@ const About = () => {
                 </Text>
                 <Collapse accordion expandIconPosition="end">
                   <Panel header={"Dependable and Quanlity Products"} key="1">
-                    <p>{text}</p>
+                    <p>Our generators are configured to meet your needs, 
+including choice of containment, cold weather packages 
+and trailer options. For ultimate flexibility, most of our 
+mobile generators come parallel-ready, enabling a 
+scalable approach to power – parallel up to 32 units. 
+Our mobile generators are manufactured to deliver the 
+reliable power you need, when and where you need it.</p>
                   </Panel>
                 </Collapse>
                 <Collapse expandIconPosition="right">
                   <Panel header={"End to End Customizable Solutions"} key="2">
-                    <p>{text}</p>
+                    <p>Our Genset is consisting of imported 
+Perkins diesel engines manufactured from 
+the UK/USA from 400 series all the way to 
+4000 series and coupling the engines with 
+alternators from various suppliers such as 
+Leroysomer France and Linz Italy. 
+The alternators come with quality AVR such 
+as the R120 to R250 or SX440 and the 
+voltage level can be adjusted by terminal 
+arrangement as per client requirement. 
+The control panel consists of a digital 
+controller from Deep Sea Electronics UK 
+coming with features such AMF, 
+configurable timers and alarms, compatible 
+with a wide range of CAN engines, uses DSE 
+Configuration Suite PC software.
+We have a capable team for Generator 
+repair and Troubleshooting in Ethiopia, as 
+per our contract we will have our Electromechanical technicians on standby for any 
+service requirement across the country, 
+and troubleshooting of engines to keep 
+your engine feeling great. </p>
                   </Panel>
                 </Collapse>
                 <Collapse expandIconPosition="right">
@@ -445,7 +480,16 @@ const About = () => {
                     header={"Efficient and Expect Customer Support"}
                     key="3"
                   >
-                    <p>{text}</p>
+                    <p>These are our core values:
+ Integrity 
+ Quality
+ Reliability
+ Trust
+ Teamwork
+With our every interaction 
+within staff members and 
+customers we will always 
+exercise our core values.</p>
                   </Panel>
                 </Collapse>
               </Flex>

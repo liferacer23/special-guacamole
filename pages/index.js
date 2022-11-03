@@ -330,7 +330,7 @@ export default function Home() {
       <ImageContainer width="100%" height="700px" mobileWidth="100%" mobileHeight="250px">
         <Image
           layout="fill"
-          objectFit="fill"
+          objectFit="cover"
           src={hero}
           alt="hero image.jpg"
           priority

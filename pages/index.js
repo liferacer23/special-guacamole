@@ -343,7 +343,8 @@ export default function Home() {
         <HeaderContent>
           <Text
             mobileDisplay="none"
-            fontSize={"16px"}
+            style={{marginLeft:"3em"}}
+            fontSize={"20px"}
             color="rgb(253,201,55)"
             fontWeight="bold"
           >
@@ -352,6 +353,7 @@ export default function Home() {
           <Text
             fontSize={"3.4rem"}
             color="rgb(0,44,90)"
+       
             fontWeight="bold"
             width="50vw"
             height="10rem"
@@ -364,10 +366,11 @@ export default function Home() {
           </Text>
           <Text
             mobileFontSize={"0.7rem"}
-            fontSize={"18px"}
-            color="white"
+            fontSize={"25px"}
+            color="#858585"
             fontWeight="bold"
-            width="50vw"
+            style={{marginLeft:"3.5em", marginTop:"1rem"}}
+            width="60vw"
             height="5rem"
             mobileWidth="90vw"
             mobileHeight="3rem"

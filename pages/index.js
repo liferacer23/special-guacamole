@@ -2,7 +2,7 @@ import Head from "next/head";
 import styled from "styled-components";
 import Image from "next/image";
 import checklistbg from "../assets/checklistbg.png";
-import generator from "../assets/generator.jpeg";
+import generator from "../assets/generator.webp";
 import { GiCheckMark } from "react-icons/gi";
 import { BsTools } from "react-icons/bs";
 import { GoGlobe } from "react-icons/go";

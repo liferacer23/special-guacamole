@@ -96,17 +96,19 @@ export default function services() {
             Services
           </Text>
           <Flex width="100%" justifyContent="center" gap="0px">
-            <Flex width="20%" directionMobile="row" widthMobile="50%" gap="0px">
+            <Flex width="18%" directionMobile="row" widthMobile="60%" gap="0px">
               <Link href="/">
                 <Flex
-                  width="50%"
+                  width="40%"
                   directionMobile="row"
-                  widthMobile="50%"
+                  widthMobile="40%"
                   justifyContent="center"
                   gap="0px"
                 >
                   {" "}
-                  <AiOutlineHome style={{ fontSize: "1.5rem" }} />
+                  <AiOutlineHome
+                    style={{ margin: "0 5px", fontSize: "1.5rem" }}
+                  />
                   <Text
                     color="#fff"
                     fontSize="1rem"

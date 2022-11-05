@@ -371,7 +371,7 @@ export default function Home() {
             width="60vw"
             height="5rem"
             mobileWidth="90vw"
-            mobileHeight="3rem"
+            mobileHeight="3.5rem"
           >
             We offer the most reliable power services in the country
           </Text>

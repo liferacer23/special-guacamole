@@ -50,7 +50,7 @@ const HeaderContainer = styled.div`
   }
 `;
 
-const IconTextContainer = styled.span`
+const IconTextContainer = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;

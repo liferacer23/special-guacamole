@@ -252,13 +252,7 @@ const HeaderContent = styled.div`
     align-items: center;
   }
 `;
-const FooterHeader = styled.div`
-  height: 30rem;
-  opacity: 0;
-  @media (max-width: 1000px) {
-    display: none;
-  }
-`;
+
 const OrDiv = styled.div`
   position: absolute;
   font-size: 0.9rem;
@@ -1130,46 +1124,53 @@ export default function Home() {
             margin="0 0 3rem 0"
             directionMobile="row"
           >
-            <Button
-              style={{
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
-                padding: "1.6rem 1rem",
-              }}
-              width="11rem"
-              height="3rem"
-              background="rgb(255,199,44)"
-              mobileHeight="3rem"
-            >
-              Visit our Office
-            </Button>
-            <Button
-              width="16rem"
-              height="3rem"
-              background="transparent"
-              color="rgba(0, 48, 100, 1)"
-              border="2px solid rgba(0, 48, 100, 1)"
-              mobileFontSize="0.9rem"
-              fontSize="0.9rem"
-              style={{
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
-              }}
-            >
-              <BiPhoneCall
-                style={{ color: "rgba(0, 48, 100, 1)", fontSize: "1.2rem" }}
-              />
-              <Text
-                fontSize="0.9rem"
-                color="rgba(0, 48, 100, 1)"
-                fontWeight="bold"
-                mobileFontSize="0.6rem"
+            <Link href="/about">
+              <Button
+                style={{
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  padding: "1.6rem 1rem",
+                }}
+                width="11rem"
+                height="3rem"
+                background="rgb(255,199,44)"
+                mobileHeight="3rem"
               >
-                Call Us at +251977805757
-              </Text>
-            </Button>
+                Visit our Office
+              </Button>
+            </Link>
+            <Link href="/about">
+              <Button
+                width="16rem"
+                height="3rem"
+                background="transparent"
+                color="rgba(0, 48, 100, 1)"
+                border="2px solid rgba(0, 48, 100, 1)"
+                mobileFontSize="0.9rem"
+                fontSize="0.9rem"
+                style={{
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                }}
+              >
+                <BiPhoneCall
+                  style={{ color: "rgba(0, 48, 100, 1)", fontSize: "1.2rem" }}
+                />
+                <Text
+                  fontSize="0.9rem"
+                  color="rgba(0, 48, 100, 1)"
+                  fontWeight="bold"
+                  mobileFontSize="0.6rem"
+                  width="15rem"
+                  height="1rem"
+                  mobileWidth="11rem"
+                >
+                  Call Us at +251977805757
+                </Text>
+              </Button>
+            </Link>
           </Flex>
         </Flex>
       </HospitalitySection>

@@ -13,12 +13,9 @@ const FooterContainer = styled.div`
   }
 `;
 
-
 export default function Footer() {
-
   return (
     <>
-     
       <FooterContainer>
         <Flex
           background="rgba(0, 48, 100, 1)"
@@ -27,7 +24,6 @@ export default function Footer() {
           direction="column"
           gap="3rem"
           width="100%"
-          
         >
           <Flex justifyContent="start" alignItems="start">
             <Flex justifyContent="start" alignItems="start">
@@ -219,9 +215,11 @@ export default function Footer() {
             </Flex>
           </Flex>
           <Flex justifyContent="space-between" width="100%">
-            <Text color="#fff"    mobileFontSize="0.5rem">
-              Copyright © 2022 Nilecoeem All rights reserved. Designed by
-              Localmedia.ae
+            <Text color="#fff" mobileFontSize="0.5rem">
+              Copyright © 2022 Nilecoeem All rights reserved. Designed by &nbsp;
+              <a style={{ color: "#fff" }} href="Kelaltech.com">
+                Kelaltech.com
+              </a>
             </Text>
             <Flex
               width="100%"
@@ -229,82 +227,82 @@ export default function Footer() {
               alignItems="start"
               directionMobile="row"
             >
-              <Link href='/'>
-              <Text
-                width="12%"
-                mobileWidth="13%"
-                hoverColor="rgb(255, 199, 44)"
-                color="#fff"
-                fontSize="0.8rem"
-                mobileFontSize="0.5rem"
-              >
-                Home |
-              </Text>
+              <Link href="/">
+                <Text
+                  width="12%"
+                  mobileWidth="13%"
+                  hoverColor="rgb(255, 199, 44)"
+                  color="#fff"
+                  fontSize="0.8rem"
+                  mobileFontSize="0.5rem"
+                >
+                  Home |
+                </Text>
               </Link>
               <Link href="/about">
-              <Text
-                width="12%"
-                mobileWidth="18%"
-                hoverColor="rgb(255, 199, 44)"
-                color="#fff"
-                fontSize="0.8rem"
-                mobileFontSize="0.5rem"
-              >
-                {" "}
-                About Us |
-              </Text>
+                <Text
+                  width="12%"
+                  mobileWidth="18%"
+                  hoverColor="rgb(255, 199, 44)"
+                  color="#fff"
+                  fontSize="0.8rem"
+                  mobileFontSize="0.5rem"
+                >
+                  {" "}
+                  About Us |
+                </Text>
               </Link>
-              <Link href='/products'>
-              <Text
-                width="12%"
-                mobileWidth="18%"
-                hoverColor="rgb(255, 199, 44)"
-                color="#fff"
-                fontSize="0.8rem"
-                mobileFontSize="0.5rem"
-              >
-                {" "}
-                Products |
-              </Text>
+              <Link href="/products">
+                <Text
+                  width="12%"
+                  mobileWidth="18%"
+                  hoverColor="rgb(255, 199, 44)"
+                  color="#fff"
+                  fontSize="0.8rem"
+                  mobileFontSize="0.5rem"
+                >
+                  {" "}
+                  Products |
+                </Text>
               </Link>
-              <Link href='/service'>
-              <Text
-                width="12%"
-                mobileWidth="18%"
-                hoverColor="rgb(255, 199, 44)"
-                color="#fff"
-                fontSize="0.8rem"
-                mobileFontSize="0.5rem"
-              >
-                {" "}
-                Services |
-              </Text>
+              <Link href="/service">
+                <Text
+                  width="12%"
+                  mobileWidth="18%"
+                  hoverColor="rgb(255, 199, 44)"
+                  color="#fff"
+                  fontSize="0.8rem"
+                  mobileFontSize="0.5rem"
+                >
+                  {" "}
+                  Services |
+                </Text>
               </Link>
               <Link href="/gallery">
-              <Text
-                width="12%"
-                mobileWidth="16%"
-                hoverColor="rgb(255, 199, 44)"
-                color="#fff"
-                fontSize="0.8rem"
-                mobileFontSize="0.5rem"
-              >
-                {" "}
-                Gallery |
-              </Text>
+                <Text
+                  width="12%"
+                  mobileWidth="16%"
+                  hoverColor="rgb(255, 199, 44)"
+                  color="#fff"
+                  fontSize="0.8rem"
+                  mobileFontSize="0.5rem"
+                >
+                  {" "}
+                  Gallery |
+                </Text>
               </Link>
               <Link href="/contact">
-              <Text
-                width="14%"
-                mobileWidth="18%"
-                hoverColor="rgb(255, 199, 44)"
-                color="#fff"
-                fontSize="0.8rem"
-                mobileFontSize="0.5rem"
-              >
-                {" "}
-                Contact Us |
-              </Text>
+                <Text
+                  width="14%"
+                  mobileWidth="18%"
+                  hoverColor="rgb(255, 199, 44)"
+                  color="#fff"
+                  fontSize="0.8rem"
+                  mobileFontSize="0.5rem"
+                >
+                  {" "}
+                  Contact Us |
+                </Text>
               </Link>
             </Flex>
           </Flex>

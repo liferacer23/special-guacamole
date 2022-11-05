@@ -219,7 +219,7 @@ export default function Footer() {
               Copyright © 2022 Nilecoeem All rights reserved. Designed by &nbsp;
               <a
                 style={{ color: "#fff", textDecoration: "underline" }}
-                href="Kelaltech.com"
+                href="https://kelaltech.com/"
               >
                 Kelaltech.com
               </a>

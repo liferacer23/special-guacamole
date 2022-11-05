@@ -42,7 +42,8 @@ const HeaderItems = styled.div`
   display: flex;
   align-item: center;
   justify-content: end;
-  width: 50%;
+  width: 42rem;
+  height: 2rem;
   gap: 10px;
   @media (max-width: 1000px) {
     display: none;
@@ -52,7 +53,7 @@ const HeaderItems = styled.div`
 const StyledButton = styled("button")`
   width: ${(props) => props.width || "7rem"} !important;
   height: ${(props) => props.height || "2.5rem"} !important;
-background: ${(props) => props.background || "transparent"} !important;
+  background: ${(props) => props.background || "transparent"} !important;
   border: 0px solid transparent !important;
   color: #000000 !important;
   font-size: 14px !important;
@@ -146,7 +147,13 @@ const ContentItem = styled("div")`
     border-left: 10px solid rgb(255, 199, 44);
   }
 `;
-const searchContent = <Search style={{width:"200px"}} placeholder="input search text" enterButton />;
+const searchContent = (
+  <Search
+    style={{ width: "200px" }}
+    placeholder="input search text"
+    enterButton
+  />
+);
 
 //create a hamburger menu for mobile view
 
@@ -329,22 +336,32 @@ const NavBar = () => {
           </SearchContainer>
           <HeaderItems>
             <Links href="/">
-              <StyledButton width="7rem" height="2.5rem">Home</StyledButton>
+              <StyledButton width="7rem" height="2.5rem">
+                Home
+              </StyledButton>
             </Links>
             <Links href="/about">
-              <StyledButton width="7rem" height="2.5rem">About Us</StyledButton>
+              <StyledButton width="7rem" height="2.5rem">
+                About Us
+              </StyledButton>
             </Links>
             <Popover content={content} placement="bottomRight" trigger="hover">
               <StyledButton>Products</StyledButton>
             </Popover>
             <Links href="/service">
-              <StyledButton width="7rem" height="2.5rem">Service</StyledButton>
+              <StyledButton width="7rem" height="2.5rem">
+                Service
+              </StyledButton>
             </Links>
             <Links href="/gallery">
-              <StyledButton width="7rem" height="2.5rem">Gallery</StyledButton>
+              <StyledButton width="7rem" height="2.5rem">
+                Gallery
+              </StyledButton>
             </Links>
             <Links href="/contact">
-              <StyledButton width="7rem" height="2.5rem">Contact Us</StyledButton>
+              <StyledButton width="7rem" height="2.5rem">
+                Contact Us
+              </StyledButton>
             </Links>
             <Popover content={searchContent} trigger="click" placement="bottom">
               {" "}

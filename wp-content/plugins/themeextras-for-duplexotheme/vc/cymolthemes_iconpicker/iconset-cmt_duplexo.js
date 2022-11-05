@@ -1,0 +1,62 @@
+/*!========================================================================
+ * ======================================================================== */
+
+;(function($){
+
+    $.iconset_cmt_duplexo = {
+        iconClass: 'cmt_duplexo',
+        iconClassFix: 'flaticon-',
+        icons: [
+			'',
+			'tripadvisor-logotype',
+			'hook',
+			'customer-support',
+			'worker-of-construction-working-with-a-shovel-beside-material-pile',
+			'shovel',
+			'idea',
+			'model',
+			'drawing',
+			'ruler',
+			'mechanic',
+			'wrench',
+			'tools',
+			'sketch',
+			'process',
+			'maintenance',
+			'builder',
+			'builder-1',
+			'builder-2',
+			'tractor',
+			'construction-and-tools',
+			'truck',
+			'construction-and-tools-1',
+			'barrier',
+			'earthmover',
+			'pick-mattock',
+			'oil-pump',
+			'gear',
+			'gear-1',
+			'house',
+			'skyline',
+			'crane',
+			'construction-and-tools-2',
+			'architecture-and-city',
+			'engineer-working',
+			'construction-worker',
+			'winch',
+			'winch-1',
+			'worker',
+			'tools-1',
+			'helmet',
+			'tripod',
+			'phone-call',
+			'placeholder',
+			'envelope',
+			'email',
+			'worldwide',
+			'clock',
+			'message',
+								
+		]};
+    
+})(jQuery);

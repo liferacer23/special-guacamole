@@ -1,0 +1,245 @@
+Plugin Name: Snapshot
+Author: Incsub
+
+Change Log:
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+4.7.3
+----------------------------------------------------------------------
+- Fix: Improved handling of zip file during backup
+- Fix: Email is not sent after export
+
+4.7.2
+----------------------------------------------------------------------
+- New: Added "Google Login" support
+
+4.7.1
+----------------------------------------------------------------------
+- Improvement: Export failed email
+- Improvement: Removal of Defender logs table from database backup
+- Improvement: FTP/SFTP directory information added
+- Improvement: Snapshot Installer database prefix field validation
+- Improvement: Snapshot Installer now shows the correct failed page when the disk space is full during the restoration
+- Fix: FTP/SFTP link text
+- Fix: Snapshot Installer now shows lists of files that are failed to restore
+- Fix: Google drive destination modal issue
+- Fix: Settings saved messaged displayed on Settings page
+- Fix: Schedule from Config wasn't applied to the Hub
+
+4.7.0
+----------------------------------------------------------------------
+- Improvement: Snapshot Installer 2.0
+- Improvement: New email design
+- Improvement: Link to download Snapshot Installer and restoration guide in email
+- Improvement: Backup download request notification
+
+4.6.0
+----------------------------------------------------------------------
+- Feature: FTP/SFTP backup destination
+- Feature: WP-CLI support for backups
+- Improvement: Apply Your Own Config
+- Improvement: Button to delete all logs
+
+4.5.2
+----------------------------------------------------------------------
+- Improvement: Minor tweaks and adjustments
+
+4.5.1
+----------------------------------------------------------------------
+- Improvement: Code stability and removal of debug notices
+
+4.5.0
+----------------------------------------------------------------------
+- Feature: Configs
+- Bug: IP check before running a backup temporarily disabled
+- Improvement: Ability to go to previous step after authorizing Google Drive
+- Improvement: Academy links removed
+- Improvement: Global Exclusions shortcut links
+
+4.4.0
+----------------------------------------------------------------------
+- Feature: Dropbox Destination
+- Improvement: Check if IPs are whitelisted before running a backup
+- Improvement: "Test Connection" button on destination edit modals
+
+4.3.5
+----------------------------------------------------------------------
+- Feature: Backup comments
+- Bug: Save Changes button doesn't save storage limit
+- Bug: Only one destination is displayed under "Last backup destination"
+- Bug: Pressing Esc doesn't close modals
+- Improvement: DB level dynamic scaling
+- Improvement: Increase file listing success rate
+- Improvement: Compatibility with the WP Hide & Security Enhancer plugin
+- Improvement: Option to clear all global file exclusions at once
+- Improvement: "Load more" button for large log files
+- Improvement: Troubleshooting message with IPs to be whitelisted when backup can't start
+
+4.3.4
+----------------------------------------------------------------------
+- Feature: Snapshot Tutorials
+- Bug: Error when adding Google Drive destination
+- Bug: Changing Google Drive Directory ID has no effect
+- Bug: Validation error when editing a destination
+- Bug: Backup fails in filelist stage when multiple steps are required
+- Improvement: Schedule now stored on the API side only
+- Improvement: Include recommendations in error notifications
+- Improvement: New Global file exclusion UI
+- Improvement: Storage Space widget on Backups page
+- Improvement: Fallback to default time format when WP's time format doesn't include time
+- Improvement: Send email when backup export fails
+- Improvement: Skip What's New modal for fresh installs
+- Improvement: Modal for members with inactive membership
+
+4.3.3
+----------------------------------------------------------------------
+- Feature: FTP restoration
+- Feature: Send email upon backup creation
+- Bug: Backup size appears bigger due to manifest duplicates
+- Bug: Backup export issues due to manifest duplicates
+- Bug: Space issues above Destinations widget on WPMU DEV hosted sites
+- Bug: Translations issues
+- Improvement: Warnings when restoring with advanced-cache.php
+- Improvement: Warnings when restoring from Jetpack
+- Improvement: Update hub links
+- Improvement: Icon indicating last backup failure in Hub
+- Improvement: Re-enable the Backup Now button automatically
+- Improvement: Use wpmudev.com in the Google Drive app
+- Improvement: Reset storage limit when resetting settings
+- Improvement: Exclude Defender's log from backup
+
+4.3.2
+----------------------------------------------------------------------
+- Bug: Issues when DB results need an alias
+- Bug: Issues with DB backup when dblist needs multiple iterations
+- Improvement: Restore button is not clear for the user
+
+4.3.1
+----------------------------------------------------------------------
+- Feature: Make backup rotation configurable
+- Feature: Add support for DB views
+- Bug: Re-enable backup retention
+- Bug: Conflict with W3 Total Cache
+- Bug: Connected destinations persist after settings reset
+- Bug: Rotation issues
+- Bug: Failed backups can occupy storage space
+- Bug: Reset settings potentially failing altogether
+- Bug: Frontend issue with long destination names
+- Bug: Mobile navigation issues
+- Bug: Exclude Large-Size folders issues
+- Improvement: Enhance settings text to specify which backups are being removed
+- Improvement: Remove Hosting Settings subpage
+- Improvement: Resume restore after manually extracting the backup zip
+- Improvement: Schedule Module showing up twice when initially set up from the Hub
+- Improvement: jQuery Migrate warnings
+- Improvement: Add Destination in logs
+- Improvement: Inform better about the 50 days expiry policy
+- Improvement: Migration of all links to wpmudev.com
+
+4.3.0
+----------------------------------------------------------------------
+- New: Whitelabel WPMU DEV's brand
+- Improve: Flush output buffer after zipstream writes - To help with underpowered hosts
+- Fix: Wrong icon colors in Schedule modal
+- Fix: Design inconsistencies in onboarding modals
+
+4.2.1
+----------------------------------------------------------------------
+- Fix: Inconsistencies with password protection of backup deletion
+
+4.2.0
+----------------------------------------------------------------------
+- New: Integrate Google Drive as a backup destination
+- New: Integrate all S3-compatible providers as backup destinations
+- New: Password-protected backup deletion
+- Improve: Security for enabled directory listing
+- Improve: Add 3rd party destinations in the Dashboard widget
+- Improve: Show confirmation modal before deleting a backup
+- Improve: Prevent adding the same destination twice
+- Fix: Issues with files that contain 'manifest' in their filename
+- Improve: Apply delete restriction on non-last snapshot at API side
+- Improve: Export error message related to missing backups issue
+- Fix: The optional Directory Path field is shown as required when editing S3 destinations
+
+4.1.2
+----------------------------------------------------------------------
+- Improve: Compatibility with WordPress's jQuery update
+- Fix: Deprecated entry after creating a backup with PHP 8.0
+- Fix: Issue with wp_localize_script() when on PHP 8.0
+- Fix: Array to string conversion when listing backup export destinations on PHP 8.0
+- Improve: Exclude non-essential folders from the backup
+- New: Show tooltip of deactivated destinations
+- New: Hotlink for logs
+- Improve: Instructions for S3 compatible providers
+- Improve: Schedule edit button on Destination page
+- Fix: Instructions for Google Cloud provider
+- Fix: Text for editing destinations
+- Improve: Content of export email
+- Fix: Export destination tooltip for destinations with long names or a large number of destinations
+
+4.1.1
+----------------------------------------------------------------------
+- Fix: Copy and image of the What's New modal
+
+4.1.0
+----------------------------------------------------------------------
+- New: Integrate Amazon S3 as a backup destination
+- New: Integration with S3 compatible providers - Backblaze, Wasabi, Google Cloud, and DigitalOcean Spaces
+- Improve: Backup restore of staging sites hosted with WPMU DEV
+- Fix: Inconsistencies with weekly scheduled backups
+
+4.0.3
+----------------------------------------------------------------------
+- New: Add hosting backups in the UI
+- New: Email user when a backup fails
+- Fix: Export failing with special character in filename
+- Fix: Backup failing if it detects an unsanitized filename
+- New: Email exported backup from now-unavailable sites
+- Improvement: Explaining incremental backup size with tooltip
+- Improvement: Add coming soon tag to the upcoming destinations
+- Fix: Issue with Saving Region on Firefox
+- Improvement: Show all backups of each user's sites
+- Improvement: Fix slight delay in showing proper progress when reloading the backups page
+- Improvement: Improve UX of Storage Limit
+- Fix: Modal typo
+- Fix: Slight frontend issue with WP v5.5
+- Fix: Backup Now button disappears upon page reload when backup is underway
+- Fix: Wrong copy at the Uninstall settings
+- Fix: Notifications and Uninstall settings not being reset
+- Fix: Issue with showing the Snapshot hero on the destinations page
+
+4.0.2
+----------------------------------------------------------------------
+- New: Make Hub work with v4
+- Fix: Issues with restoring backups when there are tables with the wrong db prefix
+- Improvement: Enhance handling of large files in backups
+- Fix: Issues with masking login area when restoring backups
+- Fix: Issues with deleting failed backups
+- Improvement: Prevent backup delays when large sites are being processed
+- Improvement: Enhance UX while a backup is being triggered
+- Improvement: Enhance UX while a schedule is being saved
+- Improvement: Remove unused info from API responses
+- Fix: PHP v5.6 issues
+
+4.0.1
+----------------------------------------------------------------------
+- New: Make Automate work with v4
+- Fix: Dynamic scaling at fetch-filelist stage
+- Improvement: Add Divi's cache folder in permanent exclusions
+- Improvement: Add log entry for failed backup exports in Snapshot's log
+- Improvement: Prevent backups getting stuck when files have been moved between filelist and zipstream stages
+- Fix: Can't delete all backups in one go
+- Fix: Issues with deleting failed backups
+- Fix: Previously deleted db table appears in subsequent export
+- Improvement: More detailed logging for fetch-filelist stage
+- Improvement: More detailed logging for file-zipstream stage
+- Fix: Issues with deleting backups on sites in subfolders
+- Fix: Frontend inconsistencies with backup cancellations
+- Fix: Backup exports stall when admin and public site have a http/https mismatch
+
+4.0.0
+----------------------------------------------------------------------
+- New: Incremental backups
+
+
+904325-1649584120-au

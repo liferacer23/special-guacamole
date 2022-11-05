@@ -1,0 +1,684 @@
+2022-10-04 00:02:21 +04:00 [info] A backup has been initiated.
+
+2022-10-04 00:02:22 +04:00 [info] The API has requested the filelist for the currently running backup.
+
+2022-10-04 00:02:24 +04:00 [info] Snapshot has completed sending back the filelist to the API, so we're ready to begin the actual backup of the files.
+
+2022-10-04 00:02:31 +04:00 [info] The API has requested the backing up of files.
+
+2022-10-04 00:02:45 +04:00 [info] The plugin has completed the backup of all requested files.
+
+2022-10-04 00:02:48 +04:00 [info] The API has requested the backing up of files.
+
+2022-10-04 00:03:03 +04:00 [info] The plugin has completed the backup of all requested files.
+
+2022-10-04 00:03:06 +04:00 [info] The API has requested the backing up of files.
+
+2022-10-04 00:03:12 +04:00 [info] The plugin has completed the backup of all requested files.
+
+2022-10-04 00:03:46 +04:00 [info] The API has requested the DB tablelist for the currently running backup.
+
+2022-10-04 00:03:47 +04:00 [info] Snapshot has completed sending back the DB tablelist to the API, so we're ready to begin the actual backup of the tables.
+
+2022-10-04 00:03:48 +04:00 [info] The API has requested the backing up of a DB table.
+
+2022-10-04 00:03:48 +04:00 [info] The table to be backed up: wp_term_taxonomy, starting from row: 0.
+
+2022-10-04 00:03:48 +04:00 [info] The plugin has completed the backup of the wp_term_taxonomy table.
+
+2022-10-04 00:03:49 +04:00 [info] The API has requested the backing up of a DB table.
+
+2022-10-04 00:03:49 +04:00 [info] The table to be backed up: wp_revslider_css_bkp, starting from row: 0.
+
+2022-10-04 00:03:49 +04:00 [info] The plugin has completed the backup of the wp_revslider_css_bkp table.
+
+2022-10-04 00:03:49 +04:00 [info] The API has requested the backing up of a DB table.
+
+2022-10-04 00:03:49 +04:00 [info] The table to be backed up: wp_links, starting from row: 0.
+
+2022-10-04 00:03:49 +04:00 [info] The plugin has completed the backup of the wp_links table.
+
+2022-10-04 00:03:50 +04:00 [info] The API has requested the backing up of a DB table.
+
+2022-10-04 00:03:50 +04:00 [info] The table to be backed up: wp_yoast_seo_links, starting from row: 0.
+
+2022-10-04 00:03:50 +04:00 [info] The plugin has completed the backup of the wp_yoast_seo_links table.
+
+2022-10-04 00:03:51 +04:00 [info] The API has requested the backing up of a DB table.
+
+2022-10-04 00:03:51 +04:00 [info] The table to be backed up: wp_terms, starting from row: 0.
+
+2022-10-04 00:03:51 +04:00 [info] The plugin has completed the backup of the wp_terms table.
+
+2022-10-04 00:03:52 +04:00 [info] The API has requested the backing up of a DB table.
+
+2022-10-04 00:03:52 +04:00 [info] The table to be backed up: wp_slc_simple_login_captcha, starting from row: 0.
+
+2022-10-04 00:03:52 +04:00 [info] The plugin has completed the backup of the wp_slc_simple_login_captcha table.
+
+2022-10-04 00:03:53 +04:00 [info] The API has requested the backing up of a DB table.
+
+2022-10-04 00:03:53 +04:00 [info] The table to be backed up: wp_wfhits, starting from row: 0.
+
+2022-10-04 00:03:53 +04:00 [info] The plugin has completed the backup of the wp_wfhits table.
+
+2022-10-04 00:03:54 +04:00 [info] The API has requested the backing up of a DB table.
+
+2022-10-04 00:03:54 +04:00 [info] The table to be backed up: wp_revslider_sliders, starting from row: 0.
+
+2022-10-04 00:03:54 +04:00 [info] The plugin has completed the backup of the wp_revslider_sliders table.
+
+2022-10-04 00:03:54 +04:00 [info] The API has requested the backing up of a DB table.
+
+2022-10-04 00:03:54 +04:00 [info] The table to be backed up: wp_wffilemods, starting from row: 0.
+
+2022-10-04 00:03:54 +04:00 [info] The plugin has backed up the wp_wffilemods table until row #1000 .
+
+2022-10-04 00:03:56 +04:00 [info] The API has requested the backing up of a DB table.
+
+2022-10-04 00:03:56 +04:00 [info] The table to be backed up: wp_wffilemods, starting from row: 1000.
+
+2022-10-04 00:03:56 +04:00 [info] The plugin has backed up the wp_wffilemods table until row #2000 .
+
+2022-10-04 00:03:58 +04:00 [info] The API has requested the backing up of a DB table.
+
+2022-10-04 00:03:58 +04:00 [info] The table to be backed up: wp_wffilemods, starting from row: 2000.
+
+2022-10-04 00:03:58 +04:00 [info] The plugin has backed up the wp_wffilemods table until row #3000 .
+
+2022-10-04 00:03:59 +04:00 [info] The API has requested the backing up of a DB table.
+
+2022-10-04 00:03:59 +04:00 [info] The table to be backed up: wp_wffilemods, starting from row: 3000.
+
+2022-10-04 00:03:59 +04:00 [info] The plugin has backed up the wp_wffilemods table until row #4000 .
+
+2022-10-04 00:04:00 +04:00 [info] The API has requested the backing up of a DB table.
+
+2022-10-04 00:04:00 +04:00 [info] The table to be backed up: wp_wffilemods, starting from row: 4000.
+
+2022-10-04 00:04:00 +04:00 [info] The plugin has backed up the wp_wffilemods table until row #5000 .
+
+2022-10-04 00:04:01 +04:00 [info] The API has requested the backing up of a DB table.
+
+2022-10-04 00:04:01 +04:00 [info] The table to be backed up: wp_wffilemods, starting from row: 5000.
+
+2022-10-04 00:04:01 +04:00 [info] The plugin has backed up the wp_wffilemods table until row #6000 .
+
+2022-10-04 00:04:02 +04:00 [info] The API has requested the backing up of a DB table.
+
+2022-10-04 00:04:02 +04:00 [info] The table to be backed up: wp_wffilemods, starting from row: 6000.
+
+2022-10-04 00:04:02 +04:00 [info] The plugin has backed up the wp_wffilemods table until row #7000 .
+
+2022-10-04 00:04:03 +04:00 [info] The API has requested the backing up of a DB table.
+
+2022-10-04 00:04:03 +04:00 [info] The table to be backed up: wp_wffilemods, starting from row: 7000.
+
+2022-10-04 00:04:03 +04:00 [info] The plugin has backed up the wp_wffilemods table until row #8000 .
+
+2022-10-04 00:04:05 +04:00 [info] The API has requested the backing up of a DB table.
+
+2022-10-04 00:04:05 +04:00 [info] The table to be backed up: wp_wffilemods, starting from row: 8000.
+
+2022-10-04 00:04:05 +04:00 [info] The plugin has backed up the wp_wffilemods table until row #9000 .
+
+2022-10-04 00:04:07 +04:00 [info] The API has requested the backing up of a DB table.
+
+2022-10-04 00:04:07 +04:00 [info] The table to be backed up: wp_wffilemods, starting from row: 9000.
+
+2022-10-04 00:04:07 +04:00 [info] The plugin has backed up the wp_wffilemods table until row #10000 .
+
+2022-10-04 00:04:08 +04:00 [info] The API has requested the backing up of a DB table.
+
+2022-10-04 00:04:08 +04:00 [info] The table to be backed up: wp_wffilemods, starting from row: 10000.
+
+2022-10-04 00:04:08 +04:00 [info] The plugin has backed up the wp_wffilemods table until row #11000 .
+
+2022-10-04 00:04:09 +04:00 [info] The API has requested the backing up of a DB table.
+
+2022-10-04 00:04:09 +04:00 [info] The table to be backed up: wp_wffilemods, starting from row: 11000.
+
+2022-10-04 00:04:09 +04:00 [info] The plugin has completed the backup of the wp_wffilemods table.
+
+2022-10-04 00:04:10 +04:00 [info] The API has requested the backing up of a DB table.
+
+2022-10-04 00:04:10 +04:00 [info] The table to be backed up: wp_actionscheduler_claims, starting from row: 0.
+
+2022-10-04 00:04:10 +04:00 [info] The plugin has completed the backup of the wp_actionscheduler_claims table.
+
+2022-10-04 00:04:11 +04:00 [info] The API has requested the backing up of a DB table.
+
+2022-10-04 00:04:11 +04:00 [info] The table to be backed up: wp_revslider_static_slides_bkp, starting from row: 0.
+
+2022-10-04 00:04:11 +04:00 [info] The plugin has completed the backup of the wp_revslider_static_slides_bkp table.
+
+2022-10-04 00:04:11 +04:00 [info] The API has requested the backing up of a DB table.
+
+2022-10-04 00:04:12 +04:00 [info] The table to be backed up: wp_wfblockediplog, starting from row: 0.
+
+2022-10-04 00:04:12 +04:00 [info] The plugin has completed the backup of the wp_wfblockediplog table.
+
+2022-10-04 00:04:12 +04:00 [info] The API has requested the backing up of a DB table.
+
+2022-10-04 00:04:12 +04:00 [info] The table to be backed up: wp_wfconfig, starting from row: 0.
+
+2022-10-04 00:04:12 +04:00 [info] The plugin has completed the backup of the wp_wfconfig table.
+
+2022-10-04 00:04:14 +04:00 [info] The API has requested the backing up of a DB table.
+
+2022-10-04 00:04:14 +04:00 [info] The table to be backed up: wp_wfnotifications, starting from row: 0.
+
+2022-10-04 00:04:14 +04:00 [info] The plugin has completed the backup of the wp_wfnotifications table.
+
+2022-10-04 00:04:15 +04:00 [info] The API has requested the backing up of a DB table.
+
+2022-10-04 00:04:15 +04:00 [info] The table to be backed up: wp_wfreversecache, starting from row: 0.
+
+2022-10-04 00:04:15 +04:00 [info] The plugin has completed the backup of the wp_wfreversecache table.
+
+2022-10-04 00:04:15 +04:00 [info] The API has requested the backing up of a DB table.
+
+2022-10-04 00:04:15 +04:00 [info] The table to be backed up: wp_revslider_static_slides, starting from row: 0.
+
+2022-10-04 00:04:15 +04:00 [info] The plugin has completed the backup of the wp_revslider_static_slides table.
+
+2022-10-04 00:04:17 +04:00 [info] The API has requested the backing up of a DB table.
+
+2022-10-04 00:04:17 +04:00 [info] The table to be backed up: wp_wfblocks7, starting from row: 0.
+
+2022-10-04 00:04:17 +04:00 [info] The plugin has completed the backup of the wp_wfblocks7 table.
+
+2022-10-04 00:04:17 +04:00 [info] The API has requested the backing up of a DB table.
+
+2022-10-04 00:04:17 +04:00 [info] The table to be backed up: wp_wfknownfilelist, starting from row: 0.
+
+2022-10-04 00:04:17 +04:00 [info] The plugin has backed up the wp_wfknownfilelist table until row #1000 .
+
+2022-10-04 00:04:18 +04:00 [info] The API has requested the backing up of a DB table.
+
+2022-10-04 00:04:18 +04:00 [info] The table to be backed up: wp_wfknownfilelist, starting from row: 1000.
+
+2022-10-04 00:04:18 +04:00 [info] The plugin has backed up the wp_wfknownfilelist table until row #2000 .
+
+2022-10-04 00:04:19 +04:00 [info] The API has requested the backing up of a DB table.
+
+2022-10-04 00:04:19 +04:00 [info] The table to be backed up: wp_wfknownfilelist, starting from row: 2000.
+
+2022-10-04 00:04:19 +04:00 [info] The plugin has backed up the wp_wfknownfilelist table until row #3000 .
+
+2022-10-04 00:04:19 +04:00 [info] The API has requested the backing up of a DB table.
+
+2022-10-04 00:04:19 +04:00 [info] The table to be backed up: wp_wfknownfilelist, starting from row: 3000.
+
+2022-10-04 00:04:19 +04:00 [info] The plugin has backed up the wp_wfknownfilelist table until row #4000 .
+
+2022-10-04 00:04:20 +04:00 [info] The API has requested the backing up of a DB table.
+
+2022-10-04 00:04:20 +04:00 [info] The table to be backed up: wp_wfknownfilelist, starting from row: 4000.
+
+2022-10-04 00:04:20 +04:00 [info] The plugin has backed up the wp_wfknownfilelist table until row #5000 .
+
+2022-10-04 00:04:20 +04:00 [info] The API has requested the backing up of a DB table.
+
+2022-10-04 00:04:20 +04:00 [info] The table to be backed up: wp_wfknownfilelist, starting from row: 5000.
+
+2022-10-04 00:04:20 +04:00 [info] The plugin has backed up the wp_wfknownfilelist table until row #6000 .
+
+2022-10-04 00:04:21 +04:00 [info] The API has requested the backing up of a DB table.
+
+2022-10-04 00:04:21 +04:00 [info] The table to be backed up: wp_wfknownfilelist, starting from row: 6000.
+
+2022-10-04 00:04:21 +04:00 [info] The plugin has backed up the wp_wfknownfilelist table until row #7000 .
+
+2022-10-04 00:04:22 +04:00 [info] The API has requested the backing up of a DB table.
+
+2022-10-04 00:04:22 +04:00 [info] The table to be backed up: wp_wfknownfilelist, starting from row: 7000.
+
+2022-10-04 00:04:22 +04:00 [info] The plugin has backed up the wp_wfknownfilelist table until row #8000 .
+
+2022-10-04 00:04:22 +04:00 [info] The API has requested the backing up of a DB table.
+
+2022-10-04 00:04:22 +04:00 [info] The table to be backed up: wp_wfknownfilelist, starting from row: 8000.
+
+2022-10-04 00:04:22 +04:00 [info] The plugin has backed up the wp_wfknownfilelist table until row #9000 .
+
+2022-10-04 00:04:23 +04:00 [info] The API has requested the backing up of a DB table.
+
+2022-10-04 00:04:23 +04:00 [info] The table to be backed up: wp_wfknownfilelist, starting from row: 9000.
+
+2022-10-04 00:04:23 +04:00 [info] The plugin has backed up the wp_wfknownfilelist table until row #10000 .
+
+2022-10-04 00:04:24 +04:00 [info] The API has requested the backing up of a DB table.
+
+2022-10-04 00:04:24 +04:00 [info] The table to be backed up: wp_wfknownfilelist, starting from row: 10000.
+
+2022-10-04 00:04:24 +04:00 [info] The plugin has backed up the wp_wfknownfilelist table until row #11000 .
+
+2022-10-04 00:04:24 +04:00 [info] The API has requested the backing up of a DB table.
+
+2022-10-04 00:04:24 +04:00 [info] The table to be backed up: wp_wfknownfilelist, starting from row: 11000.
+
+2022-10-04 00:04:24 +04:00 [info] The plugin has completed the backup of the wp_wfknownfilelist table.
+
+2022-10-04 00:04:25 +04:00 [info] The API has requested the backing up of a DB table.
+
+2022-10-04 00:04:25 +04:00 [info] The table to be backed up: wp_termmeta, starting from row: 0.
+
+2022-10-04 00:04:25 +04:00 [info] The plugin has completed the backup of the wp_termmeta table.
+
+2022-10-04 00:04:26 +04:00 [info] The API has requested the backing up of a DB table.
+
+2022-10-04 00:04:26 +04:00 [info] The table to be backed up: wp_actionscheduler_actions, starting from row: 0.
+
+2022-10-04 00:04:26 +04:00 [info] The plugin has completed the backup of the wp_actionscheduler_actions table.
+
+2022-10-04 00:04:26 +04:00 [info] The API has requested the backing up of a DB table.
+
+2022-10-04 00:04:26 +04:00 [info] The table to be backed up: wp_smush_dir_images, starting from row: 0.
+
+2022-10-04 00:04:26 +04:00 [info] The plugin has completed the backup of the wp_smush_dir_images table.
+
+2022-10-04 00:04:28 +04:00 [info] The API has requested the backing up of a DB table.
+
+2022-10-04 00:04:28 +04:00 [info] The table to be backed up: wp_options, starting from row: 0.
+
+2022-10-04 00:04:28 +04:00 [info] The plugin has completed the backup of the wp_options table.
+
+2022-10-04 00:04:30 +04:00 [info] The API has requested the backing up of a DB table.
+
+2022-10-04 00:04:30 +04:00 [info] The table to be backed up: wp_wfissues, starting from row: 0.
+
+2022-10-04 00:04:30 +04:00 [info] The plugin has completed the backup of the wp_wfissues table.
+
+2022-10-04 00:04:31 +04:00 [info] The API has requested the backing up of a DB table.
+
+2022-10-04 00:04:31 +04:00 [info] The table to be backed up: wp_wfsnipcache, starting from row: 0.
+
+2022-10-04 00:04:31 +04:00 [info] The plugin has completed the backup of the wp_wfsnipcache table.
+
+2022-10-04 00:04:31 +04:00 [info] The API has requested the backing up of a DB table.
+
+2022-10-04 00:04:31 +04:00 [info] The table to be backed up: wp_revslider_layer_animations, starting from row: 0.
+
+2022-10-04 00:04:31 +04:00 [info] The plugin has completed the backup of the wp_revslider_layer_animations table.
+
+2022-10-04 00:04:32 +04:00 [info] The API has requested the backing up of a DB table.
+
+2022-10-04 00:04:32 +04:00 [info] The table to be backed up: wp_wfpendingissues, starting from row: 0.
+
+2022-10-04 00:04:32 +04:00 [info] The plugin has completed the backup of the wp_wfpendingissues table.
+
+2022-10-04 00:04:33 +04:00 [info] The API has requested the backing up of a DB table.
+
+2022-10-04 00:04:33 +04:00 [info] The table to be backed up: wp_wfhoover, starting from row: 0.
+
+2022-10-04 00:04:33 +04:00 [info] The plugin has completed the backup of the wp_wfhoover table.
+
+2022-10-04 00:04:34 +04:00 [info] The API has requested the backing up of a DB table.
+
+2022-10-04 00:04:34 +04:00 [info] The table to be backed up: wp_revslider_navigations, starting from row: 0.
+
+2022-10-04 00:04:34 +04:00 [info] The plugin has completed the backup of the wp_revslider_navigations table.
+
+2022-10-04 00:04:34 +04:00 [info] The API has requested the backing up of a DB table.
+
+2022-10-04 00:04:34 +04:00 [info] The table to be backed up: wp_actionscheduler_logs, starting from row: 0.
+
+2022-10-04 00:04:34 +04:00 [info] The plugin has completed the backup of the wp_actionscheduler_logs table.
+
+2022-10-04 00:04:35 +04:00 [info] The API has requested the backing up of a DB table.
+
+2022-10-04 00:04:35 +04:00 [info] The table to be backed up: wp_revslider_layer_animations_bkp, starting from row: 0.
+
+2022-10-04 00:04:35 +04:00 [info] The plugin has completed the backup of the wp_revslider_layer_animations_bkp table.
+
+2022-10-04 00:04:36 +04:00 [info] The API has requested the backing up of a DB table.
+
+2022-10-04 00:04:36 +04:00 [info] The table to be backed up: wp_wfcrawlers, starting from row: 0.
+
+2022-10-04 00:04:36 +04:00 [info] The plugin has completed the backup of the wp_wfcrawlers table.
+
+2022-10-04 00:04:37 +04:00 [info] The API has requested the backing up of a DB table.
+
+2022-10-04 00:04:37 +04:00 [info] The table to be backed up: wp_revslider_slides_bkp, starting from row: 0.
+
+2022-10-04 00:04:37 +04:00 [info] The plugin has completed the backup of the wp_revslider_slides_bkp table.
+
+2022-10-04 00:04:37 +04:00 [info] The API has requested the backing up of a DB table.
+
+2022-10-04 00:04:37 +04:00 [info] The table to be backed up: wp_comments, starting from row: 0.
+
+2022-10-04 00:04:37 +04:00 [info] The plugin has completed the backup of the wp_comments table.
+
+2022-10-04 00:04:38 +04:00 [info] The API has requested the backing up of a DB table.
+
+2022-10-04 00:04:38 +04:00 [info] The table to be backed up: wp_wftrafficrates, starting from row: 0.
+
+2022-10-04 00:04:38 +04:00 [info] The plugin has completed the backup of the wp_wftrafficrates table.
+
+2022-10-04 00:04:38 +04:00 [info] The API has requested the backing up of a DB table.
+
+2022-10-04 00:04:38 +04:00 [info] The table to be backed up: wp_defender_lockout, starting from row: 0.
+
+2022-10-04 00:04:38 +04:00 [info] The plugin has backed up the wp_defender_lockout table until row #1000 .
+
+2022-10-04 00:04:39 +04:00 [info] The API has requested the backing up of a DB table.
+
+2022-10-04 00:04:39 +04:00 [info] The table to be backed up: wp_defender_lockout, starting from row: 1000.
+
+2022-10-04 00:04:39 +04:00 [info] The plugin has backed up the wp_defender_lockout table until row #2000 .
+
+2022-10-04 00:04:40 +04:00 [info] The API has requested the backing up of a DB table.
+
+2022-10-04 00:04:40 +04:00 [info] The table to be backed up: wp_defender_lockout, starting from row: 2000.
+
+2022-10-04 00:04:40 +04:00 [info] The plugin has backed up the wp_defender_lockout table until row #3000 .
+
+2022-10-04 00:04:41 +04:00 [info] The API has requested the backing up of a DB table.
+
+2022-10-04 00:04:41 +04:00 [info] The table to be backed up: wp_defender_lockout, starting from row: 3000.
+
+2022-10-04 00:04:41 +04:00 [info] The plugin has backed up the wp_defender_lockout table until row #4000 .
+
+2022-10-04 00:04:41 +04:00 [info] The API has requested the backing up of a DB table.
+
+2022-10-04 00:04:41 +04:00 [info] The table to be backed up: wp_defender_lockout, starting from row: 4000.
+
+2022-10-04 00:04:41 +04:00 [info] The plugin has backed up the wp_defender_lockout table until row #5000 .
+
+2022-10-04 00:04:43 +04:00 [info] The API has requested the backing up of a DB table.
+
+2022-10-04 00:04:43 +04:00 [info] The table to be backed up: wp_defender_lockout, starting from row: 5000.
+
+2022-10-04 00:04:43 +04:00 [info] The plugin has backed up the wp_defender_lockout table until row #6000 .
+
+2022-10-04 00:04:44 +04:00 [info] The API has requested the backing up of a DB table.
+
+2022-10-04 00:04:44 +04:00 [info] The table to be backed up: wp_defender_lockout, starting from row: 6000.
+
+2022-10-04 00:04:44 +04:00 [info] The plugin has backed up the wp_defender_lockout table until row #7000 .
+
+2022-10-04 00:04:45 +04:00 [info] The API has requested the backing up of a DB table.
+
+2022-10-04 00:04:45 +04:00 [info] The table to be backed up: wp_defender_lockout, starting from row: 7000.
+
+2022-10-04 00:04:45 +04:00 [info] The plugin has backed up the wp_defender_lockout table until row #8000 .
+
+2022-10-04 00:04:46 +04:00 [info] The API has requested the backing up of a DB table.
+
+2022-10-04 00:04:46 +04:00 [info] The table to be backed up: wp_defender_lockout, starting from row: 8000.
+
+2022-10-04 00:04:46 +04:00 [info] The plugin has backed up the wp_defender_lockout table until row #9000 .
+
+2022-10-04 00:04:47 +04:00 [info] The API has requested the backing up of a DB table.
+
+2022-10-04 00:04:47 +04:00 [info] The table to be backed up: wp_defender_lockout, starting from row: 9000.
+
+2022-10-04 00:04:47 +04:00 [info] The plugin has backed up the wp_defender_lockout table until row #10000 .
+
+2022-10-04 00:04:47 +04:00 [info] The API has requested the backing up of a DB table.
+
+2022-10-04 00:04:47 +04:00 [info] The table to be backed up: wp_defender_lockout, starting from row: 10000.
+
+2022-10-04 00:04:47 +04:00 [info] The plugin has backed up the wp_defender_lockout table until row #11000 .
+
+2022-10-04 00:04:48 +04:00 [info] The API has requested the backing up of a DB table.
+
+2022-10-04 00:04:48 +04:00 [info] The table to be backed up: wp_defender_lockout, starting from row: 11000.
+
+2022-10-04 00:04:48 +04:00 [info] The plugin has backed up the wp_defender_lockout table until row #12000 .
+
+2022-10-04 00:04:49 +04:00 [info] The API has requested the backing up of a DB table.
+
+2022-10-04 00:04:49 +04:00 [info] The table to be backed up: wp_defender_lockout, starting from row: 12000.
+
+2022-10-04 00:04:49 +04:00 [info] The plugin has backed up the wp_defender_lockout table until row #13000 .
+
+2022-10-04 00:04:50 +04:00 [info] The API has requested the backing up of a DB table.
+
+2022-10-04 00:04:50 +04:00 [info] The table to be backed up: wp_defender_lockout, starting from row: 13000.
+
+2022-10-04 00:04:50 +04:00 [info] The plugin has completed the backup of the wp_defender_lockout table.
+
+2022-10-04 00:04:51 +04:00 [info] The API has requested the backing up of a DB table.
+
+2022-10-04 00:04:51 +04:00 [info] The table to be backed up: wp_defender_audit_log, starting from row: 0.
+
+2022-10-04 00:04:51 +04:00 [info] The plugin has completed the backup of the wp_defender_audit_log table.
+
+2022-10-04 00:04:51 +04:00 [info] The API has requested the backing up of a DB table.
+
+2022-10-04 00:04:51 +04:00 [info] The table to be backed up: wp_wfls_settings, starting from row: 0.
+
+2022-10-04 00:04:51 +04:00 [info] The plugin has completed the backup of the wp_wfls_settings table.
+
+2022-10-04 00:04:52 +04:00 [info] The API has requested the backing up of a DB table.
+
+2022-10-04 00:04:52 +04:00 [info] The table to be backed up: wp_wflocs, starting from row: 0.
+
+2022-10-04 00:04:52 +04:00 [info] The plugin has completed the backup of the wp_wflocs table.
+
+2022-10-04 00:04:52 +04:00 [info] The API has requested the backing up of a DB table.
+
+2022-10-04 00:04:52 +04:00 [info] The table to be backed up: wp_term_relationships, starting from row: 0.
+
+2022-10-04 00:04:53 +04:00 [info] The plugin has completed the backup of the wp_term_relationships table.
+
+2022-10-04 00:04:53 +04:00 [info] The API has requested the backing up of a DB table.
+
+2022-10-04 00:04:53 +04:00 [info] The table to be backed up: wp_revslider_css, starting from row: 0.
+
+2022-10-04 00:04:53 +04:00 [info] The plugin has completed the backup of the wp_revslider_css table.
+
+2022-10-04 00:04:54 +04:00 [info] The API has requested the backing up of a DB table.
+
+2022-10-04 00:04:54 +04:00 [info] The table to be backed up: wp_revslider_sliders_bkp, starting from row: 0.
+
+2022-10-04 00:04:54 +04:00 [info] The plugin has completed the backup of the wp_revslider_sliders_bkp table.
+
+2022-10-04 00:04:54 +04:00 [info] The API has requested the backing up of a DB table.
+
+2022-10-04 00:04:54 +04:00 [info] The table to be backed up: wp_yoast_indexable_hierarchy, starting from row: 0.
+
+2022-10-04 00:04:54 +04:00 [info] The plugin has completed the backup of the wp_yoast_indexable_hierarchy table.
+
+2022-10-04 00:04:55 +04:00 [info] The API has requested the backing up of a DB table.
+
+2022-10-04 00:04:55 +04:00 [info] The table to be backed up: wp_wfstatus, starting from row: 0.
+
+2022-10-04 00:04:55 +04:00 [info] The plugin has completed the backup of the wp_wfstatus table.
+
+2022-10-04 00:04:56 +04:00 [info] The API has requested the backing up of a DB table.
+
+2022-10-04 00:04:56 +04:00 [info] The table to be backed up: wp_usermeta, starting from row: 0.
+
+2022-10-04 00:04:56 +04:00 [info] The plugin has completed the backup of the wp_usermeta table.
+
+2022-10-04 00:04:57 +04:00 [info] The API has requested the backing up of a DB table.
+
+2022-10-04 00:04:57 +04:00 [info] The table to be backed up: wp_wflogins, starting from row: 0.
+
+2022-10-04 00:04:57 +04:00 [info] The plugin has backed up the wp_wflogins table until row #1000 .
+
+2022-10-04 00:04:57 +04:00 [info] The API has requested the backing up of a DB table.
+
+2022-10-04 00:04:57 +04:00 [info] The table to be backed up: wp_wflogins, starting from row: 1000.
+
+2022-10-04 00:04:57 +04:00 [info] The plugin has backed up the wp_wflogins table until row #2000 .
+
+2022-10-04 00:04:58 +04:00 [info] The API has requested the backing up of a DB table.
+
+2022-10-04 00:04:58 +04:00 [info] The table to be backed up: wp_wflogins, starting from row: 2000.
+
+2022-10-04 00:04:58 +04:00 [info] The plugin has completed the backup of the wp_wflogins table.
+
+2022-10-04 00:04:59 +04:00 [info] The API has requested the backing up of a DB table.
+
+2022-10-04 00:04:59 +04:00 [info] The table to be backed up: wp_wfls_2fa_secrets, starting from row: 0.
+
+2022-10-04 00:04:59 +04:00 [info] The plugin has completed the backup of the wp_wfls_2fa_secrets table.
+
+2022-10-04 00:04:59 +04:00 [info] The API has requested the backing up of a DB table.
+
+2022-10-04 00:04:59 +04:00 [info] The table to be backed up: wp_revslider_navigations_bkp, starting from row: 0.
+
+2022-10-04 00:04:59 +04:00 [info] The plugin has completed the backup of the wp_revslider_navigations_bkp table.
+
+2022-10-04 00:05:00 +04:00 [info] The API has requested the backing up of a DB table.
+
+2022-10-04 00:05:00 +04:00 [info] The table to be backed up: wp_wpmailsmtp_tasks_meta, starting from row: 0.
+
+2022-10-04 00:05:00 +04:00 [info] The plugin has completed the backup of the wp_wpmailsmtp_tasks_meta table.
+
+2022-10-04 00:05:01 +04:00 [info] The API has requested the backing up of a DB table.
+
+2022-10-04 00:05:01 +04:00 [info] The table to be backed up: wp_actionscheduler_groups, starting from row: 0.
+
+2022-10-04 00:05:01 +04:00 [info] The plugin has completed the backup of the wp_actionscheduler_groups table.
+
+2022-10-04 00:05:01 +04:00 [info] The API has requested the backing up of a DB table.
+
+2022-10-04 00:05:01 +04:00 [info] The table to be backed up: wp_defender_scan_item, starting from row: 0.
+
+2022-10-04 00:05:01 +04:00 [info] The plugin has completed the backup of the wp_defender_scan_item table.
+
+2022-10-04 00:05:02 +04:00 [info] The API has requested the backing up of a DB table.
+
+2022-10-04 00:05:02 +04:00 [info] The table to be backed up: wp_yoast_indexable, starting from row: 0.
+
+2022-10-04 00:05:02 +04:00 [info] The plugin has completed the backup of the wp_yoast_indexable table.
+
+2022-10-04 00:05:02 +04:00 [info] The API has requested the backing up of a DB table.
+
+2022-10-04 00:05:02 +04:00 [info] The table to be backed up: wp_postmeta, starting from row: 0.
+
+2022-10-04 00:05:02 +04:00 [info] The plugin has backed up the wp_postmeta table until row #1000 .
+
+2022-10-04 00:05:03 +04:00 [info] The API has requested the backing up of a DB table.
+
+2022-10-04 00:05:03 +04:00 [info] The table to be backed up: wp_postmeta, starting from row: 1000.
+
+2022-10-04 00:05:03 +04:00 [info] The plugin has backed up the wp_postmeta table until row #2000 .
+
+2022-10-04 00:05:04 +04:00 [info] The API has requested the backing up of a DB table.
+
+2022-10-04 00:05:04 +04:00 [info] The table to be backed up: wp_postmeta, starting from row: 2000.
+
+2022-10-04 00:05:04 +04:00 [info] The plugin has backed up the wp_postmeta table until row #3000 .
+
+2022-10-04 00:05:05 +04:00 [info] The API has requested the backing up of a DB table.
+
+2022-10-04 00:05:05 +04:00 [info] The table to be backed up: wp_postmeta, starting from row: 3000.
+
+2022-10-04 00:05:05 +04:00 [info] The plugin has backed up the wp_postmeta table until row #4000 .
+
+2022-10-04 00:05:06 +04:00 [info] The API has requested the backing up of a DB table.
+
+2022-10-04 00:05:06 +04:00 [info] The table to be backed up: wp_postmeta, starting from row: 4000.
+
+2022-10-04 00:05:06 +04:00 [info] The plugin has completed the backup of the wp_postmeta table.
+
+2022-10-04 00:05:07 +04:00 [info] The API has requested the backing up of a DB table.
+
+2022-10-04 00:05:07 +04:00 [info] The table to be backed up: wp_wpr_rucss_resources, starting from row: 0.
+
+2022-10-04 00:05:07 +04:00 [info] The plugin has completed the backup of the wp_wpr_rucss_resources table.
+
+2022-10-04 00:05:07 +04:00 [info] The API has requested the backing up of a DB table.
+
+2022-10-04 00:05:07 +04:00 [info] The table to be backed up: wp_commentmeta, starting from row: 0.
+
+2022-10-04 00:05:07 +04:00 [info] The plugin has completed the backup of the wp_commentmeta table.
+
+2022-10-04 00:05:08 +04:00 [info] The API has requested the backing up of a DB table.
+
+2022-10-04 00:05:08 +04:00 [info] The table to be backed up: wp_revslider_slides, starting from row: 0.
+
+2022-10-04 00:05:08 +04:00 [info] The plugin has completed the backup of the wp_revslider_slides table.
+
+2022-10-04 00:05:08 +04:00 [info] The API has requested the backing up of a DB table.
+
+2022-10-04 00:05:08 +04:00 [info] The table to be backed up: wp_defender_scan, starting from row: 0.
+
+2022-10-04 00:05:08 +04:00 [info] The plugin has completed the backup of the wp_defender_scan table.
+
+2022-10-04 00:05:09 +04:00 [info] The API has requested the backing up of a DB table.
+
+2022-10-04 00:05:09 +04:00 [info] The table to be backed up: wp_wpr_rucss_used_css, starting from row: 0.
+
+2022-10-04 00:05:09 +04:00 [info] The plugin has completed the backup of the wp_wpr_rucss_used_css table.
+
+2022-10-04 00:05:09 +04:00 [info] The API has requested the backing up of a DB table.
+
+2022-10-04 00:05:09 +04:00 [info] The table to be backed up: wp_yoast_migrations, starting from row: 0.
+
+2022-10-04 00:05:09 +04:00 [info] The plugin has completed the backup of the wp_yoast_migrations table.
+
+2022-10-04 00:05:10 +04:00 [info] The API has requested the backing up of a DB table.
+
+2022-10-04 00:05:10 +04:00 [info] The table to be backed up: wp_posts, starting from row: 0.
+
+2022-10-04 00:05:10 +04:00 [info] The plugin has completed the backup of the wp_posts table.
+
+2022-10-04 00:05:11 +04:00 [info] The API has requested the backing up of a DB table.
+
+2022-10-04 00:05:11 +04:00 [info] The table to be backed up: wp_litespeed_img_optm, starting from row: 0.
+
+2022-10-04 00:05:11 +04:00 [info] The plugin has backed up the wp_litespeed_img_optm table until row #1000 .
+
+2022-10-04 00:05:12 +04:00 [info] The API has requested the backing up of a DB table.
+
+2022-10-04 00:05:12 +04:00 [info] The table to be backed up: wp_litespeed_img_optm, starting from row: 1000.
+
+2022-10-04 00:05:12 +04:00 [info] The plugin has completed the backup of the wp_litespeed_img_optm table.
+
+2022-10-04 00:05:13 +04:00 [info] The API has requested the backing up of a DB table.
+
+2022-10-04 00:05:13 +04:00 [info] The table to be backed up: wp_defender_email_log, starting from row: 0.
+
+2022-10-04 00:05:13 +04:00 [info] The plugin has completed the backup of the wp_defender_email_log table.
+
+2022-10-04 00:05:14 +04:00 [info] The API has requested the backing up of a DB table.
+
+2022-10-04 00:05:14 +04:00 [info] The table to be backed up: wp_users, starting from row: 0.
+
+2022-10-04 00:05:14 +04:00 [info] The plugin has completed the backup of the wp_users table.
+
+2022-10-04 00:05:15 +04:00 [info] The API has requested the backing up of a DB table.
+
+2022-10-04 00:05:15 +04:00 [info] The table to be backed up: wp_wpmailsmtp_debug_events, starting from row: 0.
+
+2022-10-04 00:05:15 +04:00 [info] The plugin has completed the backup of the wp_wpmailsmtp_debug_events table.
+
+2022-10-04 00:05:16 +04:00 [info] The API has requested the backing up of a DB table.
+
+2022-10-04 00:05:16 +04:00 [info] The table to be backed up: wp_litespeed_img_optming, starting from row: 0.
+
+2022-10-04 00:05:16 +04:00 [info] The plugin has completed the backup of the wp_litespeed_img_optming table.
+
+2022-10-04 00:05:17 +04:00 [info] The API has requested the backing up of a DB table.
+
+2022-10-04 00:05:17 +04:00 [info] The table to be backed up: wp_wflivetraffichuman, starting from row: 0.
+
+2022-10-04 00:05:17 +04:00 [info] The plugin has completed the backup of the wp_wflivetraffichuman table.
+
+2022-10-04 00:05:19 +04:00 [info] The API has requested the backing up of a DB table.
+
+2022-10-04 00:05:19 +04:00 [info] The table to be backed up: wp_wffilechanges, starting from row: 0.
+
+2022-10-04 00:05:19 +04:00 [info] The plugin has completed the backup of the wp_wffilechanges table.
+
+2022-10-04 00:05:20 +04:00 [info] The API has requested the backing up of a DB table.
+
+2022-10-04 00:05:20 +04:00 [info] The table to be backed up: wp_yoast_primary_term, starting from row: 0.
+
+2022-10-04 00:05:20 +04:00 [info] The plugin has completed the backup of the wp_yoast_primary_term table.
+
+2022-10-04 00:05:30 +04:00 [info] The backup has been completed.
+
+2022-11-04 00:01:53 +04:00 [info] The API has requested info from the Hub.
+
+2022-11-04 00:01:55 +04:00 [info] Passing the retrieved info from the Hub to the API.
+
+2022-11-04 00:02:00 +04:00 [info] The API has requested backup initiation.
+

@@ -1,0 +1,9 @@
+import '@wpmudev/shared-ui';
+import './main-snapshot.js';
+import './pages/backups-page.js';
+import './pages/hosting-backups-page.js';
+import './pages/dashboard-page.js';
+import './pages/settings-page.js';
+import './pages/destinations-page.js';
+import './restore-backups.js';
+import './react/index.js';

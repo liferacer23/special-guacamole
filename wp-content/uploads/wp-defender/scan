@@ -1,0 +1,34 @@
+ping url https://www.nilecoeem.com/wp-admin/admin-ajax.php?action=defender_process_scan
+Prepare facts for a scan
+Current task gather_fact
+processing gather_fact
+process done, queue for next
+Scan not done, pinging
+ping url https://www.nilecoeem.com/wp-admin/admin-ajax.php?action=defender_process_scan
+Current task gather_fact
+processing gather_fact
+task gather_fact processed
+queue core_integrity_check for next
+process done, queue for next
+Scan not done, pinging
+ping url https://www.nilecoeem.com/wp-admin/admin-ajax.php?action=defender_process_scan
+Current task core_integrity_check
+processing core_integrity_check
+Fetch checksums, should only once
+current pos 0
+skip /home/nilecoeem.com/public_html/.htaccess because of file is whitelisted
+skip /home/nilecoeem.com/public_html/.htaccess.bk because of file is whitelisted
+task core_integrity_check processed
+queue plugin_integrity_check for next
+process done, queue for next
+Scan not done, pinging
+ping url https://www.nilecoeem.com/wp-admin/admin-ajax.php?action=defender_process_scan
+Current task plugin_integrity_check
+processing plugin_integrity_check
+task plugin_integrity_check processed
+queue theme_integrity_check for next
+process done, queue for next
+Scan not done, pinging
+ping url https://www.nilecoeem.com/wp-admin/admin-ajax.php?action=defender_process_scan
+Current task theme_integrity_check
+processing theme_integrity_check

@@ -1,0 +1,797 @@
+0000.001 (0) Opened log file at time: Tue, 25 Oct 2022 02:51:28 +0000 on http://nilecoeem.com
+0000.005 (0) UpdraftPlus WordPress backup plugin (https://updraftplus.com): 2.22.23.25 WP: 6.0.3 PHP: 7.4.29 (litespeed, Linux CyberPanel 5.4.0-1047-azure #49-Ubuntu SMP Thu Apr 22 14:30:37 UTC 2021 x86_64) MySQL: 10.3.34-MariaDB-0ubuntu0.20.04.1 (max packet size=16777216) WPLANG: en_US Server: LiteSpeed safe_mode: 0 max_execution_time: 900 memory_limit: 1024M (used: 13.8M | 16M) multisite: N openssl: OpenSSL 1.1.1f  31 Mar 2020 mcrypt: N LANG:  ZipArchive::addFile: Y
+0000.008 (0) Free space on disk containing Updraft's temporary directory: 176240.9 MB
+0000.012 (0) Tasks: Backup files: 1 (schedule: weekly) Backup DB:  (schedule: weekly)
+0000.015 (0) Processed schedules. Combining jobs from identical schedules. Tasks now: Backup files: 1 Backup DB: 1
+0000.036 (0) Requesting semaphore lock (fd) (apparently via scheduler: last_scheduled_action_called_at=1666059139, seconds_ago=607149)
+0000.060 (0) Set semaphore last lock (fd) time to 2022-10-25 02:51:28
+0000.064 (0) Semaphore lock (fd) complete
+0000.075 (0) Backup run: resumption=0, nonce=86210862ec7b, file_nonce=86210862ec7b begun at=1666666288 (0s ago), job type=backup
+0000.082 (0) Scheduling a resumption (1) after 300 seconds (1666666588) in case this run gets aborted
+0000.162 (0) Checking if we have a zip executable available
+0000.166 (0) Testing: /usr/bin/zip
+0000.190 (0) Output: zip warning: binziptest/test.zip not found or empty
+0000.194 (0) Output: adding: binziptest/subdir1/	(in=0) (out=0) (stored 0%)
+0000.198 (0) Output: adding: binziptest/subdir1/subdir2/	(in=0) (out=0) (stored 0%)
+0000.201 (0) Output: adding: binziptest/subdir1/subdir2/test.html	(in=131) (out=107) (deflated 18%)
+0000.204 (0) Output: total bytes=131, compressed=107 -> 18% savings
+0000.229 (0) Output: adding: binziptest/subdir1/subdir2/test2.html	(in=138) (out=113) (deflated 18%)
+0000.233 (0) Output: total bytes=269, compressed=220 -> 18% savings
+0000.270 (0) Working binary zip found: /usr/bin/zip
+0000.299 (0) Zip engine: found/will use a binary zip: /usr/bin/zip
+0000.302 (0) Creation of backups of directories: beginning
+0000.312 (0) Beginning creation of dump of plugins (split every: 75 MB)
+0001.523 (0) Total entities for the zip file: 3031 directories, 13746 files (0 skipped as non-modified), 181.7 MB
+0001.530 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-plugins.zip.tmp: 100 files added (on-disk size: 0 KB)
+0001.534 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-plugins.zip.tmp: 200 files added (on-disk size: 0 KB)
+0001.540 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-plugins.zip.tmp: 300 files added (on-disk size: 0 KB)
+0001.545 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-plugins.zip.tmp: 400 files added (on-disk size: 0 KB)
+0001.550 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-plugins.zip.tmp: 500 files added (on-disk size: 0 KB)
+0001.554 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-plugins.zip.tmp: 600 files added (on-disk size: 0 KB)
+0001.558 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-plugins.zip.tmp: 700 files added (on-disk size: 0 KB)
+0001.565 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-plugins.zip.tmp: 800 files added (on-disk size: 0 KB)
+0001.571 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-plugins.zip.tmp: 900 files added (on-disk size: 0 KB)
+0001.581 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-plugins.zip.tmp: 1000 files added (on-disk size: 0 KB)
+0001.587 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 1000 files added on this batch (11.6 MB, 13746 files batched, 1001 (1001) added so far); re-opening (prior size: 0 KB)
+0002.497 (0) backup_2022-10-25-0651_Nilecoeem_86210862ec7b-plugins.zip.tmp: size is now: 3.90 MB
+0002.510 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-plugins.zip.tmp: 1100 files added (on-disk size: 3967.7 KB)
+0002.514 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-plugins.zip.tmp: 1200 files added (on-disk size: 3967.7 KB)
+0002.519 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-plugins.zip.tmp: 1300 files added (on-disk size: 3967.7 KB)
+0002.523 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-plugins.zip.tmp: 1400 files added (on-disk size: 3967.7 KB)
+0002.528 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-plugins.zip.tmp: 1500 files added (on-disk size: 3967.7 KB)
+0002.532 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-plugins.zip.tmp: 1600 files added (on-disk size: 3967.7 KB)
+0002.536 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-plugins.zip.tmp: 1700 files added (on-disk size: 3967.7 KB)
+0002.540 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-plugins.zip.tmp: 1800 files added (on-disk size: 3967.7 KB)
+0002.544 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-plugins.zip.tmp: 1900 files added (on-disk size: 3967.7 KB)
+0002.548 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-plugins.zip.tmp: 2000 files added (on-disk size: 3967.7 KB)
+0002.551 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 1000 files added on this batch (15 MB, 13746 files batched, 1001 (2002) added so far); re-opening (prior size: 3967.7 KB)
+0003.409 (0) backup_2022-10-25-0651_Nilecoeem_86210862ec7b-plugins.zip.tmp: size is now: 10.90 MB
+0003.421 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-plugins.zip.tmp: 2100 files added (on-disk size: 11115.6 KB)
+0003.425 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-plugins.zip.tmp: 2200 files added (on-disk size: 11115.6 KB)
+0003.430 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-plugins.zip.tmp: 2300 files added (on-disk size: 11115.6 KB)
+0003.434 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-plugins.zip.tmp: 2400 files added (on-disk size: 11115.6 KB)
+0003.438 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-plugins.zip.tmp: 2500 files added (on-disk size: 11115.6 KB)
+0003.442 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-plugins.zip.tmp: 2600 files added (on-disk size: 11115.6 KB)
+0003.452 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-plugins.zip.tmp: 2700 files added (on-disk size: 11115.6 KB)
+0003.465 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-plugins.zip.tmp: 2800 files added (on-disk size: 11115.6 KB)
+0003.469 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-plugins.zip.tmp: 2900 files added (on-disk size: 11115.6 KB)
+0003.473 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-plugins.zip.tmp: 3000 files added (on-disk size: 11115.6 KB)
+0003.477 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 1000 files added on this batch (2.7 MB, 13746 files batched, 1001 (3003) added so far); re-opening (prior size: 11115.6 KB)
+0003.993 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-plugins.zip.tmp: 3100 files added (on-disk size: 12760 KB)
+0004.000 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-plugins.zip.tmp: 3200 files added (on-disk size: 12760 KB)
+0004.006 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-plugins.zip.tmp: 3300 files added (on-disk size: 12760 KB)
+0004.014 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-plugins.zip.tmp: 3400 files added (on-disk size: 12760 KB)
+0004.017 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-plugins.zip.tmp: 3500 files added (on-disk size: 12760 KB)
+0004.021 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-plugins.zip.tmp: 3600 files added (on-disk size: 12760 KB)
+0004.026 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-plugins.zip.tmp: 3700 files added (on-disk size: 12760 KB)
+0004.030 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-plugins.zip.tmp: 3800 files added (on-disk size: 12760 KB)
+0004.034 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-plugins.zip.tmp: 3900 files added (on-disk size: 12760 KB)
+0004.050 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-plugins.zip.tmp: 4000 files added (on-disk size: 12760 KB)
+0004.053 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 1000 files added on this batch (22.8 MB, 13746 files batched, 1001 (4004) added so far); re-opening (prior size: 12760 KB)
+0005.043 (0) backup_2022-10-25-0651_Nilecoeem_86210862ec7b-plugins.zip.tmp: size is now: 18.80 MB
+0005.054 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-plugins.zip.tmp: 4100 files added (on-disk size: 19231.1 KB)
+0005.058 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-plugins.zip.tmp: 4200 files added (on-disk size: 19231.1 KB)
+0005.063 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-plugins.zip.tmp: 4300 files added (on-disk size: 19231.1 KB)
+0005.067 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-plugins.zip.tmp: 4400 files added (on-disk size: 19231.1 KB)
+0005.071 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-plugins.zip.tmp: 4500 files added (on-disk size: 19231.1 KB)
+0005.075 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-plugins.zip.tmp: 4600 files added (on-disk size: 19231.1 KB)
+0005.080 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-plugins.zip.tmp: 4700 files added (on-disk size: 19231.1 KB)
+0005.084 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-plugins.zip.tmp: 4800 files added (on-disk size: 19231.1 KB)
+0005.088 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-plugins.zip.tmp: 4900 files added (on-disk size: 19231.1 KB)
+0005.093 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-plugins.zip.tmp: 5000 files added (on-disk size: 19231.1 KB)
+0005.097 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 1000 files added on this batch (13.4 MB, 13746 files batched, 1001 (5005) added so far); re-opening (prior size: 19231.1 KB)
+0006.128 (0) backup_2022-10-25-0651_Nilecoeem_86210862ec7b-plugins.zip.tmp: size is now: 22.70 MB
+0006.142 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-plugins.zip.tmp: 5100 files added (on-disk size: 23284.4 KB)
+0006.147 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-plugins.zip.tmp: 5200 files added (on-disk size: 23284.4 KB)
+0006.152 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-plugins.zip.tmp: 5300 files added (on-disk size: 23284.4 KB)
+0006.157 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-plugins.zip.tmp: 5400 files added (on-disk size: 23284.4 KB)
+0006.163 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-plugins.zip.tmp: 5500 files added (on-disk size: 23284.4 KB)
+0006.168 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-plugins.zip.tmp: 5600 files added (on-disk size: 23284.4 KB)
+0006.175 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-plugins.zip.tmp: 5700 files added (on-disk size: 23284.4 KB)
+0006.180 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-plugins.zip.tmp: 5800 files added (on-disk size: 23284.4 KB)
+0006.185 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-plugins.zip.tmp: 5900 files added (on-disk size: 23284.4 KB)
+0006.189 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-plugins.zip.tmp: 6000 files added (on-disk size: 23284.4 KB)
+0006.193 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 1000 files added on this batch (15.9 MB, 13746 files batched, 1001 (6006) added so far); re-opening (prior size: 23284.4 KB)
+0007.201 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-plugins.zip.tmp: 6100 files added (on-disk size: 25328.1 KB)
+0007.206 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-plugins.zip.tmp: 6200 files added (on-disk size: 25328.1 KB)
+0007.212 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-plugins.zip.tmp: 6300 files added (on-disk size: 25328.1 KB)
+0007.217 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-plugins.zip.tmp: 6400 files added (on-disk size: 25328.1 KB)
+0007.222 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-plugins.zip.tmp: 6500 files added (on-disk size: 25328.1 KB)
+0007.227 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-plugins.zip.tmp: 6600 files added (on-disk size: 25328.1 KB)
+0007.242 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-plugins.zip.tmp: 6700 files added (on-disk size: 25328.1 KB)
+0007.247 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-plugins.zip.tmp: 6800 files added (on-disk size: 25328.1 KB)
+0007.252 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-plugins.zip.tmp: 6900 files added (on-disk size: 25328.1 KB)
+0007.257 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-plugins.zip.tmp: 7000 files added (on-disk size: 25328.1 KB)
+0007.262 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 1000 files added on this batch (17.1 MB, 13746 files batched, 1001 (7007) added so far); re-opening (prior size: 25328.1 KB)
+0008.606 (0) backup_2022-10-25-0651_Nilecoeem_86210862ec7b-plugins.zip.tmp: size is now: 30.60 MB
+0008.617 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-plugins.zip.tmp: 7100 files added (on-disk size: 31376.9 KB)
+0008.623 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-plugins.zip.tmp: 7200 files added (on-disk size: 31376.9 KB)
+0008.627 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-plugins.zip.tmp: 7300 files added (on-disk size: 31376.9 KB)
+0008.632 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-plugins.zip.tmp: 7400 files added (on-disk size: 31376.9 KB)
+0008.649 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-plugins.zip.tmp: 7500 files added (on-disk size: 31376.9 KB)
+0008.654 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-plugins.zip.tmp: 7600 files added (on-disk size: 31376.9 KB)
+0008.660 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-plugins.zip.tmp: 7700 files added (on-disk size: 31376.9 KB)
+0008.665 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-plugins.zip.tmp: 7800 files added (on-disk size: 31376.9 KB)
+0008.671 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-plugins.zip.tmp: 7900 files added (on-disk size: 31376.9 KB)
+0008.676 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-plugins.zip.tmp: 8000 files added (on-disk size: 31376.9 KB)
+0008.679 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 1000 files added on this batch (16.6 MB, 13746 files batched, 1001 (8008) added so far); re-opening (prior size: 31376.9 KB)
+0010.240 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-plugins.zip.tmp: 8100 files added (on-disk size: 35938.9 KB)
+0010.246 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-plugins.zip.tmp: 8200 files added (on-disk size: 35938.9 KB)
+0010.251 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-plugins.zip.tmp: 8300 files added (on-disk size: 35938.9 KB)
+0010.256 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-plugins.zip.tmp: 8400 files added (on-disk size: 35938.9 KB)
+0010.261 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-plugins.zip.tmp: 8500 files added (on-disk size: 35938.9 KB)
+0010.266 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-plugins.zip.tmp: 8600 files added (on-disk size: 35938.9 KB)
+0010.272 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 25 MB added on this batch (25.5 MB, 13746 files batched, 691 (8699) added so far); re-opening (prior size: 35938.9 KB)
+0013.020 (0) backup_2022-10-25-0651_Nilecoeem_86210862ec7b-plugins.zip.tmp: size is now: 42.50 MB
+0013.029 (0) A useful amount of data was added after this amount of zip processing: 3.1 s (normalised: 3 s, rate: 8409.3 KB/s)
+0013.035 (0) Performance is good - will increase the amount of data we attempt to batch (time=3.1037490367889, normalised_time=3.0442588053224, max_time=13.031442165375, data points known=1, old_max_bytes=26214400, new_max_bytes=67328987)
+0013.041 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-plugins.zip.tmp: 8700 files added (on-disk size: 43547.9 KB)
+0013.046 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-plugins.zip.tmp: 8800 files added (on-disk size: 43547.9 KB)
+0013.051 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-plugins.zip.tmp: 8900 files added (on-disk size: 43547.9 KB)
+0013.056 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-plugins.zip.tmp: 9000 files added (on-disk size: 43547.9 KB)
+0013.061 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-plugins.zip.tmp: 9100 files added (on-disk size: 43547.9 KB)
+0013.066 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-plugins.zip.tmp: 9200 files added (on-disk size: 43547.9 KB)
+0013.071 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-plugins.zip.tmp: 9300 files added (on-disk size: 43547.9 KB)
+0013.076 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-plugins.zip.tmp: 9400 files added (on-disk size: 43547.9 KB)
+0013.081 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-plugins.zip.tmp: 9500 files added (on-disk size: 43547.9 KB)
+0013.087 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-plugins.zip.tmp: 9600 files added (on-disk size: 43547.9 KB)
+0013.108 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 1000 files added on this batch (4.2 MB, 13746 files batched, 1001 (9700) added so far); re-opening (prior size: 43547.9 KB)
+0013.837 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-plugins.zip.tmp: 9700 files added (on-disk size: 45019.3 KB)
+0013.845 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-plugins.zip.tmp: 9800 files added (on-disk size: 45019.3 KB)
+0013.850 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-plugins.zip.tmp: 9900 files added (on-disk size: 45019.3 KB)
+0013.854 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-plugins.zip.tmp: 10000 files added (on-disk size: 45019.3 KB)
+0013.858 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-plugins.zip.tmp: 10100 files added (on-disk size: 45019.3 KB)
+0013.863 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-plugins.zip.tmp: 10200 files added (on-disk size: 45019.3 KB)
+0013.867 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-plugins.zip.tmp: 10300 files added (on-disk size: 45019.3 KB)
+0013.871 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-plugins.zip.tmp: 10400 files added (on-disk size: 45019.3 KB)
+0013.876 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-plugins.zip.tmp: 10500 files added (on-disk size: 45019.3 KB)
+0013.881 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-plugins.zip.tmp: 10600 files added (on-disk size: 45019.3 KB)
+0013.885 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-plugins.zip.tmp: 10700 files added (on-disk size: 45019.3 KB)
+0013.888 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 1000 files added on this batch (3.7 MB, 13746 files batched, 1001 (10701) added so far); re-opening (prior size: 45019.3 KB)
+0014.492 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-plugins.zip.tmp: 10800 files added (on-disk size: 46388.1 KB)
+0014.497 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-plugins.zip.tmp: 10900 files added (on-disk size: 46388.1 KB)
+0014.501 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-plugins.zip.tmp: 11000 files added (on-disk size: 46388.1 KB)
+0014.506 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-plugins.zip.tmp: 11100 files added (on-disk size: 46388.1 KB)
+0014.510 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-plugins.zip.tmp: 11200 files added (on-disk size: 46388.1 KB)
+0014.514 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-plugins.zip.tmp: 11300 files added (on-disk size: 46388.1 KB)
+0014.518 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-plugins.zip.tmp: 11400 files added (on-disk size: 46388.1 KB)
+0014.523 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-plugins.zip.tmp: 11500 files added (on-disk size: 46388.1 KB)
+0014.527 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-plugins.zip.tmp: 11600 files added (on-disk size: 46388.1 KB)
+0014.531 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-plugins.zip.tmp: 11700 files added (on-disk size: 46388.1 KB)
+0014.534 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 1000 files added on this batch (13.1 MB, 13746 files batched, 1001 (11702) added so far); re-opening (prior size: 46388.1 KB)
+0015.432 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-plugins.zip.tmp: 11800 files added (on-disk size: 49808.3 KB)
+0015.438 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-plugins.zip.tmp: 11900 files added (on-disk size: 49808.3 KB)
+0015.442 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-plugins.zip.tmp: 12000 files added (on-disk size: 49808.3 KB)
+0015.446 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-plugins.zip.tmp: 12100 files added (on-disk size: 49808.3 KB)
+0015.451 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-plugins.zip.tmp: 12200 files added (on-disk size: 49808.3 KB)
+0015.455 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-plugins.zip.tmp: 12300 files added (on-disk size: 49808.3 KB)
+0015.459 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-plugins.zip.tmp: 12400 files added (on-disk size: 49808.3 KB)
+0015.462 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-plugins.zip.tmp: 12500 files added (on-disk size: 49808.3 KB)
+0015.466 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-plugins.zip.tmp: 12600 files added (on-disk size: 49808.3 KB)
+0015.485 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-plugins.zip.tmp: 12700 files added (on-disk size: 49808.3 KB)
+0015.488 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 1000 files added on this batch (11.5 MB, 13746 files batched, 1001 (12703) added so far); re-opening (prior size: 49808.3 KB)
+0016.348 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-plugins.zip.tmp: 12800 files added (on-disk size: 53641.7 KB)
+0016.353 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-plugins.zip.tmp: 12900 files added (on-disk size: 53641.7 KB)
+0016.357 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-plugins.zip.tmp: 13000 files added (on-disk size: 53641.7 KB)
+0016.362 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-plugins.zip.tmp: 13100 files added (on-disk size: 53641.7 KB)
+0016.366 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-plugins.zip.tmp: 13200 files added (on-disk size: 53641.7 KB)
+0016.371 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-plugins.zip.tmp: 13300 files added (on-disk size: 53641.7 KB)
+0016.375 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-plugins.zip.tmp: 13400 files added (on-disk size: 53641.7 KB)
+0016.380 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-plugins.zip.tmp: 13500 files added (on-disk size: 53641.7 KB)
+0016.384 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-plugins.zip.tmp: 13600 files added (on-disk size: 53641.7 KB)
+0016.388 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-plugins.zip.tmp: 13700 files added (on-disk size: 53641.7 KB)
+0016.394 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 1000 files added on this batch (8.1 MB, 13746 files batched, 1001 (13704) added so far); re-opening (prior size: 53641.7 KB)
+0017.528 (0) Creating zip file manifest (backup_2022-10-25-0651_Nilecoeem_86210862ec7b-plugins.zip.list-temp.tmp)
+0017.571 (0) Successfully created zip file manifest (size: 1215649)
+0018.238 (0) Created plugins zip (0) - 56704 KB in 17.9 s (3164.7 KB/s) (sha1: 2f870be19655ddba28218eb4208107c18d8dd9ac, sha256: 6070167c4bbb42b46ded35dcfac38c17cb6a895af62519c80a5ffb05fd7ff4b6)
+0018.258 (0) Cloud backup selection (1/1): googledrive with instance (1/1) (last)
+0018.260 (0) Beginning dispatch of backup to remote (googledrive) (instance identifier s-b44606ebc5aa8fba5ebd5f79a42b0c4a)
+0022.503 (0) Google Drive: quota usage: used=149205.6 MB, total=2097152 MB, available=1947946.4 MB
+0022.507 (0) Google Drive: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-plugins.zip: Attempting to upload to Google Drive (into folder id: 126IdidYuYhwsl_x18UJ7Un8bRD0MSjvd)
+0024.790 (0) Googledrive chunked upload: 1.8 % uploaded (1048576 - increasing chunk size to 2048 KB - memory usage: 17.1 / 34)
+0025.734 (0) Googledrive chunked upload: 5.4 % uploaded (3145728 - increasing chunk size to 4096 KB - memory usage: 17.1 / 34)
+0027.018 (0) Googledrive chunked upload: 12.6 % uploaded (7340032 - increasing chunk size to 8192 KB - memory usage: 17.1 / 34)
+0028.590 (0) Googledrive chunked upload: 27.1 % uploaded (15728640 - increasing chunk size to 16384 KB - memory usage: 17.1 / 34)
+0030.119 (0) Googledrive chunked upload: 56 % uploaded (32505856 - increasing chunk size to 32768 KB - memory usage: 17.1 / 34)
+0033.851 (0) Googledrive chunked upload: 100 % uploaded (32505856)
+0033.859 (0) Google Drive: OK: Archive backup_2022-10-25-0651_Nilecoeem_86210862ec7b-plugins.zip uploaded in 11.35 seconds
+0033.863 (0) Recording as successfully uploaded: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-plugins.zip
+0033.878 (0) Deleting local file: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-plugins.zip: OK
+0033.899 (0) Beginning creation of dump of themes (split every: 75 MB)
+0033.971 (0) Total entities for the zip file: 176 directories, 803 files (0 skipped as non-modified), 34.8 MB
+0033.980 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-themes.zip.tmp: 100 files added (on-disk size: 0 KB)
+0033.985 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-themes.zip.tmp: 200 files added (on-disk size: 0 KB)
+0033.989 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-themes.zip.tmp: 300 files added (on-disk size: 0 KB)
+0033.994 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-themes.zip.tmp: 400 files added (on-disk size: 0 KB)
+0033.998 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-themes.zip.tmp: 500 files added (on-disk size: 0 KB)
+0034.004 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-themes.zip.tmp: 600 files added (on-disk size: 0 KB)
+0034.008 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-themes.zip.tmp: 700 files added (on-disk size: 0 KB)
+0034.013 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-themes.zip.tmp: 800 files added (on-disk size: 0 KB)
+0034.931 (0) backup_2022-10-25-0651_Nilecoeem_86210862ec7b-themes.zip.tmp: size is now: 27.50 MB
+0034.949 (0) Creating zip file manifest (backup_2022-10-25-0651_Nilecoeem_86210862ec7b-themes.zip.list-temp.tmp)
+0034.955 (0) Successfully created zip file manifest (size: 55514)
+0035.284 (0) Created themes zip (0) - 28120.1 KB in 1.4 s (20414.4 KB/s) (sha1: 6d9e1fcf083030abe63cea152978fd2b2f5d0289, sha256: 3456ee9ed31205e5ec164a8d7e20c3872c646752d77106583133f1a59a5b997b)
+0035.295 (0) Cloud backup selection (1/1): googledrive with instance (1/1) (last)
+0035.297 (0) Beginning dispatch of backup to remote (googledrive) (instance identifier s-b44606ebc5aa8fba5ebd5f79a42b0c4a)
+0035.943 (0) Google Drive: quota usage: used=149260.9 MB, total=2097152 MB, available=1947891.1 MB
+0035.953 (0) Google Drive: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-themes.zip: Attempting to upload to Google Drive (into folder id: 126IdidYuYhwsl_x18UJ7Un8bRD0MSjvd)
+0037.996 (0) Googledrive chunked upload: 3.6 % uploaded (1048576 - increasing chunk size to 2048 KB - memory usage: 15.1 / 34)
+0038.950 (0) Googledrive chunked upload: 10.9 % uploaded (3145728 - increasing chunk size to 4096 KB - memory usage: 15.1 / 34)
+0040.214 (0) Googledrive chunked upload: 25.5 % uploaded (7340032 - increasing chunk size to 8192 KB - memory usage: 15.1 / 34)
+0041.734 (0) Googledrive chunked upload: 54.6 % uploaded (15728640 - increasing chunk size to 16384 KB - memory usage: 15.1 / 34)
+0044.282 (0) Googledrive chunked upload: 100 % uploaded (15728640)
+0044.296 (0) Google Drive: OK: Archive backup_2022-10-25-0651_Nilecoeem_86210862ec7b-themes.zip uploaded in 8.34 seconds
+0044.299 (0) Recording as successfully uploaded: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-themes.zip
+0044.312 (0) Deleting local file: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-themes.zip: OK
+0044.324 (0) Exclusion option setting (uploads): 
+0044.328 (0) Looking for candidates to backup in: /home/nilecoeem.com/public_html/wp-content/uploads
+0044.331 (0) finding files: revslider: adding to list (1)
+0044.335 (0) finding files: 2022: adding to list (2)
+0044.339 (0) finding files: 2020: adding to list (3)
+0044.341 (0) finding files: wpcf7_uploads: adding to list (4)
+0044.344 (0) finding files: ShortpixelBackups: adding to list (5)
+0044.357 (0) finding files: 2021: adding to list (6)
+0044.361 (0) finding files: wp-defender: adding to list (7)
+0044.366 (0) finding files: shipper: adding to list (8)
+0044.370 (0) finding files: snapshot-backups: adding to list (9)
+0044.373 (0) finding files: .shortpixel-q-1: adding to list (10)
+0044.376 (0) finding files: js_composer: adding to list (11)
+0044.380 (0) finding files: .htaccess: adding to list (12)
+0044.383 (0) Beginning creation of dump of uploads (split every: 75 MB)
+0044.468 (0) Total entities for the zip file: 56 directories, 3659 files (0 skipped as non-modified), 111.7 MB
+0044.474 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-uploads.zip.tmp: 100 files added (on-disk size: 0 KB)
+0044.479 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-uploads.zip.tmp: 200 files added (on-disk size: 0 KB)
+0044.484 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-uploads.zip.tmp: 300 files added (on-disk size: 0 KB)
+0044.489 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-uploads.zip.tmp: 400 files added (on-disk size: 0 KB)
+0044.494 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-uploads.zip.tmp: 500 files added (on-disk size: 0 KB)
+0044.498 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-uploads.zip.tmp: 600 files added (on-disk size: 0 KB)
+0044.505 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-uploads.zip.tmp: 700 files added (on-disk size: 0 KB)
+0044.510 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-uploads.zip.tmp: 800 files added (on-disk size: 0 KB)
+0044.514 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-uploads.zip.tmp: 900 files added (on-disk size: 0 KB)
+0044.521 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-uploads.zip.tmp: 1000 files added (on-disk size: 0 KB)
+0044.524 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 1000 files added on this batch (17.7 MB, 3659 files batched, 1001 (1001) added so far); re-opening (prior size: 0 KB)
+0045.126 (0) backup_2022-10-25-0651_Nilecoeem_86210862ec7b-uploads.zip.tmp: size is now: 17.90 MB
+0045.151 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-uploads.zip.tmp: 1100 files added (on-disk size: 18288.3 KB)
+0045.156 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-uploads.zip.tmp: 1200 files added (on-disk size: 18288.3 KB)
+0045.160 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-uploads.zip.tmp: 1300 files added (on-disk size: 18288.3 KB)
+0045.164 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-uploads.zip.tmp: 1400 files added (on-disk size: 18288.3 KB)
+0045.168 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-uploads.zip.tmp: 1500 files added (on-disk size: 18288.3 KB)
+0045.172 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-uploads.zip.tmp: 1600 files added (on-disk size: 18288.3 KB)
+0045.177 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-uploads.zip.tmp: 1700 files added (on-disk size: 18288.3 KB)
+0045.181 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-uploads.zip.tmp: 1800 files added (on-disk size: 18288.3 KB)
+0045.189 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-uploads.zip.tmp: 1900 files added (on-disk size: 18288.3 KB)
+0045.195 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-uploads.zip.tmp: 2000 files added (on-disk size: 18288.3 KB)
+0045.208 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 1000 files added on this batch (21.1 MB, 3659 files batched, 1001 (2002) added so far); re-opening (prior size: 18288.3 KB)
+0045.836 (0) backup_2022-10-25-0651_Nilecoeem_86210862ec7b-uploads.zip.tmp: size is now: 39.10 MB
+0045.860 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-uploads.zip.tmp: 2100 files added (on-disk size: 40062.8 KB)
+0045.864 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-uploads.zip.tmp: 2200 files added (on-disk size: 40062.8 KB)
+0045.869 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-uploads.zip.tmp: 2300 files added (on-disk size: 40062.8 KB)
+0045.874 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-uploads.zip.tmp: 2400 files added (on-disk size: 40062.8 KB)
+0045.878 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-uploads.zip.tmp: 2500 files added (on-disk size: 40062.8 KB)
+0045.882 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-uploads.zip.tmp: 2600 files added (on-disk size: 40062.8 KB)
+0045.886 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-uploads.zip.tmp: 2700 files added (on-disk size: 40062.8 KB)
+0045.892 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-uploads.zip.tmp: 2800 files added (on-disk size: 40062.8 KB)
+0045.896 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-uploads.zip.tmp: 2900 files added (on-disk size: 40062.8 KB)
+0045.901 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-uploads.zip.tmp: 3000 files added (on-disk size: 40062.8 KB)
+0045.904 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 1000 files added on this batch (25.2 MB, 3659 files batched, 1001 (3003) added so far); re-opening (prior size: 40062.8 KB)
+0046.606 (0) backup_2022-10-25-0651_Nilecoeem_86210862ec7b-uploads.zip.tmp: size is now: 64.50 MB
+0046.617 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-uploads.zip.tmp: 3100 files added (on-disk size: 66049.1 KB)
+0046.622 (0) Adding batch to zip file (UpdraftPlus_BinZip): possibly approaching split limit (9.6 MB, 145 (3148) files added so far); last ratio: 1; re-opening (prior size: 66049.1 KB)
+0046.893 (0) Zip size is at/near split limit (74.1 MB / 75 MB) - bumping index (from: 0)
+0047.764 (0) Creating zip file manifest (backup_2022-10-25-0651_Nilecoeem_86210862ec7b-uploads.zip.list-temp.tmp)
+0047.776 (0) Successfully created zip file manifest (size: 194038)
+0047.784 (0) Created uploads zip (0) - 75877.6 KB in 2.5 s (30235.3 KB/s) (checksums: sha1: 8f888c527b46031a4017bd5a46bad0fbc08a27c6, sha256: 500c1e3160d3ab3bcb70ada631aa69a1dcbbf3e6ff63ca569994d5ee91779e11)
+0047.800 (0) Cloud backup selection (1/1): googledrive with instance (1/1) (last)
+0047.803 (0) Beginning dispatch of backup to remote (googledrive) (instance identifier s-b44606ebc5aa8fba5ebd5f79a42b0c4a)
+0048.469 (0) Google Drive: quota usage: used=149288.4 MB, total=2097152 MB, available=1947863.6 MB
+0048.473 (0) Google Drive: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-uploads.zip: Attempting to upload to Google Drive (into folder id: 126IdidYuYhwsl_x18UJ7Un8bRD0MSjvd)
+0050.217 (0) Googledrive chunked upload: 1.3 % uploaded (1048576 - increasing chunk size to 2048 KB - memory usage: 16.3 / 34)
+0051.154 (0) Googledrive chunked upload: 4 % uploaded (3145728 - increasing chunk size to 4096 KB - memory usage: 16.3 / 34)
+0052.175 (0) Googledrive chunked upload: 9.4 % uploaded (7340032 - increasing chunk size to 8192 KB - memory usage: 16.3 / 34)
+0053.482 (0) Googledrive chunked upload: 20.2 % uploaded (15728640 - increasing chunk size to 16384 KB - memory usage: 16.3 / 34)
+0054.976 (0) Googledrive chunked upload: 41.8 % uploaded (32505856 - increasing chunk size to 32768 KB - memory usage: 16.3 / 34)
+0057.320 (0) Googledrive chunked upload: 85 % uploaded (66060288 - increasing chunk size to 65536 KB - memory usage: 16.3 / 34)
+0060.667 (0) Googledrive chunked upload: 100 % uploaded (66060288)
+0060.678 (0) Google Drive: OK: Archive backup_2022-10-25-0651_Nilecoeem_86210862ec7b-uploads.zip uploaded in 12.2 seconds
+0060.681 (0) Recording as successfully uploaded: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-uploads.zip
+0060.708 (0) Deleting local file: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-uploads.zip: OK
+0060.717 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 2.0 seconds have passed since the last write (0.1 MB, 1 (3149) files added so far); re-opening (prior size: 0 KB)
+0060.730 (0) backup_2022-10-25-0651_Nilecoeem_86210862ec7b-uploads2.zip.tmp: size is now: 0.10 MB
+0060.739 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-uploads2.zip.tmp: 3200 files added (on-disk size: 144.2 KB)
+0060.744 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-uploads2.zip.tmp: 3300 files added (on-disk size: 144.2 KB)
+0060.750 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-uploads2.zip.tmp: 3400 files added (on-disk size: 144.2 KB)
+0060.755 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-uploads2.zip.tmp: 3500 files added (on-disk size: 144.2 KB)
+0060.761 (0) Zip: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-uploads2.zip.tmp: 3600 files added (on-disk size: 144.2 KB)
+0061.398 (0) backup_2022-10-25-0651_Nilecoeem_86210862ec7b-uploads2.zip.tmp: size is now: 37.40 MB
+0061.415 (0) Creating zip file manifest (backup_2022-10-25-0651_Nilecoeem_86210862ec7b-uploads2.zip.list-temp.tmp)
+0061.420 (0) Successfully created zip file manifest (size: 47882)
+0062.071 (0) Created uploads zip (1) - 38293 KB in 14.3 s (2681.4 KB/s) (sha1: e4933bcadff849752c86c5e02d86c1635cfb0908, sha256: 2ad372594396824c20c0d32ba2e4f3f870ac9c5b1aabfe85e8419411868965e1)
+0062.087 (0) Cloud backup selection (1/1): googledrive with instance (1/1) (last)
+0062.091 (0) Beginning dispatch of backup to remote (googledrive) (instance identifier s-b44606ebc5aa8fba5ebd5f79a42b0c4a)
+0062.732 (0) Google Drive: quota usage: used=149421.8 MB, total=2097152 MB, available=1947730.2 MB
+0062.737 (0) Google Drive: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-uploads2.zip: Attempting to upload to Google Drive (into folder id: 126IdidYuYhwsl_x18UJ7Un8bRD0MSjvd)
+0064.792 (0) Googledrive chunked upload: 2.7 % uploaded (1048576 - increasing chunk size to 2048 KB - memory usage: 15.1 / 34)
+0066.000 (0) Googledrive chunked upload: 8 % uploaded (3145728 - increasing chunk size to 4096 KB - memory usage: 15.1 / 34)
+0066.998 (0) Googledrive chunked upload: 18.7 % uploaded (7340032 - increasing chunk size to 8192 KB - memory usage: 15.1 / 34)
+0068.354 (0) Googledrive chunked upload: 40.1 % uploaded (15728640 - increasing chunk size to 16384 KB - memory usage: 15.1 / 34)
+0069.876 (0) Googledrive chunked upload: 82.9 % uploaded (32505856 - increasing chunk size to 32768 KB - memory usage: 15.1 / 34)
+0072.197 (0) Googledrive chunked upload: 100 % uploaded (32505856)
+0072.209 (0) Google Drive: OK: Archive backup_2022-10-25-0651_Nilecoeem_86210862ec7b-uploads2.zip uploaded in 9.47 seconds
+0072.213 (0) Recording as successfully uploaded: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-uploads2.zip
+0072.229 (0) Deleting local file: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-uploads2.zip: OK
+0072.238 (0) No backup of wpcore: excluded by user's options
+0072.246 (0) Beginning backup of other directories found in the content directory (index: 0)
+0072.249 (0) Exclusion option setting (others): 
+0072.254 (0) Looking for candidates to backup in: /home/nilecoeem.com/public_html/wp-content
+0072.257 (0) finding files: updraft: skipping: this is the updraft directory
+0072.261 (0) finding files: index.php: adding to list (1)
+0072.266 (0) finding files: cache: adding to list (2)
+0072.269 (0) finding files: advanced-cache-backup.php: adding to list (3)
+0072.272 (0) finding files: advanced-cache.php: adding to list (4)
+0072.276 (0) finding files: wp-rocket-config: adding to list (5)
+0072.279 (0) finding files: themes: skipping: this is the themes directory
+0072.282 (0) finding files: plugins: skipping: this is the plugins directory
+0072.284 (0) finding files: upgrade: adding to list (6)
+0072.288 (0) finding files: wflogs: adding to list (7)
+0072.291 (0) finding files: uploads: skipping: this is the uploads directory
+0072.294 (0) finding files: .htaccess: adding to list (8)
+0072.310 (0) Total entities for the zip file: 39 directories, 80 files (0 skipped as non-modified), 33.6 MB
+0073.700 (0) backup_2022-10-25-0651_Nilecoeem_86210862ec7b-others.zip.tmp: size is now: 8.60 MB
+0073.722 (0) Creating zip file manifest (backup_2022-10-25-0651_Nilecoeem_86210862ec7b-others.zip.list-temp.tmp)
+0073.726 (0) Successfully created zip file manifest (size: 5271)
+0073.844 (0) Created others zip (0) - 8792 KB in 1.5 s (5706.4 KB/s) (sha1: b19fb58939358253716efa980d8c301129229d84, sha256: cc64975111a9304bed17159271ea607b7ce337bc79d9d97b5c6be433b6cef64b)
+0073.855 (0) Cloud backup selection (1/1): googledrive with instance (1/1) (last)
+0073.857 (0) Beginning dispatch of backup to remote (googledrive) (instance identifier s-b44606ebc5aa8fba5ebd5f79a42b0c4a)
+0074.610 (0) Google Drive: quota usage: used=149459.2 MB, total=2097152 MB, available=1947692.8 MB
+0074.614 (0) Google Drive: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-others.zip: Attempting to upload to Google Drive (into folder id: 126IdidYuYhwsl_x18UJ7Un8bRD0MSjvd)
+0076.437 (0) Googledrive chunked upload: 11.6 % uploaded (1048576 - increasing chunk size to 2048 KB - memory usage: 15 / 36)
+0077.390 (0) Googledrive chunked upload: 34.9 % uploaded (3145728 - increasing chunk size to 4096 KB - memory usage: 15 / 36)
+0078.669 (0) Googledrive chunked upload: 81.5 % uploaded (7340032 - increasing chunk size to 8192 KB - memory usage: 15 / 36)
+0080.947 (0) Googledrive chunked upload: 100 % uploaded (7340032)
+0080.959 (0) Google Drive: OK: Archive backup_2022-10-25-0651_Nilecoeem_86210862ec7b-others.zip uploaded in 6.34 seconds
+0080.961 (0) Recording as successfully uploaded: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-others.zip
+0080.970 (0) Deleting local file: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-others.zip: OK
+0080.977 (0) No backup of more: excluded by user's options
+0080.992 (0) Saving backup status to database (elements: 9)
+0081.002 (0) Beginning creation of database dump (WordPress DB)
+0081.006 (0) SQL compatibility mode is: ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION
+0081.016 (0) Testing potential mysqldump binary: /usr/bin/mysqldump
+0081.056 (0) Output: /*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;\n/*!40103 SET TIME_ZONE='+00:00' */;\n/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;\n/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;\n/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;\n/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;\nDROP TABLE IF EXISTS `wp_options`;\n/*!40101 SET @saved_cs_client     = @@character_set_client */;\n/*!40101 SET character_set_client = utf8 */;\nCRE (truncated - 1524 bytes total)
+0081.060 (0) Working binary mysqldump found: /usr/bin/mysqldump
+0081.112 (0) Table wp_options: Total expected rows (via COUNT): 713
+0081.162 (0) Table wp_options: Rows added in this batch (next record: 137679): 709 (uncompressed bytes in this segment=669919) in 0.07 seconds
+0081.181 (0) Table wp_options: finishing file(s) (2, 168.3 KB)
+0081.191 (0) Table wp_users: Total expected rows (via COUNT): 2
+0081.194 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0081.201 (0) Table wp_users: Rows added in this batch (next record: 3): 2 (uncompressed bytes in this segment=1562) in 0.01 seconds
+0081.213 (0) Table wp_users: finishing file(s) (2, 0.7 KB)
+0081.229 (0) Table wp_usermeta: Total expected rows (via COUNT): 70
+0081.232 (0) Table is relatively small; fetch_rows will thus be: 100 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0081.241 (0) Table wp_usermeta: Rows added in this batch (next record: 126): 70 (uncompressed bytes in this segment=7300) in 0.02 seconds
+0081.264 (0) Table wp_usermeta: finishing file(s) (2, 3.2 KB)
+0081.279 (0) Table wp_actionscheduler_actions: Total expected rows (via COUNT): 1
+0081.282 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0081.289 (0) Table wp_actionscheduler_actions: Rows added in this batch (next record: 1955): 1 (uncompressed bytes in this segment=1825) in 0.02 seconds
+0081.304 (0) Table wp_actionscheduler_actions: finishing file(s) (2, 0.7 KB)
+0081.313 (0) Table wp_actionscheduler_claims: Total expected rows (via COUNT): 1
+0081.317 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0081.321 (0) Table wp_actionscheduler_claims: Rows added in this batch (next record: 34437): 1 (uncompressed bytes in this segment=712) in 0.01 seconds
+0081.333 (0) Table wp_actionscheduler_claims: finishing file(s) (2, 0.4 KB)
+0081.347 (0) Table wp_actionscheduler_groups: Total expected rows (via COUNT): 3
+0081.351 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0081.355 (0) Table wp_actionscheduler_groups: Rows added in this batch (next record: 3): 3 (uncompressed bytes in this segment=721) in 0.01 seconds
+0081.367 (0) Table wp_actionscheduler_groups: finishing file(s) (2, 0.4 KB)
+0081.395 (0) Table wp_actionscheduler_logs: Total expected rows (via COUNT): 3
+0081.399 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0081.404 (0) Table wp_actionscheduler_logs: Rows added in this batch (next record: 227): 3 (uncompressed bytes in this segment=1094) in 0.01 seconds
+0081.415 (0) Table wp_actionscheduler_logs: finishing file(s) (2, 0.5 KB)
+0081.433 (0) Table wp_commentmeta: Total expected rows (via COUNT): 0
+0081.441 (0) Table wp_commentmeta: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=701) in 0.02 seconds
+0081.457 (0) Table wp_commentmeta: finishing file(s) (2, 0.4 KB)
+0081.484 (0) Table wp_comments: Total expected rows (via COUNT): 0
+0081.502 (0) Table wp_comments: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1679) in 0.02 seconds
+0081.521 (0) Table wp_comments: finishing file(s) (2, 0.5 KB)
+0081.535 (0) Table wp_links: Total expected rows (via COUNT): 0
+0081.539 (0) Table wp_links: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1266) in 0.01 seconds
+0081.551 (0) Table wp_links: finishing file(s) (2, 0.5 KB)
+0081.570 (0) Table wp_postmeta: Total expected rows (approximate): 3872
+0081.669 (0) Table wp_postmeta: Rows added in this batch (next record: 9668): 4208 (uncompressed bytes in this segment=2766673) in 0.11 seconds
+0081.686 (0) Table wp_postmeta: finishing file(s) (2, 95.6 KB)
+0081.705 (0) Table wp_posts: Total expected rows (via COUNT): 222
+0081.708 (0) Table is relatively small; fetch_rows will thus be: 250 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0081.744 (0) Table wp_posts: Rows added in this batch (next record: 1906): 222 (uncompressed bytes in this segment=663894) in 0.05 seconds
+0081.762 (0) Table wp_posts: finishing file(s) (2, 58.9 KB)
+0081.770 (0) Table wp_term_relationships: Total expected rows (approximate): 77
+0081.779 (0) Table wp_term_relationships: Rows added in this batch (next record: 100000): 77 (uncompressed bytes in this segment=1898) in 0.01 seconds
+0081.793 (0) Table wp_term_relationships: finishing file(s) (2, 0.6 KB)
+0081.806 (0) Table wp_term_taxonomy: Total expected rows (via COUNT): 30
+0081.808 (0) Table is relatively small; fetch_rows will thus be: 50 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0081.816 (0) Table wp_term_taxonomy: Rows added in this batch (next record: 30): 30 (uncompressed bytes in this segment=2001) in 0.02 seconds
+0081.832 (0) Table wp_term_taxonomy: finishing file(s) (2, 0.7 KB)
+0081.845 (0) Table wp_termmeta: Total expected rows (via COUNT): 0
+0081.868 (0) Table wp_termmeta: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=657) in 0.03 seconds
+0081.891 (0) Table wp_termmeta: finishing file(s) (2, 0.4 KB)
+0081.899 (0) Table wp_terms: Total expected rows (via COUNT): 30
+0081.903 (0) Table is relatively small; fetch_rows will thus be: 50 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0081.911 (0) Table wp_terms: Rows added in this batch (next record: 30): 30 (uncompressed bytes in this segment=1858) in 0.01 seconds
+0081.924 (0) Table wp_terms: finishing file(s) (2, 0.8 KB)
+0081.940 (0) Table wp_wpr_rucss_resources: Total expected rows (via COUNT): 0
+0081.949 (0) Table wp_wpr_rucss_resources: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1126) in 0.02 seconds
+0081.966 (0) Table wp_wpr_rucss_resources: finishing file(s) (2, 0.5 KB)
+0081.982 (0) Table wp_wpr_rucss_used_css: Total expected rows (via COUNT): 0
+0081.986 (0) Table wp_wpr_rucss_used_css: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=991) in 0.01 seconds
+0082.004 (0) Table wp_wpr_rucss_used_css: finishing file(s) (2, 0.5 KB)
+0082.015 (0) Table wp_defender_audit_log: Total expected rows (via COUNT): 6
+0082.018 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0082.026 (0) Table wp_defender_audit_log: Rows added in this batch (next record: 235): 6 (uncompressed bytes in this segment=2119) in 0.01 seconds
+0082.038 (0) Table wp_defender_audit_log: finishing file(s) (2, 0.7 KB)
+0082.048 (0) Table wp_defender_email_log: Total expected rows (via COUNT): 65
+0082.052 (0) Table is relatively small; fetch_rows will thus be: 100 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0082.061 (0) Table wp_defender_email_log: Rows added in this batch (next record: 65): 65 (uncompressed bytes in this segment=4721) in 0.01 seconds
+0082.073 (0) Table wp_defender_email_log: finishing file(s) (2, 1 KB)
+0082.081 (0) Table wp_defender_lockout: Total expected rows (approximate): 13557
+0082.186 (0) Table wp_defender_lockout: binary mysqldump finished (writes: 40, bytes 924505, return code 0) in 0.10 seconds
+0082.195 (0) Table wp_defender_lockout: finishing file(s) (1, 193.7 KB)
+0082.202 (0) Table wp_defender_lockout_log: Total expected rows (approximate): 1607
+0082.241 (0) Table wp_defender_lockout_log: Rows added in this batch (next record: 17423): 1631 (uncompressed bytes in this segment=438859) in 0.04 seconds
+0082.253 (0) Table wp_defender_lockout_log: finishing file(s) (2, 37.9 KB)
+0082.261 (0) Table wp_defender_scan: Total expected rows (via COUNT): 2
+0082.264 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0082.271 (0) Table wp_defender_scan: Rows added in this batch (next record: 9): 2 (uncompressed bytes in this segment=958) in 0.01 seconds
+0082.284 (0) Table wp_defender_scan: finishing file(s) (2, 0.5 KB)
+0082.293 (0) Table wp_defender_scan_item: Total expected rows (via COUNT): 2
+0082.298 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0082.301 (0) Table wp_defender_scan_item: Rows added in this batch (next record: 12): 2 (uncompressed bytes in this segment=1027) in 0.01 seconds
+0082.312 (0) Table wp_defender_scan_item: finishing file(s) (2, 0.5 KB)
+0082.322 (0) Table wp_litespeed_img_optm: Total expected rows (approximate): 1516
+0082.343 (0) Table wp_litespeed_img_optm: Rows added in this batch (next record: 1516): 1516 (uncompressed bytes in this segment=105841) in 0.02 seconds
+0082.355 (0) Table wp_litespeed_img_optm: finishing file(s) (2, 17.4 KB)
+0082.363 (0) Table wp_litespeed_img_optming: Total expected rows (via COUNT): 0
+0082.367 (0) Table wp_litespeed_img_optming: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=815) in 0.00 seconds
+0082.379 (0) Table wp_litespeed_img_optming: finishing file(s) (2, 0.4 KB)
+0082.395 (0) Table wp_revslider_css: Total expected rows (via COUNT): 142
+0082.399 (0) Table is relatively small; fetch_rows will thus be: 250 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0082.407 (0) Table wp_revslider_css: Rows added in this batch (next record: 142): 142 (uncompressed bytes in this segment=129782) in 0.02 seconds
+0082.420 (0) Table wp_revslider_css: finishing file(s) (2, 5.4 KB)
+0082.434 (0) Table wp_revslider_css_bkp: Total expected rows (via COUNT): 47
+0082.437 (0) Table is relatively small; fetch_rows will thus be: 50 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0082.460 (0) Table wp_revslider_css_bkp: Rows added in this batch (next record: 47): 47 (uncompressed bytes in this segment=15397) in 0.03 seconds
+0082.475 (0) Table wp_revslider_css_bkp: finishing file(s) (2, 1.8 KB)
+0082.490 (0) Table wp_revslider_layer_animations: Total expected rows (via COUNT): 0
+0082.497 (0) Table wp_revslider_layer_animations: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=551) in 0.01 seconds
+0082.508 (0) Table wp_revslider_layer_animations: finishing file(s) (2, 0.3 KB)
+0082.524 (0) Table wp_revslider_layer_animations_bkp: Total expected rows (via COUNT): 0
+0082.528 (0) Table wp_revslider_layer_animations_bkp: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=575) in 0.00 seconds
+0082.542 (0) Table wp_revslider_layer_animations_bkp: finishing file(s) (2, 0.3 KB)
+0082.555 (0) Table wp_revslider_navigations: Total expected rows (via COUNT): 0
+0082.559 (0) Table wp_revslider_navigations: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=628) in 0.01 seconds
+0082.579 (0) Table wp_revslider_navigations: finishing file(s) (2, 0.3 KB)
+0082.592 (0) Table wp_revslider_navigations_bkp: Total expected rows (via COUNT): 0
+0082.595 (0) Table wp_revslider_navigations_bkp: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=652) in 0.01 seconds
+0082.608 (0) Table wp_revslider_navigations_bkp: finishing file(s) (2, 0.3 KB)
+0082.624 (0) Table wp_revslider_sliders: Total expected rows (via COUNT): 1
+0082.628 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0082.636 (0) Table wp_revslider_sliders: Rows added in this batch (next record: 1): 1 (uncompressed bytes in this segment=9375) in 0.02 seconds
+0082.652 (0) Table wp_revslider_sliders: finishing file(s) (2, 3.1 KB)
+0082.665 (0) Table wp_revslider_sliders_bkp: Total expected rows (via COUNT): 0
+0082.672 (0) Table wp_revslider_sliders_bkp: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=604) in 0.01 seconds
+0082.700 (0) Table wp_revslider_sliders_bkp: finishing file(s) (2, 0.3 KB)
+0082.715 (0) Table wp_revslider_slides: Total expected rows (via COUNT): 1
+0082.718 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0082.725 (0) Table wp_revslider_slides: Rows added in this batch (next record: 2): 1 (uncompressed bytes in this segment=17953) in 0.02 seconds
+0082.739 (0) Table wp_revslider_slides: finishing file(s) (2, 2.5 KB)
+0082.751 (0) Table wp_revslider_slides_bkp: Total expected rows (via COUNT): 0
+0082.757 (0) Table wp_revslider_slides_bkp: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=595) in 0.01 seconds
+0082.773 (0) Table wp_revslider_slides_bkp: finishing file(s) (2, 0.3 KB)
+0082.786 (0) Table wp_revslider_static_slides: Total expected rows (via COUNT): 1
+0082.801 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0082.809 (0) Table wp_revslider_static_slides: Rows added in this batch (next record: 1): 1 (uncompressed bytes in this segment=791) in 0.03 seconds
+0082.822 (0) Table wp_revslider_static_slides: finishing file(s) (2, 0.4 KB)
+0082.837 (0) Table wp_revslider_static_slides_bkp: Total expected rows (via COUNT): 0
+0082.844 (0) Table wp_revslider_static_slides_bkp: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=592) in 0.01 seconds
+0082.859 (0) Table wp_revslider_static_slides_bkp: finishing file(s) (2, 0.3 KB)
+0082.867 (0) Table wp_slc_simple_login_captcha: Total expected rows (via COUNT): 2
+0082.871 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0082.877 (0) Table wp_slc_simple_login_captcha: Rows added in this batch (next record: 15701): 2 (uncompressed bytes in this segment=862) in 0.01 seconds
+0082.888 (0) Table wp_slc_simple_login_captcha: finishing file(s) (2, 0.5 KB)
+0082.911 (0) Table wp_smush_dir_images: Total expected rows (via COUNT): 0
+0082.918 (0) Table wp_smush_dir_images: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1078) in 0.01 seconds
+0082.930 (0) Table wp_smush_dir_images: finishing file(s) (2, 0.5 KB)
+0082.939 (0) Table wp_wfblockediplog: Total expected rows (approximate): 115
+0082.943 (0) Table wp_wfblockediplog: Rows added in this batch (next record: 1000): 115 (uncompressed bytes in this segment=8029) in 0.01 seconds
+0082.956 (0) Table wp_wfblockediplog: finishing file(s) (2, 1.6 KB)
+0082.967 (0) Table wp_wfblocks7: Total expected rows (via COUNT): 0
+0082.971 (0) Table wp_wfblocks7: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=835) in 0.00 seconds
+0082.984 (0) Table wp_wfblocks7: finishing file(s) (2, 0.4 KB)
+0082.993 (0) Table wp_wfconfig: Total expected rows (approximate): 262
+0083.059 (0) Table wp_wfconfig: Rows added in this batch (next record: 1000): 264 (uncompressed bytes in this segment=820014) in 0.07 seconds
+0083.073 (0) Table wp_wfconfig: finishing file(s) (2, 422.5 KB)
+0083.086 (0) Table wp_wfcrawlers: Total expected rows (approximate): 7
+0083.091 (0) Table wp_wfcrawlers: Rows added in this batch (next record: 1000): 7 (uncompressed bytes in this segment=1534) in 0.01 seconds
+0083.103 (0) Table wp_wfcrawlers: finishing file(s) (2, 0.5 KB)
+0083.111 (0) Table wp_wffilechanges: Total expected rows (approximate): 0
+0083.115 (0) Table wp_wffilechanges: Rows added in this batch (next record: 0): 0 (uncompressed bytes in this segment=452) in 0.00 seconds
+0083.135 (0) Table wp_wffilechanges: finishing file(s) (2, 0.3 KB)
+0083.144 (0) Table wp_wffilemods: Total expected rows (approximate): 11300
+0083.303 (0) Table wp_wffilemods: binary mysqldump finished (writes: 37, bytes 2227624, return code 0) in 0.15 seconds
+0083.312 (0) Table wp_wffilemods: finishing file(s) (1, 1005.6 KB)
+0083.323 (0) Table wp_wfhits: Total expected rows (via COUNT): 395
+0083.326 (0) Table is relatively small; fetch_rows will thus be: 500 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0083.341 (0) Table wp_wfhits: Rows added in this batch (next record: 42896): 395 (uncompressed bytes in this segment=150810) in 0.02 seconds
+0083.363 (0) Table wp_wfhits: finishing file(s) (2, 11.8 KB)
+0083.370 (0) Table wp_wfhoover: Total expected rows (via COUNT): 0
+0083.377 (0) Table wp_wfhoover: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=515) in 0.01 seconds
+0083.388 (0) Table wp_wfhoover: finishing file(s) (2, 0.3 KB)
+0083.398 (0) Table wp_wfissues: Total expected rows (via COUNT): 1
+0083.402 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0083.409 (0) Table wp_wfissues: Rows added in this batch (next record: 385): 1 (uncompressed bytes in this segment=1686) in 0.01 seconds
+0083.420 (0) Table wp_wfissues: finishing file(s) (2, 0.9 KB)
+0083.427 (0) Table wp_wfknownfilelist: Total expected rows (approximate): 12011
+0083.483 (0) Table wp_wfknownfilelist: binary mysqldump finished (writes: 28, bytes 983475, return code 0) in 0.05 seconds
+0083.496 (0) Table wp_wfknownfilelist: finishing file(s) (1, 115.7 KB)
+0083.505 (0) Table wp_wflivetraffichuman: Total expected rows (approximate): 0
+0083.512 (0) Table wp_wflivetraffichuman: Rows added in this batch (next record: 0): 0 (uncompressed bytes in this segment=648) in 0.01 seconds
+0083.525 (0) Table wp_wflivetraffichuman: finishing file(s) (2, 0.3 KB)
+0083.534 (0) Table wp_wflocs: Total expected rows (approximate): 0
+0083.538 (0) Table wp_wflocs: Rows added in this batch (next record: 1000): 1 (uncompressed bytes in this segment=829) in 0.00 seconds
+0083.548 (0) Table wp_wflocs: finishing file(s) (2, 0.5 KB)
+0083.557 (0) Table wp_wflogins: Total expected rows (approximate): 1957
+0083.588 (0) Table wp_wflogins: Rows added in this batch (next record: 45185): 2001 (uncompressed bytes in this segment=464605) in 0.03 seconds
+0083.600 (0) Table wp_wflogins: finishing file(s) (2, 30.3 KB)
+0083.609 (0) Table wp_wfls_2fa_secrets: Total expected rows (via COUNT): 0
+0083.613 (0) Table wp_wfls_2fa_secrets: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=681) in 0.00 seconds
+0083.626 (0) Table wp_wfls_2fa_secrets: finishing file(s) (2, 0.4 KB)
+0083.635 (0) Table wp_wfls_settings: Total expected rows (approximate): 19
+0083.639 (0) Table wp_wfls_settings: Rows added in this batch (next record: 1000): 19 (uncompressed bytes in this segment=1601) in 0.00 seconds
+0083.649 (0) Table wp_wfls_settings: finishing file(s) (2, 0.8 KB)
+0083.657 (0) Table wp_wfnotifications: Total expected rows (approximate): 7
+0083.661 (0) Table wp_wfnotifications: Rows added in this batch (next record: 1000): 7 (uncompressed bytes in this segment=1821) in 0.00 seconds
+0083.672 (0) Table wp_wfnotifications: finishing file(s) (2, 0.6 KB)
+0083.682 (0) Table wp_wfpendingissues: Total expected rows (via COUNT): 0
+0083.686 (0) Table wp_wfpendingissues: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=872) in 0.00 seconds
+0083.698 (0) Table wp_wfpendingissues: finishing file(s) (2, 0.4 KB)
+0083.717 (0) Table wp_wfreversecache: Total expected rows (approximate): 0
+0083.721 (0) Table wp_wfreversecache: Rows added in this batch (next record: 1000): 1 (uncompressed bytes in this segment=603) in 0.00 seconds
+0083.732 (0) Table wp_wfreversecache: finishing file(s) (2, 0.4 KB)
+0083.745 (0) Table wp_wfsnipcache: Total expected rows (via COUNT): 0
+0083.748 (0) Table wp_wfsnipcache: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=717) in 0.00 seconds
+0083.759 (0) Table wp_wfsnipcache: finishing file(s) (2, 0.4 KB)
+0083.770 (0) Table wp_wfstatus: Total expected rows (via COUNT): 943
+0083.782 (0) Table wp_wfstatus: Rows added in this batch (next record: 12759): 943 (uncompressed bytes in this segment=94684) in 0.01 seconds
+0083.794 (0) Table wp_wfstatus: finishing file(s) (2, 16.8 KB)
+0083.802 (0) Table wp_wftrafficrates: Total expected rows (approximate): 0
+0083.806 (0) Table wp_wftrafficrates: Rows added in this batch (next record: 0): 0 (uncompressed bytes in this segment=566) in 0.00 seconds
+0083.818 (0) Table wp_wftrafficrates: finishing file(s) (2, 0.3 KB)
+0083.840 (0) Table wp_wpmailsmtp_debug_events: Total expected rows (via COUNT): 4
+0083.844 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0083.852 (0) Table wp_wpmailsmtp_debug_events: Rows added in this batch (next record: 4): 4 (uncompressed bytes in this segment=1686) in 0.01 seconds
+0083.866 (0) Table wp_wpmailsmtp_debug_events: finishing file(s) (2, 0.6 KB)
+0083.880 (0) Table wp_wpmailsmtp_tasks_meta: Total expected rows (via COUNT): 0
+0083.888 (0) Table wp_wpmailsmtp_tasks_meta: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=629) in 0.01 seconds
+0083.903 (0) Table wp_wpmailsmtp_tasks_meta: finishing file(s) (2, 0.4 KB)
+0083.918 (0) Table wp_yoast_indexable: Total expected rows (via COUNT): 26
+0083.921 (0) Table is relatively small; fetch_rows will thus be: 50 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0083.932 (0) Table wp_yoast_indexable: Rows added in this batch (next record: 31): 26 (uncompressed bytes in this segment=20138) in 0.02 seconds
+0083.960 (0) Table wp_yoast_indexable: finishing file(s) (2, 3.5 KB)
+0083.968 (0) Table wp_yoast_indexable_hierarchy: Total expected rows (approximate): 22
+0083.977 (0) Table wp_yoast_indexable_hierarchy: Rows added in this batch (next record: 1000): 22 (uncompressed bytes in this segment=1140) in 0.01 seconds
+0083.990 (0) Table wp_yoast_indexable_hierarchy: finishing file(s) (2, 0.4 KB)
+0083.999 (0) Table wp_yoast_migrations: Total expected rows (via COUNT): 23
+0084.004 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0084.012 (0) Table wp_yoast_migrations: Rows added in this batch (next record: 23): 23 (uncompressed bytes in this segment=1232) in 0.01 seconds
+0084.023 (0) Table wp_yoast_migrations: finishing file(s) (2, 0.6 KB)
+0084.033 (0) Table wp_yoast_primary_term: Total expected rows (via COUNT): 0
+0084.040 (0) Table wp_yoast_primary_term: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=852) in 0.01 seconds
+0084.052 (0) Table wp_yoast_primary_term: finishing file(s) (2, 0.4 KB)
+0084.064 (0) Table wp_yoast_seo_links: Total expected rows (via COUNT): 0
+0084.068 (0) Table wp_yoast_seo_links: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=981) in 0.00 seconds
+0084.077 (0) Table wp_yoast_seo_links: finishing file(s) (2, 0.4 KB)
+0084.081 (0) backup_2022-10-25-0651_Nilecoeem_86210862ec7b-db-table-wp_options.table.tmpr137680.gz (1/68/fopen): adding to final database dump
+0084.086 (0) backup_2022-10-25-0651_Nilecoeem_86210862ec7b-db-table-wp_options.table.gz (2/68/fopen): adding to final database dump
+0084.090 (0) backup_2022-10-25-0651_Nilecoeem_86210862ec7b-db-table-wp_users.table.tmpr4.gz (3/68/fopen): adding to final database dump
+0084.093 (0) backup_2022-10-25-0651_Nilecoeem_86210862ec7b-db-table-wp_users.table.gz (4/68/fopen): adding to final database dump
+0084.096 (0) backup_2022-10-25-0651_Nilecoeem_86210862ec7b-db-table-wp_usermeta.table.tmpr127.gz (5/68/fopen): adding to final database dump
+0084.099 (0) backup_2022-10-25-0651_Nilecoeem_86210862ec7b-db-table-wp_usermeta.table.gz (6/68/fopen): adding to final database dump
+0084.102 (0) backup_2022-10-25-0651_Nilecoeem_86210862ec7b-db-table-wp_actionscheduler_actions.table.tmpr1956.gz (7/68/fopen): adding to final database dump
+0084.104 (0) backup_2022-10-25-0651_Nilecoeem_86210862ec7b-db-table-wp_actionscheduler_actions.table.gz (8/68/fopen): adding to final database dump
+0084.108 (0) backup_2022-10-25-0651_Nilecoeem_86210862ec7b-db-table-wp_actionscheduler_claims.table.tmpr34438.gz (9/68/fopen): adding to final database dump
+0084.111 (0) backup_2022-10-25-0651_Nilecoeem_86210862ec7b-db-table-wp_actionscheduler_claims.table.gz (10/68/fopen): adding to final database dump
+0084.114 (0) backup_2022-10-25-0651_Nilecoeem_86210862ec7b-db-table-wp_actionscheduler_groups.table.tmpr4.gz (11/68/fopen): adding to final database dump
+0084.116 (0) backup_2022-10-25-0651_Nilecoeem_86210862ec7b-db-table-wp_actionscheduler_groups.table.gz (12/68/fopen): adding to final database dump
+0084.119 (0) backup_2022-10-25-0651_Nilecoeem_86210862ec7b-db-table-wp_actionscheduler_logs.table.tmpr228.gz (13/68/fopen): adding to final database dump
+0084.123 (0) backup_2022-10-25-0651_Nilecoeem_86210862ec7b-db-table-wp_actionscheduler_logs.table.gz (14/68/fopen): adding to final database dump
+0084.125 (0) backup_2022-10-25-0651_Nilecoeem_86210862ec7b-db-table-wp_commentmeta.table.tmpr0.gz (15/68/fopen): adding to final database dump
+0084.128 (0) backup_2022-10-25-0651_Nilecoeem_86210862ec7b-db-table-wp_commentmeta.table.gz (16/68/fopen): adding to final database dump
+0084.131 (0) backup_2022-10-25-0651_Nilecoeem_86210862ec7b-db-table-wp_comments.table.tmpr0.gz (17/68/fopen): adding to final database dump
+0084.134 (0) backup_2022-10-25-0651_Nilecoeem_86210862ec7b-db-table-wp_comments.table.gz (18/68/fopen): adding to final database dump
+0084.137 (0) backup_2022-10-25-0651_Nilecoeem_86210862ec7b-db-table-wp_links.table.tmpr0.gz (19/68/fopen): adding to final database dump
+0084.140 (0) backup_2022-10-25-0651_Nilecoeem_86210862ec7b-db-table-wp_links.table.gz (20/68/fopen): adding to final database dump
+0084.143 (0) backup_2022-10-25-0651_Nilecoeem_86210862ec7b-db-table-wp_postmeta.table.tmpr9669.gz (21/68/fopen): adding to final database dump
+0084.148 (0) backup_2022-10-25-0651_Nilecoeem_86210862ec7b-db-table-wp_postmeta.table.gz (22/68/fopen): adding to final database dump
+0084.151 (0) backup_2022-10-25-0651_Nilecoeem_86210862ec7b-db-table-wp_posts.table.tmpr1907.gz (23/68/fopen): adding to final database dump
+0084.155 (0) backup_2022-10-25-0651_Nilecoeem_86210862ec7b-db-table-wp_posts.table.gz (24/68/fopen): adding to final database dump
+0084.159 (0) backup_2022-10-25-0651_Nilecoeem_86210862ec7b-db-table-wp_term_relationships.table.tmpr100001.gz (25/68/fopen): adding to final database dump
+0084.162 (0) backup_2022-10-25-0651_Nilecoeem_86210862ec7b-db-table-wp_term_relationships.table.gz (26/68/fopen): adding to final database dump
+0084.164 (0) backup_2022-10-25-0651_Nilecoeem_86210862ec7b-db-table-wp_term_taxonomy.table.tmpr31.gz (27/68/fopen): adding to final database dump
+0084.168 (0) backup_2022-10-25-0651_Nilecoeem_86210862ec7b-db-table-wp_term_taxonomy.table.gz (28/68/fopen): adding to final database dump
+0084.172 (0) backup_2022-10-25-0651_Nilecoeem_86210862ec7b-db-table-wp_termmeta.table.tmpr0.gz (29/68/fopen): adding to final database dump
+0084.181 (0) backup_2022-10-25-0651_Nilecoeem_86210862ec7b-db-table-wp_termmeta.table.gz (30/68/fopen): adding to final database dump
+0084.186 (0) backup_2022-10-25-0651_Nilecoeem_86210862ec7b-db-table-wp_terms.table.tmpr31.gz (31/68/fopen): adding to final database dump
+0084.189 (0) backup_2022-10-25-0651_Nilecoeem_86210862ec7b-db-table-wp_terms.table.gz (32/68/fopen): adding to final database dump
+0084.193 (0) backup_2022-10-25-0651_Nilecoeem_86210862ec7b-db-table-wp_wpr_rucss_resources.table.tmpr0.gz (33/68/fopen): adding to final database dump
+0084.196 (0) backup_2022-10-25-0651_Nilecoeem_86210862ec7b-db-table-wp_wpr_rucss_resources.table.gz (34/68/fopen): adding to final database dump
+0084.199 (0) backup_2022-10-25-0651_Nilecoeem_86210862ec7b-db-table-wp_wpr_rucss_used_css.table.tmpr0.gz (35/68/fopen): adding to final database dump
+0084.202 (0) backup_2022-10-25-0651_Nilecoeem_86210862ec7b-db-table-wp_wpr_rucss_used_css.table.gz (36/68/fopen): adding to final database dump
+0084.204 (0) backup_2022-10-25-0651_Nilecoeem_86210862ec7b-db-table-wp_defender_audit_log.table.tmpr236.gz (37/68/fopen): adding to final database dump
+0084.207 (0) backup_2022-10-25-0651_Nilecoeem_86210862ec7b-db-table-wp_defender_audit_log.table.gz (38/68/fopen): adding to final database dump
+0084.210 (0) backup_2022-10-25-0651_Nilecoeem_86210862ec7b-db-table-wp_defender_email_log.table.tmpr66.gz (39/68/fopen): adding to final database dump
+0084.212 (0) backup_2022-10-25-0651_Nilecoeem_86210862ec7b-db-table-wp_defender_email_log.table.gz (40/68/fopen): adding to final database dump
+0084.216 (0) backup_2022-10-25-0651_Nilecoeem_86210862ec7b-db-table-wp_defender_lockout.table.gz (41/68/fopen): adding to final database dump
+0084.221 (0) backup_2022-10-25-0651_Nilecoeem_86210862ec7b-db-table-wp_defender_lockout_log.table.tmpr17424.gz (42/68/fopen): adding to final database dump
+0084.225 (0) backup_2022-10-25-0651_Nilecoeem_86210862ec7b-db-table-wp_defender_lockout_log.table.gz (43/68/fopen): adding to final database dump
+0084.228 (0) backup_2022-10-25-0651_Nilecoeem_86210862ec7b-db-table-wp_defender_scan.table.tmpr10.gz (44/68/fopen): adding to final database dump
+0084.231 (0) backup_2022-10-25-0651_Nilecoeem_86210862ec7b-db-table-wp_defender_scan.table.gz (45/68/fopen): adding to final database dump
+0084.233 (0) backup_2022-10-25-0651_Nilecoeem_86210862ec7b-db-table-wp_defender_scan_item.table.tmpr13.gz (46/68/fopen): adding to final database dump
+0084.236 (0) backup_2022-10-25-0651_Nilecoeem_86210862ec7b-db-table-wp_defender_scan_item.table.gz (47/68/fopen): adding to final database dump
+0084.240 (0) backup_2022-10-25-0651_Nilecoeem_86210862ec7b-db-table-wp_litespeed_img_optm.table.tmpr1517.gz (48/68/fopen): adding to final database dump
+0084.243 (0) backup_2022-10-25-0651_Nilecoeem_86210862ec7b-db-table-wp_litespeed_img_optm.table.gz (49/68/fopen): adding to final database dump
+0084.254 (0) backup_2022-10-25-0651_Nilecoeem_86210862ec7b-db-table-wp_litespeed_img_optming.table.tmpr0.gz (50/68/fopen): adding to final database dump
+0084.257 (0) backup_2022-10-25-0651_Nilecoeem_86210862ec7b-db-table-wp_litespeed_img_optming.table.gz (51/68/fopen): adding to final database dump
+0084.260 (0) backup_2022-10-25-0651_Nilecoeem_86210862ec7b-db-table-wp_revslider_css.table.tmpr143.gz (52/68/fopen): adding to final database dump
+0084.264 (0) backup_2022-10-25-0651_Nilecoeem_86210862ec7b-db-table-wp_revslider_css.table.gz (53/68/fopen): adding to final database dump
+0084.267 (0) backup_2022-10-25-0651_Nilecoeem_86210862ec7b-db-table-wp_revslider_css_bkp.table.tmpr48.gz (54/68/fopen): adding to final database dump
+0084.270 (0) backup_2022-10-25-0651_Nilecoeem_86210862ec7b-db-table-wp_revslider_css_bkp.table.gz (55/68/fopen): adding to final database dump
+0084.273 (0) backup_2022-10-25-0651_Nilecoeem_86210862ec7b-db-table-wp_revslider_layer_animations.table.tmpr0.gz (56/68/fopen): adding to final database dump
+0084.277 (0) backup_2022-10-25-0651_Nilecoeem_86210862ec7b-db-table-wp_revslider_layer_animations.table.gz (57/68/fopen): adding to final database dump
+0084.280 (0) backup_2022-10-25-0651_Nilecoeem_86210862ec7b-db-table-wp_revslider_layer_animations_bkp.table.tmpr0.gz (58/68/fopen): adding to final database dump
+0084.283 (0) backup_2022-10-25-0651_Nilecoeem_86210862ec7b-db-table-wp_revslider_layer_animations_bkp.table.gz (59/68/fopen): adding to final database dump
+0084.287 (0) backup_2022-10-25-0651_Nilecoeem_86210862ec7b-db-table-wp_revslider_navigations.table.tmpr0.gz (60/68/fopen): adding to final database dump
+0084.289 (0) backup_2022-10-25-0651_Nilecoeem_86210862ec7b-db-table-wp_revslider_navigations.table.gz (61/68/fopen): adding to final database dump
+0084.307 (0) backup_2022-10-25-0651_Nilecoeem_86210862ec7b-db-table-wp_revslider_navigations_bkp.table.tmpr0.gz (62/68/fopen): adding to final database dump
+0084.312 (0) backup_2022-10-25-0651_Nilecoeem_86210862ec7b-db-table-wp_revslider_navigations_bkp.table.gz (63/68/fopen): adding to final database dump
+0084.317 (0) backup_2022-10-25-0651_Nilecoeem_86210862ec7b-db-table-wp_revslider_sliders.table.tmpr2.gz (64/68/fopen): adding to final database dump
+0084.321 (0) backup_2022-10-25-0651_Nilecoeem_86210862ec7b-db-table-wp_revslider_sliders.table.gz (65/68/fopen): adding to final database dump
+0084.324 (0) backup_2022-10-25-0651_Nilecoeem_86210862ec7b-db-table-wp_revslider_sliders_bkp.table.tmpr0.gz (66/68/fopen): adding to final database dump
+0084.327 (0) backup_2022-10-25-0651_Nilecoeem_86210862ec7b-db-table-wp_revslider_sliders_bkp.table.gz (67/68/fopen): adding to final database dump
+0084.331 (0) backup_2022-10-25-0651_Nilecoeem_86210862ec7b-db-table-wp_revslider_slides.table.tmpr3.gz (68/68/fopen): adding to final database dump
+0084.333 (0) backup_2022-10-25-0651_Nilecoeem_86210862ec7b-db-table-wp_revslider_slides.table.gz (69/68/fopen): adding to final database dump
+0084.336 (0) backup_2022-10-25-0651_Nilecoeem_86210862ec7b-db-table-wp_revslider_slides_bkp.table.tmpr0.gz (70/68/fopen): adding to final database dump
+0084.339 (0) backup_2022-10-25-0651_Nilecoeem_86210862ec7b-db-table-wp_revslider_slides_bkp.table.gz (71/68/fopen): adding to final database dump
+0084.343 (0) backup_2022-10-25-0651_Nilecoeem_86210862ec7b-db-table-wp_revslider_static_slides.table.tmpr2.gz (72/68/fopen): adding to final database dump
+0084.345 (0) backup_2022-10-25-0651_Nilecoeem_86210862ec7b-db-table-wp_revslider_static_slides.table.gz (73/68/fopen): adding to final database dump
+0084.348 (0) backup_2022-10-25-0651_Nilecoeem_86210862ec7b-db-table-wp_revslider_static_slides_bkp.table.tmpr0.gz (74/68/fopen): adding to final database dump
+0084.351 (0) backup_2022-10-25-0651_Nilecoeem_86210862ec7b-db-table-wp_revslider_static_slides_bkp.table.gz (75/68/fopen): adding to final database dump
+0084.354 (0) backup_2022-10-25-0651_Nilecoeem_86210862ec7b-db-table-wp_slc_simple_login_captcha.table.tmpr15702.gz (76/68/fopen): adding to final database dump
+0084.356 (0) backup_2022-10-25-0651_Nilecoeem_86210862ec7b-db-table-wp_slc_simple_login_captcha.table.gz (77/68/fopen): adding to final database dump
+0084.359 (0) backup_2022-10-25-0651_Nilecoeem_86210862ec7b-db-table-wp_smush_dir_images.table.tmpr0.gz (78/68/fopen): adding to final database dump
+0084.363 (0) backup_2022-10-25-0651_Nilecoeem_86210862ec7b-db-table-wp_smush_dir_images.table.gz (79/68/fopen): adding to final database dump
+0084.365 (0) backup_2022-10-25-0651_Nilecoeem_86210862ec7b-db-table-wp_wfblockediplog.table.tmpr1001.gz (80/68/fopen): adding to final database dump
+0084.368 (0) backup_2022-10-25-0651_Nilecoeem_86210862ec7b-db-table-wp_wfblockediplog.table.gz (81/68/fopen): adding to final database dump
+0084.371 (0) backup_2022-10-25-0651_Nilecoeem_86210862ec7b-db-table-wp_wfblocks7.table.tmpr0.gz (82/68/fopen): adding to final database dump
+0084.372 (0) backup_2022-10-25-0651_Nilecoeem_86210862ec7b-db-table-wp_wfblocks7.table.gz (83/68/fopen): adding to final database dump
+0084.375 (0) backup_2022-10-25-0651_Nilecoeem_86210862ec7b-db-table-wp_wfconfig.table.tmpr1001.gz (84/68/fopen): adding to final database dump
+0084.383 (0) backup_2022-10-25-0651_Nilecoeem_86210862ec7b-db-table-wp_wfconfig.table.gz (85/68/fopen): adding to final database dump
+0084.386 (0) backup_2022-10-25-0651_Nilecoeem_86210862ec7b-db-table-wp_wfcrawlers.table.tmpr1001.gz (86/68/fopen): adding to final database dump
+0084.389 (0) backup_2022-10-25-0651_Nilecoeem_86210862ec7b-db-table-wp_wfcrawlers.table.gz (87/68/fopen): adding to final database dump
+0084.392 (0) backup_2022-10-25-0651_Nilecoeem_86210862ec7b-db-table-wp_wffilechanges.table.tmpr1.gz (88/68/fopen): adding to final database dump
+0084.395 (0) backup_2022-10-25-0651_Nilecoeem_86210862ec7b-db-table-wp_wffilechanges.table.gz (89/68/fopen): adding to final database dump
+0084.398 (0) backup_2022-10-25-0651_Nilecoeem_86210862ec7b-db-table-wp_wffilemods.table.gz (90/68/fopen): adding to final database dump
+0084.410 (0) backup_2022-10-25-0651_Nilecoeem_86210862ec7b-db-table-wp_wfhits.table.tmpr42897.gz (91/68/fopen): adding to final database dump
+0084.421 (0) backup_2022-10-25-0651_Nilecoeem_86210862ec7b-db-table-wp_wfhits.table.gz (92/68/fopen): adding to final database dump
+0084.424 (0) backup_2022-10-25-0651_Nilecoeem_86210862ec7b-db-table-wp_wfhoover.table.tmpr0.gz (93/68/fopen): adding to final database dump
+0084.430 (0) backup_2022-10-25-0651_Nilecoeem_86210862ec7b-db-table-wp_wfhoover.table.gz (94/68/fopen): adding to final database dump
+0084.433 (0) backup_2022-10-25-0651_Nilecoeem_86210862ec7b-db-table-wp_wfissues.table.tmpr386.gz (95/68/fopen): adding to final database dump
+0084.438 (0) backup_2022-10-25-0651_Nilecoeem_86210862ec7b-db-table-wp_wfissues.table.gz (96/68/fopen): adding to final database dump
+0084.441 (0) backup_2022-10-25-0651_Nilecoeem_86210862ec7b-db-table-wp_wfknownfilelist.table.gz (97/68/fopen): adding to final database dump
+0084.446 (0) backup_2022-10-25-0651_Nilecoeem_86210862ec7b-db-table-wp_wflivetraffichuman.table.tmpr1.gz (98/68/fopen): adding to final database dump
+0084.449 (0) backup_2022-10-25-0651_Nilecoeem_86210862ec7b-db-table-wp_wflivetraffichuman.table.gz (99/68/fopen): adding to final database dump
+0084.458 (0) backup_2022-10-25-0651_Nilecoeem_86210862ec7b-db-table-wp_wflocs.table.tmpr1001.gz (100/68/fopen): adding to final database dump
+0084.461 (0) backup_2022-10-25-0651_Nilecoeem_86210862ec7b-db-table-wp_wflocs.table.gz (101/68/fopen): adding to final database dump
+0084.464 (0) backup_2022-10-25-0651_Nilecoeem_86210862ec7b-db-table-wp_wflogins.table.tmpr45186.gz (102/68/fopen): adding to final database dump
+0084.467 (0) backup_2022-10-25-0651_Nilecoeem_86210862ec7b-db-table-wp_wflogins.table.gz (103/68/fopen): adding to final database dump
+0084.470 (0) backup_2022-10-25-0651_Nilecoeem_86210862ec7b-db-table-wp_wfls_2fa_secrets.table.tmpr0.gz (104/68/fopen): adding to final database dump
+0084.474 (0) backup_2022-10-25-0651_Nilecoeem_86210862ec7b-db-table-wp_wfls_2fa_secrets.table.gz (105/68/fopen): adding to final database dump
+0084.479 (0) backup_2022-10-25-0651_Nilecoeem_86210862ec7b-db-table-wp_wfls_settings.table.tmpr1001.gz (106/68/fopen): adding to final database dump
+0084.483 (0) backup_2022-10-25-0651_Nilecoeem_86210862ec7b-db-table-wp_wfls_settings.table.gz (107/68/fopen): adding to final database dump
+0084.484 (0) backup_2022-10-25-0651_Nilecoeem_86210862ec7b-db-table-wp_wfnotifications.table.tmpr1001.gz (108/68/fopen): adding to final database dump
+0084.487 (0) backup_2022-10-25-0651_Nilecoeem_86210862ec7b-db-table-wp_wfnotifications.table.gz (109/68/fopen): adding to final database dump
+0084.495 (0) backup_2022-10-25-0651_Nilecoeem_86210862ec7b-db-table-wp_wfpendingissues.table.tmpr0.gz (110/68/fopen): adding to final database dump
+0084.500 (0) backup_2022-10-25-0651_Nilecoeem_86210862ec7b-db-table-wp_wfpendingissues.table.gz (111/68/fopen): adding to final database dump
+0084.503 (0) backup_2022-10-25-0651_Nilecoeem_86210862ec7b-db-table-wp_wfreversecache.table.tmpr1001.gz (112/68/fopen): adding to final database dump
+0084.506 (0) backup_2022-10-25-0651_Nilecoeem_86210862ec7b-db-table-wp_wfreversecache.table.gz (113/68/fopen): adding to final database dump
+0084.508 (0) backup_2022-10-25-0651_Nilecoeem_86210862ec7b-db-table-wp_wfsnipcache.table.tmpr0.gz (114/68/fopen): adding to final database dump
+0084.511 (0) backup_2022-10-25-0651_Nilecoeem_86210862ec7b-db-table-wp_wfsnipcache.table.gz (115/68/fopen): adding to final database dump
+0084.514 (0) backup_2022-10-25-0651_Nilecoeem_86210862ec7b-db-table-wp_wfstatus.table.tmpr12760.gz (116/68/fopen): adding to final database dump
+0084.518 (0) backup_2022-10-25-0651_Nilecoeem_86210862ec7b-db-table-wp_wfstatus.table.gz (117/68/fopen): adding to final database dump
+0084.536 (0) backup_2022-10-25-0651_Nilecoeem_86210862ec7b-db-table-wp_wftrafficrates.table.tmpr1.gz (118/68/fopen): adding to final database dump
+0084.542 (0) backup_2022-10-25-0651_Nilecoeem_86210862ec7b-db-table-wp_wftrafficrates.table.gz (119/68/fopen): adding to final database dump
+0084.549 (0) backup_2022-10-25-0651_Nilecoeem_86210862ec7b-db-table-wp_wpmailsmtp_debug_events.table.tmpr5.gz (120/68/fopen): adding to final database dump
+0084.552 (0) backup_2022-10-25-0651_Nilecoeem_86210862ec7b-db-table-wp_wpmailsmtp_debug_events.table.gz (121/68/fopen): adding to final database dump
+0084.555 (0) backup_2022-10-25-0651_Nilecoeem_86210862ec7b-db-table-wp_wpmailsmtp_tasks_meta.table.tmpr0.gz (122/68/fopen): adding to final database dump
+0084.558 (0) backup_2022-10-25-0651_Nilecoeem_86210862ec7b-db-table-wp_wpmailsmtp_tasks_meta.table.gz (123/68/fopen): adding to final database dump
+0084.560 (0) backup_2022-10-25-0651_Nilecoeem_86210862ec7b-db-table-wp_yoast_indexable.table.tmpr32.gz (124/68/fopen): adding to final database dump
+0084.563 (0) backup_2022-10-25-0651_Nilecoeem_86210862ec7b-db-table-wp_yoast_indexable.table.gz (125/68/fopen): adding to final database dump
+0084.567 (0) backup_2022-10-25-0651_Nilecoeem_86210862ec7b-db-table-wp_yoast_indexable_hierarchy.table.tmpr1001.gz (126/68/fopen): adding to final database dump
+0084.570 (0) backup_2022-10-25-0651_Nilecoeem_86210862ec7b-db-table-wp_yoast_indexable_hierarchy.table.gz (127/68/fopen): adding to final database dump
+0084.572 (0) backup_2022-10-25-0651_Nilecoeem_86210862ec7b-db-table-wp_yoast_migrations.table.tmpr24.gz (128/68/fopen): adding to final database dump
+0084.575 (0) backup_2022-10-25-0651_Nilecoeem_86210862ec7b-db-table-wp_yoast_migrations.table.gz (129/68/fopen): adding to final database dump
+0084.577 (0) backup_2022-10-25-0651_Nilecoeem_86210862ec7b-db-table-wp_yoast_primary_term.table.tmpr0.gz (130/68/fopen): adding to final database dump
+0084.580 (0) backup_2022-10-25-0651_Nilecoeem_86210862ec7b-db-table-wp_yoast_primary_term.table.gz (131/68/fopen): adding to final database dump
+0084.582 (0) backup_2022-10-25-0651_Nilecoeem_86210862ec7b-db-table-wp_yoast_seo_links.table.tmpr0.gz (132/68/fopen): adding to final database dump
+0084.584 (0) backup_2022-10-25-0651_Nilecoeem_86210862ec7b-db-table-wp_yoast_seo_links.table.gz (133/68/fopen): adding to final database dump
+0084.590 (0) backup_2022-10-25-0651_Nilecoeem_86210862ec7b-db.gz: finished writing out complete database file (2218.7 KB)
+0084.644 (0) Total database tables backed up: 68 (backup_2022-10-25-0651_Nilecoeem_86210862ec7b-db.gz, size: 2272029, sha1: ac44e19ce8b9586c28f539452349e7f8922bf85c, sha256: 63ada7037b659ca4ad71f9a80189bf08613a2191a8dab9606a86f5defeb9f01a)
+0084.661 (0) backup_2022-10-25-0651_Nilecoeem_86210862ec7b-plugins.zip: plugins: This file has already been successfully uploaded
+0084.664 (0) backup_2022-10-25-0651_Nilecoeem_86210862ec7b-themes.zip: themes: This file has already been successfully uploaded
+0084.667 (0) backup_2022-10-25-0651_Nilecoeem_86210862ec7b-uploads.zip: uploads: This file has already been successfully uploaded
+0084.670 (0) backup_2022-10-25-0651_Nilecoeem_86210862ec7b-uploads2.zip: uploads: This file has already been successfully uploaded
+0084.673 (0) backup_2022-10-25-0651_Nilecoeem_86210862ec7b-others.zip: others: This file has already been successfully uploaded
+0084.676 (0) backup_2022-10-25-0651_Nilecoeem_86210862ec7b-db.gz: db: This file has not yet been successfully uploaded: will queue
+0084.679 (0) Saving backup history. Total backup size: Unknown
+0084.686 (0) Requesting upload of the files that have not yet been successfully uploaded (1)
+0084.694 (0) Cloud backup selection (1/1): googledrive with instance (1/1) (last)
+0084.696 (0) Beginning dispatch of backup to remote (googledrive) (instance identifier s-b44606ebc5aa8fba5ebd5f79a42b0c4a)
+0085.344 (0) Google Drive: quota usage: used=149467.7 MB, total=2097152 MB, available=1947684.3 MB
+0085.348 (0) Google Drive: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-db.gz: Attempting to upload to Google Drive (into folder id: 126IdidYuYhwsl_x18UJ7Un8bRD0MSjvd)
+0087.074 (0) Googledrive chunked upload: 46.2 % uploaded (1048576 - increasing chunk size to 2048 KB - memory usage: 15.1 / 42)
+0089.609 (0) Googledrive chunked upload: 100 % uploaded (1048576)
+0089.619 (0) Google Drive: OK: Archive backup_2022-10-25-0651_Nilecoeem_86210862ec7b-db.gz uploaded in 4.27 seconds
+0089.625 (0) Recording as successfully uploaded: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-db.gz
+0089.633 (0) Deleting local file: backup_2022-10-25-0651_Nilecoeem_86210862ec7b-db.gz: OK
+0089.642 (0) Retain: beginning examination of existing backup sets; user setting: retain_files=5, retain_db=5
+0089.646 (0) Number of backup sets in history: 6; groups (db): 1
+0089.653 (0) Examining (for databases) backup set with group_id=0, nonce=86210862ec7b, datestamp=1666666288 (Oct 25 2022 02:51:28)
+0089.656 (0) This backup set is the backup set just made, so will not be deleted.
+0089.656 (0) Examining (for databases) backup set with group_id=0, nonce=55e700333b33, datestamp=1666059139 (Oct 18 2022 02:12:19)
+0089.656 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0089.659 (0) Examining (for databases) backup set with group_id=0, nonce=f7721fbd4411, datestamp=1665454376 (Oct 11 2022 02:12:56)
+0089.660 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0089.660 (0) Examining (for databases) backup set with group_id=0, nonce=70c4d116731e, datestamp=1664848949 (Oct 04 2022 02:02:29)
+0089.660 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0089.660 (0) Examining (for databases) backup set with group_id=0, nonce=795b60f35d0d, datestamp=1664246222 (Sep 27 2022 02:37:02)
+0089.660 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0089.660 (0) Examining (for databases) backup set with group_id=0, nonce=3698ba13edb9, datestamp=1663639421 (Sep 20 2022 02:03:41)
+0089.660 (0) 1663639421: db: this set includes a database (backup_2022-09-20-0603_Nilecoeem_3698ba13edb9-db.gz); db count is now 5
+0089.660 (0) 1663639421: db: over retain limit (5); will delete this database
+0089.660 (0) Delete file: backup_2022-09-20-0603_Nilecoeem_3698ba13edb9-db.gz, service=googledrive
+0093.139 (0) Google Drive: backup_2022-09-20-0603_Nilecoeem_3698ba13edb9-db.gz: Deletion successful
+0093.148 (0) This backup set remains non-empty (f=1/d=0); will retain in history
+0093.151 (0) Number of backup sets in history: 6; groups (files): 1
+0093.155 (0) Examining (for files) backup set with nonce=86210862ec7b, datestamp=1666666288 (Oct 25 2022 02:51:28)
+0093.158 (0) This backup set is the backup set just made, so will not be deleted.
+0093.160 (0) This backup set is the backup set just made, so will not be deleted.
+0093.160 (0) This backup set is the backup set just made, so will not be deleted.
+0093.160 (0) This backup set is the backup set just made, so will not be deleted.
+0093.160 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0093.164 (0) Examining (for files) backup set with nonce=55e700333b33, datestamp=1666059139 (Oct 18 2022 02:12:19)
+0093.164 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0093.164 (0) Examining (for files) backup set with nonce=f7721fbd4411, datestamp=1665454376 (Oct 11 2022 02:12:56)
+0093.164 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0093.165 (0) Examining (for files) backup set with nonce=70c4d116731e, datestamp=1664848949 (Oct 04 2022 02:02:29)
+0093.165 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0093.165 (0) Examining (for files) backup set with nonce=795b60f35d0d, datestamp=1664246222 (Sep 27 2022 02:37:02)
+0093.165 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0093.165 (0) Examining (for files) backup set with nonce=3698ba13edb9, datestamp=1663639421 (Sep 20 2022 02:03:41)
+0093.165 (0) plugins: over retain limit (5); will delete this file entity
+0093.165 (0) themes: over retain limit (5); will delete this file entity
+0093.165 (0) uploads: over retain limit (5); will delete this file entity
+0093.165 (0) others: over retain limit (5); will delete this file entity
+0093.165 (0) Delete file: backup_2022-09-20-0603_Nilecoeem_3698ba13edb9-plugins.zip, service=googledrive
+0093.168 (0) Delete file: backup_2022-09-20-0603_Nilecoeem_3698ba13edb9-themes.zip, service=googledrive
+0093.186 (0) Delete file: backup_2022-09-20-0603_Nilecoeem_3698ba13edb9-uploads.zip, service=googledrive
+0093.191 (0) Delete file: backup_2022-09-20-0603_Nilecoeem_3698ba13edb9-uploads2.zip, service=googledrive
+0093.195 (0) Delete file: backup_2022-09-20-0603_Nilecoeem_3698ba13edb9-others.zip, service=googledrive
+0095.042 (0) Google Drive: backup_2022-09-20-0603_Nilecoeem_3698ba13edb9-others.zip: Deletion successful
+0096.160 (0) Google Drive: backup_2022-09-20-0603_Nilecoeem_3698ba13edb9-uploads2.zip: Deletion successful
+0097.203 (0) Google Drive: backup_2022-09-20-0603_Nilecoeem_3698ba13edb9-uploads.zip: Deletion successful
+0098.289 (0) Google Drive: backup_2022-09-20-0603_Nilecoeem_3698ba13edb9-themes.zip: Deletion successful
+0099.376 (0) Google Drive: backup_2022-09-20-0603_Nilecoeem_3698ba13edb9-plugins.zip: Deletion successful
+0099.384 (0) This backup set is now empty; will remove from history
+0099.387 (0) Deleting log file (log.3698ba13edb9.txt)
+0099.391 (0) Retain: saving new backup history (sets now: 5) and finishing retain operation
+0099.409 (0) Resume backup (86210862ec7b, 0): finish run
+0099.420 (0) Decremented the semaphore (fd) by 1
+0099.426 (0) Semaphore (fd) unlocked
+0099.432 (0) There were no errors in the uploads, so the 'resume' event (1) is being unscheduled
+0099.443 (0) No email will/can be sent - the user has not configured an email address.
+0099.444 (0) The backup apparently succeeded and is now complete

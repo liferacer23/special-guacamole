@@ -217,7 +217,10 @@ export default function Footer() {
           <Flex justifyContent="space-between" width="100%">
             <Text color="#fff" mobileFontSize="0.5rem">
               Copyright © 2022 Nilecoeem All rights reserved. Designed by &nbsp;
-              <a style={{ color: "#fff" }} href="Kelaltech.com">
+              <a
+                style={{ color: "#fff", textDecoration: "underline" }}
+                href="Kelaltech.com"
+              >
                 Kelaltech.com
               </a>
             </Text>

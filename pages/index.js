@@ -364,10 +364,10 @@ export default function Home() {
           </Text>
           <Text
             mobileFontSize={"0.7rem"}
-            fontSize={"25px"}
+            fontSize={"20px"}
             color="rgb(0,44,90)"
             fontWeight="bold"
-            style={{ marginLeft: "1rem", marginTop: "1rem" }}
+            style={{ marginLeft: "1rem", marginTop: "1.5rem" }}
             width="60vw"
             height="5rem"
             mobileWidth="90vw"

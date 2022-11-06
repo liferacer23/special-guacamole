@@ -148,7 +148,7 @@ const HeaderButtonContainer = styled.div`
   justify-content: flex-start;
   align-item: center;
   gap: 4rem;
-  margin-top: -0.5rem;
+  margin-top: -0.8rem;
 `;
 
 const Card = styled.div`
@@ -367,7 +367,7 @@ export default function Home() {
             fontSize={"25px"}
             color="#858585"
             fontWeight="bold"
-            style={{ marginLeft: "3.5em", marginTop: "1.7rem" }}
+            style={{ marginLeft: "3em", marginTop: "1.7rem" }}
             width="60vw"
             height="5rem"
             mobileWidth="90vw"

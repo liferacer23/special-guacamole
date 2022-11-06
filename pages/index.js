@@ -350,13 +350,13 @@ export default function Home() {
             ---Welcome to Nileco---
           </Text>
           <Text
-            fontSize={"3.4rem"}
+            fontSize={"3.2rem"}
             color="rgb(0,44,90)"
             fontWeight="bold"
             width="60vw"
             height="10rem"
             mobileWidth="90vw"
-            mobileHeight="5rem"
+            mobileHeight="4rem"
             mobileFontSize={"1.5rem"}
             hoverbackground="transparent"
           >

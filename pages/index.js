@@ -367,7 +367,7 @@ export default function Home() {
             fontSize={"25px"}
             color="#858585"
             fontWeight="bold"
-            style={{ marginLeft: "3.5em", marginTop: "1rem" }}
+            style={{ marginLeft: "3.5em", marginTop: "1.7rem" }}
             width="60vw"
             height="5rem"
             mobileWidth="90vw"

@@ -1170,7 +1170,7 @@ export default function Home() {
                   mobileFontSize="0.6rem"
                   width="15rem"
                   height="1rem"
-                  mobileWidth="8rem"
+                  mobileWidth="9rem"
                 >
                   Call Us at +251977805757
                 </Text>

@@ -350,8 +350,7 @@ export default function Home() {
             ---Welcome to Nileco---
           </Text>
           <Text
-            mobileDisplay="none"
-            fontSize={"3.2rem"}
+            fontSize={"3.3rem"}
             color="rgb(0,44,90)"
             fontWeight="bold"
             width="60vw"
@@ -364,6 +363,7 @@ export default function Home() {
             WE ARE THE ULTIMATE ENERGY DISTRIBUTION CHANNEL.
           </Text>
           <Text
+            mobileDisplay="none"
             mobileFontSize={"0.7rem"}
             fontSize={"20px"}
             color="rgb(0,44,90)"

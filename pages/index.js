@@ -363,9 +363,9 @@ export default function Home() {
             WE ARE THE ULTIMATE ENERGY DISTRIBUTION CHANNEL.
           </Text>
           <Text
-            mobileFontSize={"0.7rem"}
+            mobileFontSize={"0.5rem"}
             fontSize={"25px"}
-            color="#858585"
+            color="#85858899"
             fontWeight="bold"
             style={{ marginLeft: "3em", marginTop: "1.7rem" }}
             width="60vw"

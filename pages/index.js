@@ -148,7 +148,7 @@ const HeaderButtonContainer = styled.div`
   justify-content: flex-start;
   align-item: center;
   gap: 4rem;
-  margin-top: -0.5rem;
+  margin-top: -1rem;
 `;
 
 const Card = styled.div`
@@ -249,7 +249,7 @@ const HeaderContent = styled.div`
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
-    align-items: center;
+    align-items: left;
   }
 `;
 
@@ -324,8 +324,8 @@ export default function Home() {
         <ImageContainer
           width="100%"
           height="700px"
-          mobileWidth="100%"
-          mobileHeight="250px"
+          mobileWidth="100vw"
+          mobileHeight="230px"
         >
           <Image
             layout="fill"
@@ -365,9 +365,9 @@ export default function Home() {
           <Text
             mobileFontSize={"0.7rem"}
             fontSize={"25px"}
-            color="#858585"
+            color="rgb(0,44,90)"
             fontWeight="bold"
-            style={{ marginLeft: "3.5em", marginTop: "1rem" }}
+            style={{ marginLeft: "1rem", marginTop: "1rem" }}
             width="60vw"
             height="5rem"
             mobileWidth="90vw"
@@ -503,6 +503,7 @@ export default function Home() {
                   height: "100px",
                   position: "absolute",
                   left: "2.8rem",
+                  margin: "16px 0 0 0",
                 }}
               ></div>
               <OrDiv>or</OrDiv>
@@ -1165,7 +1166,7 @@ export default function Home() {
                   mobileFontSize="0.6rem"
                   width="15rem"
                   height="1rem"
-                  mobileWidth="11rem"
+                  mobileWidth="8rem"
                 >
                   Call Us at +251977805757
                 </Text>

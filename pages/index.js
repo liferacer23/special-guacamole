@@ -350,6 +350,7 @@ export default function Home() {
             ---Welcome to Nileco---
           </Text>
           <Text
+            mobileDisplay="none"
             fontSize={"3.2rem"}
             color="rgb(0,44,90)"
             fontWeight="bold"

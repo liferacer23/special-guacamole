@@ -149,6 +149,9 @@ const HeaderButtonContainer = styled.div`
   align-item: center;
   gap: 4rem;
   margin-top: -1rem;
+  @media (max-width: 1000px) {
+    margin-top: 3rem;
+  }
 `;
 
 const Card = styled.div`

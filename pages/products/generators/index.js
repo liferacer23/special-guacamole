@@ -278,9 +278,10 @@ export default function index() {
                   padding: "1rem",
                   color: "rgb(136,142,148)",
                   fontSize: "0.9rem",
+                  textAlign: "center",
                 }}
-                border="0"
-                width="643"
+                border="1"
+                width="543"
                 cellSpacing="10px"
                 cellPadding="10px"
               >
@@ -314,7 +315,7 @@ export default function index() {
                         color="rgb(136,142,148)"
                         fontSize="0.9rem"
                         mobileFontSize="0.8rem"
-                        textAlign="left"
+                        textAlign="center"
                       >
                         NI9 LSAC
                       </Text>
@@ -323,7 +324,6 @@ export default function index() {
                     <td>1500</td>
                     <td>9.0</td>
                     <td>10.0</td>
-                    <td>7.2</td>
                   </tr>
                   <tr>
                     <td>
@@ -331,7 +331,7 @@ export default function index() {
                         color="rgb(136,142,148)"
                         fontSize="0.9rem"
                         mobileFontSize="0.8rem"
-                        textAlign="left"
+                        textAlign="center"
                       >
                         NI12.5
                       </Text>
@@ -340,7 +340,6 @@ export default function index() {
                     <td>1500</td>
                     <td>12.5</td>
                     <td>14.0</td>
-                    <td>10.0</td>
                   </tr>
                   <tr>
                     <td>
@@ -348,7 +347,7 @@ export default function index() {
                         color="rgb(136,142,148)"
                         fontSize="0.9rem"
                         mobileFontSize="0.8rem"
-                        textAlign="left"
+                        textAlign="center"
                       >
                         NI15
                       </Text>
@@ -365,7 +364,7 @@ export default function index() {
                         color="rgb(136,142,148)"
                         fontSize="0.9rem"
                         mobileFontSize="0.8rem"
-                        textAlign="left"
+                        textAlign="center"
                       >
                         NI20
                       </Text>
@@ -382,7 +381,7 @@ export default function index() {
                         color="rgb(136,142,148)"
                         fontSize="0.9rem"
                         mobileFontSize="0.8rem"
-                        textAlign="left"
+                        textAlign="center"
                       >
                         NI30
                       </Text>
@@ -399,7 +398,7 @@ export default function index() {
                         color="rgb(136,142,148)"
                         fontSize="0.9rem"
                         mobileFontSize="0.8rem"
-                        textAlign="left"
+                        textAlign="center"
                       >
                         NI45
                       </Text>
@@ -416,7 +415,7 @@ export default function index() {
                         color="rgb(136,142,148)"
                         fontSize="0.9rem"
                         mobileFontSize="0.8rem"
-                        textAlign="left"
+                        textAlign="center"
                       >
                         NI60
                       </Text>
@@ -433,7 +432,7 @@ export default function index() {
                         color="rgb(136,142,148)"
                         fontSize="0.9rem"
                         mobileFontSize="0.8rem"
-                        textAlign="left"
+                        textAlign="center"
                       >
                         NI80
                       </Text>
@@ -450,7 +449,7 @@ export default function index() {
                         color="rgb(136,142,148)"
                         fontSize="0.9rem"
                         mobileFontSize="0.8rem"
-                        textAlign="left"
+                        textAlign="center"
                       >
                         NI100
                       </Text>
@@ -467,7 +466,7 @@ export default function index() {
                         color="rgb(136,142,148)"
                         fontSize="0.9rem"
                         mobileFontSize="0.8rem"
-                        textAlign="left"
+                        textAlign="center"
                       >
                         NI135
                       </Text>
@@ -484,7 +483,7 @@ export default function index() {
                         color="rgb(136,142,148)"
                         fontSize="0.9rem"
                         mobileFontSize="0.8rem"
-                        textAlign="left"
+                        textAlign="center"
                       >
                         NI150
                       </Text>
@@ -502,7 +501,7 @@ export default function index() {
                         color="rgb(136,142,148)"
                         fontSize="0.9rem"
                         mobileFontSize="0.8rem"
-                        textAlign="left"
+                        textAlign="center"
                       >
                         NI200
                       </Text>
@@ -519,7 +518,7 @@ export default function index() {
                         color="rgb(136,142,148)"
                         fontSize="0.9rem"
                         mobileFontSize="0.8rem"
-                        textAlign="left"
+                        textAlign="center"
                       >
                         NI250
                       </Text>
@@ -536,7 +535,7 @@ export default function index() {
                         color="rgb(136,142,148)"
                         fontSize="0.9rem"
                         mobileFontSize="0.8rem"
-                        textAlign="left"
+                        textAlign="center"
                       >
                         NI275
                       </Text>
@@ -553,7 +552,7 @@ export default function index() {
                         color="rgb(136,142,148)"
                         fontSize="0.9rem"
                         mobileFontSize="0.8rem"
-                        textAlign="left"
+                        textAlign="center"
                       >
                         NI300
                       </Text>
@@ -570,7 +569,7 @@ export default function index() {
                         color="rgb(136,142,148)"
                         fontSize="0.9rem"
                         mobileFontSize="0.8rem"
-                        textAlign="left"
+                        textAlign="center"
                       >
                         NI350
                       </Text>
@@ -587,7 +586,7 @@ export default function index() {
                         color="rgb(136,142,148)"
                         fontSize="0.9rem"
                         mobileFontSize="0.8rem"
-                        textAlign="left"
+                        textAlign="center"
                       >
                         NI400
                       </Text>
@@ -604,7 +603,7 @@ export default function index() {
                         color="rgb(136,142,148)"
                         fontSize="0.9rem"
                         mobileFontSize="0.8rem"
-                        textAlign="left"
+                        textAlign="center"
                       >
                         NI450
                       </Text>
@@ -621,7 +620,7 @@ export default function index() {
                         color="rgb(136,142,148)"
                         fontSize="0.9rem"
                         mobileFontSize="0.8rem"
-                        textAlign="left"
+                        textAlign="center"
                       >
                         NI500
                       </Text>
@@ -638,7 +637,7 @@ export default function index() {
                         color="rgb(136,142,148)"
                         fontSize="0.9rem"
                         mobileFontSize="0.8rem"
-                        textAlign="left"
+                        textAlign="center"
                       >
                         NI600
                       </Text>
@@ -655,7 +654,7 @@ export default function index() {
                         color="rgb(136,142,148)"
                         fontSize="0.9rem"
                         mobileFontSize="0.8rem"
-                        textAlign="left"
+                        textAlign="center"
                       >
                         NI650
                       </Text>
@@ -672,7 +671,7 @@ export default function index() {
                         color="rgb(136,142,148)"
                         fontSize="0.9rem"
                         mobileFontSize="0.8rem"
-                        textAlign="left"
+                        textAlign="center"
                       >
                         NI750
                       </Text>
@@ -689,7 +688,7 @@ export default function index() {
                         color="rgb(136,142,148)"
                         fontSize="0.9rem"
                         mobileFontSize="0.8rem"
-                        textAlign="left"
+                        textAlign="center"
                       >
                         NI800
                       </Text>
@@ -706,7 +705,7 @@ export default function index() {
                         color="rgb(136,142,148)"
                         fontSize="0.9rem"
                         mobileFontSize="0.8rem"
-                        textAlign="left"
+                        textAlign="center"
                       >
                         NI1000
                       </Text>
@@ -723,7 +722,7 @@ export default function index() {
                         color="rgb(136,142,148)"
                         fontSize="0.9rem"
                         mobileFontSize="0.8rem"
-                        textAlign="left"
+                        textAlign="center"
                       >
                         JP1000
                       </Text>

@@ -287,7 +287,7 @@ const NavBar = () => {
                   marginRight: "-10px",
                 }}
               />{" "}
-              <Text fontSize="0.7rem" color="#fff" width="40%">
+              <Text fontSize="0.7rem" color="#fff" width="60%">
                 info@nilecoeem.com
               </Text>
             </Flex>

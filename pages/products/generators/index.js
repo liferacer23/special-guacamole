@@ -609,7 +609,7 @@ export default function index() {
                     </td>
 
                     <td>1500</td>
-
+                    <td>550</td>
                     <td>480.0</td>
                   </tr>
                   <tr>

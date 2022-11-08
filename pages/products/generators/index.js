@@ -274,73 +274,38 @@ export default function index() {
 
               <table
                 style={{
-                  width: "100%",
+                  width: "70%",
+                  margin: "auto",
                   padding: "1rem",
                   color: "rgb(136,142,148)",
                   fontSize: "0.9rem",
                   textAlign: "center",
                 }}
                 border="1"
-                width="543"
+                width="443"
                 cellSpacing="10px"
                 cellPadding="10px"
               >
                 <tbody>
                   <tr>
-                    <td rowSpan="3" width="150">
+                    <td rowSpan="3" colSpan={1} width="60">
                       Model
                     </td>
-                    <td rowSpan="5" width="124">
-                      Perkins Engine
+                  </tr>
+                  <tr>
+                    <td colSpan="2" width="50">
+                      KVA
                     </td>
-                    <td width="50">&nbsp;</td>
-                    <td colSpan="4" width="276">
-                      Rating
+                    <td colSpan="1" width="50">
+                      KW
                     </td>
                   </tr>
                   <tr>
-                    <td>RPM</td>
-                    <td colSpan="2">KVA</td>
-                    <td colSpan="2">KW</td>
+                    <td width="60">RPM</td>
+                    <td width="60">Prime</td>
+                    <td width="60">Prime</td>
                   </tr>
-                  <tr>
-                    <td>&nbsp;</td>
-                    <td>Prime</td>
-                    <td>Standby</td>
-                    <td>Prime</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <Text
-                        color="rgb(136,142,148)"
-                        fontSize="0.9rem"
-                        mobileFontSize="0.8rem"
-                        textAlign="center"
-                      >
-                        NI9 LSAC
-                      </Text>
-                    </td>
-                    <td>403A-11G1</td>
-                    <td>1500</td>
-                    <td>9.0</td>
-                    <td>10.0</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <Text
-                        color="rgb(136,142,148)"
-                        fontSize="0.9rem"
-                        mobileFontSize="0.8rem"
-                        textAlign="center"
-                      >
-                        NI12.5
-                      </Text>
-                    </td>
-                    <td>403A-15G1</td>
-                    <td>1500</td>
-                    <td>12.5</td>
-                    <td>14.0</td>
-                  </tr>
+
                   <tr>
                     <td>
                       <Text
@@ -352,10 +317,10 @@ export default function index() {
                         NI15
                       </Text>
                     </td>
-                    <td>403A-15G2</td>
+
                     <td>1500</td>
                     <td>15.0</td>
-                    <td>16.5</td>
+
                     <td>12.0</td>
                   </tr>
                   <tr>
@@ -369,10 +334,10 @@ export default function index() {
                         NI20
                       </Text>
                     </td>
-                    <td>404A-22G</td>
+
                     <td>1500</td>
                     <td>20.0</td>
-                    <td>22.0</td>
+
                     <td>16.0</td>
                   </tr>
                   <tr>
@@ -386,10 +351,10 @@ export default function index() {
                         NI30
                       </Text>
                     </td>
-                    <td>1103A-33G</td>
+
                     <td>1500</td>
                     <td>30.0</td>
-                    <td>33.0</td>
+
                     <td>24.0</td>
                   </tr>
                   <tr>
@@ -403,10 +368,10 @@ export default function index() {
                         NI45
                       </Text>
                     </td>
-                    <td>1103A-33TG1</td>
+
                     <td>1500</td>
                     <td>45.0</td>
-                    <td>49.6</td>
+
                     <td>36.0</td>
                   </tr>
                   <tr>
@@ -420,10 +385,10 @@ export default function index() {
                         NI60
                       </Text>
                     </td>
-                    <td>1103A-33TG2</td>
+
                     <td>1500</td>
                     <td>60.0</td>
-                    <td>66.0</td>
+
                     <td>48.0</td>
                   </tr>
                   <tr>
@@ -437,10 +402,10 @@ export default function index() {
                         NI80
                       </Text>
                     </td>
-                    <td>1104A-44TG2</td>
+
                     <td>1500</td>
                     <td>80.0</td>
-                    <td>88.0</td>
+
                     <td>64.0</td>
                   </tr>
                   <tr>
@@ -454,10 +419,10 @@ export default function index() {
                         NI100
                       </Text>
                     </td>
-                    <td>1104C-44TAG2</td>
+
                     <td>1500</td>
                     <td>100.0</td>
-                    <td>110.0</td>
+
                     <td>80.0</td>
                   </tr>
                   <tr>
@@ -471,10 +436,10 @@ export default function index() {
                         NI135
                       </Text>
                     </td>
-                    <td>1106A-70TG1</td>
+
                     <td>1500</td>
                     <td>135.0</td>
-                    <td>149.0</td>
+
                     <td>108.0</td>
                   </tr>
                   <tr>
@@ -488,10 +453,10 @@ export default function index() {
                         NI150
                       </Text>
                     </td>
-                    <td>1106A-70TAG2</td>
+
                     <td>1500</td>
                     <td>150.0</td>
-                    <td>165.0</td>
+
                     <td>120.0</td>
                   </tr>
 
@@ -506,10 +471,10 @@ export default function index() {
                         NI200
                       </Text>
                     </td>
-                    <td>1106A-70TAG4</td>
+
                     <td>1500</td>
                     <td>200.0</td>
-                    <td>220.0</td>
+
                     <td>160.0</td>
                   </tr>
                   <tr>
@@ -523,10 +488,10 @@ export default function index() {
                         NI250
                       </Text>
                     </td>
-                    <td>1206A-E70TTAG3</td>
+
                     <td>1500</td>
                     <td>250.0</td>
-                    <td>275.0</td>
+
                     <td>200.0</td>
                   </tr>
                   <tr>
@@ -540,10 +505,10 @@ export default function index() {
                         NI275
                       </Text>
                     </td>
-                    <td>1506A-E88TAG4</td>
+
                     <td>1500</td>
                     <td>275.0</td>
-                    <td>300.0</td>
+
                     <td>220.0</td>
                   </tr>
                   <tr>
@@ -557,10 +522,10 @@ export default function index() {
                         NI300
                       </Text>
                     </td>
-                    <td>1506A-E88TAG5</td>
+
                     <td>1500</td>
                     <td>308.0</td>
-                    <td>337.0</td>
+
                     <td>246.4</td>
                   </tr>
                   <tr>
@@ -574,10 +539,10 @@ export default function index() {
                         NI350
                       </Text>
                     </td>
-                    <td>2206A-E13TAG2</td>
+
                     <td>1500</td>
                     <td>350.0</td>
-                    <td>400.0</td>
+
                     <td>280.0</td>
                   </tr>
                   <tr>
@@ -591,10 +556,10 @@ export default function index() {
                         NI400
                       </Text>
                     </td>
-                    <td>2206A-E13TAG3</td>
+
                     <td>1500</td>
                     <td>400.0</td>
-                    <td>450.0</td>
+
                     <td>320.0</td>
                   </tr>
                   <tr>
@@ -608,10 +573,10 @@ export default function index() {
                         NI450
                       </Text>
                     </td>
-                    <td>2506A-E15TAG1</td>
+
                     <td>1500</td>
                     <td>455.0</td>
-                    <td>500.0</td>
+
                     <td>364.0</td>
                   </tr>
                   <tr>
@@ -625,10 +590,10 @@ export default function index() {
                         NI500
                       </Text>
                     </td>
-                    <td>2506A-E15TAG2</td>
+
                     <td>1500</td>
                     <td>500.0</td>
-                    <td>550.0</td>
+
                     <td>400.0</td>
                   </tr>
                   <tr>
@@ -642,10 +607,9 @@ export default function index() {
                         NI600
                       </Text>
                     </td>
-                    <td>2806A-E18TAG1A</td>
+
                     <td>1500</td>
-                    <td>600.0</td>
-                    <td>660.0</td>
+
                     <td>480.0</td>
                   </tr>
                   <tr>
@@ -659,10 +623,10 @@ export default function index() {
                         NI650
                       </Text>
                     </td>
-                    <td>2806A-E18TAG2</td>
+
                     <td>1500</td>
                     <td>650.0</td>
-                    <td>700.0</td>
+
                     <td>520.0</td>
                   </tr>
                   <tr>
@@ -676,10 +640,9 @@ export default function index() {
                         NI750
                       </Text>
                     </td>
-                    <td>4006-23TAG2A</td>
                     <td>1500</td>
                     <td>746.0</td>
-                    <td>821.0</td>
+
                     <td>596.8</td>
                   </tr>
                   <tr>
@@ -693,10 +656,10 @@ export default function index() {
                         NI800
                       </Text>
                     </td>
-                    <td>4006-23TAG3A</td>
+
                     <td>1500</td>
                     <td>800.0</td>
-                    <td>880.0</td>
+
                     <td>640.0</td>
                   </tr>
                   <tr>
@@ -710,10 +673,10 @@ export default function index() {
                         NI1000
                       </Text>
                     </td>
-                    <td>4008TAG2A</td>
+
                     <td>1500</td>
                     <td>1000.0</td>
-                    <td>1100.0</td>
+
                     <td>800.0</td>
                   </tr>
                   <tr>
@@ -724,13 +687,13 @@ export default function index() {
                         mobileFontSize="0.8rem"
                         textAlign="center"
                       >
-                        JP1000
+                        NI1000
                       </Text>
                     </td>
-                    <td>4008-30TAG2</td>
+
                     <td>1500</td>
                     <td>1000.0</td>
-                    <td>1100.0</td>
+
                     <td>800.0</td>
                   </tr>
                 </tbody>

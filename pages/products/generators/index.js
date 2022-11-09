@@ -314,23 +314,6 @@ export default function index() {
                         mobileFontSize="0.8rem"
                         textAlign="center"
                       >
-                        NI15
-                      </Text>
-                    </td>
-
-                    <td>1500</td>
-                    <td>15.0</td>
-
-                    <td>12.0</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <Text
-                        color="rgb(136,142,148)"
-                        fontSize="0.9rem"
-                        mobileFontSize="0.8rem"
-                        textAlign="center"
-                      >
                         NI20
                       </Text>
                     </td>
@@ -477,40 +460,7 @@ export default function index() {
 
                     <td>160.0</td>
                   </tr>
-                  <tr>
-                    <td>
-                      <Text
-                        color="rgb(136,142,148)"
-                        fontSize="0.9rem"
-                        mobileFontSize="0.8rem"
-                        textAlign="center"
-                      >
-                        NI250
-                      </Text>
-                    </td>
 
-                    <td>1500</td>
-                    <td>250.0</td>
-
-                    <td>200.0</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <Text
-                        color="rgb(136,142,148)"
-                        fontSize="0.9rem"
-                        mobileFontSize="0.8rem"
-                        textAlign="center"
-                      >
-                        NI275
-                      </Text>
-                    </td>
-
-                    <td>1500</td>
-                    <td>275.0</td>
-
-                    <td>220.0</td>
-                  </tr>
                   <tr>
                     <td>
                       <Text
@@ -528,23 +478,7 @@ export default function index() {
 
                     <td>246.4</td>
                   </tr>
-                  <tr>
-                    <td>
-                      <Text
-                        color="rgb(136,142,148)"
-                        fontSize="0.9rem"
-                        mobileFontSize="0.8rem"
-                        textAlign="center"
-                      >
-                        NI350
-                      </Text>
-                    </td>
 
-                    <td>1500</td>
-                    <td>350.0</td>
-
-                    <td>280.0</td>
-                  </tr>
                   <tr>
                     <td>
                       <Text
@@ -562,23 +496,7 @@ export default function index() {
 
                     <td>320.0</td>
                   </tr>
-                  <tr>
-                    <td>
-                      <Text
-                        color="rgb(136,142,148)"
-                        fontSize="0.9rem"
-                        mobileFontSize="0.8rem"
-                        textAlign="center"
-                      >
-                        NI450
-                      </Text>
-                    </td>
 
-                    <td>1500</td>
-                    <td>455.0</td>
-
-                    <td>364.0</td>
-                  </tr>
                   <tr>
                     <td>
                       <Text
@@ -595,106 +513,6 @@ export default function index() {
                     <td>500.0</td>
 
                     <td>400.0</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <Text
-                        color="rgb(136,142,148)"
-                        fontSize="0.9rem"
-                        mobileFontSize="0.8rem"
-                        textAlign="center"
-                      >
-                        NI600
-                      </Text>
-                    </td>
-
-                    <td>1500</td>
-                    <td>550</td>
-                    <td>480.0</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <Text
-                        color="rgb(136,142,148)"
-                        fontSize="0.9rem"
-                        mobileFontSize="0.8rem"
-                        textAlign="center"
-                      >
-                        NI650
-                      </Text>
-                    </td>
-
-                    <td>1500</td>
-                    <td>650.0</td>
-
-                    <td>520.0</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <Text
-                        color="rgb(136,142,148)"
-                        fontSize="0.9rem"
-                        mobileFontSize="0.8rem"
-                        textAlign="center"
-                      >
-                        NI750
-                      </Text>
-                    </td>
-                    <td>1500</td>
-                    <td>746.0</td>
-
-                    <td>596.8</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <Text
-                        color="rgb(136,142,148)"
-                        fontSize="0.9rem"
-                        mobileFontSize="0.8rem"
-                        textAlign="center"
-                      >
-                        NI800
-                      </Text>
-                    </td>
-
-                    <td>1500</td>
-                    <td>800.0</td>
-
-                    <td>640.0</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <Text
-                        color="rgb(136,142,148)"
-                        fontSize="0.9rem"
-                        mobileFontSize="0.8rem"
-                        textAlign="center"
-                      >
-                        NI1000
-                      </Text>
-                    </td>
-
-                    <td>1500</td>
-                    <td>1000.0</td>
-
-                    <td>800.0</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <Text
-                        color="rgb(136,142,148)"
-                        fontSize="0.9rem"
-                        mobileFontSize="0.8rem"
-                        textAlign="center"
-                      >
-                        NI1000
-                      </Text>
-                    </td>
-
-                    <td>1500</td>
-                    <td>1000.0</td>
-
-                    <td>800.0</td>
                   </tr>
                 </tbody>
               </table>

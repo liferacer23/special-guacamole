@@ -80,8 +80,8 @@ const StyledButton = styled("button")`
 // `;
 const Credentials = styled("div")`
   background: rgb(0, 44, 91) !important;
-  padding: 10px !important;
-  min-height: 3rem;
+  padding: 0 0 10px 0px !important;
+  min-height: 3.5rem;
   min-width: 100vw;
   display: flex;
   flex-direction: column;
